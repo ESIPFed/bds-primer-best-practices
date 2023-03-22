@@ -1,0 +1,31 @@
+h1:make-your-data-software-ready MAKE YOUR DATA SOFTWARE READY
+h2:use-non-proprietary-formats Use non-proprietary formats
+h3:why Why?
+h3:key-information Key Information
+h3:top-5-references Top 5 References
+h3:is-anything-missing Is anything missing?
+h2:structure-data-in-tidylong-format Structure data in tidy/long format
+h3:why-1 Why?
+h3:key-information-1 Key Information
+h3:top-5-references-1 Top 5 References
+h3:is-anything-missing-1 Is anything missing?
+h2:follow-iso-8601-for-dates Follow ISO 8601 for dates
+h3:why-2 Why?
+h3:key-information-2 Key Information
+h3:top-5-references-2 Top 5 References
+h3:is-anything-missing-2 Is anything missing?
+h2:match-scientific-names-to-a-taxonomic-authority Match scientific names to a taxonomic authority
+h3:why-3 Why?
+h3:key-information-3 Key Information
+h3:top-5-references-3 Top 5 References
+h3:is-anything-missing-3 Is anything missing?
+h2:record-latitude-and-longitude-in-decimal-degrees-in-wgs84 Record latitude and longitude in decimal degrees in WGS84
+h3:why-4 Why?
+h3:key-information-4 Key Information
+h3:top-5-references-4 Top 5 References
+h3:is-anything-missing-4 Is anything missing?
+h2:use-globally-unique-identifiers Use globally unique identifiers
+h3:why-5 Why?
+h3:key-information-5 Key Information
+h3:top-5-references-5 Top 5 References
+
