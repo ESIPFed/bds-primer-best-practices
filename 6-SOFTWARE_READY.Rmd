@@ -4,7 +4,7 @@
 
 ### Why?
 
-- Proprietary data goes against the whole "FAIR" principle.
+- X
 - Data will be able to be opened by multiple software types
 - It could “future proof” data; forward compatibility 
 - Makes data more socially fair (open data), financial fair
