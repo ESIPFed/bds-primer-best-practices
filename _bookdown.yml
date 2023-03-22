@@ -1,0 +1,6 @@
+book_filename: "ESIP_BDS_best_practices"
+language: 
+  ui:
+    chapter_name: 
+delete_merged_file: true
+new_session: yes
