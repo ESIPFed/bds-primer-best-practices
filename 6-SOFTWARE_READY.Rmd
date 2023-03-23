@@ -187,5 +187,48 @@
 ## Use globally unique identifiers
 
 ### Why?
+
+- It can be useful to have unique identifiers to unambiguously identify granules of information, e.g. dataset, collection, database, taxonomic concept, etc. This will allow users to precisely refer to the data and allow your data to remain identifiable when aggregated with other datasets.
+
+- To be able to uniquely identify a record in your data system or across data systems.
+Useful to create relational databases or merge records.
+
+- Although it increases workload, it safeguards against confusion and inefficiency in the future.
+
 ### Key Information
+- There are good reasons to keep an identifier opaque, i.e. it does not indicate anything about the content of information it points to. However, there are also transparent, or semi-opaque identifiers in use that take advantage of semantics to guide humans as well as machines.
+
+- One way to create a unique identifier is concatenation of sampling event, location, time, enumeration of unique observation or event.
+  - Station_95_Date_09JAN1997:14:35:00.000
+  
+- Some prefer using opaque identifiers.
+  - 10FC9784-B30F-48ED-8DB5-FF65A2A9934E
+  
+-If there is an existing globally unique identifier, it’s usually a good idea to use it (i.e. when using a taxonomic authority like WoRMS and applying their LSID).
+
+- It is important to manage any identifiers you create, if they are not managed by an authority (e.g. DOIs).
+
+- Important that it be persistent (consider samples possibly moving between institutions)
+
+
 ### Top 5 References
+- Packages to generate uuids:
+
+  - https://cran.r-project.org/web/packages/uuid/index.html 
+  - https://docs.python.org/3/library/uuid.html 
+  - http://guid.one/
+  - https://guidgenerator.com/
+  
+- Guidance on how to use GUIDs (Globally Unique Identifiers) to meet specific requirements of the biodiversity information community
+  - http://bioimages.vanderbilt.edu/pages/guid-applicability-final-2011-01.pdf
+
+- Use of globally unique identifiers (GUIDs) to link herbarium specimen records to physical specimens
+  - https://bsapubs.onlinelibrary.wiley.com/doi/full/10.1002/aps3.1027 
+
+- A Beginner’s Guide to Persistent Identifiers
+  - http://links.gbif.org/persistent_identifiers_guide_en_v1.pdf 
+
+
+
+  
+
