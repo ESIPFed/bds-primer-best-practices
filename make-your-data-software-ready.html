@@ -293,30 +293,63 @@
 <div id="why-3" class="section level3 hasAnchor" number="1.4.1">
 <h3><span class="header-section-number">1.4.1</span> Why?<a href="#why-3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
-<li>So researchers are referring to standard names so they can better compare results across studies.</li>
-<li>To more easily handle taxonomic name changes as scientific understanding evolves.</li>
-<li>Efficiently manage global datasets and better aggregation of species information across databases.</li>
-<li>To integrate or aggregate datasets, we have to have a common frame of reference for biological information</li>
+<li><p>Definition: A taxonomic authority is an internationally recognized, used and actively maintained classification of species.</p></li>
+<li><p>To integrate or aggregate datasets, we have to have a common frame of reference for taxonomic name</p></li>
+<li><p>Provides an anchor for the taxonomy as scientific understanding evolves.</p></li>
 </ul>
 </div>
 <div id="key-information-3" class="section level3 hasAnchor" number="1.4.2">
 <h3><span class="header-section-number">1.4.2</span> Key Information<a href="#key-information-3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
-<li>Adopting standard binomial nomenclature</li>
-<li>Use an existing taxonomic “backbone” (example: WoRMS (<a href="https://www.marinespecies.org/" class="uri">https://www.marinespecies.org/</a>), <a href="https://www.itis.gov/" class="uri">https://www.itis.gov/</a> )</li>
-<li>Match incoming taxa with the standard taxonomic referencing system.</li>
-<li>Always save and document the original name.</li>
-<li>Identify specific taxonomic authority used for each dataset/record</li>
-<li>Include with the data what “authority” you used for taxonomic</li>
+<li><p>Use an existing taxonomic authority (e.g. World Register of Marine Species, Integrated Taxonomic Information System, NCBI taxonomy) and include the authority who manages said information in your metadata</p></li>
+<li><p>List of many authorities can be found here: <a href="https://resolver.globalnames.org/data_sources" class="uri">https://resolver.globalnames.org/data_sources</a></p></li>
+<li><p>Make yourself aware of the structure, limits, and history of the authority you are using.</p></li>
+<li><p>Adopt standard binomial nomenclature, when possible
+When possible, reference the unique identifier in addition to the nomenclature.</p></li>
+<li><p>Always save and document the originally recorded name.</p></li>
+<li><p>Put notes about identification uncertainty in a separate column.</p></li>
+<li><p>Many authorities have APIs through which you can match names to identifiers.</p></li>
 </ul>
 </div>
 <div id="top-5-references-3" class="section level3 hasAnchor" number="1.4.3">
 <h3><span class="header-section-number">1.4.3</span> Top 5 References<a href="#top-5-references-3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
-<li><a href="https://obis.org/">OBIS</a></li>
+<li>R packages
+<ul>
+<li>taxize is a taxonomic toolbelt for R. taxize wraps APIs for a large suite of taxonomic databases availabe on the web.
+<ul>
 <li><a href="https://cran.r-project.org/web/packages/taxize/index.html" class="uri">https://cran.r-project.org/web/packages/taxize/index.html</a></li>
-<li>For microbes, either GTDB or NCBI taxonomic naming</li>
-<li>For “plants, animals, fungi, and microbes” Integrated Taxonomic Information System (ITIS)</li>
+<li>worrms is an API client for World Register of Marine Species (<a href="http://www.marinespecies.org/" class="uri">http://www.marinespecies.org/</a>).
+<a href="http://cran.nexr.com/web/packages/worrms/vignettes/worrms_vignette.html" class="uri">http://cran.nexr.com/web/packages/worrms/vignettes/worrms_vignette.html</a></li>
+<li>worms: another API client for WoRMS
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/worms/index.html" class="uri">https://cran.r-project.org/web/packages/worms/index.html</a></li>
+</ul></li>
+<li>Ritis: API client for ITIS
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/ritis/" class="uri">https://cran.r-project.org/web/packages/ritis/</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>Python packages
+<ul>
+<li>WoRMS API client
+<ul>
+<li><a href="https://github.com/iobis/pyworms" class="uri">https://github.com/iobis/pyworms</a></li>
+</ul></li>
+</ul></li>
+<li>Global Names Resolver to compare taxonomic concepts across authorities.
+<ul>
+<li><a href="https://resolver.globalnames.org/" class="uri">https://resolver.globalnames.org/</a></li>
+</ul></li>
+<li>Article: Recommendations for the Standardisation of Open Taxonomic Nomenclature for Image-Based Identifications
+<ul>
+<li><a href="https://doi.org/10.3389/fmars.2021.620702" class="uri">https://doi.org/10.3389/fmars.2021.620702</a></li>
+</ul></li>
+<li>TDWG 2022 Keynote: Richard Pyle, “An Introduction to the Scientific Names of Organisms and the Taxon Concepts they Represent”
+<ul>
+<li><a href="https://www.youtube.com/watch?v=rmTvUUjBxrI" class="uri">https://www.youtube.com/watch?v=rmTvUUjBxrI</a></li>
+</ul></li>
 </ul>
 </div>
 <div id="is-anything-missing-3" class="section level3 hasAnchor" number="1.4.4">
@@ -345,22 +378,42 @@
 <div id="why-4" class="section level3 hasAnchor" number="1.5.1">
 <h3><span class="header-section-number">1.5.1</span> Why?<a href="#why-4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
+<li>Users have to know where you collected this data, which requires a latitude, longitude, reference system and uncertainty.</li>
 <li>Decimal-degrees avoids special symbols (° or ’) which is preferable for machine readable formats</li>
+<li>WGS84 is a reference coordinate system that is widely used and incorporated in many GPS units and tools, and recognized as a standard by many government agencies.</li>
 </ul>
 </div>
 <div id="key-information-4" class="section level3 hasAnchor" number="1.5.2">
 <h3><span class="header-section-number">1.5.2</span> Key Information<a href="#key-information-4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
-<li>All values in degrees-minutes should be converted to decimal-degrees</li>
-<li>Formulas for conversion?</li>
-<li>Examples of other standards?</li>
+<li><p>If possible, encourage data providers to confirm, and record, the WGS84 datum is selected prior to data collection.</p></li>
+<li><p>Understand and report the device/instrument uncertainty associated with your coordinates because it affects the usability of your data.</p></li>
+<li><p>Consider including the vertical component (altitude, depth, height off bottom, elevation, etc)</p></li>
+<li><p>Generally speaking, degrees-minutes-seconds (DMS) can be converted to decimal-degrees (DD) by:</p>
+<ul>
+<li>DD = d + (min/60) + (sec/3600)</li>
+<li>Watch out for mixed formats, like degrees, decimal-minutes (DDM).</li>
+</ul></li>
+<li><p>Degrees West and South become negative in DD.</p>
+<ul>
+<li>Values for longitude range from -180 to 180</li>
+<li>Values for latitude range from -90 to 90</li>
+</ul></li>
 </ul>
 </div>
 <div id="top-5-references-4" class="section level3 hasAnchor" number="1.5.3">
 <h3><span class="header-section-number">1.5.3</span> Top 5 References<a href="#top-5-references-4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
-<li>Q: What are existing online tools to make this conversion?</li>
-<li>Existing R/python/ESRI packages/functions</li>
+<li><p>Existing R/python/ESRI packages/functions</p>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/measurements/measurements.pdf" class="uri">https://cran.r-project.org/web/packages/measurements/measurements.pdf</a>
+<a href="https://eml.ecoinformatics.org/schema/index.html" class="uri">https://eml.ecoinformatics.org/schema/index.html</a> (find “bounding Coordinates)</li>
+</ul></li>
+<li><p><a href="https://cfconventions.org/Data/cf-conventions/cf-conventions-1.10/cf-conventions.html#latitude-coordinate" class="uri">https://cfconventions.org/Data/cf-conventions/cf-conventions-1.10/cf-conventions.html#latitude-coordinate</a></p></li>
+<li><p><a href="https://ioos.github.io/bio_mobilization_workshop/03-data-cleaning/index.html#getting-latlon-to-decimal-degrees" class="uri">https://ioos.github.io/bio_mobilization_workshop/03-data-cleaning/index.html#getting-latlon-to-decimal-degrees</a></p></li>
+<li><p>Something that gives more background on precision, like this: <a href="https://www.trekview.org/blog/2021/reading-decimal-gps-coordinates-like-a-computer/#a-note-on-accuracy" class="uri">https://www.trekview.org/blog/2021/reading-decimal-gps-coordinates-like-a-computer/#a-note-on-accuracy</a>
+Degree-Minute-Seconds -&gt; DD calculator: <a href="https://www.fcc.gov/media/radio/dms-decimal" class="uri">https://www.fcc.gov/media/radio/dms-decimal</a></p></li>
+<li><p><a href="https://xkcd.com/2170/" class="uri">https://xkcd.com/2170/</a></p></li>
 </ul>
 </div>
 <div id="is-anything-missing-4" class="section level3 hasAnchor" number="1.5.4">
