@@ -1,5 +1,0 @@
-# PROVIDE CONTEXT AND UNDERSTANDABILITY TO YOUR DATA
-
-- Why?
-- Key Information
-- Top 5 References
