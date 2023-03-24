@@ -9,129 +9,79 @@ output:
 
 ### Why?
 
-- X
-- Data will be able to be opened by multiple software types
-- It could “future proof” data; forward compatibility 
-- Makes data more socially fair (open data), financial fair
+- Allows data to be useful in perpetuity by ensuring data readability and reusability across multiple platforms.
 - To align better with the FAIR principles (findability, accessibility, interoperability, reusability)
-- Without these, being to use the data as an end user becomes increasingly difficult and will deter people from wanting to use it
-- Proprietary software requires licenses, which not everyone can afford/has access to.
-- Ensuring data readability across multiple platforms and into the future.
-- Contributes to long-term, consistent data collection from multiple data providers
-
+- Makes data more socially equitable, supporting open science. Proprietary formats can depend on software that require licenses, which not everyone can afford/has access to.
 
 ### Key Information
-- Having open/flat files like csv is useful because they are easily manipulated
-- Having your data stored in a relational database can help with ease of conversion to csv/ dwc-a or obis 
-- How to read said format. Clearly identifying how machines can read format.
+
+- Non-proprietary formats are supported by more than one developer and can be accessed with different software systems. For example, comma separated values (CSV) format is becoming an increasingly popular non-proprietary format.
+- A [proprietary file format](https://en.wikipedia.org/wiki/Proprietary_file_format) is a file format of a company, organization, or individual that contains data that is ordered and stored according to a particular encoding-scheme, designed by the company or organization to be secret or with restricted access, such that the decoding and interpretation of this stored data is easily accomplished only with particular software or hardware that the company itself has developed. There may also be costs associated with it and access may be limited. Examples include Microsoft Excel (xlsx) and ESRI shapefiles (shp).
+- Many applications (e.g. Microsoft Office) allow exporting in multiple formats.
 
 
 ### Top 5 References
 
-- https://www.go-fair.org/fair-principles/
-- https://www.archives.gov/records-mgmt/policy/transfer-guidance-tables.html
-- netCDF spec
-- Ascii csv spec (tsv)
-- Imagery format specs…
-
-### Is anything missing?
-
-- Even though flat files are easy to use, it can be a challenge to know what to place into them. It is also important to have guidance in what to expect as contents in these files (ie unique identifiers, tidy data, basically the other topic).
-- What to do when a proprietary format is what your lab uses?!
+- Table of commonly used formats for common data types: https://guides.osu.edu/c.php?g=707751&p=5027409  
+- A more detailed table that is specific to US Federal records management: https://www.archives.gov/records-mgmt/policy/transfer-guidance-tables.html 
 
 
 ## Structure data in tidy/long format
 
 ### Why?
 
-- Easier to analyze.
-- more machine readable
-- More likely to be usable with other software
-- Makes code+analyses more reusable
+This is specifically intended for tabular data
+- There is a clear and easy to understand structure that can make your data more machine readable and easier to analyze/visualize.
+   - Clear structure: one observation per row
+   - Data are as atomic as possible (e.g., don’t mix types in field)
+- In the biological data community, tidy formats are more likely to work with commonly-used software
 - Easier to aggregate data across multiple files
-- Makes it easier to add a new “MeasurementType” without modifying all past files & software
-
 
 ### Key Information
 
-- Example: All scientific names as columns (non-tidy/wide) vs. a single column (tidy/long)
-- Darwin Core will require a long format.
-- Does tidy/long format (and adding controlled vocab) make the data more machine-readable/actionable?
-- Don’t want to tell people that they can’t use relational databases
+- Example: Each scientific name as individual columns (non-tidy/wide) vs. a single column (tidy/long) called scientific_name
 - Can be tricky working with multiple column datatypes
-- Don’t put metadata at the top of your spreadsheet
-- Keep it tabular
-
+- Don’t use colors or text formatting in tabular data, and only include column names as metadata. All other notes, definitions, etc. should be in an external metadata file (e.g. data dictionary) 
 
 ### Top 5 References
 
-- Wickham, H. . (2014). Tidy Data. Journal of Statistical Software, 59(10), 1–23. https://doi.org/10.18637/jss.v059.i10
-
-### Is anything missing?
-
-- Database schema terminologies
+- Wickham, H. (2014). Tidy Data. Journal of Statistical Software, 59(10), 1–23. https://doi.org/10.18637/jss.v059.i10
+- Data Sharing and Management Snafu in 3 Short Acts (video) https://www.youtube.com/watch?v=N2zK3sAtr-4&t=7s
+- Tips for working with data in BASH https://www.datafix.com.au/BASHing/2022-01-12.html 
+- Data Organization in Spreadsheets for Ecologists https://datacarpentry.org/spreadsheet-ecology-lesson/ 
+- Cleaning Data and Quality Control https://edirepository.org/resources/cleaning-data-and-quality-control#data-table-structure
 
 ## Follow ISO 8601 for dates
 
 ### Why?
 
-- Users have to know where you collected this data. 
-- Consistent across multiple standards - netCDF, DwC, EML
-- Well-defined international standard
-- Machine readable
-- Incorporated into many other standards (e.g. DwC, ISO 19115)
-- Clarity of when something is happening across timezones, time changes, etc
-- Avoid confusion, internationally understandable, interoperable
-- You are able to match information from different data sources using a standardized time stamp.
-- Better software integration of time elements (example: time slider on a map)
-- Python or R will expect to see time in a particular format.  
-- Local time can get confusing, must use UTC.
+- Internationally accepted format used across multiple schemas (e.g. Darwin Core, EML, ISO 19115)
+- Removes ambiguity related to timezone, daylight savings time changes, and time of day
+- Better software integration of time date/time elements
 
 ### Key Information
 
-- Lat
-- Lon
-- Vertical component (altitude, depth, height off bottom, etc)
-- Table from Wiki showing examples of all possible formats
-- Example of Zulu vs local
-- Example of date range
-- Timezones
-- Daylight savings
-- Decimal time
-- Some datasets (especially using EventCore DwC-A) will be increasingly using date ranges, which seem to break certain packages for data exploration (YYYY-MM-DDTHH:MM:SS.MMMZ/YYYY-MM-DDTHH:MM:SS.MMMZ)
-- As more event-core contributions are made, this might become more of an issue during the manipulation of data; consider installing fix libraries or contacting github communities responsible for issue libraries for fixes in the future.
-- Date parts
-- Offset from UTC
-- Just put your time in this format. 2022-12-01T18:30:35+00:00
+- Zulu = GMT = UTC: is the primary time standard by which the world regulates clocks and time. It is time relative to 0° longitude and is not adjusted for daylight saving time. (from Wikipedia).
+- Conversion to UTC, or between time zones, may depend on daylight savings
+- Todo: Table from Wiki showing examples of all possible formats
+   - Example of date range
+   - Date parts (annotated)
 
 ### Top 5 References
-- https://ioos.github.io/bio_mobilization_workshop/03-data-cleaning/index.html#getting-latlon-to-decimal-degrees 
-- CF documentation - https://cfconventions.org/Data/cf-conventions/cf-conventions-1.10/cf-conventions.html#latitude-coordinate 
-- EML documentation: 
-  - High level: https://eml.ecoinformatics.org/schema/index.html (find “bounding Coordinates)
-  - spatialRaster: 
+
 - ISO 8601 wiki: https://en.wikipedia.org/wiki/ISO_8601
-- R package lubridate
-- Python go-to package
-- https://xkcd.com/1179/
-- Article on datteime uncertainty: https://www.datafix.com.au/BASHing/2020-02-12.html 
+- R package lubridate, OlsonNames()
+- Python go-to package, datetime https://docs.python.org/3/library/datetime.html 
+- https://xkcd.com/1179/ 
+- Article on datetime uncertainty: https://www.datafix.com.au/BASHing/2020-02-12.html  
+- Map of offset from UTC: https://www.timeanddate.com/time/map/ 
+- Nice time converter: https://coastwatch.pfeg.noaa.gov/erddap/convert/time.html
+
 
 ### Is anything missing?
-- Should datum or projection be prescribed (ie, must it be WGS84?)
-- Understanding the metadata schema/data model you’re using and how it handles that information.
-  - Netcdf: https://cfconventions.org/Data/cf-conventions/cf-conventions-1.10/cf-conventions.html#coordinate-types 
-  - Iso-19115-2: 
-  - EML (dataset level, spatialRaster, spatialVector)
-- How to convert between deg-min-sec and decimal, e.drounding considerations
-- How to convert between projections (if one is prescribed)
-- More wide-spread date range support 
-- More guidelines on how to enter date-ranges
-- Can we represent datetime uncertainty? 
-- Parsers handle dates differently from each other. So sometimes it matters if one uses 2022-12-01 vs 20221201 vs 2022_12_01? (sometimes it depends on the - parser being used to interpret the date)
-- What can we do to support data validation tools so data are checked as they are submitted?
-- Some spreadsheets don’t export dates as ISO
 
-
+- How is this handled when reporting dates from paleontological and archaeological specimens?
+   - Make some recommendations for these use cases.
 
 ## Match scientific names to a taxonomic authority
 
