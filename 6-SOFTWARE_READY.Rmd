@@ -138,7 +138,6 @@ output:
 ### Why?
 
 - Definition: A taxonomic authority is an internationally recognized, used and actively maintained classification of species.
-
 - To integrate or aggregate datasets, we have to have a common frame of reference for taxonomic name
 - Provides an anchor for the taxonomy as scientific understanding evolves.
 
@@ -146,18 +145,12 @@ output:
 ### Key Information
 
 - Use an existing taxonomic authority (e.g. World Register of Marine Species, Integrated Taxonomic Information System, NCBI taxonomy) and include the authority who manages said information in your metadata
-
 - List of many authorities can be found here: https://resolver.globalnames.org/data_sources
-
 - Make yourself aware of the structure, limits, and history of the authority you are using.
-
 - Adopt standard binomial nomenclature, when possible
-When possible, reference the unique identifier in addition to the nomenclature.
-
+- When possible, reference the unique identifier in addition to the nomenclature.
 - Always save and document the originally recorded name.
-
 - Put notes about identification uncertainty in a separate column.
-
 - Many authorities have APIs through which you can match names to identifiers.
 
 
@@ -171,17 +164,13 @@ http://cran.nexr.com/web/packages/worrms/vignettes/worrms_vignette.html
       - https://cran.r-project.org/web/packages/worms/index.html
     - Ritis: API client for ITIS
        - https://cran.r-project.org/web/packages/ritis/ 
-    
 - Python packages
   - WoRMS API client
     - https://github.com/iobis/pyworms
-    
 - Global Names Resolver to compare taxonomic concepts across authorities.
   - https://resolver.globalnames.org/ 
-  
 - Article: Recommendations for the Standardisation of Open Taxonomic Nomenclature for Image-Based Identifications
   - https://doi.org/10.3389/fmars.2021.620702 
-  
 - TDWG 2022 Keynote: Richard Pyle, “An Introduction to the Scientific Names of Organisms and the Taxon Concepts they Represent”
   - https://www.youtube.com/watch?v=rmTvUUjBxrI
 
@@ -221,9 +210,10 @@ http://cran.nexr.com/web/packages/worrms/vignettes/worrms_vignette.html
 ### Top 5 References
 - Existing R/python/ESRI packages/functions
   - https://cran.r-project.org/web/packages/measurements/measurements.pdf 
-https://eml.ecoinformatics.org/schema/index.html (find “bounding Coordinates)
-- https://cfconventions.org/Data/cf-conventions/cf-conventions-1.10/cf-conventions.html#latitude-coordinate
-- https://ioos.github.io/bio_mobilization_workshop/03-data-cleaning/index.html#getting-latlon-to-decimal-degrees
+  - https://eml.ecoinformatics.org/schema/index.html (find “bounding Coordinates)
+  - https://cfconventions.org/Data/cf-conventions/cf-conventions-1.10/cf-conventions.html#latitude-coordinate
+- Getting lat/lon to decimal degrees 
+  - https://ioos.github.io/bio_mobilization_workshop/03-data-cleaning/index.html#getting-latlon-to-decimal-degrees
 - Something that gives more background on precision, like this: https://www.trekview.org/blog/2021/reading-decimal-gps-coordinates-like-a-computer/#a-note-on-accuracy
 Degree-Minute-Seconds -> DD calculator: https://www.fcc.gov/media/radio/dms-decimal
 - https://xkcd.com/2170/ 
