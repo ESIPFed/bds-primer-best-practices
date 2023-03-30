@@ -42,6 +42,11 @@ output:
 
 ## Structure data in tidy/long format
 
+df <- data.frame("Item" = c("Widget", "Widget", "Widget ), "Year" = c("2019", "2020", "2019"), "Units" = c("26", "23", "19"))
+kbl(df, booktabs = T) %>%
+kable_classic () %>%
+add_header_above(c("This is an example of tidy data" = 3))
+
 ### Why?
 
 - Easier to analyze.
@@ -72,6 +77,7 @@ output:
 - Database schema terminologies
 
 ## Follow ISO 8601 for dates
+
 
 ### Why?
 
@@ -105,7 +111,7 @@ output:
 - Just put your time in this format. 2022-12-01T18:30:35+00:00
 
 ### Top 5 References
-- https://ioos.github.io/bio_mobilization_workshop/03-data-cleaning/index.html#getting-latlon-to-decimal-degrees 
+- Getting lat/lon to decimal degrees: https://ioos.github.io/bio_mobilization_workshop/03-data-cleaning/index.html#getting-latlon-to-decimal-degrees 
 - CF documentation - https://cfconventions.org/Data/cf-conventions/cf-conventions-1.10/cf-conventions.html#latitude-coordinate 
 - EML documentation: 
   - High level: https://eml.ecoinformatics.org/schema/index.html (find “bounding Coordinates)
@@ -216,7 +222,8 @@ http://cran.nexr.com/web/packages/worrms/vignettes/worrms_vignette.html
   - https://ioos.github.io/bio_mobilization_workshop/03-data-cleaning/index.html#getting-latlon-to-decimal-degrees
 - Something that gives more background on precision, like this: https://www.trekview.org/blog/2021/reading-decimal-gps-coordinates-like-a-computer/#a-note-on-accuracy
 Degree-Minute-Seconds -> DD calculator: https://www.fcc.gov/media/radio/dms-decimal
-- https://xkcd.com/2170/ 
+
+![](https://imgs.xkcd.com/comics/coordinate_precision.png)
 
 
 ### Is anything missing?

@@ -176,6 +176,10 @@
 </div>
 <div id="structure-data-in-tidylong-format" class="section level2 hasAnchor" number="1.2">
 <h2><span class="header-section-number">1.2</span> Structure data in tidy/long format<a href="#structure-data-in-tidylong-format" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>df &lt;- data.frame(“Item” = c(“Widget”, “Widget”, “Widget ),”Year” = c(“2019”, “2020”, “2019”), “Units” = c(“26”, “23”, “19”))
+kbl(df, booktabs = T) %&gt;%
+kable_classic () %&gt;%
+add_header_above(c(“This is an example of tidy data” = 3))</p>
 <div id="why-1" class="section level3 hasAnchor" number="1.2.1">
 <h3><span class="header-section-number">1.2.1</span> Why?<a href="#why-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
@@ -253,7 +257,7 @@
 <div id="top-5-references-2" class="section level3 hasAnchor" number="1.3.3">
 <h3><span class="header-section-number">1.3.3</span> Top 5 References<a href="#top-5-references-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
-<li><a href="https://ioos.github.io/bio_mobilization_workshop/03-data-cleaning/index.html#getting-latlon-to-decimal-degrees" class="uri">https://ioos.github.io/bio_mobilization_workshop/03-data-cleaning/index.html#getting-latlon-to-decimal-degrees</a></li>
+<li>Getting lat/lon to decimal degrees: <a href="https://ioos.github.io/bio_mobilization_workshop/03-data-cleaning/index.html#getting-latlon-to-decimal-degrees" class="uri">https://ioos.github.io/bio_mobilization_workshop/03-data-cleaning/index.html#getting-latlon-to-decimal-degrees</a></li>
 <li>CF documentation - <a href="https://cfconventions.org/Data/cf-conventions/cf-conventions-1.10/cf-conventions.html#latitude-coordinate" class="uri">https://cfconventions.org/Data/cf-conventions/cf-conventions-1.10/cf-conventions.html#latitude-coordinate</a></li>
 <li>EML documentation:
 <ul>
@@ -293,22 +297,22 @@
 <div id="why-3" class="section level3 hasAnchor" number="1.4.1">
 <h3><span class="header-section-number">1.4.1</span> Why?<a href="#why-3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
-<li><p>Definition: A taxonomic authority is an internationally recognized, used and actively maintained classification of species.</p></li>
-<li><p>To integrate or aggregate datasets, we have to have a common frame of reference for taxonomic name</p></li>
-<li><p>Provides an anchor for the taxonomy as scientific understanding evolves.</p></li>
+<li>Definition: A taxonomic authority is an internationally recognized, used and actively maintained classification of species.</li>
+<li>To integrate or aggregate datasets, we have to have a common frame of reference for taxonomic name</li>
+<li>Provides an anchor for the taxonomy as scientific understanding evolves.</li>
 </ul>
 </div>
 <div id="key-information-3" class="section level3 hasAnchor" number="1.4.2">
 <h3><span class="header-section-number">1.4.2</span> Key Information<a href="#key-information-3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
-<li><p>Use an existing taxonomic authority (e.g. World Register of Marine Species, Integrated Taxonomic Information System, NCBI taxonomy) and include the authority who manages said information in your metadata</p></li>
-<li><p>List of many authorities can be found here: <a href="https://resolver.globalnames.org/data_sources" class="uri">https://resolver.globalnames.org/data_sources</a></p></li>
-<li><p>Make yourself aware of the structure, limits, and history of the authority you are using.</p></li>
-<li><p>Adopt standard binomial nomenclature, when possible
-When possible, reference the unique identifier in addition to the nomenclature.</p></li>
-<li><p>Always save and document the originally recorded name.</p></li>
-<li><p>Put notes about identification uncertainty in a separate column.</p></li>
-<li><p>Many authorities have APIs through which you can match names to identifiers.</p></li>
+<li>Use an existing taxonomic authority (e.g. World Register of Marine Species, Integrated Taxonomic Information System, NCBI taxonomy) and include the authority who manages said information in your metadata</li>
+<li>List of many authorities can be found here: <a href="https://resolver.globalnames.org/data_sources" class="uri">https://resolver.globalnames.org/data_sources</a></li>
+<li>Make yourself aware of the structure, limits, and history of the authority you are using.</li>
+<li>Adopt standard binomial nomenclature, when possible</li>
+<li>When possible, reference the unique identifier in addition to the nomenclature.</li>
+<li>Always save and document the originally recorded name.</li>
+<li>Put notes about identification uncertainty in a separate column.</li>
+<li>Many authorities have APIs through which you can match names to identifiers.</li>
 </ul>
 </div>
 <div id="top-5-references-3" class="section level3 hasAnchor" number="1.4.3">
@@ -386,15 +390,15 @@ When possible, reference the unique identifier in addition to the nomenclature.<
 <div id="key-information-4" class="section level3 hasAnchor" number="1.5.2">
 <h3><span class="header-section-number">1.5.2</span> Key Information<a href="#key-information-4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
-<li><p>If possible, encourage data providers to confirm, and record, the WGS84 datum is selected prior to data collection.</p></li>
-<li><p>Understand and report the device/instrument uncertainty associated with your coordinates because it affects the usability of your data.</p></li>
-<li><p>Consider including the vertical component (altitude, depth, height off bottom, elevation, etc)</p></li>
-<li><p>Generally speaking, degrees-minutes-seconds (DMS) can be converted to decimal-degrees (DD) by:</p>
+<li>If possible, encourage data providers to confirm, and record, the WGS84 datum is selected prior to data collection.</li>
+<li>Understand and report the device/instrument uncertainty associated with your coordinates because it affects the usability of your data.</li>
+<li>Consider including the vertical component (altitude, depth, height off bottom, elevation, etc)</li>
+<li>Generally speaking, degrees-minutes-seconds (DMS) can be converted to decimal-degrees (DD) by:
 <ul>
 <li>DD = d + (min/60) + (sec/3600)</li>
 <li>Watch out for mixed formats, like degrees, decimal-minutes (DDM).</li>
 </ul></li>
-<li><p>Degrees West and South become negative in DD.</p>
+<li>Degrees West and South become negative in DD.
 <ul>
 <li>Values for longitude range from -180 to 180</li>
 <li>Values for latitude range from -90 to 90</li>
@@ -404,17 +408,20 @@ When possible, reference the unique identifier in addition to the nomenclature.<
 <div id="top-5-references-4" class="section level3 hasAnchor" number="1.5.3">
 <h3><span class="header-section-number">1.5.3</span> Top 5 References<a href="#top-5-references-4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
-<li><p>Existing R/python/ESRI packages/functions</p>
+<li>Existing R/python/ESRI packages/functions
 <ul>
-<li><a href="https://cran.r-project.org/web/packages/measurements/measurements.pdf" class="uri">https://cran.r-project.org/web/packages/measurements/measurements.pdf</a>
-<a href="https://eml.ecoinformatics.org/schema/index.html" class="uri">https://eml.ecoinformatics.org/schema/index.html</a> (find “bounding Coordinates)</li>
+<li><a href="https://cran.r-project.org/web/packages/measurements/measurements.pdf" class="uri">https://cran.r-project.org/web/packages/measurements/measurements.pdf</a></li>
+<li><a href="https://eml.ecoinformatics.org/schema/index.html" class="uri">https://eml.ecoinformatics.org/schema/index.html</a> (find “bounding Coordinates)</li>
+<li><a href="https://cfconventions.org/Data/cf-conventions/cf-conventions-1.10/cf-conventions.html#latitude-coordinate" class="uri">https://cfconventions.org/Data/cf-conventions/cf-conventions-1.10/cf-conventions.html#latitude-coordinate</a></li>
 </ul></li>
-<li><p><a href="https://cfconventions.org/Data/cf-conventions/cf-conventions-1.10/cf-conventions.html#latitude-coordinate" class="uri">https://cfconventions.org/Data/cf-conventions/cf-conventions-1.10/cf-conventions.html#latitude-coordinate</a></p></li>
-<li><p><a href="https://ioos.github.io/bio_mobilization_workshop/03-data-cleaning/index.html#getting-latlon-to-decimal-degrees" class="uri">https://ioos.github.io/bio_mobilization_workshop/03-data-cleaning/index.html#getting-latlon-to-decimal-degrees</a></p></li>
-<li><p>Something that gives more background on precision, like this: <a href="https://www.trekview.org/blog/2021/reading-decimal-gps-coordinates-like-a-computer/#a-note-on-accuracy" class="uri">https://www.trekview.org/blog/2021/reading-decimal-gps-coordinates-like-a-computer/#a-note-on-accuracy</a>
-Degree-Minute-Seconds -&gt; DD calculator: <a href="https://www.fcc.gov/media/radio/dms-decimal" class="uri">https://www.fcc.gov/media/radio/dms-decimal</a></p></li>
-<li><p><a href="https://xkcd.com/2170/" class="uri">https://xkcd.com/2170/</a></p></li>
+<li>Getting lat/lon to decimal degrees
+<ul>
+<li><a href="https://ioos.github.io/bio_mobilization_workshop/03-data-cleaning/index.html#getting-latlon-to-decimal-degrees" class="uri">https://ioos.github.io/bio_mobilization_workshop/03-data-cleaning/index.html#getting-latlon-to-decimal-degrees</a></li>
+</ul></li>
+<li>Something that gives more background on precision, like this: <a href="https://www.trekview.org/blog/2021/reading-decimal-gps-coordinates-like-a-computer/#a-note-on-accuracy" class="uri">https://www.trekview.org/blog/2021/reading-decimal-gps-coordinates-like-a-computer/#a-note-on-accuracy</a>
+Degree-Minute-Seconds -&gt; DD calculator: <a href="https://www.fcc.gov/media/radio/dms-decimal" class="uri">https://www.fcc.gov/media/radio/dms-decimal</a></li>
 </ul>
+<p><img src="https://imgs.xkcd.com/comics/coordinate_precision.png" /></p>
 </div>
 <div id="is-anything-missing-4" class="section level3 hasAnchor" number="1.5.4">
 <h3><span class="header-section-number">1.5.4</span> Is anything missing?<a href="#is-anything-missing-4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -428,50 +435,44 @@ Degree-Minute-Seconds -&gt; DD calculator: <a href="https://www.fcc.gov/media/ra
 <div id="why-5" class="section level3 hasAnchor" number="1.6.1">
 <h3><span class="header-section-number">1.6.1</span> Why?<a href="#why-5" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
-<li><p>It can be useful to have unique identifiers to unambiguously identify granules of information, e.g. dataset, collection, database, taxonomic concept, etc. This will allow users to precisely refer to the data and allow your data to remain identifiable when aggregated with other datasets.</p></li>
-<li><p>To be able to uniquely identify a record in your data system or across data systems.
-Useful to create relational databases or merge records.</p></li>
-<li><p>Although it increases workload, it safeguards against confusion and inefficiency in the future.</p></li>
+<li>It can be useful to have unique identifiers to unambiguously identify granules of information, e.g. dataset, collection, database, taxonomic concept, etc. This will allow users to precisely refer to the data and allow your data to remain identifiable when aggregated with other datasets.</li>
+<li>To be able to uniquely identify a record in your data system or across data systems.
+Useful to create relational databases or merge records.</li>
+<li>Although it increases workload, it safeguards against confusion and inefficiency in the future.</li>
 </ul>
 </div>
 <div id="key-information-5" class="section level3 hasAnchor" number="1.6.2">
 <h3><span class="header-section-number">1.6.2</span> Key Information<a href="#key-information-5" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
-<li><p>There are good reasons to keep an identifier opaque, i.e. it does not indicate anything about the content of information it points to. However, there are also transparent, or semi-opaque identifiers in use that take advantage of semantics to guide humans as well as machines.</p></li>
-<li><p>One way to create a unique identifier is concatenation of sampling event, location, time, enumeration of unique observation or event.</p>
-<ul>
-<li>Station_95_Date_09JAN1997:14:35:00.000</li>
-</ul></li>
-<li><p>Some prefer using opaque identifiers.</p>
-<ul>
-<li>10FC9784-B30F-48ED-8DB5-FF65A2A9934E</li>
-</ul></li>
-</ul>
-<p>-If there is an existing globally unique identifier, it’s usually a good idea to use it (i.e. when using a taxonomic authority like WoRMS and applying their LSID).</p>
-<ul>
-<li><p>It is important to manage any identifiers you create, if they are not managed by an authority (e.g. DOIs).</p></li>
-<li><p>Important that it be persistent (consider samples possibly moving between institutions)</p></li>
+<li>There are good reasons to keep an identifier opaque, i.e. it does not indicate anything about the content of information it points to. However, there are also transparent, or semi-opaque identifiers in use that take advantage of semantics to guide humans as well as machines.</li>
+<li>One way to create a unique identifier is concatenation of sampling event, location, time, enumeration of unique observation or event.
+#Station_95_Date_09JAN1997:14:35:00.000</li>
+<li>Some prefer using opaque identifiers.
+#10FC9784-B30F-48ED-8DB5-FF65A2A9934E</li>
+<li>If there is an existing globally unique identifier, it’s usually a good idea to use it (i.e. when using a taxonomic authority like WoRMS and applying their LSID).</li>
+<li>It is important to manage any identifiers you create, if they are not managed by an authority (e.g. DOIs).</li>
+<li>Important that it be persistent (consider samples possibly moving between institutions)</li>
 </ul>
 </div>
 <div id="top-5-references-5" class="section level3 hasAnchor" number="1.6.3">
 <h3><span class="header-section-number">1.6.3</span> Top 5 References<a href="#top-5-references-5" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
-<li><p>Packages to generate uuids:</p>
+<li>Packages to generate uuids:
 <ul>
 <li><a href="https://cran.r-project.org/web/packages/uuid/index.html" class="uri">https://cran.r-project.org/web/packages/uuid/index.html</a></li>
 <li><a href="https://docs.python.org/3/library/uuid.html" class="uri">https://docs.python.org/3/library/uuid.html</a></li>
 <li><a href="http://guid.one/" class="uri">http://guid.one/</a></li>
 <li><a href="https://guidgenerator.com/" class="uri">https://guidgenerator.com/</a></li>
 </ul></li>
-<li><p>Guidance on how to use GUIDs (Globally Unique Identifiers) to meet specific requirements of the biodiversity information community</p>
+<li>Guidance on how to use GUIDs (Globally Unique Identifiers) to meet specific requirements of the biodiversity information community
 <ul>
 <li><a href="http://bioimages.vanderbilt.edu/pages/guid-applicability-final-2011-01.pdf" class="uri">http://bioimages.vanderbilt.edu/pages/guid-applicability-final-2011-01.pdf</a></li>
 </ul></li>
-<li><p>Use of globally unique identifiers (GUIDs) to link herbarium specimen records to physical specimens</p>
+<li>Use of globally unique identifiers (GUIDs) to link herbarium specimen records to physical specimens
 <ul>
 <li><a href="https://bsapubs.onlinelibrary.wiley.com/doi/full/10.1002/aps3.1027" class="uri">https://bsapubs.onlinelibrary.wiley.com/doi/full/10.1002/aps3.1027</a></li>
 </ul></li>
-<li><p>A Beginner’s Guide to Persistent Identifiers</p>
+<li>A Beginner’s Guide to Persistent Identifiers
 <ul>
 <li><a href="http://links.gbif.org/persistent_identifiers_guide_en_v1.pdf" class="uri">http://links.gbif.org/persistent_identifiers_guide_en_v1.pdf</a></li>
 </ul></li>
