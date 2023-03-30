@@ -9,9 +9,6 @@ output:
 
 ### Why?
 
-- Data will be able to be opened by multiple software types
-- It could “future proof” data; forward compatibility 
-- Makes data more socially fair (open data), financial fair
 - Allows data to be useful in perpetuity by ensuring data readability and reusability across multiple platforms.
 - To align better with the FAIR principles (findability, accessibility, interoperability, reusability)
 - Makes data more socially equitable, supporting open science. Proprietary formats can depend on software that require licenses, which not everyone can afford/has access to.
@@ -27,14 +24,6 @@ output:
 
 - Table of commonly used formats for common data types: https://guides.osu.edu/c.php?g=707751&p=5027409  
 - A more detailed table that is specific to US Federal records management: https://www.archives.gov/records-mgmt/policy/transfer-guidance-tables.html
-
-
-### Is anything missing?
-
-- Even though flat files are easy to use, it can be a challenge to know what to place into them. It is also important to have guidance in what to expect as contents in these files (ie unique identifiers, tidy data, basically the other topic).
-- What to do when a proprietary format is what your lab uses?!
-- A more detailed table that is specific to US Federal records management: https://www.archives.gov/records-mgmt/policy/transfer-guidance-tables.html 
-
 
 ## Structure data in tidy/long format
 
@@ -82,12 +71,6 @@ This is specifically intended for tabular data
    - Date parts (annotated)
 
 ### Top 5 References
-- Getting lat/lon to decimal degrees: https://ioos.github.io/bio_mobilization_workshop/03-data-cleaning/index.html#getting-latlon-to-decimal-degrees 
-- CF documentation - https://cfconventions.org/Data/cf-conventions/cf-conventions-1.10/cf-conventions.html#latitude-coordinate 
-- EML documentation: 
-  - High level: https://eml.ecoinformatics.org/schema/index.html (find “bounding Coordinates)
-  - spatialRaster: 
-
 
 - ISO 8601 wiki: https://en.wikipedia.org/wiki/ISO_8601
 - R package lubridate, OlsonNames()
@@ -223,8 +206,3 @@ Useful to create relational databases or merge records.
   - https://bsapubs.onlinelibrary.wiley.com/doi/full/10.1002/aps3.1027 
 - A Beginner’s Guide to Persistent Identifiers
   - http://links.gbif.org/persistent_identifiers_guide_en_v1.pdf 
-
-
-
-  
-
