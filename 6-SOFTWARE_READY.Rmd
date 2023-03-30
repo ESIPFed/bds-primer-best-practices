@@ -9,13 +9,10 @@ output:
 
 ### Why?
 
-<<<<<<< HEAD
 - Data will be able to be opened by multiple software types
 - It could “future proof” data; forward compatibility 
 - Makes data more socially fair (open data), financial fair
-=======
 - Allows data to be useful in perpetuity by ensuring data readability and reusability across multiple platforms.
->>>>>>> 44a80348e50fdbe815130a30e38c39900e44f5ad
 - To align better with the FAIR principles (findability, accessibility, interoperability, reusability)
 - Makes data more socially equitable, supporting open science. Proprietary formats can depend on software that require licenses, which not everyone can afford/has access to.
 
@@ -29,7 +26,6 @@ output:
 ### Top 5 References
 
 - Table of commonly used formats for common data types: https://guides.osu.edu/c.php?g=707751&p=5027409  
-<<<<<<< HEAD
 - A more detailed table that is specific to US Federal records management: https://www.archives.gov/records-mgmt/policy/transfer-guidance-tables.html
 
 
@@ -37,9 +33,7 @@ output:
 
 - Even though flat files are easy to use, it can be a challenge to know what to place into them. It is also important to have guidance in what to expect as contents in these files (ie unique identifiers, tidy data, basically the other topic).
 - What to do when a proprietary format is what your lab uses?!
-=======
 - A more detailed table that is specific to US Federal records management: https://www.archives.gov/records-mgmt/policy/transfer-guidance-tables.html 
->>>>>>> 44a80348e50fdbe815130a30e38c39900e44f5ad
 
 
 ## Structure data in tidy/long format
@@ -88,15 +82,13 @@ This is specifically intended for tabular data
    - Date parts (annotated)
 
 ### Top 5 References
-<<<<<<< HEAD
 - Getting lat/lon to decimal degrees: https://ioos.github.io/bio_mobilization_workshop/03-data-cleaning/index.html#getting-latlon-to-decimal-degrees 
 - CF documentation - https://cfconventions.org/Data/cf-conventions/cf-conventions-1.10/cf-conventions.html#latitude-coordinate 
 - EML documentation: 
   - High level: https://eml.ecoinformatics.org/schema/index.html (find “bounding Coordinates)
   - spatialRaster: 
-=======
 
->>>>>>> 44a80348e50fdbe815130a30e38c39900e44f5ad
+
 - ISO 8601 wiki: https://en.wikipedia.org/wiki/ISO_8601
 - R package lubridate, OlsonNames()
 - Python go-to package, datetime https://docs.python.org/3/library/datetime.html 
