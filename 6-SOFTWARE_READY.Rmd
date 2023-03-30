@@ -9,7 +9,6 @@ output:
 
 ### Why?
 
-- X
 - Data will be able to be opened by multiple software types
 - It could “future proof” data; forward compatibility 
 - Makes data more socially fair (open data), financial fair
@@ -28,11 +27,9 @@ output:
 
 ### Top 5 References
 
-- https://www.go-fair.org/fair-principles/
-- https://www.archives.gov/records-mgmt/policy/transfer-guidance-tables.html
-- netCDF spec
-- Ascii csv spec (tsv)
-- Imagery format specs…
+- Table of commonly used formats for common data types: https://guides.osu.edu/c.php?g=707751&p=5027409  
+- A more detailed table that is specific to US Federal records management: https://www.archives.gov/records-mgmt/policy/transfer-guidance-tables.html
+
 
 ### Is anything missing?
 
@@ -42,10 +39,8 @@ output:
 
 ## Structure data in tidy/long format
 
-df <- data.frame("Item" = c("Widget", "Widget", "Widget ), "Year" = c("2019", "2020", "2019"), "Units" = c("26", "23", "19"))
-kbl(df, booktabs = T) %>%
-kable_classic () %>%
-add_header_above(c("This is an example of tidy data" = 3))
+![Data table taken from: https://www.datafix.com.au/BASHing/2022-01-12.html](2022-01-12_1.png)
+
 
 ### Why?
 
@@ -198,7 +193,6 @@ http://cran.nexr.com/web/packages/worrms/vignettes/worrms_vignette.html
 - Users have to know where you collected this data, which requires a latitude, longitude, reference system and uncertainty.
 - Decimal-degrees avoids special symbols (° or  ‘) which is preferable for machine readable formats
 - WGS84 is a reference coordinate system that is widely used and incorporated in many GPS units and tools, and recognized as a standard by many government agencies.
-
 
 
 ### Key Information
