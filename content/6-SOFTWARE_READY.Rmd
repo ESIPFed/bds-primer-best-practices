@@ -22,8 +22,25 @@
 
 ## Structure data in tidy/long format
 
-![Data table taken from: https://www.datafix.com.au/BASHing/2022-01-12.html](2022-01-12_1.png)
+```{r tidyformat, echo=FALSE}
 
+library(dplyr)
+
+example_df <- data.frame(species = c("Tilia americana",
+                                     "Pinus strobus"),
+                         site_01 = sample(0:5, size = 2),
+                         site_02 = sample(0:5, size = 2),
+                         site_03 = sample(0:5, size = 2))
+
+long_example <- tidyr::pivot_longer(data = example_df, cols = site_01:site_03)
+
+knitr::kable(list(example_df, long_example), 
+                  caption = "Wide Format (left) vs. Long Format (right)",
+                  booktabs = TRUE, valign = 't') %>% 
+  kableExtra::kable_styling(font_size = 9)
+
+
+```
 
 ### Why?
 

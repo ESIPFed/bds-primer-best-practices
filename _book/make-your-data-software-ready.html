@@ -52,6 +52,8 @@
 <link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 
 
 
@@ -164,10 +166,150 @@
 </div>
 <div id="structure-data-in-tidylong-format" class="section level2 hasAnchor" number="6.2">
 <h2><span class="header-section-number">6.2</span> Structure data in tidy/long format<a href="make-your-data-software-ready.html#structure-data-in-tidylong-format" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div class="figure">
-<img src="2022-01-12_1.png" alt="" />
-<p class="caption">Data table taken from: <a href="https://www.datafix.com.au/BASHing/2022-01-12.html" class="uri">https://www.datafix.com.au/BASHing/2022-01-12.html</a></p>
-</div>
+<table class="kable_wrapper table" style="font-size: 9px; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
+<span id="tab:tidyformat">Table 6.1: </span>Wide Format (left) vs. Long Format (right)
+</caption>
+<tbody>
+<tr>
+<td>
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">
+species
+</th>
+<th style="text-align:right;">
+site_01
+</th>
+<th style="text-align:right;">
+site_02
+</th>
+<th style="text-align:right;">
+site_03
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Tilia americana
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Pinus strobus
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+5
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td>
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">
+species
+</th>
+<th style="text-align:left;">
+name
+</th>
+<th style="text-align:right;">
+value
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Tilia americana
+</td>
+<td style="text-align:left;">
+site_01
+</td>
+<td style="text-align:right;">
+3
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Tilia americana
+</td>
+<td style="text-align:left;">
+site_02
+</td>
+<td style="text-align:right;">
+3
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Tilia americana
+</td>
+<td style="text-align:left;">
+site_03
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Pinus strobus
+</td>
+<td style="text-align:left;">
+site_01
+</td>
+<td style="text-align:right;">
+4
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Pinus strobus
+</td>
+<td style="text-align:left;">
+site_02
+</td>
+<td style="text-align:right;">
+4
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Pinus strobus
+</td>
+<td style="text-align:left;">
+site_03
+</td>
+<td style="text-align:right;">
+5
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
 <div id="why-1" class="section level3 hasAnchor" number="6.2.1">
 <h3><span class="header-section-number">6.2.1</span> Why?<a href="make-your-data-software-ready.html#why-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>This is specifically intended for tabular data
