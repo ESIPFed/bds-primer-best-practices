@@ -23,7 +23,7 @@
 <meta name="author" content="ESIP Biological Data Standards Cluster" />
 
 
-<meta name="date" content="2023-03-30" />
+<meta name="date" content="2023-04-03" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -198,6 +198,7 @@
 </div>
 <div id="follow-iso-8601-for-dates" class="section level2 hasAnchor" number="6.3">
 <h2><span class="header-section-number">6.3</span> Follow ISO 8601 for dates<a href="make-your-data-software-ready.html#follow-iso-8601-for-dates" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><img src="https://imgs.xkcd.com/comics/iso_8601.png" /></p>
 <div id="why-2" class="section level3 hasAnchor" number="6.3.1">
 <h3><span class="header-section-number">6.3.1</span> Why?<a href="make-your-data-software-ready.html#why-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
@@ -224,7 +225,6 @@
 <li>ISO 8601 wiki: <a href="https://en.wikipedia.org/wiki/ISO_8601" class="uri">https://en.wikipedia.org/wiki/ISO_8601</a></li>
 <li>R package lubridate, OlsonNames()</li>
 <li>Python go-to package, datetime <a href="https://docs.python.org/3/library/datetime.html" class="uri">https://docs.python.org/3/library/datetime.html</a></li>
-<li><a href="https://xkcd.com/1179/" class="uri">https://xkcd.com/1179/</a></li>
 <li>Article on datetime uncertainty: <a href="https://www.datafix.com.au/BASHing/2020-02-12.html" class="uri">https://www.datafix.com.au/BASHing/2020-02-12.html</a><br />
 </li>
 <li>Map of offset from UTC: <a href="https://www.timeanddate.com/time/map/" class="uri">https://www.timeanddate.com/time/map/</a></li>
@@ -254,7 +254,7 @@
 <div id="key-information-3" class="section level3 hasAnchor" number="6.4.2">
 <h3><span class="header-section-number">6.4.2</span> Key Information<a href="make-your-data-software-ready.html#key-information-3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
-<li>Use an existing taxonomic authority (e.g. World Register of Marine Species, Integrated Taxonomic Information System, NCBI taxonomy) and include the authority who manages said information in your metadata</li>
+<li>Use an existing taxonomic authority (e.g. World Register of Marine Species : <a href="https://www.marinespecies.org/" class="uri">https://www.marinespecies.org/</a> , Integrated Taxonomic Information System : <a href="https://itis.gov/" class="uri">https://itis.gov/</a> , NCBI taxonomy : <a href="https://www.ncbi.nlm.nih.gov/taxonomy" class="uri">https://www.ncbi.nlm.nih.gov/taxonomy</a> ) and include the authority who manages said information in your metadata</li>
 <li>List of many authorities can be found here: <a href="https://resolver.globalnames.org/data_sources" class="uri">https://resolver.globalnames.org/data_sources</a></li>
 <li>Make yourself aware of the structure, limits, and history of the authority you are using.</li>
 <li>Adopt standard binomial nomenclature, when possible</li>
@@ -274,7 +274,7 @@
 <li><a href="https://cran.r-project.org/web/packages/taxize/index.html" class="uri">https://cran.r-project.org/web/packages/taxize/index.html</a></li>
 <li>worrms is an API client for World Register of Marine Species (<a href="http://www.marinespecies.org/" class="uri">http://www.marinespecies.org/</a>).
 <a href="http://cran.nexr.com/web/packages/worrms/vignettes/worrms_vignette.html" class="uri">http://cran.nexr.com/web/packages/worrms/vignettes/worrms_vignette.html</a></li>
-<li>worms: another API client for WoRMS
+<li>WoRMS: another API client for WoRMS
 <ul>
 <li><a href="https://cran.r-project.org/web/packages/worms/index.html" class="uri">https://cran.r-project.org/web/packages/worms/index.html</a></li>
 </ul></li>
@@ -328,6 +328,7 @@
 </div>
 <div id="record-latitude-and-longitude-in-decimal-degrees-in-wgs84" class="section level2 hasAnchor" number="6.5">
 <h2><span class="header-section-number">6.5</span> Record latitude and longitude in decimal degrees in WGS84<a href="make-your-data-software-ready.html#record-latitude-and-longitude-in-decimal-degrees-in-wgs84" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><img src="https://imgs.xkcd.com/comics/coordinate_precision.png" /></p>
 <div id="why-4" class="section level3 hasAnchor" number="6.5.1">
 <h3><span class="header-section-number">6.5.1</span> Why?<a href="make-your-data-software-ready.html#why-4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
@@ -370,7 +371,6 @@
 <li>Something that gives more background on precision, like this: <a href="https://www.trekview.org/blog/2021/reading-decimal-gps-coordinates-like-a-computer/#a-note-on-accuracy" class="uri">https://www.trekview.org/blog/2021/reading-decimal-gps-coordinates-like-a-computer/#a-note-on-accuracy</a>
 Degree-Minute-Seconds -&gt; DD calculator: <a href="https://www.fcc.gov/media/radio/dms-decimal" class="uri">https://www.fcc.gov/media/radio/dms-decimal</a></li>
 </ul>
-<p><img src="https://imgs.xkcd.com/comics/coordinate_precision.png" /></p>
 </div>
 <div id="is-anything-missing-2" class="section level3 hasAnchor" number="6.5.4">
 <h3><span class="header-section-number">6.5.4</span> Is anything missing?<a href="make-your-data-software-ready.html#is-anything-missing-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>

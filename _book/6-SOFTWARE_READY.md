@@ -1,8 +1,3 @@
----
-output:
-  pdf_document: default
-  html_document: default
----
 # MAKE YOUR DATA SOFTWARE READY
 
 ## Use non-proprietary formats
@@ -34,8 +29,8 @@ output:
 
 This is specifically intended for tabular data
 - There is a clear and easy to understand structure that can make your data more machine readable and easier to analyze/visualize.
-   - Clear structure: one observation per row
-   - Data are as atomic as possible (e.g., don’t mix types in field)
+  - Clear structure: one observation per row
+  - Data are as atomic as possible (e.g., don’t mix types in field)
 - In the biological data community, tidy formats are more likely to work with commonly-used software
 - Easier to aggregate data across multiple files
 
@@ -54,6 +49,8 @@ This is specifically intended for tabular data
 - Cleaning Data and Quality Control https://edirepository.org/resources/cleaning-data-and-quality-control#data-table-structure
 
 ## Follow ISO 8601 for dates
+
+![](https://imgs.xkcd.com/comics/iso_8601.png)
 
 
 ### Why?
@@ -75,7 +72,6 @@ This is specifically intended for tabular data
 - ISO 8601 wiki: https://en.wikipedia.org/wiki/ISO_8601
 - R package lubridate, OlsonNames()
 - Python go-to package, datetime https://docs.python.org/3/library/datetime.html 
-- https://xkcd.com/1179/ 
 - Article on datetime uncertainty: https://www.datafix.com.au/BASHing/2020-02-12.html  
 - Map of offset from UTC: https://www.timeanddate.com/time/map/ 
 - Nice time converter: https://coastwatch.pfeg.noaa.gov/erddap/convert/time.html
@@ -97,7 +93,7 @@ This is specifically intended for tabular data
 
 ### Key Information
 
-- Use an existing taxonomic authority (e.g. World Register of Marine Species, Integrated Taxonomic Information System, NCBI taxonomy) and include the authority who manages said information in your metadata
+- Use an existing taxonomic authority (e.g. World Register of Marine Species : https://www.marinespecies.org/ , Integrated Taxonomic Information System : https://itis.gov/ , NCBI taxonomy : https://www.ncbi.nlm.nih.gov/taxonomy ) and include the authority who manages said information in your metadata
 - List of many authorities can be found here: https://resolver.globalnames.org/data_sources
 - Make yourself aware of the structure, limits, and history of the authority you are using.
 - Adopt standard binomial nomenclature, when possible
@@ -113,7 +109,7 @@ This is specifically intended for tabular data
     - https://cran.r-project.org/web/packages/taxize/index.html
     - worrms is an API client for World Register of Marine Species (<http://www.marinespecies.org/>). 
 http://cran.nexr.com/web/packages/worrms/vignettes/worrms_vignette.html
-    - worms:  another API client for WoRMS
+    - WoRMS:  another API client for WoRMS
       - https://cran.r-project.org/web/packages/worms/index.html
     - Ritis: API client for ITIS
        - https://cran.r-project.org/web/packages/ritis/ 
@@ -140,6 +136,8 @@ http://cran.nexr.com/web/packages/worrms/vignettes/worrms_vignette.html
   - Is there a ‘catalogue’ or decision tree for taxonomic authorities?
 
 ## Record latitude and longitude in decimal degrees in WGS84
+
+![](https://imgs.xkcd.com/comics/coordinate_precision.png)
 
 ### Why?
 - Users have to know where you collected this data, which requires a latitude, longitude, reference system and uncertainty.
@@ -168,8 +166,6 @@ http://cran.nexr.com/web/packages/worrms/vignettes/worrms_vignette.html
   - https://ioos.github.io/bio_mobilization_workshop/03-data-cleaning/index.html#getting-latlon-to-decimal-degrees
 - Something that gives more background on precision, like this: https://www.trekview.org/blog/2021/reading-decimal-gps-coordinates-like-a-computer/#a-note-on-accuracy
 Degree-Minute-Seconds -> DD calculator: https://www.fcc.gov/media/radio/dms-decimal
-
-![](https://imgs.xkcd.com/comics/coordinate_precision.png)
 
 
 ### Is anything missing?
