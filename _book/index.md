@@ -11,5 +11,6 @@ urlcolor: blue
 classoption: oneside
 github-repo: NULL
 description: "This is a foundation for building extensions of the BDS primer in the form of best practice documents."
-output: bookdown::pdf_book
+output_dir: "_book"
+rmd_subdir: ["content/"]
 ---
