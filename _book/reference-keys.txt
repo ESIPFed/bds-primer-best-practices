@@ -1,4 +1,6 @@
 tab:tidyformat
+fig:xkcd1
+fig:xkcd2
 introduction
 provide-context-and-understandability-to-your-data
 integrate-your-data-with-other-data

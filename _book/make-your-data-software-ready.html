@@ -150,22 +150,38 @@
 <div id="key-information" class="section level3 hasAnchor" number="6.1.2">
 <h3><span class="header-section-number">6.1.2</span> Key Information<a href="make-your-data-software-ready.html#key-information" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
-<li>Non-proprietary formats are supported by more than one developer and can be accessed with different software systems. For example, comma separated values (CSV) format is becoming an increasingly popular non-proprietary format.</li>
-<li>A <a href="https://en.wikipedia.org/wiki/Proprietary_file_format">proprietary file format</a> is a file format of a company, organization, or individual that contains data that is ordered and stored according to a particular encoding-scheme, designed by the company or organization to be secret or with restricted access, such that the decoding and interpretation of this stored data is easily accomplished only with particular software or hardware that the company itself has developed. There may also be costs associated with it and access may be limited. Examples include Microsoft Excel (xlsx) and ESRI shapefiles (shp).</li>
+<li><em>Non-proprietary formats</em> are supported by more than one developer and can be accessed with different software systems. For example, comma separated values (CSV) format is becoming an increasingly popular non-proprietary format.</li>
+<li>A <em><a href="https://en.wikipedia.org/wiki/Proprietary_file_format">proprietary file format</a></em> is a file format of a company, organization, or individual that contains data that is ordered and stored according to a particular encoding-scheme, designed by the company or organization to be secret or with restricted access, such that the decoding and interpretation of this stored data is easily accomplished only with particular software or hardware that the company itself has developed. There may also be costs associated with it and access may be limited. Examples include <code>Microsoft Excel (xlsx)</code> and <code>ESRI shapefiles (shp)</code>.</li>
 <li>Many applications (e.g. Microsoft Office) allow exporting in multiple formats.</li>
 </ul>
 </div>
 <div id="top-5-references" class="section level3 hasAnchor" number="6.1.3">
 <h3><span class="header-section-number">6.1.3</span> Top 5 References<a href="make-your-data-software-ready.html#top-5-references" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
-<li>Table of commonly used formats for common data types: <a href="https://guides.osu.edu/c.php?g=707751&amp;p=5027409" class="uri">https://guides.osu.edu/c.php?g=707751&amp;p=5027409</a><br />
-</li>
-<li>A more detailed table that is specific to US Federal records management: <a href="https://www.archives.gov/records-mgmt/policy/transfer-guidance-tables.html" class="uri">https://www.archives.gov/records-mgmt/policy/transfer-guidance-tables.html</a></li>
+<li>Table of commonly used formats for common data types<br />
+<a href="https://guides.osu.edu/c.php?g=707751&amp;p=5027409" class="uri">https://guides.osu.edu/c.php?g=707751&amp;p=5027409</a></li>
+<li>A more detailed table that is specific to US Federal records management<br />
+<a href="https://www.archives.gov/records-mgmt/policy/transfer-guidance-tables.html" class="uri">https://www.archives.gov/records-mgmt/policy/transfer-guidance-tables.html</a></li>
 </ul>
 </div>
 </div>
 <div id="structure-data-in-tidylong-format" class="section level2 hasAnchor" number="6.2">
 <h2><span class="header-section-number">6.2</span> Structure data in tidy/long format<a href="make-your-data-software-ready.html#structure-data-in-tidylong-format" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="why-1" class="section level3 hasAnchor" number="6.2.1">
+<h3><span class="header-section-number">6.2.1</span> Why?<a href="make-your-data-software-ready.html#why-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><em>This is specifically intended for tabular data</em></p>
+<ul>
+<li>There is a clear and easy to understand structure that can make your data more machine readable and easier to analyze/visualize
+<ul>
+<li>Clear structure: one observation per row</li>
+<li>Data are as atomic as possible (e.g., don’t mix types in field)</li>
+</ul></li>
+<li>In the biological data community, tidy formats are more likely to work with commonly-used software</li>
+<li>Easier to aggregate data across multiple files</li>
+</ul>
+</div>
+<div id="key-information-1" class="section level3 hasAnchor" number="6.2.2">
+<h3><span class="header-section-number">6.2.2</span> Key Information<a href="make-your-data-software-ready.html#key-information-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <table class="kable_wrapper table" style="font-size: 9px; margin-left: auto; margin-right: auto;">
 <caption style="font-size: initial !important;">
 <span id="tab:tidyformat">Table 6.1: </span>Wide Format (left) vs. Long Format (right)
@@ -196,13 +212,13 @@ site_03
 Tilia americana
 </td>
 <td style="text-align:right;">
-3
+2
 </td>
 <td style="text-align:right;">
 3
 </td>
 <td style="text-align:right;">
-0
+3
 </td>
 </tr>
 <tr>
@@ -210,13 +226,13 @@ Tilia americana
 Pinus strobus
 </td>
 <td style="text-align:right;">
-4
-</td>
-<td style="text-align:right;">
-4
-</td>
-<td style="text-align:right;">
 5
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+0
 </td>
 </tr>
 </tbody>
@@ -230,10 +246,10 @@ Pinus strobus
 species
 </th>
 <th style="text-align:left;">
-name
+site
 </th>
 <th style="text-align:right;">
-value
+count
 </th>
 </tr>
 </thead>
@@ -246,7 +262,7 @@ Tilia americana
 site_01
 </td>
 <td style="text-align:right;">
-3
+2
 </td>
 </tr>
 <tr>
@@ -268,7 +284,7 @@ Tilia americana
 site_03
 </td>
 <td style="text-align:right;">
-0
+3
 </td>
 </tr>
 <tr>
@@ -279,7 +295,7 @@ Pinus strobus
 site_01
 </td>
 <td style="text-align:right;">
-4
+5
 </td>
 </tr>
 <tr>
@@ -290,7 +306,7 @@ Pinus strobus
 site_02
 </td>
 <td style="text-align:right;">
-4
+2
 </td>
 </tr>
 <tr>
@@ -301,7 +317,7 @@ Pinus strobus
 site_03
 </td>
 <td style="text-align:right;">
-5
+0
 </td>
 </tr>
 </tbody>
@@ -310,19 +326,7 @@ site_03
 </tr>
 </tbody>
 </table>
-<div id="why-1" class="section level3 hasAnchor" number="6.2.1">
-<h3><span class="header-section-number">6.2.1</span> Why?<a href="make-your-data-software-ready.html#why-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>This is specifically intended for tabular data
-- There is a clear and easy to understand structure that can make your data more machine readable and easier to analyze/visualize.
-- Clear structure: one observation per row
-- Data are as atomic as possible (e.g., don’t mix types in field)
-- In the biological data community, tidy formats are more likely to work with commonly-used software
-- Easier to aggregate data across multiple files</p>
-</div>
-<div id="key-information-1" class="section level3 hasAnchor" number="6.2.2">
-<h3><span class="header-section-number">6.2.2</span> Key Information<a href="make-your-data-software-ready.html#key-information-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
-<li>Example: Each scientific name as individual columns (non-tidy/wide) vs. a single column (tidy/long) called scientific_name</li>
 <li>Can be tricky working with multiple column datatypes</li>
 <li>Don’t use colors or text formatting in tabular data, and only include column names as metadata. All other notes, definitions, etc. should be in an external metadata file (e.g. data dictionary)</li>
 </ul>
@@ -331,20 +335,29 @@ site_03
 <h3><span class="header-section-number">6.2.3</span> Top 5 References<a href="make-your-data-software-ready.html#top-5-references-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li>Wickham, H. (2014). Tidy Data. Journal of Statistical Software, 59(10), 1–23. <a href="https://doi.org/10.18637/jss.v059.i10" class="uri">https://doi.org/10.18637/jss.v059.i10</a></li>
-<li>Data Sharing and Management Snafu in 3 Short Acts (video) <a href="https://www.youtube.com/watch?v=N2zK3sAtr-4&amp;t=7s" class="uri">https://www.youtube.com/watch?v=N2zK3sAtr-4&amp;t=7s</a></li>
-<li>Tips for working with data in BASH <a href="https://www.datafix.com.au/BASHing/2022-01-12.html" class="uri">https://www.datafix.com.au/BASHing/2022-01-12.html</a></li>
-<li>Data Organization in Spreadsheets for Ecologists <a href="https://datacarpentry.org/spreadsheet-ecology-lesson/" class="uri">https://datacarpentry.org/spreadsheet-ecology-lesson/</a></li>
-<li>Cleaning Data and Quality Control <a href="https://edirepository.org/resources/cleaning-data-and-quality-control#data-table-structure" class="uri">https://edirepository.org/resources/cleaning-data-and-quality-control#data-table-structure</a></li>
+<li>Data Sharing and Management Snafu in 3 Short Acts (video)<br />
+<a href="https://www.youtube.com/watch?v=N2zK3s=Atr-4&amp;t=7s" class="uri">https://www.youtube.com/watch?v=N2zK3s=Atr-4&amp;t=7s</a></li>
+<li>Tips for working with data in BASH<br />
+<a href="https://www.datafix.com.au/BASHing/2022-01-12.html" class="uri">https://www.datafix.com.au/BASHing/2022-01-12.html</a></li>
+<li>Data Organization in Spreadsheets for Ecologists<br />
+<a href="https://datacarpentry.org/spreadsheet-ecology-lesson/" class="uri">https://datacarpentry.org/spreadsheet-ecology-lesson/</a></li>
+<li>Cleaning Data and Quality Control<br />
+<a href="https://edirepository.org/resources/cleaning-data-and-quality-control#data-table-structure" class="uri">https://edirepository.org/resources/cleaning-data-and-quality-control#data-table-structure</a></li>
 </ul>
 </div>
 </div>
 <div id="follow-iso-8601-for-dates" class="section level2 hasAnchor" number="6.3">
 <h2><span class="header-section-number">6.3</span> Follow ISO 8601 for dates<a href="make-your-data-software-ready.html#follow-iso-8601-for-dates" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><img src="https://imgs.xkcd.com/comics/iso_8601.png" /></p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:xkcd1"></span>
+<img src="https://imgs.xkcd.com/comics/iso_8601.png" alt="https://imgs.xkcd.com/comics/iso_8601.png" width="40%" />
+<p class="caption">
+Figure 6.1: <a href="https://imgs.xkcd.com/comics/iso_8601.png" class="uri">https://imgs.xkcd.com/comics/iso_8601.png</a>
+</p>
+</div>
 <div id="why-2" class="section level3 hasAnchor" number="6.3.1">
 <h3><span class="header-section-number">6.3.1</span> Why?<a href="make-your-data-software-ready.html#why-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
-<li>Internationally accepted format used across multiple schemas (e.g. Darwin Core, EML, ISO 19115)</li>
+<li>Internationally accepted format used across multiple schemas (e.g. <code>Darwin Core</code>, <code>EML</code>, <code>ISO 19115</code>)</li>
 <li>Removes ambiguity related to timezone, daylight savings time changes, and time of day</li>
 <li>Better software integration of time date/time elements</li>
 </ul>
@@ -352,14 +365,95 @@ site_03
 <div id="key-information-2" class="section level3 hasAnchor" number="6.3.2">
 <h3><span class="header-section-number">6.3.2</span> Key Information<a href="make-your-data-software-ready.html#key-information-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
-<li>Zulu = GMT = UTC: is the primary time standard by which the world regulates clocks and time. It is time relative to 0° longitude and is not adjusted for daylight saving time. (from Wikipedia).</li>
+<li>UTC (AKA <code>Zulu</code> or <code>GMT</code>): Coordinated Universal Time (UTC) is the primary time standard by which the world regulates clocks and time. It is time relative to <code>0°</code> longitude and is not adjusted for daylight saving time. (<a href="https://en.wikipedia.org/wiki/ISO_8601">from Wikipedia</a>).</li>
 <li>Conversion to UTC, or between time zones, may depend on daylight savings</li>
-<li>Todo: Table from Wiki showing examples of all possible formats
-<ul>
-<li>Example of date range</li>
-<li>Date parts (annotated)</li>
-</ul></li>
 </ul>
+<p><em>Examples: April 3, 2023 standardized to ISO 8601</em></p>
+<table class="table" style="font-size: 9px; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Description
+</th>
+<th style="text-align:left;">
+Written.in.ISO.8601
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Date
+</td>
+<td style="text-align:left;">
+2023-04-03
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Date and Time with timezone offset
+</td>
+<td style="text-align:left;">
+2023-04-03T18:29:38+00:00
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Date and Time in UTC
+</td>
+<td style="text-align:left;">
+2023-04-03T18:29:38Z
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Time Interval in UTC (April 3 - 5, 2023)
+</td>
+<td style="text-align:left;">
+2023-04-03T18:29:38Z/2023-04-05T00:29:38Z
+</td>
+</tr>
+</tbody>
+</table>
+<table class="table" style="font-size: 9px; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Description
+</th>
+<th style="text-align:left;">
+Example
+</th>
+<th style="text-align:left;">
+Annotation
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Date and Time with timezone offset
+</td>
+<td style="text-align:left;">
+2023-04-03T18:29:38+00:00
+</td>
+<td style="text-align:left;">
+YYYY-MM-DD[the letter capital T]HH:MM:SS+[Timezone offset]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Date and Time in UTC
+</td>
+<td style="text-align:left;">
+2023-04-03T18:29:38Z
+</td>
+<td style="text-align:left;">
+YYYY-MM-DD[capital T]HH:MM:SS+[capital Z to indicate an offset of zero]
+</td>
+</tr>
+</tbody>
+</table>
 </div>
 <div id="top-5-references-2" class="section level3 hasAnchor" number="6.3.3">
 <h3><span class="header-section-number">6.3.3</span> Top 5 References<a href="make-your-data-software-ready.html#top-5-references-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -396,7 +490,7 @@ site_03
 <div id="key-information-3" class="section level3 hasAnchor" number="6.4.2">
 <h3><span class="header-section-number">6.4.2</span> Key Information<a href="make-your-data-software-ready.html#key-information-3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
-<li>Use an existing taxonomic authority (e.g. World Register of Marine Species : <a href="https://www.marinespecies.org/" class="uri">https://www.marinespecies.org/</a> , Integrated Taxonomic Information System : <a href="https://itis.gov/" class="uri">https://itis.gov/</a> , NCBI taxonomy : <a href="https://www.ncbi.nlm.nih.gov/taxonomy" class="uri">https://www.ncbi.nlm.nih.gov/taxonomy</a> ) and include the authority who manages said information in your metadata</li>
+<li>Use an existing taxonomic authority (e.g. <a href="https://www.marinespecies.org/">World Register of Marine Species</a> , <a href="https://itis.gov/">Integrated Taxonomic Information System</a> , <a href="https://www.ncbi.nlm.nih.gov/taxonomy">NCBI taxonomy</a>) and include the authority who manages said information in your metadata</li>
 <li>List of many authorities can be found here: <a href="https://resolver.globalnames.org/data_sources" class="uri">https://resolver.globalnames.org/data_sources</a></li>
 <li>Make yourself aware of the structure, limits, and history of the authority you are using.</li>
 <li>Adopt standard binomial nomenclature, when possible</li>
@@ -411,40 +505,26 @@ site_03
 <ul>
 <li>R packages
 <ul>
-<li>taxize is a taxonomic toolbelt for R. taxize wraps APIs for a large suite of taxonomic databases availabe on the web.
-<ul>
-<li><a href="https://cran.r-project.org/web/packages/taxize/index.html" class="uri">https://cran.r-project.org/web/packages/taxize/index.html</a></li>
-<li>worrms is an API client for World Register of Marine Species (<a href="http://www.marinespecies.org/" class="uri">http://www.marinespecies.org/</a>).
+<li>taxize is a taxonomic toolbelt for R. taxize wraps APIs for a large suite of taxonomic databases available on the web<br />
+<a href="https://cran.r-project.org/web/packages/taxize/index.html" class="uri">https://cran.r-project.org/web/packages/taxize/index.html</a></li>
+<li>worrms is an API client for <a href="http://www.marinespecies.org/">World Register of Marine Species</a><br />
 <a href="http://cran.nexr.com/web/packages/worrms/vignettes/worrms_vignette.html" class="uri">http://cran.nexr.com/web/packages/worrms/vignettes/worrms_vignette.html</a></li>
-<li>WoRMS: another API client for WoRMS
-<ul>
-<li><a href="https://cran.r-project.org/web/packages/worms/index.html" class="uri">https://cran.r-project.org/web/packages/worms/index.html</a></li>
-</ul></li>
+<li>worms: another API client for WoRMS<br />
+<a href="https://cran.r-project.org/web/packages/worms/index.html" class="uri">https://cran.r-project.org/web/packages/worms/index.html</a></li>
 <li>Ritis: API client for ITIS
-<ul>
-<li><a href="https://cran.r-project.org/web/packages/ritis/" class="uri">https://cran.r-project.org/web/packages/ritis/</a></li>
-</ul></li>
-</ul></li>
+<a href="https://cran.r-project.org/web/packages/ritis/" class="uri">https://cran.r-project.org/web/packages/ritis/</a></li>
 </ul></li>
 <li>Python packages
 <ul>
-<li>WoRMS API client
-<ul>
-<li><a href="https://github.com/iobis/pyworms" class="uri">https://github.com/iobis/pyworms</a></li>
+<li>WoRMS API client<br />
+<a href="https://github.com/iobis/pyworms" class="uri">https://github.com/iobis/pyworms</a></li>
 </ul></li>
-</ul></li>
-<li>Global Names Resolver to compare taxonomic concepts across authorities.
-<ul>
-<li><a href="https://resolver.globalnames.org/" class="uri">https://resolver.globalnames.org/</a></li>
-</ul></li>
-<li>Article: Recommendations for the Standardisation of Open Taxonomic Nomenclature for Image-Based Identifications
-<ul>
-<li><a href="https://doi.org/10.3389/fmars.2021.620702" class="uri">https://doi.org/10.3389/fmars.2021.620702</a></li>
-</ul></li>
-<li>TDWG 2022 Keynote: Richard Pyle, “An Introduction to the Scientific Names of Organisms and the Taxon Concepts they Represent”
-<ul>
-<li><a href="https://www.youtube.com/watch?v=rmTvUUjBxrI" class="uri">https://www.youtube.com/watch?v=rmTvUUjBxrI</a></li>
-</ul></li>
+<li>Global Names Resolver to compare taxonomic concepts across authorities<br />
+<a href="https://resolver.globalnames.org/" class="uri">https://resolver.globalnames.org/</a></li>
+<li>Article: Recommendations for the Standardisation of Open Taxonomic Nomenclature for Image-Based Identifications<br />
+<a href="https://doi.org/10.3389/fmars.2021.620702" class="uri">https://doi.org/10.3389/fmars.2021.620702</a></li>
+<li>TDWG 2022 Keynote: Richard Pyle, “An Introduction to the Scientific Names of Organisms and the Taxon Concepts they Represent”<br />
+<a href="https://www.youtube.com/watch?v=rmTvUUjBxrI" class="uri">https://www.youtube.com/watch?v=rmTvUUjBxrI</a></li>
 </ul>
 </div>
 <div id="is-anything-missing-1" class="section level3 hasAnchor" number="6.4.4">
@@ -470,13 +550,18 @@ site_03
 </div>
 <div id="record-latitude-and-longitude-in-decimal-degrees-in-wgs84" class="section level2 hasAnchor" number="6.5">
 <h2><span class="header-section-number">6.5</span> Record latitude and longitude in decimal degrees in WGS84<a href="make-your-data-software-ready.html#record-latitude-and-longitude-in-decimal-degrees-in-wgs84" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><img src="https://imgs.xkcd.com/comics/coordinate_precision.png" /></p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:xkcd2"></span>
+<img src="https://imgs.xkcd.com/comics/coordinate_precision.png" alt="https://imgs.xkcd.com/comics/coordinate_precision.png" width="40%" />
+<p class="caption">
+Figure 6.2: <a href="https://imgs.xkcd.com/comics/coordinate_precision.png" class="uri">https://imgs.xkcd.com/comics/coordinate_precision.png</a>
+</p>
+</div>
 <div id="why-4" class="section level3 hasAnchor" number="6.5.1">
 <h3><span class="header-section-number">6.5.1</span> Why?<a href="make-your-data-software-ready.html#why-4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li>Users have to know where you collected this data, which requires a latitude, longitude, reference system and uncertainty.</li>
-<li>Decimal-degrees avoids special symbols (° or ’) which is preferable for machine readable formats</li>
-<li>WGS84 is a reference coordinate system that is widely used and incorporated in many GPS units and tools, and recognized as a standard by many government agencies.</li>
+<li>Decimal-degrees avoids special symbols (<code>°</code> or <code>‘</code>) which is preferable for machine readable formats</li>
+<li><code>WGS84</code> is a reference coordinate system that is widely used and incorporated in many GPS units and tools, and recognized as a standard by many government agencies.</li>
 </ul>
 </div>
 <div id="key-information-4" class="section level3 hasAnchor" number="6.5.2">
@@ -485,15 +570,15 @@ site_03
 <li>If possible, encourage data providers to confirm, and record, the WGS84 datum is selected prior to data collection.</li>
 <li>Understand and report the device/instrument uncertainty associated with your coordinates because it affects the usability of your data.</li>
 <li>Consider including the vertical component (altitude, depth, height off bottom, elevation, etc)</li>
-<li>Generally speaking, degrees-minutes-seconds (DMS) can be converted to decimal-degrees (DD) by:
+<li>Generally speaking, <code>degrees-minutes-seconds (DMS)</code> can be converted to <code>decimal-degrees (DD)</code> by:
 <ul>
-<li>DD = d + (min/60) + (sec/3600)</li>
-<li>Watch out for mixed formats, like degrees, decimal-minutes (DDM).</li>
+<li><code>DD = d + (min/60) + (sec/3600)</code></li>
+<li>Watch out for mixed formats, like degrees, <code>decimal-minutes (DDM)</code>.</li>
 </ul></li>
 <li>Degrees West and South become negative in DD.
 <ul>
-<li>Values for longitude range from -180 to 180</li>
-<li>Values for latitude range from -90 to 90</li>
+<li>Values for longitude range from <code>-180</code> to <code>180</code>, inclusive.</li>
+<li>Values for latitude range from <code>-90</code> to <code>90</code>, inclusive.</li>
 </ul></li>
 </ul>
 </div>
@@ -502,16 +587,16 @@ site_03
 <ul>
 <li>Existing R/python/ESRI packages/functions
 <ul>
-<li><a href="https://cran.r-project.org/web/packages/measurements/measurements.pdf" class="uri">https://cran.r-project.org/web/packages/measurements/measurements.pdf</a></li>
-<li><a href="https://eml.ecoinformatics.org/schema/index.html" class="uri">https://eml.ecoinformatics.org/schema/index.html</a> (find “bounding Coordinates)</li>
-<li><a href="https://cfconventions.org/Data/cf-conventions/cf-conventions-1.10/cf-conventions.html#latitude-coordinate" class="uri">https://cfconventions.org/Data/cf-conventions/cf-conventions-1.10/cf-conventions.html#latitude-coordinate</a></li>
+<li>R - measurements <a href="https://cran.r-project.org/web/packages/measurements/measurements.pdf" class="uri">https://cran.r-project.org/web/packages/measurements/measurements.pdf</a></li>
+<li>EML <a href="https://eml.ecoinformatics.org/schema/index.html" class="uri">https://eml.ecoinformatics.org/schema/index.html</a> (find “bounding Coordinates)</li>
+<li>CF <a href="https://cfconventions.org/Data/cf-conventions/cf-conventions-1.10/cf-conventions.html#latitude-coordinate" class="uri">https://cfconventions.org/Data/cf-conventions/cf-conventions-1.10/cf-conventions.html#latitude-coordinate</a></li>
 </ul></li>
-<li>Getting lat/lon to decimal degrees
-<ul>
-<li><a href="https://ioos.github.io/bio_mobilization_workshop/03-data-cleaning/index.html#getting-latlon-to-decimal-degrees" class="uri">https://ioos.github.io/bio_mobilization_workshop/03-data-cleaning/index.html#getting-latlon-to-decimal-degrees</a></li>
-</ul></li>
-<li>Something that gives more background on precision, like this: <a href="https://www.trekview.org/blog/2021/reading-decimal-gps-coordinates-like-a-computer/#a-note-on-accuracy" class="uri">https://www.trekview.org/blog/2021/reading-decimal-gps-coordinates-like-a-computer/#a-note-on-accuracy</a>
-Degree-Minute-Seconds -&gt; DD calculator: <a href="https://www.fcc.gov/media/radio/dms-decimal" class="uri">https://www.fcc.gov/media/radio/dms-decimal</a></li>
+<li>Getting lat/lon to decimal degrees<br />
+<a href="https://ioos.github.io/bio_mobilization_workshop/03-data-cleaning/index.html#getting-latlon-to-decimal-degrees" class="uri">https://ioos.github.io/bio_mobilization_workshop/03-data-cleaning/index.html#getting-latlon-to-decimal-degrees</a></li>
+<li>Some background on precision<br />
+<a href="https://www.trekview.org/blog/2021/reading-decimal-gps-coordinates-like-a-computer/#a-note-on-accuracy" class="uri">https://www.trekview.org/blog/2021/reading-decimal-gps-coordinates-like-a-computer/#a-note-on-accuracy</a></li>
+<li>DMS to DD calculator<br />
+<a href="https://www.fcc.gov/media/radio/dms-decimal" class="uri">https://www.fcc.gov/media/radio/dms-decimal</a></li>
 </ul>
 </div>
 <div id="is-anything-missing-2" class="section level3 hasAnchor" number="6.5.4">
@@ -536,10 +621,9 @@ Useful to create relational databases or merge records.</li>
 <h3><span class="header-section-number">6.6.2</span> Key Information<a href="make-your-data-software-ready.html#key-information-5" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li>There are good reasons to keep an identifier opaque, i.e. it does not indicate anything about the content of information it points to. However, there are also transparent, or semi-opaque identifiers in use that take advantage of semantics to guide humans as well as machines.</li>
-<li>One way to create a unique identifier is concatenation of sampling event, location, time, enumeration of unique observation or event.
-#Station_95_Date_09JAN1997:14:35:00.000</li>
+<li>One way to create a unique identifier is concatenation of sampling event, location, time, enumeration of unique observation or event. (e.g. <code>Station_95_Date_09JAN1997:14:35:00.000</code>)</li>
 <li>Some prefer using opaque identifiers.
-#10FC9784-B30F-48ED-8DB5-FF65A2A9934E</li>
+(e.g. <code>10FC9784-B30F-48ED-8DB5-FF65A2A9934E</code>)</li>
 <li>If there is an existing globally unique identifier, it’s usually a good idea to use it (i.e. when using a taxonomic authority like WoRMS and applying their LSID).</li>
 <li>It is important to manage any identifiers you create, if they are not managed by an authority (e.g. DOIs).</li>
 <li>Important that it be persistent (consider samples possibly moving between institutions)</li>
@@ -548,25 +632,19 @@ Useful to create relational databases or merge records.</li>
 <div id="top-5-references-5" class="section level3 hasAnchor" number="6.6.3">
 <h3><span class="header-section-number">6.6.3</span> Top 5 References<a href="make-your-data-software-ready.html#top-5-references-5" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
-<li>Packages to generate uuids:
+<li>Software and Packages to generate uuids:
 <ul>
-<li><a href="https://cran.r-project.org/web/packages/uuid/index.html" class="uri">https://cran.r-project.org/web/packages/uuid/index.html</a></li>
-<li><a href="https://docs.python.org/3/library/uuid.html" class="uri">https://docs.python.org/3/library/uuid.html</a></li>
+<li>R - uuid <a href="https://cran.r-project.org/web/packages/uuid/index.html" class="uri">https://cran.r-project.org/web/packages/uuid/index.html</a></li>
+<li>python - uuid <a href="https://docs.python.org/3/library/uuid.html" class="uri">https://docs.python.org/3/library/uuid.html</a></li>
 <li><a href="http://guid.one/" class="uri">http://guid.one/</a></li>
 <li><a href="https://guidgenerator.com/" class="uri">https://guidgenerator.com/</a></li>
 </ul></li>
-<li>Guidance on how to use GUIDs (Globally Unique Identifiers) to meet specific requirements of the biodiversity information community
-<ul>
-<li><a href="http://bioimages.vanderbilt.edu/pages/guid-applicability-final-2011-01.pdf" class="uri">http://bioimages.vanderbilt.edu/pages/guid-applicability-final-2011-01.pdf</a></li>
-</ul></li>
-<li>Use of globally unique identifiers (GUIDs) to link herbarium specimen records to physical specimens
-<ul>
-<li><a href="https://bsapubs.onlinelibrary.wiley.com/doi/full/10.1002/aps3.1027" class="uri">https://bsapubs.onlinelibrary.wiley.com/doi/full/10.1002/aps3.1027</a></li>
-</ul></li>
-<li>A Beginner’s Guide to Persistent Identifiers
-<ul>
-<li><a href="http://links.gbif.org/persistent_identifiers_guide_en_v1.pdf" class="uri">http://links.gbif.org/persistent_identifiers_guide_en_v1.pdf</a></li>
-</ul></li>
+<li>Guidance on how to use GUIDs (Globally Unique Identifiers) to meet specific requirements of the biodiversity information community<br />
+<a href="http://bioimages.vanderbilt.edu/pages/guid-applicability-final-2011-01.pdf" class="uri">http://bioimages.vanderbilt.edu/pages/guid-applicability-final-2011-01.pdf</a></li>
+<li>Use of globally unique identifiers (GUIDs) to link herbarium specimen records to physical specimens<br />
+<a href="https://bsapubs.onlinelibrary.wiley.com/doi/full/10.1002/aps3.1027" class="uri">https://bsapubs.onlinelibrary.wiley.com/doi/full/10.1002/aps3.1027</a></li>
+<li>A Beginner’s Guide to Persistent Identifiers<br />
+<a href="http://links.gbif.org/persistent_identifiers_guide_en_v1.pdf" class="uri">http://links.gbif.org/persistent_identifiers_guide_en_v1.pdf</a></li>
 </ul>
 
 </div>
