@@ -1,0 +1,7 @@
+.Rhistory
+.RData
+#_book
+_bookdown_files
+rsconnect
+.Rproj.user
+.Rproj.user/

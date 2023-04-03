@@ -1,0 +1,9 @@
+book_filename: "ESIP_BDS_best_practices"
+language: 
+  ui:
+    chapter_name: 
+delete_merged_file: true
+new_session: no
+output_dir: "_book"
+rmd_files: ["index.Rmd", "content/1-intro.Rmd", "content/2-CONTEXT_UNDERSTANDABILITY.Rmd","content/3-INTEGRATE_DATA.Rmd", "content/4-INTEROPERABLE_DATA.Rmd", "content/5-SHARE_DATA_WEB.Rmd", "content/6-SOFTWARE_READY.Rmd"]
+rmd_subdir: ["content/"]
