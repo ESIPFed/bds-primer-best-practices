@@ -1,6 +1,6 @@
 ---
 name: non-trivial revision to current content
-about: uggest revisions that are not typos or broken links, but larger revisions   to
+about: Suggest revisions that are not typos or broken links, but larger revisions   to
   sentences, sections, or concepts.
 title: ''
 labels: ''
