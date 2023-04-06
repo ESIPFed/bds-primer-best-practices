@@ -9,7 +9,7 @@ bookdown::gitbook:
 bookdown::pdf_book:
   includes:
     in_header: preamble.tex
-  latex_engine: xelatex
+  latex_engine: pdflatex
   citation_package: natbib
   keep_tex: yes
   toc_depth: 2
