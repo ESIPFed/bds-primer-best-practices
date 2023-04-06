@@ -36,7 +36,7 @@ https://www.archives.gov/records-mgmt/policy/transfer-guidance-tables.html
 
 ### Key Information
 
-```{r tidyformat, echo=FALSE}
+```{r tidyformat, echo=FALSE, warning=FALSE}
 
 library(dplyr)
 
