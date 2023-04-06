@@ -2,7 +2,7 @@
 name: small problem (e.g typos and broken links)
 about: Suggest revisions for easy to fix problems, like typos and broken links)
 title: ''
-labels: ''
+labels: easy fix
 assignees: ''
 
 ---

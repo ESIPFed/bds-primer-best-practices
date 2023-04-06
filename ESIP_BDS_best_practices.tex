@@ -1,0 +1,762 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  oneside]{book}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={ESIP Biological Data Standards Cluster Primer: Best Practices},
+  pdfauthor={ESIP Biological Data Standards Cluster},
+  colorlinks=true,
+  linkcolor={Maroon},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={blue},
+  pdfcreator={LaTeX via pandoc}}
+
+\title{ESIP Biological Data Standards Cluster Primer: Best Practices}
+\author{ESIP Biological Data Standards Cluster}
+\date{2023-04-06}
+
+\begin{document}
+\maketitle
+
+{
+\hypersetup{linkcolor=}
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\hypertarget{introduction}{%
+\chapter{Introduction}\label{introduction}}
+
+\emph{This was last updated after the \href{https://docs.google.com/document/d/1cBQEy_-MNYm8SBN-0iY_X2esd6MSM-pZE_MZD6rv0Do/edit\#}{meeting on 2022-12-01}, and all material from those brainstorming sessions were incorporated}
+
+The diversity of biological data, and (seeming) lack of overarching community standards makes working with biological data challenging. Several standards do exist for biological data, however these different data, metadata, and taxonomic standards are confusing for data managers and data users to navigate. The biological data community in the US could benefit from guidance, best practice documentation, training, and community building. The \href{https://wiki.esipfed.org/Biological_Data_Standards_Cluster}{ESIP Biological Data Cluster (BDS)} was formed to tackle these problems.
+
+In short, the will be successful if it:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Increase awareness \& interest in standards
+\item
+  Create unity/shared vision around biological data standards implementation \& Provide guidance related to biological standards
+\item
+  Provide opportunities for Knowledge sharing \& coordination
+\item
+  Provide Connectivity across ESIP
+\end{enumerate}
+
+We successfully increased awareness and interest in standards through the creation of the primer, officially called, \href{https://doi.org/10.6084/m9.figshare.16806712.v1}{Biological Observation Data Standardization - A Primer for Data Manager} Our goals have evolved to work toward creating a sample extension of the cluster's primer in the form of a best practice document(s). The target audience for the best practice document(s) are people who are new to working with biological data standards. The best practice document will provide additional detail on the points listed in the primer, focusing on efficient actions that can be taken to standardize data.
+
+\newpage
+
+As an example, we brainstormed the ``Make your data software ready'' section of the primer. Specifically, this includes:
+
+\begin{itemize}
+\tightlist
+\item
+  Use non-proprietary formats
+\item
+  Structure data in tidy/long format
+\item
+  Follow ISO 8601 for dates
+\item
+  Match scientific names to a taxonomic authority
+\item
+  Record latitude and longitude in decimal degrees in WGS84
+\item
+  Use globally unique identifiers
+\end{itemize}
+
+The proposed structure for each best practice module is:
+
+\begin{itemize}
+\tightlist
+\item
+  Value proposition (Why?)
+\item
+  List / key information (bulleted)
+\item
+  References list (max 5)
+\end{itemize}
+
+\hypertarget{provide-context-and-understandability-to-your-data}{%
+\chapter{PROVIDE CONTEXT AND UNDERSTANDABILITY TO YOUR DATA}\label{provide-context-and-understandability-to-your-data}}
+
+\begin{itemize}
+\tightlist
+\item
+  Why?
+\item
+  Key Information
+\item
+  Top 5 References
+\end{itemize}
+
+\hypertarget{integrate-your-data-with-other-data}{%
+\chapter{INTEGRATE YOUR DATA WITH OTHER DATA}\label{integrate-your-data-with-other-data}}
+
+\begin{itemize}
+\tightlist
+\item
+  Why?
+\item
+  Key Information
+\item
+  Top 5 References
+\end{itemize}
+
+\hypertarget{make-your-data-interoperable}{%
+\chapter{MAKE YOUR DATA INTEROPERABLE}\label{make-your-data-interoperable}}
+
+\begin{itemize}
+\tightlist
+\item
+  Why?
+\item
+  Key Information
+\item
+  Top 5 References
+\end{itemize}
+
+\hypertarget{share-your-data-on-the-web}{%
+\chapter{SHARE YOUR DATA ON THE WEB}\label{share-your-data-on-the-web}}
+
+\begin{itemize}
+\tightlist
+\item
+  Why?
+\item
+  Key Information
+\item
+  Top 5 References
+\end{itemize}
+
+\hypertarget{make-your-data-software-ready}{%
+\chapter{MAKE YOUR DATA SOFTWARE READY}\label{make-your-data-software-ready}}
+
+\hypertarget{use-non-proprietary-formats}{%
+\section{Use non-proprietary formats}\label{use-non-proprietary-formats}}
+
+\hypertarget{why}{%
+\subsection{Why?}\label{why}}
+
+\begin{itemize}
+\tightlist
+\item
+  Allows data to be useful in perpetuity by ensuring data readability and reusability across multiple platforms.
+\item
+  To align better with the FAIR principles (findability, accessibility, interoperability, reusability)
+\item
+  Makes data more socially equitable, supporting open science. Proprietary formats can depend on software that require licenses, which not everyone can afford/has access to.
+\end{itemize}
+
+\hypertarget{key-information}{%
+\subsection{Key Information}\label{key-information}}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Non-proprietary formats} are supported by more than one developer and can be accessed with different software systems. For example, comma separated values (CSV) format is becoming an increasingly popular non-proprietary format.
+\item
+  A \emph{\href{https://en.wikipedia.org/wiki/Proprietary_file_format}{proprietary file format}} is a file format of a company, organization, or individual that contains data that is ordered and stored according to a particular encoding-scheme, designed by the company or organization to be secret or with restricted access, such that the decoding and interpretation of this stored data is easily accomplished only with particular software or hardware that the company itself has developed. There may also be costs associated with it and access may be limited. Examples include \texttt{Microsoft\ Excel\ (xlsx)} and \texttt{ESRI\ shapefiles\ (shp)}.
+\item
+  Many applications (e.g.~Microsoft Office) allow exporting in multiple formats.
+\end{itemize}
+
+\hypertarget{top-5-references}{%
+\subsection{Top 5 References}\label{top-5-references}}
+
+\begin{itemize}
+\tightlist
+\item
+  Table of commonly used formats for common data types\\
+  \url{https://guides.osu.edu/c.php?g=707751\&p=5027409}
+\item
+  A more detailed table that is specific to US Federal records management\\
+  \url{https://www.archives.gov/records-mgmt/policy/transfer-guidance-tables.html}
+\end{itemize}
+
+\hypertarget{structure-data-in-tidylong-format}{%
+\section{Structure data in tidy/long format}\label{structure-data-in-tidylong-format}}
+
+\hypertarget{why-1}{%
+\subsection{Why?}\label{why-1}}
+
+\emph{This is specifically intended for tabular data}
+
+\begin{itemize}
+\tightlist
+\item
+  There is a clear and easy to understand structure that can make your data more machine readable and easier to analyze/visualize
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Clear structure: one observation per row
+  \item
+    Data are as atomic as possible (e.g., don't mix types in field)
+  \end{itemize}
+\item
+  In the biological data community, tidy formats are more likely to work with commonly-used software
+\item
+  Easier to aggregate data across multiple files
+\end{itemize}
+
+\hypertarget{key-information-1}{%
+\subsection{Key Information}\label{key-information-1}}
+
+\label{tab:tidyformat}Wide Format (left) vs.~Long Format (right)
+
+species
+
+site\_01
+
+site\_02
+
+site\_03
+
+Tilia americana
+
+1
+
+5
+
+0
+
+Pinus strobus
+
+3
+
+4
+
+4
+
+species
+
+site
+
+count
+
+Tilia americana
+
+site\_01
+
+1
+
+Tilia americana
+
+site\_02
+
+5
+
+Tilia americana
+
+site\_03
+
+0
+
+Pinus strobus
+
+site\_01
+
+3
+
+Pinus strobus
+
+site\_02
+
+4
+
+Pinus strobus
+
+site\_03
+
+4
+
+\begin{itemize}
+\tightlist
+\item
+  Can be tricky working with multiple column datatypes
+\item
+  Don't use colors or text formatting in tabular data, and only include column names as metadata. All other notes, definitions, etc. should be in an external metadata file (e.g.~data dictionary)
+\end{itemize}
+
+\hypertarget{top-5-references-1}{%
+\subsection{Top 5 References}\label{top-5-references-1}}
+
+\begin{itemize}
+\tightlist
+\item
+  Wickham, H. (2014). Tidy Data. Journal of Statistical Software, 59(10), 1--23. \url{https://doi.org/10.18637/jss.v059.i10}
+\item
+  Data Sharing and Management Snafu in 3 Short Acts (video)\\
+  \url{https://www.youtube.com/watch?v=N2zK3s=Atr-4\&t=7s}
+\item
+  Tips for working with data in BASH\\
+  \url{https://www.datafix.com.au/BASHing/2022-01-12.html}
+\item
+  Data Organization in Spreadsheets for Ecologists\\
+  \url{https://datacarpentry.org/spreadsheet-ecology-lesson/}
+\item
+  Cleaning Data and Quality Control\\
+  \url{https://edirepository.org/resources/cleaning-data-and-quality-control\#data-table-structure}
+\end{itemize}
+
+\hypertarget{follow-iso-8601-for-dates}{%
+\section{Follow ISO 8601 for dates}\label{follow-iso-8601-for-dates}}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.4\linewidth]{https://imgs.xkcd.com/comics/iso_8601} 
+
+}
+
+\caption{https://imgs.xkcd.com/comics/iso_8601.png}\label{fig:xkcd1}
+\end{figure}
+
+\hypertarget{why-2}{%
+\subsection{Why?}\label{why-2}}
+
+\begin{itemize}
+\tightlist
+\item
+  Internationally accepted format used across multiple schemas (e.g.~\texttt{Darwin\ Core}, \texttt{EML}, \texttt{ISO\ 19115})
+\item
+  Removes ambiguity related to timezone, daylight savings time changes, and time of day
+\item
+  Better software integration of time date/time elements
+\end{itemize}
+
+\hypertarget{key-information-2}{%
+\subsection{Key Information}\label{key-information-2}}
+
+\begin{itemize}
+\tightlist
+\item
+  UTC (AKA \texttt{Zulu} or \texttt{GMT}): Coordinated Universal Time (UTC) is the primary time standard by which the world regulates clocks and time. It is time relative to \texttt{0°} longitude and is not adjusted for daylight saving time. (\href{https://en.wikipedia.org/wiki/ISO_8601}{from Wikipedia}).
+\item
+  Conversion to UTC, or between time zones, may depend on daylight savings
+\end{itemize}
+
+\emph{Examples: April 3, 2023 standardized to ISO 8601}
+
+Description
+
+Written.in.ISO.8601
+
+Date
+
+2023-04-03
+
+Date and Time with timezone offset
+
+2023-04-03T18:29:38+00:00
+
+Date and Time in UTC
+
+2023-04-03T18:29:38Z
+
+Time Interval in UTC (April 3 - 5, 2023)
+
+2023-04-03T18:29:38Z/2023-04-05T00:29:38Z
+
+Description
+
+Example
+
+Annotation
+
+Date and Time with timezone offset
+
+2023-04-03T18:29:38+00:00
+
+YYYY-MM-DD{[}the letter capital T{]}HH:MM:SS+{[}Timezone offset{]}
+
+Date and Time in UTC
+
+2023-04-03T18:29:38Z
+
+YYYY-MM-DD{[}capital T{]}HH:MM:SS+{[}capital Z to indicate an offset of zero{]}
+
+\hypertarget{top-5-references-2}{%
+\subsection{Top 5 References}\label{top-5-references-2}}
+
+\begin{itemize}
+\tightlist
+\item
+  ISO 8601 wiki: \url{https://en.wikipedia.org/wiki/ISO_8601}
+\item
+  R package lubridate, OlsonNames()
+\item
+  Python go-to package, datetime \url{https://docs.python.org/3/library/datetime.html}
+\item
+  Article on datetime uncertainty: \url{https://www.datafix.com.au/BASHing/2020-02-12.html}\\
+\item
+  Map of offset from UTC: \url{https://www.timeanddate.com/time/map/}
+\item
+  Nice time converter: \url{https://coastwatch.pfeg.noaa.gov/erddap/convert/time.html}
+\end{itemize}
+
+\hypertarget{is-anything-missing}{%
+\subsection{Is anything missing?}\label{is-anything-missing}}
+
+\begin{itemize}
+\tightlist
+\item
+  How is this handled when reporting dates from paleontological and archaeological specimens?
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Make some recommendations for these use cases.
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{match-scientific-names-to-a-taxonomic-authority}{%
+\section{Match scientific names to a taxonomic authority}\label{match-scientific-names-to-a-taxonomic-authority}}
+
+\hypertarget{why-3}{%
+\subsection{Why?}\label{why-3}}
+
+\begin{itemize}
+\tightlist
+\item
+  Definition: A taxonomic authority is an internationally recognized, used and actively maintained classification of species.
+\item
+  To integrate or aggregate datasets, we have to have a common frame of reference for taxonomic name
+\item
+  Provides an anchor for the taxonomy as scientific understanding evolves.
+\end{itemize}
+
+\hypertarget{key-information-3}{%
+\subsection{Key Information}\label{key-information-3}}
+
+\begin{itemize}
+\tightlist
+\item
+  Use an existing taxonomic authority (e.g.~\href{https://www.marinespecies.org/}{World Register of Marine Species} , \href{https://itis.gov/}{Integrated Taxonomic Information System} , \href{https://www.ncbi.nlm.nih.gov/taxonomy}{NCBI taxonomy}) and include the authority who manages said information in your metadata
+\item
+  List of many authorities can be found here: \url{https://resolver.globalnames.org/data_sources}
+\item
+  Make yourself aware of the structure, limits, and history of the authority you are using.
+\item
+  Adopt standard binomial nomenclature, when possible
+\item
+  When possible, reference the unique identifier in addition to the nomenclature.
+\item
+  Always save and document the originally recorded name.
+\item
+  Put notes about identification uncertainty in a separate column.
+\item
+  Many authorities have APIs through which you can match names to identifiers.
+\end{itemize}
+
+\hypertarget{top-5-references-3}{%
+\subsection{Top 5 References}\label{top-5-references-3}}
+
+\begin{itemize}
+\tightlist
+\item
+  R packages
+
+  \begin{itemize}
+  \tightlist
+  \item
+    taxize is a taxonomic toolbelt for R. taxize wraps APIs for a large suite of taxonomic databases available on the web\\
+    \url{https://cran.r-project.org/web/packages/taxize/index.html}
+  \item
+    worrms is an API client for \href{http://www.marinespecies.org/}{World Register of Marine Species}\\
+    \url{http://cran.nexr.com/web/packages/worrms/vignettes/worrms_vignette.html}
+  \item
+    worms: another API client for WoRMS\\
+    \url{https://cran.r-project.org/web/packages/worms/index.html}
+  \item
+    Ritis: API client for ITIS
+    \url{https://cran.r-project.org/web/packages/ritis/}
+  \end{itemize}
+\item
+  Python packages
+
+  \begin{itemize}
+  \tightlist
+  \item
+    WoRMS API client\\
+    \url{https://github.com/iobis/pyworms}
+  \end{itemize}
+\item
+  Global Names Resolver to compare taxonomic concepts across authorities\\
+  \url{https://resolver.globalnames.org/}
+\item
+  Article: Recommendations for the Standardisation of Open Taxonomic Nomenclature for Image-Based Identifications\\
+  \url{https://doi.org/10.3389/fmars.2021.620702}
+\item
+  TDWG 2022 Keynote: Richard Pyle, ``An Introduction to the Scientific Names of Organisms and the Taxon Concepts they Represent''\\
+  \url{https://www.youtube.com/watch?v=rmTvUUjBxrI}
+\end{itemize}
+
+\hypertarget{is-anything-missing-1}{%
+\subsection{Is anything missing?}\label{is-anything-missing-1}}
+
+\begin{itemize}
+\tightlist
+\item
+  Unrealistic to mandate single taxonomic database across all fields and all metadata; better to mandate inclusion of DB or reference used in each case
+\item
+  Is it possible to map from one authority to another via machine readable/AI means?
+
+  \begin{itemize}
+  \tightlist
+  \item
+    NCBI \textgreater\textgreater{} GTDB works
+  \item
+    Would be necessary/have to happen to have this be machine readable?
+  \end{itemize}
+\item
+  How do we define a taxonomic authority ?
+
+  \begin{itemize}
+  \tightlist
+  \item
+    International recognized, used and actively maintained
+  \end{itemize}
+\item
+  How do we help people go to the ``correct'' authority?
+
+  \begin{itemize}
+  \tightlist
+  \item
+    ITIS, WORMs, AOS (\url{https://checklist.americanornithology.org})
+  \item
+    Is there a `catalogue' or decision tree for taxonomic authorities?
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{record-latitude-and-longitude-in-decimal-degrees-in-wgs84}{%
+\section{Record latitude and longitude in decimal degrees in WGS84}\label{record-latitude-and-longitude-in-decimal-degrees-in-wgs84}}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.4\linewidth]{https://imgs.xkcd.com/comics/coordinate_precision} 
+
+}
+
+\caption{https://imgs.xkcd.com/comics/coordinate_precision.png}\label{fig:xkcd2}
+\end{figure}
+
+\hypertarget{why-4}{%
+\subsection{Why?}\label{why-4}}
+
+\begin{itemize}
+\tightlist
+\item
+  Users have to know where you collected this data, which requires a latitude, longitude, reference system and uncertainty.
+\item
+  Decimal-degrees avoids special symbols (\texttt{°} or \texttt{‘}) which is preferable for machine readable formats
+\item
+  \texttt{WGS84} is a reference coordinate system that is widely used and incorporated in many GPS units and tools, and recognized as a standard by many government agencies.
+\end{itemize}
+
+\hypertarget{key-information-4}{%
+\subsection{Key Information}\label{key-information-4}}
+
+\begin{itemize}
+\tightlist
+\item
+  If possible, encourage data providers to confirm, and record, the WGS84 datum is selected prior to data collection.
+\item
+  Understand and report the device/instrument uncertainty associated with your coordinates because it affects the usability of your data.
+\item
+  Consider including the vertical component (altitude, depth, height off bottom, elevation, etc)
+\item
+  Generally speaking, \texttt{degrees-minutes-seconds\ (DMS)} can be converted to \texttt{decimal-degrees\ (DD)} by:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \texttt{DD\ =\ d\ +\ (min/60)\ +\ (sec/3600)}
+  \item
+    Watch out for mixed formats, like degrees, \texttt{decimal-minutes\ (DDM)}.
+  \end{itemize}
+\item
+  Degrees West and South become negative in DD.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Values for longitude range from \texttt{-180} to \texttt{180}, inclusive.
+  \item
+    Values for latitude range from \texttt{-90} to \texttt{90}, inclusive.
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{top-5-references-4}{%
+\subsection{Top 5 References}\label{top-5-references-4}}
+
+\begin{itemize}
+\tightlist
+\item
+  Existing R/python/ESRI packages/functions
+
+  \begin{itemize}
+  \tightlist
+  \item
+    R - measurements \url{https://cran.r-project.org/web/packages/measurements/measurements.pdf}
+  \item
+    EML \url{https://eml.ecoinformatics.org/schema/index.html} (find ``bounding Coordinates)
+  \item
+    CF \url{https://cfconventions.org/Data/cf-conventions/cf-conventions-1.10/cf-conventions.html\#latitude-coordinate}
+  \end{itemize}
+\item
+  Getting lat/lon to decimal degrees\\
+  \url{https://ioos.github.io/bio_mobilization_workshop/03-data-cleaning/index.html\#getting-latlon-to-decimal-degrees}
+\item
+  Some background on precision\\
+  \url{https://www.trekview.org/blog/2021/reading-decimal-gps-coordinates-like-a-computer/\#a-note-on-accuracy}
+\item
+  DMS to DD calculator\\
+  \url{https://www.fcc.gov/media/radio/dms-decimal}
+\end{itemize}
+
+\hypertarget{is-anything-missing-2}{%
+\subsection{Is anything missing?}\label{is-anything-missing-2}}
+
+\begin{itemize}
+\tightlist
+\item
+  We debated whether or not decimal degrees should be emphasized at all. Is it more important to get the data collectors to use a standard, or show data managers how to convert between standards?
+\end{itemize}
+
+\hypertarget{use-globally-unique-identifiers}{%
+\section{Use globally unique identifiers}\label{use-globally-unique-identifiers}}
+
+\hypertarget{why-5}{%
+\subsection{Why?}\label{why-5}}
+
+\begin{itemize}
+\tightlist
+\item
+  It can be useful to have unique identifiers to unambiguously identify granules of information, e.g.~dataset, collection, database, taxonomic concept, etc. This will allow users to precisely refer to the data and allow your data to remain identifiable when aggregated with other datasets.
+\item
+  To be able to uniquely identify a record in your data system or across data systems.
+  Useful to create relational databases or merge records.
+\item
+  Although it increases workload, it safeguards against confusion and inefficiency in the future.
+\end{itemize}
+
+\hypertarget{key-information-5}{%
+\subsection{Key Information}\label{key-information-5}}
+
+\begin{itemize}
+\tightlist
+\item
+  There are good reasons to keep an identifier opaque, i.e.~it does not indicate anything about the content of information it points to. However, there are also transparent, or semi-opaque identifiers in use that take advantage of semantics to guide humans as well as machines.
+\item
+  One way to create a unique identifier is concatenation of sampling event, location, time, enumeration of unique observation or event. (e.g.~\texttt{Station\_95\_Date\_09JAN1997:14:35:00.000})
+\item
+  Some prefer using opaque identifiers.
+  (e.g.~\texttt{10FC9784-B30F-48ED-8DB5-FF65A2A9934E})
+\item
+  If there is an existing globally unique identifier, it's usually a good idea to use it (i.e.~when using a taxonomic authority like WoRMS and applying their LSID).
+\item
+  It is important to manage any identifiers you create, if they are not managed by an authority (e.g.~DOIs).
+\item
+  Important that it be persistent (consider samples possibly moving between institutions)
+\end{itemize}
+
+\hypertarget{top-5-references-5}{%
+\subsection{Top 5 References}\label{top-5-references-5}}
+
+\begin{itemize}
+\tightlist
+\item
+  Software and Packages to generate uuids:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    R - uuid \url{https://cran.r-project.org/web/packages/uuid/index.html}
+  \item
+    python - uuid \url{https://docs.python.org/3/library/uuid.html}
+  \item
+    \url{http://guid.one/}
+  \item
+    \url{https://guidgenerator.com/}
+  \end{itemize}
+\item
+  Guidance on how to use GUIDs (Globally Unique Identifiers) to meet specific requirements of the biodiversity information community\\
+  \url{http://bioimages.vanderbilt.edu/pages/guid-applicability-final-2011-01.pdf}
+\item
+  Use of globally unique identifiers (GUIDs) to link herbarium specimen records to physical specimens\\
+  \url{https://bsapubs.onlinelibrary.wiley.com/doi/full/10.1002/aps3.1027}
+\item
+  A Beginner's Guide to Persistent Identifiers\\
+  \url{http://links.gbif.org/persistent_identifiers_guide_en_v1.pdf}
+\end{itemize}
+
+\end{document}

@@ -11,4 +11,5 @@ urlcolor: blue
 classoption: oneside
 github-repo: NULL
 description: "This is a foundation for building extensions of the BDS primer in the form of best practice documents."
+always_allow_html: true
 ---
