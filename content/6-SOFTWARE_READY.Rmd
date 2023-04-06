@@ -119,11 +119,6 @@ kableExtra::kable(tab2)%>%
 - Nice time converter: https://coastwatch.pfeg.noaa.gov/erddap/convert/time.html
 
 
-### Is anything missing?
-
-- How is this handled when reporting dates from paleontological and archaeological specimens?
-   - Make some recommendations for these use cases.
-
 ## Match scientific names to a taxonomic authority
 
 ### Why?
@@ -165,17 +160,6 @@ https://doi.org/10.3389/fmars.2021.620702
 - TDWG 2022 Keynote: Richard Pyle, “An Introduction to the Scientific Names of Organisms and the Taxon Concepts they Represent”  
 https://www.youtube.com/watch?v=rmTvUUjBxrI
 
-### Is anything missing?
-
-- Unrealistic to mandate single taxonomic database across all fields and all metadata; better to mandate inclusion of DB or reference used in each case
-- Is it possible to map from one authority to another via machine readable/AI means?
-  - NCBI >> GTDB works
-  - Would be necessary/have to happen to have this be machine readable?
-- How do we define a taxonomic authority ? 
-  - International recognized, used and actively maintained 
-- How do we help people go to the “correct” authority? 
-  - ITIS, WORMs, AOS (https://checklist.americanornithology.org) 
-  - Is there a ‘catalogue’ or decision tree for taxonomic authorities?
 
 ## Record latitude and longitude in decimal degrees in WGS84
 
@@ -215,9 +199,6 @@ https://www.trekview.org/blog/2021/reading-decimal-gps-coordinates-like-a-comput
 - DMS to DD calculator  
 https://www.fcc.gov/media/radio/dms-decimal
 
-
-### Is anything missing?
-- We debated whether or not decimal degrees should be emphasized at all.  Is it more important to get the data collectors to use a standard, or show data managers how to convert between standards?
 
 ## Use globally unique identifiers
 
