@@ -209,13 +209,13 @@ site_03
 Tilia americana
 </td>
 <td style="text-align:right;">
-4
+3
 </td>
 <td style="text-align:right;">
-5
+0
 </td>
 <td style="text-align:right;">
-2
+1
 </td>
 </tr>
 <tr>
@@ -223,13 +223,13 @@ Tilia americana
 Pinus strobus
 </td>
 <td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
 1
 </td>
 <td style="text-align:right;">
-2
-</td>
-<td style="text-align:right;">
-4
+0
 </td>
 </tr>
 </tbody>
@@ -259,7 +259,7 @@ Tilia americana
 site_01
 </td>
 <td style="text-align:right;">
-4
+3
 </td>
 </tr>
 <tr>
@@ -270,7 +270,7 @@ Tilia americana
 site_02
 </td>
 <td style="text-align:right;">
-5
+0
 </td>
 </tr>
 <tr>
@@ -279,17 +279,6 @@ Tilia americana
 </td>
 <td style="text-align:left;">
 site_03
-</td>
-<td style="text-align:right;">
-2
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Pinus strobus
-</td>
-<td style="text-align:left;">
-site_01
 </td>
 <td style="text-align:right;">
 1
@@ -300,10 +289,21 @@ site_01
 Pinus strobus
 </td>
 <td style="text-align:left;">
+site_01
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Pinus strobus
+</td>
+<td style="text-align:left;">
 site_02
 </td>
 <td style="text-align:right;">
-2
+1
 </td>
 </tr>
 <tr>
@@ -314,7 +314,7 @@ Pinus strobus
 site_03
 </td>
 <td style="text-align:right;">
-4
+0
 </td>
 </tr>
 </tbody>
@@ -549,6 +549,44 @@ Figure 6.2: <a href="https://imgs.xkcd.com/comics/coordinate_precision.png" clas
 <li>Values for latitude range from <code>-90</code> to <code>90</code>, inclusive.</li>
 </ul></li>
 </ul>
+<table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Format
+</th>
+<th style="text-align:left;">
+Example
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Decimal Degrees (DD)
+</td>
+<td style="text-align:left;">
+30.50833333
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Degrees Minutes Seconds (DMS)
+</td>
+<td style="text-align:left;">
+30° 15’ 10 N
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Degrees Decimal Minutes (DM or DDM)
+</td>
+<td style="text-align:left;">
+30° 15.1667 N
+</td>
+</tr>
+</tbody>
+</table>
 </div>
 <div id="top-5-references-4" class="section level3 hasAnchor" number="6.5.3">
 <h3><span class="header-section-number">6.5.3</span> Top 5 References<a href="make-your-data-software-ready.html#top-5-references-4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -586,7 +624,7 @@ Useful to create relational databases or merge records.</li>
 <li>One way to create a unique identifier is concatenation of sampling event, location, time, enumeration of unique observation or event. (e.g. <code>Station_95_Date_09JAN1997:14:35:00.000</code>)</li>
 <li>Some prefer using opaque identifiers.
 (e.g. <code>10FC9784-B30F-48ED-8DB5-FF65A2A9934E</code>)</li>
-<li>If there is an existing globally unique identifier, it’s usually a good idea to use it (i.e. when using a taxonomic authority like WoRMS and applying their LSID).</li>
+<li>If there is an existing persistent unique identifier, it’s usually a good idea to use it (i.e. when using a taxonomic authority like WoRMS and applying their LSID).</li>
 <li>It is important to manage any identifiers you create, if they are not managed by an authority (e.g. DOIs).</li>
 <li>Important that it be persistent (consider samples possibly moving between institutions)</li>
 </ul>

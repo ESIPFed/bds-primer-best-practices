@@ -186,6 +186,25 @@ knitr::include_graphics('https://imgs.xkcd.com/comics/coordinate_precision.png')
   - Values for longitude range from `-180` to `180`, inclusive.
   - Values for latitude range from `-90` to `90`, inclusive.
 
+```{r example_coordinates, echo = FALSE}
+
+ds <- data.frame(Format = c("Decimal Degrees (DD)",
+                            "Degrees Minutes Seconds (DMS)",
+                            "Degrees Decimal Minutes (DM or DDM)"
+                             ),
+                 Example = c(30.50833333,
+                             paste("30\u00B0", "15'", '10 N'),
+                             paste("30\u00B0", "15.1667 N")
+                 )
+)
+                 
+
+kableExtra::kable(ds,
+                  booktabs = TRUE,
+                  col.names = gsub("[.]", " ", names(ds))) %>% 
+  kableExtra::kable_styling(font_size = 10)
+    
+```
 
 ### Top 5 References
 - Existing R/python/ESRI packages/functions
@@ -213,7 +232,7 @@ Useful to create relational databases or merge records.
 - One way to create a unique identifier is concatenation of sampling event, location, time, enumeration of unique observation or event. (e.g. `Station_95_Date_09JAN1997:14:35:00.000`)
 - Some prefer using opaque identifiers.
   (e.g. `10FC9784-B30F-48ED-8DB5-FF65A2A9934E`)
-- If there is an existing globally unique identifier, it’s usually a good idea to use it (i.e. when using a taxonomic authority like WoRMS and applying their LSID).
+- If there is an existing persistent unique identifier, it’s usually a good idea to use it (i.e. when using a taxonomic authority like WoRMS and applying their LSID).
 - It is important to manage any identifiers you create, if they are not managed by an authority (e.g. DOIs).
 - Important that it be persistent (consider samples possibly moving between institutions)
 
