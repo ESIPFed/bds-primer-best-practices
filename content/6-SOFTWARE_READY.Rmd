@@ -200,7 +200,7 @@ https://www.trekview.org/blog/2021/reading-decimal-gps-coordinates-like-a-comput
 https://www.fcc.gov/media/radio/dms-decimal
 
 
-## Use globally unique identifiers
+## Use persistent unique identifiers
 
 ### Why?
 - It can be useful to have unique identifiers to unambiguously identify granules of information, e.g. dataset, collection, database, taxonomic concept, etc. This will allow users to precisely refer to the data and allow your data to remain identifiable when aggregated with other datasets.
@@ -216,6 +216,28 @@ Useful to create relational databases or merge records.
 - If there is an existing globally unique identifier, it’s usually a good idea to use it (i.e. when using a taxonomic authority like WoRMS and applying their LSID).
 - It is important to manage any identifiers you create, if they are not managed by an authority (e.g. DOIs).
 - Important that it be persistent (consider samples possibly moving between institutions)
+
+```{r PID Examples, echo = FALSE}
+
+ds <- data.frame("Type of PID" = c("Digital Object Identifier (DOI)",
+                                   "International Geo Sample Number (IGSN)",
+                                   "Life Science Identifier (LSID)",
+                                   "Open Researcher and Contributor ID (ORCID)"),
+                 "Use Case" = c("Actionable persistent link for papers, data, and other digital objects",
+                                "Persistent identifier for physical samples",
+                                "Persistent structured method for biologically significant data",
+                                "Persistent actionable link for individuals"),
+                 "Example" = c("https://doi.org/10.6084/m9.figshare.16806712.v2",
+                               "http://igsn.org/AU1243",
+                               "urn:lsid:marinespecies.org:taxname:218214",
+                               "https://orcid.org/0000-0002-4391-107X"))
+
+kableExtra::kable(ds,
+                  booktabs = TRUE,
+                  col.names = gsub("[.]", " ", names(ds))) %>% 
+  kableExtra::kable_styling(font_size = 10)
+
+```
 
 
 ### Top 5 References

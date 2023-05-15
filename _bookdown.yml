@@ -4,7 +4,7 @@ language:
     chapter_name: 
 delete_merged_file: true
 new_session: no
-output_dir: "_book"
+output_dir: "docs"
 rmd_files: ["index.Rmd"
   , "content/1-intro.Rmd"
   , "content/2-CONTEXT_UNDERSTANDABILITY.Rmd"
