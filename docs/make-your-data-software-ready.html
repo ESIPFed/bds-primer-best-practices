@@ -23,7 +23,7 @@
 <meta name="author" content="ESIP Biological Data Standards Cluster" />
 
 
-<meta name="date" content="2023-04-06" />
+<meta name="date" content="2023-05-15" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -108,7 +108,7 @@
 <li class="chapter" data-level="6.5.2" data-path="make-your-data-software-ready.html"><a href="make-your-data-software-ready.html#key-information-4"><i class="fa fa-check"></i><b>6.5.2</b> Key Information</a></li>
 <li class="chapter" data-level="6.5.3" data-path="make-your-data-software-ready.html"><a href="make-your-data-software-ready.html#top-5-references-4"><i class="fa fa-check"></i><b>6.5.3</b> Top 5 References</a></li>
 </ul></li>
-<li class="chapter" data-level="6.6" data-path="make-your-data-software-ready.html"><a href="make-your-data-software-ready.html#use-globally-unique-identifiers"><i class="fa fa-check"></i><b>6.6</b> Use globally unique identifiers</a>
+<li class="chapter" data-level="6.6" data-path="make-your-data-software-ready.html"><a href="make-your-data-software-ready.html#use-persistent-unique-identifiers"><i class="fa fa-check"></i><b>6.6</b> Use persistent unique identifiers</a>
 <ul>
 <li class="chapter" data-level="6.6.1" data-path="make-your-data-software-ready.html"><a href="make-your-data-software-ready.html#why-5"><i class="fa fa-check"></i><b>6.6.1</b> Why?</a></li>
 <li class="chapter" data-level="6.6.2" data-path="make-your-data-software-ready.html"><a href="make-your-data-software-ready.html#key-information-5"><i class="fa fa-check"></i><b>6.6.2</b> Key Information</a></li>
@@ -209,13 +209,13 @@ site_03
 Tilia americana
 </td>
 <td style="text-align:right;">
-2
-</td>
-<td style="text-align:right;">
-1
-</td>
-<td style="text-align:right;">
 4
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+2
 </td>
 </tr>
 <tr>
@@ -223,13 +223,13 @@ Tilia americana
 Pinus strobus
 </td>
 <td style="text-align:right;">
-3
-</td>
-<td style="text-align:right;">
-3
+1
 </td>
 <td style="text-align:right;">
 2
+</td>
+<td style="text-align:right;">
+4
 </td>
 </tr>
 </tbody>
@@ -259,7 +259,7 @@ Tilia americana
 site_01
 </td>
 <td style="text-align:right;">
-2
+4
 </td>
 </tr>
 <tr>
@@ -270,7 +270,7 @@ Tilia americana
 site_02
 </td>
 <td style="text-align:right;">
-1
+5
 </td>
 </tr>
 <tr>
@@ -281,7 +281,7 @@ Tilia americana
 site_03
 </td>
 <td style="text-align:right;">
-4
+2
 </td>
 </tr>
 <tr>
@@ -292,7 +292,7 @@ Pinus strobus
 site_01
 </td>
 <td style="text-align:right;">
-3
+1
 </td>
 </tr>
 <tr>
@@ -303,7 +303,7 @@ Pinus strobus
 site_02
 </td>
 <td style="text-align:right;">
-3
+2
 </td>
 </tr>
 <tr>
@@ -314,7 +314,7 @@ Pinus strobus
 site_03
 </td>
 <td style="text-align:right;">
-2
+4
 </td>
 </tr>
 </tbody>
@@ -568,8 +568,8 @@ Figure 6.2: <a href="https://imgs.xkcd.com/comics/coordinate_precision.png" clas
 </ul>
 </div>
 </div>
-<div id="use-globally-unique-identifiers" class="section level2 hasAnchor" number="6.6">
-<h2><span class="header-section-number">6.6</span> Use globally unique identifiers<a href="make-your-data-software-ready.html#use-globally-unique-identifiers" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="use-persistent-unique-identifiers" class="section level2 hasAnchor" number="6.6">
+<h2><span class="header-section-number">6.6</span> Use persistent unique identifiers<a href="make-your-data-software-ready.html#use-persistent-unique-identifiers" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div id="why-5" class="section level3 hasAnchor" number="6.6.1">
 <h3><span class="header-section-number">6.6.1</span> Why?<a href="make-your-data-software-ready.html#why-5" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
@@ -590,6 +590,67 @@ Useful to create relational databases or merge records.</li>
 <li>It is important to manage any identifiers you create, if they are not managed by an authority (e.g. DOIs).</li>
 <li>Important that it be persistent (consider samples possibly moving between institutions)</li>
 </ul>
+<table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Type of PID
+</th>
+<th style="text-align:left;">
+Use Case
+</th>
+<th style="text-align:left;">
+Example
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Digital Object Identifier (DOI)
+</td>
+<td style="text-align:left;">
+Actionable persistent link for papers, data, and other digital objects
+</td>
+<td style="text-align:left;">
+<a href="https://doi.org/10.6084/m9.figshare.16806712.v2" class="uri">https://doi.org/10.6084/m9.figshare.16806712.v2</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+International Geo Sample Number (IGSN)
+</td>
+<td style="text-align:left;">
+Persistent identifier for physical samples
+</td>
+<td style="text-align:left;">
+<a href="http://igsn.org/AU1243" class="uri">http://igsn.org/AU1243</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Life Science Identifier (LSID)
+</td>
+<td style="text-align:left;">
+Persistent structured method for biologically significant data
+</td>
+<td style="text-align:left;">
+<a href="urn:lsid:marinespecies.org:taxname:218214" class="uri">urn:lsid:marinespecies.org:taxname:218214</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Open Researcher and Contributor ID (ORCID)
+</td>
+<td style="text-align:left;">
+Persistent actionable link for individuals
+</td>
+<td style="text-align:left;">
+<a href="https://orcid.org/0000-0002-4391-107X" class="uri">https://orcid.org/0000-0002-4391-107X</a>
+</td>
+</tr>
+</tbody>
+</table>
 </div>
 <div id="top-5-references-5" class="section level3 hasAnchor" number="6.6.3">
 <h3><span class="header-section-number">6.6.3</span> Top 5 References<a href="make-your-data-software-ready.html#top-5-references-5" class="anchor-section" aria-label="Anchor link to header"></a></h3>
