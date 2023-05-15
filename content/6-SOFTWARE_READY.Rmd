@@ -214,7 +214,8 @@ kableExtra::kable(ds,
 - Getting lat/lon to decimal degrees  
 https://ioos.github.io/bio_mobilization_workshop/03-data-cleaning/index.html#getting-latlon-to-decimal-degrees
 - Some background on precision  
-https://www.trekview.org/blog/2021/reading-decimal-gps-coordinates-like-a-computer/#a-note-on-accuracy
+  - https://www.trekview.org/blog/2021/reading-decimal-gps-coordinates-like-a-computer/#a-note-on-accuracy
+  - https://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude
 - DMS to DD calculator  
 https://www.fcc.gov/media/radio/dms-decimal
 
