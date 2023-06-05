@@ -23,7 +23,7 @@
 <meta name="author" content="ESIP Biological Data Standards Cluster" />
 
 
-<meta name="date" content="2023-05-15" />
+<meta name="date" content="2023-06-04" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -84,7 +84,7 @@
 <li class="chapter" data-level="6.1.2" data-path="make-your-data-software-ready.html"><a href="make-your-data-software-ready.html#key-information"><i class="fa fa-check"></i><b>6.1.2</b> Key Information</a></li>
 <li class="chapter" data-level="6.1.3" data-path="make-your-data-software-ready.html"><a href="make-your-data-software-ready.html#top-5-references"><i class="fa fa-check"></i><b>6.1.3</b> Top 5 References</a></li>
 </ul></li>
-<li class="chapter" data-level="6.2" data-path="make-your-data-software-ready.html"><a href="make-your-data-software-ready.html#structure-data-in-tidylong-format"><i class="fa fa-check"></i><b>6.2</b> Structure data in tidy/long format</a>
+<li class="chapter" data-level="6.2" data-path="make-your-data-software-ready.html"><a href="make-your-data-software-ready.html#structure-tabular-data-in-tidylong-format"><i class="fa fa-check"></i><b>6.2</b> Structure tabular data in tidy/long format</a>
 <ul>
 <li class="chapter" data-level="6.2.1" data-path="make-your-data-software-ready.html"><a href="make-your-data-software-ready.html#why-1"><i class="fa fa-check"></i><b>6.2.1</b> Why?</a></li>
 <li class="chapter" data-level="6.2.2" data-path="make-your-data-software-ready.html"><a href="make-your-data-software-ready.html#key-information-1"><i class="fa fa-check"></i><b>6.2.2</b> Key Information</a></li>
@@ -162,8 +162,8 @@
 </ul>
 </div>
 </div>
-<div id="structure-data-in-tidylong-format" class="section level2 hasAnchor" number="6.2">
-<h2><span class="header-section-number">6.2</span> Structure data in tidy/long format<a href="make-your-data-software-ready.html#structure-data-in-tidylong-format" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="structure-tabular-data-in-tidylong-format" class="section level2 hasAnchor" number="6.2">
+<h2><span class="header-section-number">6.2</span> Structure tabular data in tidy/long format<a href="make-your-data-software-ready.html#structure-tabular-data-in-tidylong-format" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div id="why-1" class="section level3 hasAnchor" number="6.2.1">
 <h3><span class="header-section-number">6.2.1</span> Why?<a href="make-your-data-software-ready.html#why-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><em>This is specifically intended for tabular data</em></p>
@@ -179,6 +179,14 @@
 </div>
 <div id="key-information-1" class="section level3 hasAnchor" number="6.2.2">
 <h3><span class="header-section-number">6.2.2</span> Key Information<a href="make-your-data-software-ready.html#key-information-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<pre><code>## 
+## Attaching package: &#39;dplyr&#39;</code></pre>
+<pre><code>## The following objects are masked from &#39;package:stats&#39;:
+## 
+##     filter, lag</code></pre>
+<pre><code>## The following objects are masked from &#39;package:base&#39;:
+## 
+##     intersect, setdiff, setequal, union</code></pre>
 <table class="kable_wrapper table" style="font-size: 9px; margin-left: auto; margin-right: auto;">
 <caption style="font-size: initial !important;">
 <span id="tab:tidyformat">Table 6.1: </span>Wide Format (left) vs. Long Format (right)
@@ -209,13 +217,13 @@ site_03
 Tilia americana
 </td>
 <td style="text-align:right;">
-3
-</td>
-<td style="text-align:right;">
 0
 </td>
 <td style="text-align:right;">
-1
+3
+</td>
+<td style="text-align:right;">
+2
 </td>
 </tr>
 <tr>
@@ -223,13 +231,13 @@ Tilia americana
 Pinus strobus
 </td>
 <td style="text-align:right;">
-0
-</td>
-<td style="text-align:right;">
 1
 </td>
 <td style="text-align:right;">
-0
+4
+</td>
+<td style="text-align:right;">
+4
 </td>
 </tr>
 </tbody>
@@ -259,7 +267,7 @@ Tilia americana
 site_01
 </td>
 <td style="text-align:right;">
-3
+0
 </td>
 </tr>
 <tr>
@@ -270,7 +278,7 @@ Tilia americana
 site_02
 </td>
 <td style="text-align:right;">
-0
+3
 </td>
 </tr>
 <tr>
@@ -281,7 +289,7 @@ Tilia americana
 site_03
 </td>
 <td style="text-align:right;">
-1
+2
 </td>
 </tr>
 <tr>
@@ -292,7 +300,7 @@ Pinus strobus
 site_01
 </td>
 <td style="text-align:right;">
-0
+1
 </td>
 </tr>
 <tr>
@@ -303,7 +311,7 @@ Pinus strobus
 site_02
 </td>
 <td style="text-align:right;">
-1
+4
 </td>
 </tr>
 <tr>
@@ -314,7 +322,7 @@ Pinus strobus
 site_03
 </td>
 <td style="text-align:right;">
-0
+4
 </td>
 </tr>
 </tbody>
@@ -599,8 +607,11 @@ Degrees Decimal Minutes (DM or DDM)
 </ul></li>
 <li>Getting lat/lon to decimal degrees<br />
 <a href="https://ioos.github.io/bio_mobilization_workshop/03-data-cleaning/index.html#getting-latlon-to-decimal-degrees" class="uri">https://ioos.github.io/bio_mobilization_workshop/03-data-cleaning/index.html#getting-latlon-to-decimal-degrees</a></li>
-<li>Some background on precision<br />
-<a href="https://www.trekview.org/blog/2021/reading-decimal-gps-coordinates-like-a-computer/#a-note-on-accuracy" class="uri">https://www.trekview.org/blog/2021/reading-decimal-gps-coordinates-like-a-computer/#a-note-on-accuracy</a></li>
+<li>Some background on precision
+<ul>
+<li><a href="https://www.trekview.org/blog/2021/reading-decimal-gps-coordinates-like-a-computer/#a-note-on-accuracy" class="uri">https://www.trekview.org/blog/2021/reading-decimal-gps-coordinates-like-a-computer/#a-note-on-accuracy</a></li>
+<li><a href="https://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude" class="uri">https://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude</a></li>
+</ul></li>
 <li>DMS to DD calculator<br />
 <a href="https://www.fcc.gov/media/radio/dms-decimal" class="uri">https://www.fcc.gov/media/radio/dms-decimal</a></li>
 </ul>
