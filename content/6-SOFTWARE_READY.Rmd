@@ -22,7 +22,7 @@ https://guides.osu.edu/c.php?g=707751&p=5027409
 - A more detailed table that is specific to US Federal records management  
 https://www.archives.gov/records-mgmt/policy/transfer-guidance-tables.html
 
-## Structure data in tidy/long format
+## Structure tabular data in tidy/long format
 
 ### Why?
 

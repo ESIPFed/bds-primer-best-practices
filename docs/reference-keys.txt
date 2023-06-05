@@ -11,7 +11,7 @@ use-non-proprietary-formats
 why
 key-information
 top-5-references
-structure-data-in-tidylong-format
+structure-tabular-data-in-tidylong-format
 why-1
 key-information-1
 top-5-references-1
