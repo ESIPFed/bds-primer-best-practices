@@ -130,7 +130,9 @@ kableExtra::kable(tab2)%>%
 
 ### Key Information
 
-- Use an existing taxonomic authority (e.g. [World Register of Marine Species](https://www.marinespecies.org/) , [Integrated Taxonomic Information System]( https://itis.gov/) , [NCBI taxonomy](https://www.ncbi.nlm.nih.gov/taxonomy)) and include the authority who manages said information in your metadata
+- Definition: As used here, a taxonomic authority is an online resource that maintains up-to-date species-level classification information and provides persistent identifiers for taxonomic classifications.
+Example: For the species *Balaenoptera borealis* (Lesson, 1828), the WoRMS taxonomic authority ID link is https://www.marinespecies.org/aphia.php?p=taxdetails&id=137088 and the LSID is urn:lsid:marinespecies.org:taxname:137088.
+- Use an existing taxonomic authority (e.g. [World Register of Marine Species](https://www.marinespecies.org/) , [Integrated Taxonomic Information System](https://itis.gov/) , [NCBI taxonomy](https://www.ncbi.nlm.nih.gov/taxonomy)) and include the authority who manages said information in your metadata
 - List of many authorities can be found here: https://resolver.globalnames.org/data_sources
 - Make yourself aware of the structure, limits, and history of the authority you are using.
 - Adopt standard binomial nomenclature, when possible
