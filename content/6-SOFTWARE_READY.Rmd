@@ -123,8 +123,7 @@ kableExtra::kable(tab2)%>%
 
 ### Why?
 
-- Definition: A taxonomic authority is an internationally recognized, used and actively maintained classification of species.
-- To integrate or aggregate datasets, we have to have a common frame of reference for taxonomic name
+- To integrate or aggregate datasets, we need a common frame of reference for taxonomic name
 - Provides an anchor for the taxonomy as scientific understanding evolves.
 
 
@@ -178,7 +177,7 @@ knitr::include_graphics('https://imgs.xkcd.com/comics/coordinate_precision.png')
 
 
 ### Key Information
-- If possible, encourage data providers to confirm, and record, the WGS84 datum is selected prior to data collection.
+- If possible, encourage data providers to confirm, and record, the WGS84 datum prior to data collection.
 - Understand and report the device/instrument uncertainty associated with your coordinates because it affects the usability of your data.
 - Consider including the vertical component (altitude, depth, height off bottom, elevation, etc)
 - Generally speaking, `degrees-minutes-seconds (DMS)` can be converted to `decimal-degrees (DD)` by: 
@@ -220,7 +219,7 @@ https://ioos.github.io/bio_mobilization_workshop/03-data-cleaning/index.html#get
   - https://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude
 - DMS to DD calculator  
 https://www.fcc.gov/media/radio/dms-decimal
-
+-- The three most commonly used datums are WGS84, NAD83, and NAD27. A more complete list can be found here: https://wiki.gis.com/wiki/index.php/Datum_(geodesy)#List_of_Datums
 
 ## Use persistent unique identifiers
 
