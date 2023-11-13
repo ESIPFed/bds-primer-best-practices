@@ -1,0 +1,127 @@
+# PROVIDE CONTEXT AND UNDERSTANDABILITY TO YOUR DATA {.unnumbered}
+
+
+## Ecological Metadata Language (EML)
+
+### What Is It?
+
+Ecological Metadata Language (EML) is an XML schema. An EML instance (XML document) holds metadata to describe one or more data objects. Data tables are the most common, but almost any data object can be accommodated.
+
+### Why?
+
+-   Provide context to your data.
+-   Can capture linked data relationships within EML (dataset series)
+-   Standardized representation of information.
+-   EML was designed for ecological data, which encompasses biological data.
+-   It's taxonomic fields cover relationships (hierarchies), IDs, and authoritative material
+
+### Key Information
+
+-   EML schema <https://eml.ecoinformatics.org/eml-schema> 
+
+-   Mandatory for LTER, iLTER, OBIS, GBIF, Darwin Core Archive (DwC-A)
+
+-   Maintained, and github repo, managed by NCEAS
+
+-   Usually, what you would submit to a repository is a "data package" consisting of an EML document and one or more data objects.
+
+### Top References
+
+Tools or packages to help write EML:
+
+-   For data managers, coders: 
+
+    -   EML-R package: <https://cran.r-project.org/web/packages/EML/index.html>
+
+    -   Postgresql database with fields compatible with EML <https://github.com/lter/LTER-core-metabase>  
+
+    -   R-code for generating EML from LTER-metabase (built on EML-R package): <https://github.com/BLE-LTER/MetaEgress>
+
+    -   EMLAssemblyline (built on EML-R package): <https://ediorg.github.io/EMLassemblyline/articles/overview.html> 
+
+-   For scientists or those not inclined to write scripts
+
+    -   ezEML: <https://ezeml.edirepository.org/>
+
+## ISO 19115
+
+### What Is It?
+
+Content standard for describing geographic data sponsored by the International Standards Organization (ISO). At its most basic, it is written in narrative form with class diagrams. There are many implementations and extensions (e.g., <https://www.dcc.ac.uk/resources/metadata-standards/iso-19115>).
+
+### Why?
+
+-   Provide context to your data (biological data is inherently 'geographic')
+
+-   Standardized representation of information
+
+-   **Mandated** by some US federal agencies, including NOAA, NASA, and USGS
+
+-   Can be used at different granularities, used to describe data packages or collections, as well as at a dataset level (?): content standard vs collection standard?
+
+### What?
+
+-   Evolved from the need for to to harmonize the FGDC Content Standard for Digital Geospatial Metadata (CSDGM) with other formal and defacto standards that support the documentation of geospatial data and services.
+
+-   Many variations including 19115, 19115-1, 19115-2
+
+-   From [NCEI](https://www.ncei.noaa.gov/resources/metadata):
+
+    -   ISO 19115 Geographic information -- Metadata: The ISO standard for documenting geospatial data. 
+
+    -   ISO 19115-2 Geographic information -- Metadata -- Part 2: Extensions for imagery and gridded data: An extension of ISO 19115 used to document information about imagery, gridded data, and remotely sensed data. The root of ISO 19115 metadata records will change from MD_Metadata to MI_Metadata when using ISO 19115-2. 
+
+-   There is a biological extension (https://repository.oceanbestpractices.org/handle/11329/1281?show=full), but it is not very widely used.  In part this is because many search engines do not harvest this extension.
+
+-   Usurped FGDC CSDGM - all users encouraged to migrate to ISO.
+
+-   Highly flexible for many uses compared FGDC CSDGM, but few required elements leaves room for incomplete metadata
+
+### Top References
+
+-   NOAA Workbook for ISO 19115-2 <https://www.ncei.noaa.gov/sites/default/files/2020-04/ISO%2019115-2%20Workbook_Part%20II%20Extentions%20for%20imagery%20and%20Gridded%20Data.pdf> 
+
+-   Convert ISO to EML - <https://nceas.github.io/arcticdatautils/reference/convert_iso_to_eml.html> 
+
+-   Work Flow Model -\
+    <https://www.fgdc.gov/metadata/iso-implementation-model-workflow> 
+
+-   mdToolkit: <https://www.mdtoolkit.org/home> - mdEditor is a writer for ISO 19115 metadata which uses mdJSON as an intermediary and mdTranslator allows translation to different metadata formats
+
+## Minimum Information about any (x) Sequence (MIxS)
+
+### What is it?
+
+A set of checklists and packages for genomic sequence data
+
+### Why?
+
+-   Provide minimal standardized metadata about genetic sequence data
+
+-   Agreed upon and published by the Genome Standards Consortium
+
+-   Used by the INSDC (DDBJ, EMBL-EBI and NCBI)
+
+### Key Information
+
+-   Pronounced "mix-ess"
+
+-   Term search tool: <http://www.gensc.org/pages/standards/search-terms.html>?
+
+-   MixS is a suite of checklists (pronounced MIX-ess) standards introduced the reporting of a breadth of environment-specific metadata variables to augment the genome-specific checklists.
+
+-   Thus enabling the mix and matching of genome checklists and environmental-specific packages.
+
+-   [![MixS Structure](http://www.gensc.org/images/mixs_ext_graphic-1024x731.png)](http://www.gensc.org/pages/standards-intro.html)
+
+### Top References
+
+-   <https://genomicsstandardsconsortium.github.io/mixs/>
+
+-   <https://www.gensc.org/mixs/> 
+
+-   <https://www.nature.com/articles/nbt.1823>
+
+-   <https://github.com/GenomicsStandardsConsortium/mixs/wiki> 
+
+-   <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3869023/>
