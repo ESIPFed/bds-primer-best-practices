@@ -1,0 +1,39 @@
+project:
+  type: book
+
+book:
+  title: "ESIP Biological Data Cluster (BDS) Primer Guide"
+  author: "ESIP Biological Data Cluster"
+  date: last-modified
+  chapters:
+    - index.qmd
+    #- intro.qmd
+    #- CONTEXT_UNDERSTANDABILITY.qmd
+    #- INTEGRATE_DATA.qmd
+    #- INTEROPERABLE_DATA.qmd
+    #- SHARE_DATA_WEB.qmd
+    - SOFTWARE_READY.qmd
+    
+execute:
+  echo: FALSE
+  warning: FALSE
+  message: FALSE
+
+#bibliography: references.bib
+# 
+format:
+  html:
+   theme: cosmo
+  pdf: default
+  docx: 
+    toc: false  # This isn't populating for some reason
+    #toc-depth: 2
+    number-sections: true
+    fig-align: center
+    #tbl-colwidths: auto
+    lang: en
+    reference-doc: custom-reference-doc.docx
+    
+  
+editor: visual
+

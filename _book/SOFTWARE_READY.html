@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.353">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>ESIP Biological Data Cluster (BDS) Primer Guide - MAKE YOUR DATA SOFTWARE READY</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./index.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<link href="site_libs/tabwid-1.1.3/tabwid.css" rel="stylesheet">
+<script src="site_libs/tabwid-1.1.3/tabwid.js"></script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./SOFTWARE_READY.html">MAKE YOUR DATA SOFTWARE READY</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">ESIP Biological Data Cluster (BDS) Primer Guide</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./SOFTWARE_READY.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">MAKE YOUR DATA SOFTWARE READY</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#use-non-proprietary-formats" id="toc-use-non-proprietary-formats" class="nav-link active" data-scroll-target="#use-non-proprietary-formats">Use non-proprietary formats</a>
+  <ul class="collapse">
+  <li><a href="#why" id="toc-why" class="nav-link" data-scroll-target="#why">Why?</a></li>
+  <li><a href="#key-information" id="toc-key-information" class="nav-link" data-scroll-target="#key-information">Key Information</a></li>
+  <li><a href="#top-references" id="toc-top-references" class="nav-link" data-scroll-target="#top-references">Top References</a></li>
+  </ul></li>
+  <li><a href="#structure-tabular-data-in-tidylong-format" id="toc-structure-tabular-data-in-tidylong-format" class="nav-link" data-scroll-target="#structure-tabular-data-in-tidylong-format">Structure tabular data in tidy/long format</a>
+  <ul class="collapse">
+  <li><a href="#why-1" id="toc-why-1" class="nav-link" data-scroll-target="#why-1">Why?</a></li>
+  <li><a href="#key-information-1" id="toc-key-information-1" class="nav-link" data-scroll-target="#key-information-1">Key Information</a></li>
+  <li><a href="#top-references-1" id="toc-top-references-1" class="nav-link" data-scroll-target="#top-references-1">Top References</a></li>
+  </ul></li>
+  <li><a href="#follow-iso-8601-for-dates" id="toc-follow-iso-8601-for-dates" class="nav-link" data-scroll-target="#follow-iso-8601-for-dates">Follow ISO 8601 for dates</a>
+  <ul class="collapse">
+  <li><a href="#why-2" id="toc-why-2" class="nav-link" data-scroll-target="#why-2">Why?</a></li>
+  <li><a href="#key-information-2" id="toc-key-information-2" class="nav-link" data-scroll-target="#key-information-2">Key Information</a></li>
+  <li><a href="#top-references-2" id="toc-top-references-2" class="nav-link" data-scroll-target="#top-references-2">Top References</a></li>
+  </ul></li>
+  <li><a href="#match-scientific-names-to-a-taxonomic-authority" id="toc-match-scientific-names-to-a-taxonomic-authority" class="nav-link" data-scroll-target="#match-scientific-names-to-a-taxonomic-authority">Match scientific names to a taxonomic authority</a>
+  <ul class="collapse">
+  <li><a href="#why-3" id="toc-why-3" class="nav-link" data-scroll-target="#why-3">Why?</a></li>
+  <li><a href="#key-information-3" id="toc-key-information-3" class="nav-link" data-scroll-target="#key-information-3">Key Information</a></li>
+  <li><a href="#top-references-3" id="toc-top-references-3" class="nav-link" data-scroll-target="#top-references-3">Top References</a></li>
+  </ul></li>
+  <li><a href="#record-latitude-and-longitude-in-decimal-degrees-in-wgs84" id="toc-record-latitude-and-longitude-in-decimal-degrees-in-wgs84" class="nav-link" data-scroll-target="#record-latitude-and-longitude-in-decimal-degrees-in-wgs84">Record latitude and longitude in decimal degrees in WGS84</a>
+  <ul class="collapse">
+  <li><a href="#why-4" id="toc-why-4" class="nav-link" data-scroll-target="#why-4">Why?</a></li>
+  <li><a href="#key-information-4" id="toc-key-information-4" class="nav-link" data-scroll-target="#key-information-4">Key Information</a></li>
+  <li><a href="#top-references-4" id="toc-top-references-4" class="nav-link" data-scroll-target="#top-references-4">Top References</a></li>
+  </ul></li>
+  <li><a href="#use-persistent-unique-identifiers" id="toc-use-persistent-unique-identifiers" class="nav-link" data-scroll-target="#use-persistent-unique-identifiers">Use persistent unique identifiers</a>
+  <ul class="collapse">
+  <li><a href="#why-5" id="toc-why-5" class="nav-link" data-scroll-target="#why-5">Why?</a></li>
+  <li><a href="#key-information-5" id="toc-key-information-5" class="nav-link" data-scroll-target="#key-information-5">Key Information</a></li>
+  <li><a href="#top-references-5" id="toc-top-references-5" class="nav-link" data-scroll-target="#top-references-5">Top References</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">MAKE YOUR DATA SOFTWARE READY</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="use-non-proprietary-formats" class="level2">
+<h2 class="anchored" data-anchor-id="use-non-proprietary-formats">Use non-proprietary formats</h2>
+<section id="why" class="level3">
+<h3 class="anchored" data-anchor-id="why">Why?</h3>
+<ul>
+<li>Allows data to be useful in perpetuity by ensuring data readability and reusability across multiple platforms.</li>
+<li>To align better with the FAIR principles (findability, accessibility, interoperability, reusability)</li>
+<li>Makes data more socially equitable, supporting open science. Proprietary formats can depend on software that require licenses, which not everyone can afford/has access to.</li>
+</ul>
+</section>
+<section id="key-information" class="level3">
+<h3 class="anchored" data-anchor-id="key-information">Key Information</h3>
+<ul>
+<li><em>Non-proprietary formats</em> are supported by more than one developer and can be accessed with different software systems. For example, comma separated values (CSV) format is becoming an increasingly popular non-proprietary format.</li>
+<li>A <a href="https://en.wikipedia.org/wiki/Proprietary_file_format"><em>proprietary file format</em></a> is a file format of a company, organization, or individual that contains data that is ordered and stored according to a particular encoding-scheme, designed by the company or organization to be secret or with restricted access, such that the decoding and interpretation of this stored data is easily accomplished only with particular software or hardware that the company itself has developed. There may also be costs associated with it and access may be limited. Examples include <code>Microsoft Excel (xlsx)</code> and <code>ESRI shapefiles (shp)</code>.</li>
+<li>Many applications (e.g.&nbsp;Microsoft Office) allow exporting in multiple formats.</li>
+</ul>
+</section>
+<section id="top-references" class="level3">
+<h3 class="anchored" data-anchor-id="top-references">Top References</h3>
+<ul>
+<li>Table of commonly used formats for common data types<br>
+<a href="https://guides.osu.edu/c.php?g=707751&amp;p=5027409\" class="uri">https://guides.osu.edu/c.php?g=707751&amp;p=5027409\</a></li>
+<li>A more detailed table that is specific to US Federal records management<br>
+<a href="https://www.archives.gov/records-mgmt/policy/transfer-guidance-tables.html\" class="uri">https://www.archives.gov/records-mgmt/policy/transfer-guidance-tables.html\</a></li>
+</ul>
+</section>
+</section>
+<section id="structure-tabular-data-in-tidylong-format" class="level2">
+<h2 class="anchored" data-anchor-id="structure-tabular-data-in-tidylong-format">Structure tabular data in tidy/long format</h2>
+<section id="why-1" class="level3">
+<h3 class="anchored" data-anchor-id="why-1">Why?</h3>
+<p><em>This is specifically intended for tabular data</em></p>
+<ul>
+<li>There is a clear and easy to understand structure that can make your data more machine readable and easier to analyze/visualize
+<ul>
+<li>Clear structure: one observation per row</li>
+<li>Data are as atomic as possible (e.g., don’t mix types in field)</li>
+</ul></li>
+<li>In the biological data community, tidy formats are more likely to work with commonly-used software</li>
+<li>Easier to aggregate data across multiple files</li>
+</ul>
+</section>
+<section id="key-information-1" class="level3">
+<h3 class="anchored" data-anchor-id="key-information-1">Key Information</h3>
+<p>Example of Wide Format</p>
+<div class="cell">
+<div class="cell-output-display">
+
+<div class="tabwid"><style>.cl-9c2b206a{}.cl-9c20ff18{font-family:'Arial';font-size:11pt;font-weight:bold;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-9c20ff54{font-family:'Arial';font-size:9pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-9c2557d4{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-9c2557e8{margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-9c256eae{width:1.133in;background-color:rgba(207, 207, 207, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c256eaf{width:0.778in;background-color:rgba(207, 207, 207, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c256eb8{width:1.133in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c256eb9{width:0.778in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c256ec2{width:1.133in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c256ec3{width:0.778in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing="true" class="cl-9c2b206a"><thead><tr style="overflow-wrap:break-word;"><th class="cl-9c256eae"><p class="cl-9c2557d4"><span class="cl-9c20ff18">species</span></p></th><th class="cl-9c256eaf"><p class="cl-9c2557e8"><span class="cl-9c20ff18">site_01</span></p></th><th class="cl-9c256eaf"><p class="cl-9c2557e8"><span class="cl-9c20ff18">site_02</span></p></th><th class="cl-9c256eaf"><p class="cl-9c2557e8"><span class="cl-9c20ff18">site_03</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td class="cl-9c256eb8"><p class="cl-9c2557d4"><span class="cl-9c20ff54">Tilia americana</span></p></td><td class="cl-9c256eb9"><p class="cl-9c2557e8"><span class="cl-9c20ff54">3</span></p></td><td class="cl-9c256eb9"><p class="cl-9c2557e8"><span class="cl-9c20ff54">1</span></p></td><td class="cl-9c256eb9"><p class="cl-9c2557e8"><span class="cl-9c20ff54">5</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-9c256ec2"><p class="cl-9c2557d4"><span class="cl-9c20ff54">Pinus strobus</span></p></td><td class="cl-9c256ec3"><p class="cl-9c2557e8"><span class="cl-9c20ff54">4</span></p></td><td class="cl-9c256ec3"><p class="cl-9c2557e8"><span class="cl-9c20ff54">0</span></p></td><td class="cl-9c256ec3"><p class="cl-9c2557e8"><span class="cl-9c20ff54">1</span></p></td></tr></tbody></table></div>
+</div>
+</div>
+<p>Example of Long Format</p>
+<div class="cell">
+<div class="cell-output-display">
+
+<div class="tabwid"><style>.cl-9c4c003c{}.cl-9c43a7b6{font-family:'Arial';font-size:11pt;font-weight:bold;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-9c43a7c0{font-family:'Arial';font-size:9pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-9c470802{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-9c47080c{margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-9c47190a{width:1.133in;background-color:rgba(207, 207, 207, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c471914{width:0.688in;background-color:rgba(207, 207, 207, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c47191e{width:0.659in;background-color:rgba(207, 207, 207, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c47191f{width:1.133in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c471920{width:0.688in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c471928{width:0.659in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c471929{width:1.133in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c47192a{width:0.688in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c471932{width:0.659in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing="true" class="cl-9c4c003c"><thead><tr style="overflow-wrap:break-word;"><th class="cl-9c47190a"><p class="cl-9c470802"><span class="cl-9c43a7b6">species</span></p></th><th class="cl-9c471914"><p class="cl-9c470802"><span class="cl-9c43a7b6">site</span></p></th><th class="cl-9c47191e"><p class="cl-9c47080c"><span class="cl-9c43a7b6">count</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td class="cl-9c47191f"><p class="cl-9c470802"><span class="cl-9c43a7c0">Tilia americana</span></p></td><td class="cl-9c471920"><p class="cl-9c470802"><span class="cl-9c43a7c0">site_01</span></p></td><td class="cl-9c471928"><p class="cl-9c47080c"><span class="cl-9c43a7c0">2</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-9c471929"><p class="cl-9c470802"><span class="cl-9c43a7c0">Tilia americana</span></p></td><td class="cl-9c47192a"><p class="cl-9c470802"><span class="cl-9c43a7c0">site_02</span></p></td><td class="cl-9c471932"><p class="cl-9c47080c"><span class="cl-9c43a7c0">1</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-9c47191f"><p class="cl-9c470802"><span class="cl-9c43a7c0">Tilia americana</span></p></td><td class="cl-9c471920"><p class="cl-9c470802"><span class="cl-9c43a7c0">site_03</span></p></td><td class="cl-9c471928"><p class="cl-9c47080c"><span class="cl-9c43a7c0">1</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-9c471929"><p class="cl-9c470802"><span class="cl-9c43a7c0">Pinus strobus</span></p></td><td class="cl-9c47192a"><p class="cl-9c470802"><span class="cl-9c43a7c0">site_01</span></p></td><td class="cl-9c471932"><p class="cl-9c47080c"><span class="cl-9c43a7c0">3</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-9c47191f"><p class="cl-9c470802"><span class="cl-9c43a7c0">Pinus strobus</span></p></td><td class="cl-9c471920"><p class="cl-9c470802"><span class="cl-9c43a7c0">site_02</span></p></td><td class="cl-9c471928"><p class="cl-9c47080c"><span class="cl-9c43a7c0">0</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-9c471929"><p class="cl-9c470802"><span class="cl-9c43a7c0">Pinus strobus</span></p></td><td class="cl-9c47192a"><p class="cl-9c470802"><span class="cl-9c43a7c0">site_03</span></p></td><td class="cl-9c471932"><p class="cl-9c47080c"><span class="cl-9c43a7c0">2</span></p></td></tr></tbody></table></div>
+</div>
+</div>
+<ul>
+<li>Can be tricky working with multiple column datatypes</li>
+<li>Don’t use colors or text formatting in tabular data, and only include column names as metadata. All other notes, definitions, etc. should be in an external metadata file (e.g.&nbsp;data dictionary)</li>
+</ul>
+</section>
+<section id="top-references-1" class="level3">
+<h3 class="anchored" data-anchor-id="top-references-1">Top References</h3>
+<ul>
+<li>Wickham, H. (2014). Tidy Data. Journal of Statistical Software, 59(10), 1–23. <a href="https://doi.org/10.18637/jss.v059.i10" class="uri">https://doi.org/10.18637/jss.v059.i10</a></li>
+<li>Data Sharing and Management Snafu in 3 Short Acts (video)<br>
+<a href="https://www.youtube.com/watch?v=N2zK3s=Atr-4&amp;t=7s" class="uri">https://www.youtube.com/watch?v=N2zK3s=Atr-4&amp;t=7s</a></li>
+<li>Tips for working with data in BASH<br>
+<a href="https://www.datafix.com.au/BASHing/2022-01-12.html" class="uri">https://www.datafix.com.au/BASHing/2022-01-12.html</a></li>
+<li>Data Organization in Spreadsheets for Ecologists<br>
+<a href="https://datacarpentry.org/spreadsheet-ecology-lesson/" class="uri">https://datacarpentry.org/spreadsheet-ecology-lesson/</a></li>
+<li>Cleaning Data and Quality Control<br>
+<a href="https://edirepository.org/resources/cleaning-data-and-quality-control#data-table-structure" class="uri">https://edirepository.org/resources/cleaning-data-and-quality-control#data-table-structure</a></li>
+</ul>
+</section>
+</section>
+<section id="follow-iso-8601-for-dates" class="level2">
+<h2 class="anchored" data-anchor-id="follow-iso-8601-for-dates">Follow ISO 8601 for dates</h2>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://imgs.xkcd.com/comics/iso_8601.png" class="img-fluid figure-img" style="width:40.0%"></p>
+<figcaption class="figure-caption">https://imgs.xkcd.com/comics/iso_8601.png</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<section id="why-2" class="level3">
+<h3 class="anchored" data-anchor-id="why-2">Why?</h3>
+<ul>
+<li>Internationally accepted format used across multiple schemas (e.g.&nbsp;<code>Darwin Core</code>, <code>EML</code>, <code>ISO 19115</code>)</li>
+<li>Removes ambiguity related to timezone, daylight savings time changes, and time of day</li>
+<li>Better software integration of time date/time elements</li>
+</ul>
+</section>
+<section id="key-information-2" class="level3">
+<h3 class="anchored" data-anchor-id="key-information-2">Key Information</h3>
+<ul>
+<li>UTC (AKA <code>Zulu</code> or <code>GMT</code>): Coordinated Universal Time (UTC) is the primary time standard by which the world regulates clocks and time. It is time relative to <code>0°</code> longitude and is not adjusted for daylight saving time. (<a href="https://en.wikipedia.org/wiki/ISO_8601">from Wikipedia</a>).</li>
+<li>Conversion to UTC, or between time zones, may depend on daylight savings</li>
+</ul>
+<p><em>Examples: April 3, 2023 standardized to ISO 8601</em></p>
+<div class="cell">
+<div class="cell-output-display">
+
+<div class="tabwid"><style>.cl-9c79d174{}.cl-9c709f14{font-family:'Arial';font-size:11pt;font-weight:bold;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-9c709f28{font-family:'Arial';font-size:9pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-9c74100e{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-9c74258a{width:2.909in;background-color:rgba(207, 207, 207, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c742594{width:3.453in;background-color:rgba(207, 207, 207, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c74259e{width:2.909in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c74259f{width:3.453in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c7425a0{width:2.909in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c7425a8{width:3.453in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c7425a9{width:2.909in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c7425b2{width:3.453in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c7425b3{width:2.909in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c7425b4{width:3.453in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing="true" class="cl-9c79d174"><thead><tr style="overflow-wrap:break-word;"><th class="cl-9c74258a"><p class="cl-9c74100e"><span class="cl-9c709f14">Description</span></p></th><th class="cl-9c742594"><p class="cl-9c74100e"><span class="cl-9c709f14">Written in ISO 8601</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td class="cl-9c74259e"><p class="cl-9c74100e"><span class="cl-9c709f28">Date</span></p></td><td class="cl-9c74259f"><p class="cl-9c74100e"><span class="cl-9c709f28">2023-04-03</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-9c7425a0"><p class="cl-9c74100e"><span class="cl-9c709f28">Date and Time with timezone offset</span></p></td><td class="cl-9c7425a8"><p class="cl-9c74100e"><span class="cl-9c709f28">2023-04-03T18:29:38+00:00</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-9c7425a9"><p class="cl-9c74100e"><span class="cl-9c709f28">Date and Time in UTC</span></p></td><td class="cl-9c7425b2"><p class="cl-9c74100e"><span class="cl-9c709f28">2023-04-03T18:29:38Z</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-9c7425b3"><p class="cl-9c74100e"><span class="cl-9c709f28">Time Interval in UTC (April 3 - 5, 2023)</span></p></td><td class="cl-9c7425b4"><p class="cl-9c74100e"><span class="cl-9c709f28">2023-04-03T18:29:38Z/2023-04-05T00:29:38Z</span></p></td></tr></tbody></table></div>
+</div>
+</div>
+<p><em>Examples: different styles of timezone annotation</em></p>
+<div class="cell">
+<div class="cell-output-display">
+
+<div class="tabwid"><style>.cl-9c948028{}.cl-9c8b6416{font-family:'Arial';font-size:11pt;font-weight:bold;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-9c8b642a{font-family:'Arial';font-size:9pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-9c8ea2ac{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-9c8eb468{width:2.909in;background-color:rgba(207, 207, 207, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c8eb472{width:3.453in;background-color:rgba(207, 207, 207, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c8eb473{width:2.909in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c8eb474{width:3.453in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c8eb47c{width:2.909in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c8eb486{width:3.453in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c8eb487{width:2.909in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c8eb488{width:3.453in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c8eb490{width:2.909in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c8eb491{width:3.453in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing="true" class="cl-9c948028"><thead><tr style="overflow-wrap:break-word;"><th class="cl-9c8eb468"><p class="cl-9c8ea2ac"><span class="cl-9c8b6416">Description</span></p></th><th class="cl-9c8eb472"><p class="cl-9c8ea2ac"><span class="cl-9c8b6416">Written in ISO 8601</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td class="cl-9c8eb473"><p class="cl-9c8ea2ac"><span class="cl-9c8b642a">Date</span></p></td><td class="cl-9c8eb474"><p class="cl-9c8ea2ac"><span class="cl-9c8b642a">2023-04-03</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-9c8eb47c"><p class="cl-9c8ea2ac"><span class="cl-9c8b642a">Date and Time with timezone offset</span></p></td><td class="cl-9c8eb486"><p class="cl-9c8ea2ac"><span class="cl-9c8b642a">2023-04-03T18:29:38+00:00</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-9c8eb487"><p class="cl-9c8ea2ac"><span class="cl-9c8b642a">Date and Time in UTC</span></p></td><td class="cl-9c8eb488"><p class="cl-9c8ea2ac"><span class="cl-9c8b642a">2023-04-03T18:29:38Z</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-9c8eb490"><p class="cl-9c8ea2ac"><span class="cl-9c8b642a">Time Interval in UTC (April 3 - 5, 2023)</span></p></td><td class="cl-9c8eb491"><p class="cl-9c8ea2ac"><span class="cl-9c8b642a">2023-04-03T18:29:38Z/2023-04-05T00:29:38Z</span></p></td></tr></tbody></table></div>
+</div>
+</div>
+</section>
+<section id="top-references-2" class="level3">
+<h3 class="anchored" data-anchor-id="top-references-2">Top References</h3>
+<ul>
+<li>ISO 8601 wiki: <a href="https://en.wikipedia.org/wiki/ISO_8601" class="uri">https://en.wikipedia.org/wiki/ISO_8601</a></li>
+<li>R package lubridate, OlsonNames()</li>
+<li>Python go-to package, datetime <a href="https://docs.python.org/3/library/datetime.html" class="uri">https://docs.python.org/3/library/datetime.html</a></li>
+<li>Article on datetime uncertainty: <a href="https://www.datafix.com.au/BASHing/2020-02-12.html" class="uri">https://www.datafix.com.au/BASHing/2020-02-12.html</a></li>
+<li>Map of offset from UTC: <a href="https://www.timeanddate.com/time/map/" class="uri">https://www.timeanddate.com/time/map/</a></li>
+<li>Nice time converter: <a href="https://coastwatch.pfeg.noaa.gov/erddap/convert/time.html" class="uri">https://coastwatch.pfeg.noaa.gov/erddap/convert/time.html</a></li>
+</ul>
+</section>
+</section>
+<section id="match-scientific-names-to-a-taxonomic-authority" class="level2">
+<h2 class="anchored" data-anchor-id="match-scientific-names-to-a-taxonomic-authority">Match scientific names to a taxonomic authority</h2>
+<section id="why-3" class="level3">
+<h3 class="anchored" data-anchor-id="why-3">Why?</h3>
+<ul>
+<li>To integrate or aggregate datasets, we need a common frame of reference for taxonomic name</li>
+<li>Provides an anchor for the taxonomy as scientific understanding evolves.</li>
+</ul>
+</section>
+<section id="key-information-3" class="level3">
+<h3 class="anchored" data-anchor-id="key-information-3">Key Information</h3>
+<ul>
+<li>Definition: As used here, a taxonomic authority is an online resource that maintains up-to-date species-level classification information and provides persistent identifiers for taxonomic classifications. Example: For the species <em>Balaenoptera borealis</em> (Lesson, 1828), the WoRMS taxonomic authority ID link is <a href="https://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=137088" class="uri">https://www.marinespecies.org/aphia.php?p=taxdetails&amp;id=137088</a> and the LSID is <code>urn:lsid:marinespecies.org:taxname:137088</code>.</li>
+<li>Use an existing taxonomic authority (e.g.&nbsp;<a href="https://www.marinespecies.org">World Register of Marine Species</a> , <a href="https://itis.gov/">Integrated Taxonomic Information System</a> , <a href="https://www.ncbi.nlm.nih.gov/taxonomy">NCBI taxonomy</a>) and include the authority who manages said information in your metadata</li>
+<li>List of many authorities can be found here: <a href="https://resolver.globalnames.org/data_sources" class="uri">https://resolver.globalnames.org/data_sources</a></li>
+<li>Make yourself aware of the structure, limits, and history of the authority you are using.</li>
+<li>Adopt standard binomial nomenclature, when possible</li>
+<li>When possible, reference the unique identifier in addition to the nomenclature.</li>
+<li>Always save and document the originally recorded name.</li>
+<li>Put notes about identification uncertainty in a separate column.</li>
+<li>Many authorities have APIs through which you can match names to identifiers.</li>
+</ul>
+</section>
+<section id="top-references-3" class="level3">
+<h3 class="anchored" data-anchor-id="top-references-3">Top References</h3>
+<ul>
+<li>R packages
+<ul>
+<li>taxize is a taxonomic toolbelt for R. taxize wraps APIs for a large suite of taxonomic databases available on the web<br>
+<a href="https://cran.r-project.org/web/packages/taxize/index.html" class="uri">https://cran.r-project.org/web/packages/taxize/index.html</a></li>
+<li>worrms is an API client for <a href="http://www.marinespecies.org/">World Register of Marine Species</a><br>
+<a href="http://cran.nexr.com/web/packages/worrms/vignettes/worrms_vignette.html" class="uri">http://cran.nexr.com/web/packages/worrms/vignettes/worrms_vignette.html</a></li>
+<li>worms: another API client for WoRMS<br>
+<a href="https://cran.r-project.org/web/packages/worms/index.html" class="uri">https://cran.r-project.org/web/packages/worms/index.html</a></li>
+<li>Ritis: API client for ITIS &lt;https://cran.r-project.org/web/packages/ritis/&gt;</li>
+</ul></li>
+<li>Python packages
+<ul>
+<li>WoRMS API client<br>
+<a href="https://github.com/iobis/pyworms" class="uri">https://github.com/iobis/pyworms</a></li>
+</ul></li>
+<li>Global Names Resolver to compare taxonomic concepts across authorities<br>
+<a href="https://resolver.globalnames.org/" class="uri">https://resolver.globalnames.org/</a></li>
+<li>Article: Recommendations for the Standardisation of Open Taxonomic Nomenclature for Image-Based Identifications<br>
+<a href="https://doi.org/10.3389/fmars.2021.620702" class="uri">https://doi.org/10.3389/fmars.2021.620702</a></li>
+<li>TDWG 2022 Keynote: Richard Pyle, “An Introduction to the Scientific Names of Organisms and the Taxon Concepts they Represent”<br>
+<a href="https://www.youtube.com/watch?v=rmTvUUjBxrI" class="uri">https://www.youtube.com/watch?v=rmTvUUjBxrI</a></li>
+</ul>
+</section>
+</section>
+<section id="record-latitude-and-longitude-in-decimal-degrees-in-wgs84" class="level2">
+<h2 class="anchored" data-anchor-id="record-latitude-and-longitude-in-decimal-degrees-in-wgs84">Record latitude and longitude in decimal degrees in WGS84</h2>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://imgs.xkcd.com/comics/coordinate_precision.png" class="img-fluid figure-img" style="width:40.0%"></p>
+<figcaption class="figure-caption">https://imgs.xkcd.com/comics/coordinate_precision.png</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<section id="why-4" class="level3">
+<h3 class="anchored" data-anchor-id="why-4">Why?</h3>
+<ul>
+<li>Users have to know where you collected this data, which requires a latitude, longitude, reference system and uncertainty.</li>
+<li>Decimal-degrees avoids special symbols (<code>°</code> or <code>‘</code>) which is preferable for machine readable formats</li>
+<li><code>WGS84</code> is a reference coordinate system that is widely used and incorporated in many GPS units and tools, and recognized as a standard by many government agencies.</li>
+</ul>
+</section>
+<section id="key-information-4" class="level3">
+<h3 class="anchored" data-anchor-id="key-information-4">Key Information</h3>
+<ul>
+<li>If possible, encourage data providers to confirm, and record, the WGS84 datum prior to data collection.</li>
+<li>Understand and report the device/instrument uncertainty associated with your coordinates because it affects the usability of your data.</li>
+<li>Consider including the vertical component (altitude, depth, height off bottom, elevation, etc)</li>
+<li>Generally speaking, <code>degrees-minutes-seconds (DMS)</code> can be converted to <code>decimal-degrees (DD)</code> by:
+<ul>
+<li><code>DD = d + (min/60) + (sec/3600)</code></li>
+<li>Watch out for mixed formats, like degrees, <code>decimal-minutes (DDM)</code>.</li>
+</ul></li>
+<li>Degrees West and South become negative in DD.
+<ul>
+<li>Values for longitude range from <code>-180</code> to <code>180</code>, inclusive.</li>
+<li>Values for latitude range from <code>-90</code> to <code>90</code>, inclusive.</li>
+</ul></li>
+</ul>
+<p><em>Example Coordinates</em></p>
+<div class="cell">
+<div class="cell-output-display">
+
+<div class="tabwid"><style>.cl-9cbfa938{}.cl-9cb60144{font-family:'Arial';font-size:11pt;font-weight:bold;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-9cb60158{font-family:'Arial';font-size:9pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-9cb9b8e8{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-9cb9cb4e{width:2.985in;background-color:rgba(207, 207, 207, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9cb9cb4f{width:1.264in;background-color:rgba(207, 207, 207, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9cb9cb58{width:2.985in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9cb9cb59{width:1.264in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9cb9cb62{width:2.985in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9cb9cb63{width:1.264in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing="true" class="cl-9cbfa938"><thead><tr style="overflow-wrap:break-word;"><th class="cl-9cb9cb4e"><p class="cl-9cb9b8e8"><span class="cl-9cb60144">Format</span></p></th><th class="cl-9cb9cb4f"><p class="cl-9cb9b8e8"><span class="cl-9cb60144">Example</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td class="cl-9cb9cb58"><p class="cl-9cb9b8e8"><span class="cl-9cb60158">Decimal Degrees (DD)</span></p></td><td class="cl-9cb9cb59"><p class="cl-9cb9b8e8"><span class="cl-9cb60158">30.50833333</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-9cb9cb62"><p class="cl-9cb9b8e8"><span class="cl-9cb60158">Degrees Minutes Seconds (DMS)</span></p></td><td class="cl-9cb9cb63"><p class="cl-9cb9b8e8"><span class="cl-9cb60158">30° 15' 10 N</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-9cb9cb58"><p class="cl-9cb9b8e8"><span class="cl-9cb60158">Degrees Decimal Minutes (DM or DDM)</span></p></td><td class="cl-9cb9cb59"><p class="cl-9cb9b8e8"><span class="cl-9cb60158">30° 15.1667 N</span></p></td></tr></tbody></table></div>
+</div>
+</div>
+</section>
+<section id="top-references-4" class="level3">
+<h3 class="anchored" data-anchor-id="top-references-4">Top References</h3>
+<ul>
+<li>Existing R/python/ESRI packages/functions
+<ul>
+<li>R - measurements <a href="https://cran.r-project.org/web/packages/measurements/measurements.pdf" class="uri">https://cran.r-project.org/web/packages/measurements/measurements.pdf</a></li>
+<li>EML <a href="https://eml.ecoinformatics.org/schema/index.html" class="uri">https://eml.ecoinformatics.org/schema/index.html</a> (find “bounding Coordinates)</li>
+<li>CF <a href="https://cfconventions.org/Data/cf-conventions/cf-conventions-1.10/cf-conventions.html#latitude-coordinate" class="uri">https://cfconventions.org/Data/cf-conventions/cf-conventions-1.10/cf-conventions.html#latitude-coordinate</a></li>
+</ul></li>
+<li>Getting lat/lon to decimal degrees<br>
+<a href="https://ioos.github.io/bio_mobilization_workshop/03-data-cleaning/index.html#getting-latlon-to-decimal-degrees" class="uri">https://ioos.github.io/bio_mobilization_workshop/03-data-cleaning/index.html#getting-latlon-to-decimal-degrees</a></li>
+<li>Some background on precision
+<ul>
+<li><a href="https://www.trekview.org/blog/2021/reading-decimal-gps-coordinates-like-a-computer/#a-note-on-accuracy" class="uri">https://www.trekview.org/blog/2021/reading-decimal-gps-coordinates-like-a-computer/#a-note-on-accuracy</a></li>
+<li><a href="https://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude" class="uri">https://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude</a></li>
+</ul></li>
+<li>DMS to DD calculator<br>
+<a href="https://www.fcc.gov/media/radio/dms-decimal" class="uri">https://www.fcc.gov/media/radio/dms-decimal</a> – The three most commonly used datums are WGS84, NAD83, and NAD27. A more complete list can be found here: <a href="https://wiki.gis.com/wiki/index.php/Datum\_(geodesy)#List_of_Datums" class="uri">https://wiki.gis.com/wiki/index.php/Datum\_(geodesy)#List_of_Datums</a></li>
+</ul>
+</section>
+</section>
+<section id="use-persistent-unique-identifiers" class="level2">
+<h2 class="anchored" data-anchor-id="use-persistent-unique-identifiers">Use persistent unique identifiers</h2>
+<section id="why-5" class="level3">
+<h3 class="anchored" data-anchor-id="why-5">Why?</h3>
+<ul>
+<li>It can be useful to have unique identifiers to unambiguously identify granules of information, e.g.&nbsp;dataset, collection, database, taxonomic concept, etc. This will allow users to precisely refer to the data and allow your data to remain identifiable when aggregated with other datasets.</li>
+<li>To be able to uniquely identify a record in your data system or across data systems. Useful to create relational databases or merge records.</li>
+<li>Although it increases workload, it safeguards against confusion and inefficiency in the future.</li>
+</ul>
+</section>
+<section id="key-information-5" class="level3">
+<h3 class="anchored" data-anchor-id="key-information-5">Key Information</h3>
+<ul>
+<li>There are good reasons to keep an identifier opaque, i.e.&nbsp;it does not indicate anything about the content of information it points to. However, there are also transparent, or semi-opaque identifiers in use that take advantage of semantics to guide humans as well as machines.</li>
+<li>One way to create a unique identifier is concatenation of sampling event, location, time, enumeration of unique observation or event. (e.g.&nbsp;<code>Station_95_Date_09JAN1997:14:35:00.000</code>)</li>
+<li>Some prefer using opaque identifiers. (e.g.&nbsp;<code>10FC9784-B30F-48ED-8DB5-FF65A2A9934E</code>)</li>
+<li>If there is an existing persistent unique identifier, it’s usually a good idea to use it (i.e.&nbsp;when using a taxonomic authority like WoRMS and applying their LSID).</li>
+<li>It is important to manage any identifiers you create, if they are not managed by an authority (e.g.&nbsp;DOIs).</li>
+<li>Important that it be persistent (consider samples possibly moving between institutions)</li>
+</ul>
+<p><em>Examples of PIDs</em></p>
+<div class="cell">
+<div class="cell-output-display">
+
+<div class="tabwid"><style>.cl-9cd50f30{}.cl-9ccc93fa{font-family:'Arial';font-size:11pt;font-weight:bold;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-9ccc9404{font-family:'Arial';font-size:9pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-9ccff19e{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-9cd002ce{width:1.5in;background-color:rgba(207, 207, 207, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9cd002d8{width:3in;background-color:rgba(207, 207, 207, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9cd002d9{width:1.5in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9cd002e2{width:3in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9cd002e3{width:1.5in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9cd002e4{width:3in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing="true" class="cl-9cd50f30"><thead><tr style="overflow-wrap:break-word;"><th class="cl-9cd002ce"><p class="cl-9ccff19e"><span class="cl-9ccc93fa">Type of PID</span></p></th><th class="cl-9cd002ce"><p class="cl-9ccff19e"><span class="cl-9ccc93fa">Use Case</span></p></th><th class="cl-9cd002d8"><p class="cl-9ccff19e"><span class="cl-9ccc93fa">Example</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td class="cl-9cd002d9"><p class="cl-9ccff19e"><span class="cl-9ccc9404">Digital Object Identifier (DOI)</span></p></td><td class="cl-9cd002d9"><p class="cl-9ccff19e"><span class="cl-9ccc9404">Actionable persistent link for papers, data, and other digital objects</span></p></td><td class="cl-9cd002e2"><p class="cl-9ccff19e"><span class="cl-9ccc9404">https://doi.org/10.6084/m9.figshare.16806712.v2</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-9cd002e3"><p class="cl-9ccff19e"><span class="cl-9ccc9404">International Geo Sample Number (IGSN)</span></p></td><td class="cl-9cd002e3"><p class="cl-9ccff19e"><span class="cl-9ccc9404">Persistent identifier for physical samples</span></p></td><td class="cl-9cd002e4"><p class="cl-9ccff19e"><span class="cl-9ccc9404">http://igsn.org/AU1243&gt;</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-9cd002d9"><p class="cl-9ccff19e"><span class="cl-9ccc9404">Life Science Identifier (LSID)</span></p></td><td class="cl-9cd002d9"><p class="cl-9ccff19e"><span class="cl-9ccc9404">Persistent structured method for biologically significant data</span></p></td><td class="cl-9cd002e2"><p class="cl-9ccff19e"><span class="cl-9ccc9404">urn:lsid:marinespecies.org:taxname:218214</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-9cd002e3"><p class="cl-9ccff19e"><span class="cl-9ccc9404">Open Researcher and Contributor ID (ORCID)</span></p></td><td class="cl-9cd002e3"><p class="cl-9ccff19e"><span class="cl-9ccc9404">Persistent actionable link for individuals</span></p></td><td class="cl-9cd002e4"><p class="cl-9ccff19e"><span class="cl-9ccc9404">https://orcid.org/0000-0002-4391-107X</span></p></td></tr></tbody></table></div>
+</div>
+</div>
+</section>
+<section id="top-references-5" class="level3">
+<h3 class="anchored" data-anchor-id="top-references-5">Top References</h3>
+<ul>
+<li>Software and Packages to generate uuids:
+<ul>
+<li>R - uuid <a href="https://cran.r-project.org/web/packages/uuid/index.html" class="uri">https://cran.r-project.org/web/packages/uuid/index.html</a></li>
+<li>python - uuid <a href="https://docs.python.org/3/library/uuid.html" class="uri">https://docs.python.org/3/library/uuid.html</a></li>
+<li><a href="http://guid.one/" class="uri">http://guid.one/</a></li>
+<li><a href="https://guidgenerator.com/" class="uri">https://guidgenerator.com/</a></li>
+</ul></li>
+<li>Guidance on how to use GUIDs (Globally Unique Identifiers) to meet specific requirements of the biodiversity information community<br>
+<a href="http://bioimages.vanderbilt.edu/pages/guid-applicability-final-2011-01.pdf" class="uri">http://bioimages.vanderbilt.edu/pages/guid-applicability-final-2011-01.pdf</a></li>
+<li>Use of globally unique identifiers (GUIDs) to link herbarium specimen records to physical specimens<br>
+<a href="https://bsapubs.onlinelibrary.wiley.com/doi/full/10.1002/aps3.1027" class="uri">https://bsapubs.onlinelibrary.wiley.com/doi/full/10.1002/aps3.1027</a></li>
+<li>A Beginner’s Guide to Persistent Identifiers<br>
+<a href="http://links.gbif.org/persistent_identifiers_guide_en_v1.pdf" class="uri">http://links.gbif.org/persistent_identifiers_guide_en_v1.pdf</a></li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./index.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Preface</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>
