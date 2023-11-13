@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>ESIP Biological Data Cluster (BDS) Primer Guide - 1&nbsp; PROVIDE CONTEXT AND UNDERSTANDABILITY TO YOUR DATA</title>
+<title>ESIP Biological Data Cluster (BDS) Primer Guide - PROVIDE CONTEXT AND UNDERSTANDABILITY TO YOUR DATA</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -73,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./CONTEXT_UNDERSTANDABILITY.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">PROVIDE CONTEXT AND UNDERSTANDABILITY TO YOUR DATA</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./CONTEXT_UNDERSTANDABILITY.html">PROVIDE CONTEXT AND UNDERSTANDABILITY TO YOUR DATA</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -107,7 +107,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./CONTEXT_UNDERSTANDABILITY.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">PROVIDE CONTEXT AND UNDERSTANDABILITY TO YOUR DATA</span></span></a>
+ <span class="menu-text">PROVIDE CONTEXT AND UNDERSTANDABILITY TO YOUR DATA</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -126,29 +126,26 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#make-your-data-software-ready" id="toc-make-your-data-software-ready" class="nav-link active" data-scroll-target="#make-your-data-software-ready">MAKE YOUR DATA SOFTWARE READY</a>
+  <li><a href="#ecological-metadata-language-eml" id="toc-ecological-metadata-language-eml" class="nav-link active" data-scroll-target="#ecological-metadata-language-eml">Ecological Metadata Language (EML)</a>
   <ul class="collapse">
-  <li><a href="#ecological-metadata-language-eml" id="toc-ecological-metadata-language-eml" class="nav-link" data-scroll-target="#ecological-metadata-language-eml"><span class="header-section-number">1.1</span> Ecological Metadata Language (EML)</a>
-  <ul class="collapse">
-  <li><a href="#what-is-it" id="toc-what-is-it" class="nav-link" data-scroll-target="#what-is-it"><span class="header-section-number">1.1.1</span> What Is It?</a></li>
-  <li><a href="#why" id="toc-why" class="nav-link" data-scroll-target="#why"><span class="header-section-number">1.1.2</span> Why?</a></li>
-  <li><a href="#key-information" id="toc-key-information" class="nav-link" data-scroll-target="#key-information"><span class="header-section-number">1.1.3</span> Key Information</a></li>
-  <li><a href="#top-references" id="toc-top-references" class="nav-link" data-scroll-target="#top-references"><span class="header-section-number">1.1.4</span> Top References</a></li>
+  <li><a href="#what-is-it" id="toc-what-is-it" class="nav-link" data-scroll-target="#what-is-it">What Is It?</a></li>
+  <li><a href="#why" id="toc-why" class="nav-link" data-scroll-target="#why">Why?</a></li>
+  <li><a href="#key-information" id="toc-key-information" class="nav-link" data-scroll-target="#key-information">Key Information</a></li>
+  <li><a href="#top-references" id="toc-top-references" class="nav-link" data-scroll-target="#top-references">Top References</a></li>
   </ul></li>
-  <li><a href="#iso-19115" id="toc-iso-19115" class="nav-link" data-scroll-target="#iso-19115"><span class="header-section-number">1.2</span> ISO 19115</a>
+  <li><a href="#iso-19115" id="toc-iso-19115" class="nav-link" data-scroll-target="#iso-19115">ISO 19115</a>
   <ul class="collapse">
-  <li><a href="#what-is-it-1" id="toc-what-is-it-1" class="nav-link" data-scroll-target="#what-is-it-1"><span class="header-section-number">1.2.1</span> What Is It?</a></li>
-  <li><a href="#why-1" id="toc-why-1" class="nav-link" data-scroll-target="#why-1"><span class="header-section-number">1.2.2</span> Why?</a></li>
-  <li><a href="#what" id="toc-what" class="nav-link" data-scroll-target="#what"><span class="header-section-number">1.2.3</span> What?</a></li>
-  <li><a href="#top-references-1" id="toc-top-references-1" class="nav-link" data-scroll-target="#top-references-1"><span class="header-section-number">1.2.4</span> Top References</a></li>
+  <li><a href="#what-is-it-1" id="toc-what-is-it-1" class="nav-link" data-scroll-target="#what-is-it-1">What Is It?</a></li>
+  <li><a href="#why-1" id="toc-why-1" class="nav-link" data-scroll-target="#why-1">Why?</a></li>
+  <li><a href="#what" id="toc-what" class="nav-link" data-scroll-target="#what">What?</a></li>
+  <li><a href="#top-references-1" id="toc-top-references-1" class="nav-link" data-scroll-target="#top-references-1">Top References</a></li>
   </ul></li>
-  <li><a href="#minimum-information-about-any-x-sequence-mixs" id="toc-minimum-information-about-any-x-sequence-mixs" class="nav-link" data-scroll-target="#minimum-information-about-any-x-sequence-mixs"><span class="header-section-number">1.3</span> Minimum Information about any (x) Sequence (MIxS)</a>
+  <li><a href="#minimum-information-about-any-x-sequence-mixs" id="toc-minimum-information-about-any-x-sequence-mixs" class="nav-link" data-scroll-target="#minimum-information-about-any-x-sequence-mixs">Minimum Information about any (x) Sequence (MIxS)</a>
   <ul class="collapse">
-  <li><a href="#what-is-it-2" id="toc-what-is-it-2" class="nav-link" data-scroll-target="#what-is-it-2"><span class="header-section-number">1.3.1</span> What is it?</a></li>
-  <li><a href="#why-2" id="toc-why-2" class="nav-link" data-scroll-target="#why-2"><span class="header-section-number">1.3.2</span> Why?</a></li>
-  <li><a href="#key-information-1" id="toc-key-information-1" class="nav-link" data-scroll-target="#key-information-1"><span class="header-section-number">1.3.3</span> Key Information</a></li>
-  <li><a href="#top-references-2" id="toc-top-references-2" class="nav-link" data-scroll-target="#top-references-2"><span class="header-section-number">1.3.4</span> Top References</a></li>
-  </ul></li>
+  <li><a href="#what-is-it-2" id="toc-what-is-it-2" class="nav-link" data-scroll-target="#what-is-it-2">What is it?</a></li>
+  <li><a href="#why-2" id="toc-why-2" class="nav-link" data-scroll-target="#why-2">Why?</a></li>
+  <li><a href="#key-information-1" id="toc-key-information-1" class="nav-link" data-scroll-target="#key-information-1">Key Information</a></li>
+  <li><a href="#top-references-2" id="toc-top-references-2" class="nav-link" data-scroll-target="#top-references-2">Top References</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -158,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">PROVIDE CONTEXT AND UNDERSTANDABILITY TO YOUR DATA</span></h1>
+<h1 class="title">PROVIDE CONTEXT AND UNDERSTANDABILITY TO YOUR DATA</h1>
 </div>
 
 
@@ -173,16 +170,14 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="make-your-data-software-ready" class="level1 unnumbered">
-<h1 class="unnumbered">MAKE YOUR DATA SOFTWARE READY</h1>
-<section id="ecological-metadata-language-eml" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="ecological-metadata-language-eml"><span class="header-section-number">1.1</span> Ecological Metadata Language (EML)</h2>
-<section id="what-is-it" class="level3" data-number="1.1.1">
-<h3 data-number="1.1.1" class="anchored" data-anchor-id="what-is-it"><span class="header-section-number">1.1.1</span> What Is It?</h3>
+<section id="ecological-metadata-language-eml" class="level2">
+<h2 class="anchored" data-anchor-id="ecological-metadata-language-eml">Ecological Metadata Language (EML)</h2>
+<section id="what-is-it" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-it">What Is It?</h3>
 <p>Ecological Metadata Language (EML) is an XML schema. An EML instance (XML document) holds metadata to describe one or more data objects. Data tables are the most common, but almost any data object can be accommodated.</p>
 </section>
-<section id="why" class="level3" data-number="1.1.2">
-<h3 data-number="1.1.2" class="anchored" data-anchor-id="why"><span class="header-section-number">1.1.2</span> Why?</h3>
+<section id="why" class="level3">
+<h3 class="anchored" data-anchor-id="why">Why?</h3>
 <ul>
 <li>Provide context to your data.</li>
 <li>Can capture linked data relationships within EML (dataset series)</li>
@@ -191,8 +186,8 @@ ul.task-list li input[type="checkbox"] {
 <li>It’s taxonomic fields cover relationships (hierarchies), IDs, and authoritative material</li>
 </ul>
 </section>
-<section id="key-information" class="level3" data-number="1.1.3">
-<h3 data-number="1.1.3" class="anchored" data-anchor-id="key-information"><span class="header-section-number">1.1.3</span> Key Information</h3>
+<section id="key-information" class="level3">
+<h3 class="anchored" data-anchor-id="key-information">Key Information</h3>
 <ul>
 <li><p>EML schema <a href="https://eml.ecoinformatics.org/eml-schema" class="uri">https://eml.ecoinformatics.org/eml-schema</a>&nbsp;</p></li>
 <li><p>Mandatory for LTER, iLTER, OBIS, GBIF, Darwin Core Archive (DwC-A)</p></li>
@@ -200,8 +195,8 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Usually, what you would submit to a repository is a “data package” consisting of an EML document and one or more data objects.</p></li>
 </ul>
 </section>
-<section id="top-references" class="level3" data-number="1.1.4">
-<h3 data-number="1.1.4" class="anchored" data-anchor-id="top-references"><span class="header-section-number">1.1.4</span> Top References</h3>
+<section id="top-references" class="level3">
+<h3 class="anchored" data-anchor-id="top-references">Top References</h3>
 <p>Tools or packages to help write EML:</p>
 <ul>
 <li><p>For data managers, coders:&nbsp;</p>
@@ -218,14 +213,14 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </section>
 </section>
-<section id="iso-19115" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="iso-19115"><span class="header-section-number">1.2</span> ISO 19115</h2>
-<section id="what-is-it-1" class="level3" data-number="1.2.1">
-<h3 data-number="1.2.1" class="anchored" data-anchor-id="what-is-it-1"><span class="header-section-number">1.2.1</span> What Is It?</h3>
+<section id="iso-19115" class="level2">
+<h2 class="anchored" data-anchor-id="iso-19115">ISO 19115</h2>
+<section id="what-is-it-1" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-it-1">What Is It?</h3>
 <p>Content standard for describing geographic data sponsored by the International Standards Organization (ISO). At its most basic, it is written in narrative form with class diagrams. There are many implementations and extensions (e.g., <a href="https://www.dcc.ac.uk/resources/metadata-standards/iso-19115" class="uri">https://www.dcc.ac.uk/resources/metadata-standards/iso-19115</a>).</p>
 </section>
-<section id="why-1" class="level3" data-number="1.2.2">
-<h3 data-number="1.2.2" class="anchored" data-anchor-id="why-1"><span class="header-section-number">1.2.2</span> Why?</h3>
+<section id="why-1" class="level3">
+<h3 class="anchored" data-anchor-id="why-1">Why?</h3>
 <ul>
 <li><p>Provide context to your data (biological data is inherently ‘geographic’)</p></li>
 <li><p>Standardized representation of information</p></li>
@@ -233,8 +228,8 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Can be used at different granularities, used to describe data packages or collections, as well as at a dataset level (?): content standard vs collection standard?</p></li>
 </ul>
 </section>
-<section id="what" class="level3" data-number="1.2.3">
-<h3 data-number="1.2.3" class="anchored" data-anchor-id="what"><span class="header-section-number">1.2.3</span> What?</h3>
+<section id="what" class="level3">
+<h3 class="anchored" data-anchor-id="what">What?</h3>
 <ul>
 <li><p>Evolved from the need for to to harmonize the FGDC Content Standard for Digital Geospatial Metadata (CSDGM) with other formal and defacto standards that support the documentation of geospatial data and services.</p></li>
 <li><p>Many variations including 19115, 19115-1, 19115-2</p></li>
@@ -248,8 +243,8 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Highly flexible for many uses compared FGDC CSDGM, but few required elements leaves room for incomplete metadata</p></li>
 </ul>
 </section>
-<section id="top-references-1" class="level3" data-number="1.2.4">
-<h3 data-number="1.2.4" class="anchored" data-anchor-id="top-references-1"><span class="header-section-number">1.2.4</span> Top References</h3>
+<section id="top-references-1" class="level3">
+<h3 class="anchored" data-anchor-id="top-references-1">Top References</h3>
 <ul>
 <li><p>NOAA Workbook for ISO 19115-2 <a href="https://www.ncei.noaa.gov/sites/default/files/2020-04/ISO%2019115-2%20Workbook_Part%20II%20Extentions%20for%20imagery%20and%20Gridded%20Data.pdf" class="uri">https://www.ncei.noaa.gov/sites/default/files/2020-04/ISO%2019115-2%20Workbook_Part%20II%20Extentions%20for%20imagery%20and%20Gridded%20Data.pdf</a>&nbsp;</p></li>
 <li><p>Convert ISO to EML - <a href="https://nceas.github.io/arcticdatautils/reference/convert_iso_to_eml.html" class="uri">https://nceas.github.io/arcticdatautils/reference/convert_iso_to_eml.html</a>&nbsp;</p></li>
@@ -259,22 +254,22 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </section>
 </section>
-<section id="minimum-information-about-any-x-sequence-mixs" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="minimum-information-about-any-x-sequence-mixs"><span class="header-section-number">1.3</span> Minimum Information about any (x) Sequence (MIxS)</h2>
-<section id="what-is-it-2" class="level3" data-number="1.3.1">
-<h3 data-number="1.3.1" class="anchored" data-anchor-id="what-is-it-2"><span class="header-section-number">1.3.1</span> What is it?</h3>
+<section id="minimum-information-about-any-x-sequence-mixs" class="level2">
+<h2 class="anchored" data-anchor-id="minimum-information-about-any-x-sequence-mixs">Minimum Information about any (x) Sequence (MIxS)</h2>
+<section id="what-is-it-2" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-it-2">What is it?</h3>
 <p>A set of checklists and packages for genomic sequence data</p>
 </section>
-<section id="why-2" class="level3" data-number="1.3.2">
-<h3 data-number="1.3.2" class="anchored" data-anchor-id="why-2"><span class="header-section-number">1.3.2</span> Why?</h3>
+<section id="why-2" class="level3">
+<h3 class="anchored" data-anchor-id="why-2">Why?</h3>
 <ul>
 <li><p>Provide minimal standardized metadata about genetic sequence data</p></li>
 <li><p>Agreed upon and published by the Genome Standards Consortium</p></li>
 <li><p>Used by the INSDC (DDBJ, EMBL-EBI and NCBI)</p></li>
 </ul>
 </section>
-<section id="key-information-1" class="level3" data-number="1.3.3">
-<h3 data-number="1.3.3" class="anchored" data-anchor-id="key-information-1"><span class="header-section-number">1.3.3</span> Key Information</h3>
+<section id="key-information-1" class="level3">
+<h3 class="anchored" data-anchor-id="key-information-1">Key Information</h3>
 <ul>
 <li><p>Pronounced “mix-ess”</p></li>
 <li><p>Term search tool: <a href="http://www.gensc.org/pages/standards/search-terms.html" class="uri">http://www.gensc.org/pages/standards/search-terms.html</a>?</p></li>
@@ -288,8 +283,8 @@ ul.task-list li input[type="checkbox"] {
 </div></li>
 </ul>
 </section>
-<section id="top-references-2" class="level3" data-number="1.3.4">
-<h3 data-number="1.3.4" class="anchored" data-anchor-id="top-references-2"><span class="header-section-number">1.3.4</span> Top References</h3>
+<section id="top-references-2" class="level3">
+<h3 class="anchored" data-anchor-id="top-references-2">Top References</h3>
 <ul>
 <li><p><a href="https://genomicsstandardsconsortium.github.io/mixs/" class="uri">https://genomicsstandardsconsortium.github.io/mixs/</a></p></li>
 <li><p><a href="https://www.gensc.org/mixs/" class="uri">https://www.gensc.org/mixs/</a>&nbsp;</p></li>
@@ -299,7 +294,6 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 
 
-</section>
 </section>
 </section>
 

@@ -1,6 +1,5 @@
 # PROVIDE CONTEXT AND UNDERSTANDABILITY TO YOUR DATA {.unnumbered}
 
-# MAKE YOUR DATA SOFTWARE READY {.unnumbered}
 
 ## Ecological Metadata Language (EML)
 
