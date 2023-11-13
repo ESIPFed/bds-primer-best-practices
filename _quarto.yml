@@ -9,7 +9,7 @@ book:
   chapters:
     - index.qmd
     #- intro.qmd
-    #- CONTEXT_UNDERSTANDABILITY.qmd
+    - CONTEXT_UNDERSTANDABILITY.qmd
     #- INTEGRATE_DATA.qmd
     #- INTEROPERABLE_DATA.qmd
     #- SHARE_DATA_WEB.qmd
