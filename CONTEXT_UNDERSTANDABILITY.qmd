@@ -1,4 +1,4 @@
-# PROVIDE CONTEXT AND UNDERSTANDABILITY TO YOUR DATA {.unnumbered}
+# Provide Context and Understandability to Your Data {.unnumbered}
 
 
 ## Ecological Metadata Language (EML)

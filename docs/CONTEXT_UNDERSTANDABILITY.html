@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>ESIP Biological Data Cluster (BDS) Primer Guide - PROVIDE CONTEXT AND UNDERSTANDABILITY TO YOUR DATA</title>
+<title>ESIP Biological Data Cluster (BDS) Primer Guide - Provide Context and Understandability to Your Data</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -73,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./CONTEXT_UNDERSTANDABILITY.html">PROVIDE CONTEXT AND UNDERSTANDABILITY TO YOUR DATA</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./CONTEXT_UNDERSTANDABILITY.html">Provide Context and Understandability to Your Data</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -107,13 +107,13 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./CONTEXT_UNDERSTANDABILITY.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">PROVIDE CONTEXT AND UNDERSTANDABILITY TO YOUR DATA</span></a>
+ <span class="menu-text">Provide Context and Understandability to Your Data</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./SOFTWARE_READY.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">MAKE YOUR DATA SOFTWARE READY</span></a>
+ <span class="menu-text">Make Your Data Software Ready</span></a>
   </div>
 </li>
     </ul>
@@ -155,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">PROVIDE CONTEXT AND UNDERSTANDABILITY TO YOUR DATA</h1>
+<h1 class="title">Provide Context and Understandability to Your Data</h1>
 </div>
 
 
@@ -529,6 +529,22 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp("^(?:http:|https:)\/\/esipfed\.github\.io");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          // default icon
+          link.classList.add("external");
+      }
+    }
 });
 </script>
 <nav class="page-navigation">
@@ -539,7 +555,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
   <div class="nav-page nav-page-next">
       <a href="./SOFTWARE_READY.html" class="pagination-link">
-        <span class="nav-page-text">MAKE YOUR DATA SOFTWARE READY</span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text">Make Your Data Software Ready</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
