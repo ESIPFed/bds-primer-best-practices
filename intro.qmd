@@ -11,7 +11,9 @@ In short, the will be successful if it:
 3.  Provide opportunities for Knowledge sharing & coordination
 4.  Provide Connectivity across ESIP
 
-We successfully increased awareness and interest in standards through the creation of the primer, officially called, [Biological Observation Data Standardization - A Primer for Data Manager](https://doi.org/10.6084/m9.figshare.16806712.v1) Our goals have evolved to work toward creating a sample extension of the cluster's primer in the form of a best practice document(s). The target audience for the best practice document(s) are people who are new to working with biological data standards. The best practice document will provide additional detail on the points listed in the primer, focusing on efficient actions that can be taken to standardize data.
+We successfully increased awareness and interest in standards through the creation of the primer, officially called, [Biological Observation Data Standardization - A Primer for Data Manager.](https://doi.org/10.6084/m9.figshare.16806712.v1) ![](images/primer_thumbnail.PNG){height=30} 
+
+Our goals have evolved to work toward creating a sample extension of the cluster's primer in the form of a best practice document(s). The target audience for the best practice document(s) are people who are new to working with biological data standards. The best practice document will provide additional detail on the points listed in the primer, focusing on efficient actions that can be taken to standardize data.
 
 \newpage
 

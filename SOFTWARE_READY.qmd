@@ -1,4 +1,4 @@
-# MAKE YOUR DATA SOFTWARE READY {.unnumbered}
+# Make Your Data Software Ready {.unnumbered}
 
 ## Use non-proprietary formats
 
@@ -17,9 +17,10 @@
 ### Top References
 
 -   Table of commonly used formats for common data types\
-    <https://guides.osu.edu/c.php?g=707751&p=5027409\>
+    <https://guides.osu.edu/c.php?g=707751&p=5027409>
+    
 -   A more detailed table that is specific to US Federal records management\
-    <https://www.archives.gov/records-mgmt/policy/transfer-guidance-tables.html\>
+    <https://www.archives.gov/records-mgmt/policy/transfer-guidance-tables.html>
 
 ## Structure tabular data in tidy/long format
 
@@ -107,7 +108,8 @@ flextable(long_example) %>%
 
 ### Top References
 
--   Wickham, H. (2014). Tidy Data. Journal of Statistical Software, 59(10), 1--23. <https://doi.org/10.18637/jss.v059.i10>
+-   Wickham, H. (2014). Tidy Data. Journal of Statistical Software, 59(10), 1--23.\
+    <https://doi.org/10.18637/jss.v059.i10>
 -   Data Sharing and Management Snafu in 3 Short Acts (video)\
     <https://www.youtube.com/watch?v=N2zK3s=Atr-4&t=7s>
 -   Tips for working with data in BASH\
@@ -236,7 +238,7 @@ flextable(tab1) %>%
         <http://cran.nexr.com/web/packages/worrms/vignettes/worrms_vignette.html>
     -   worms: another API client for WoRMS\
         <https://cran.r-project.org/web/packages/worms/index.html>
-    -   Ritis: API client for ITIS \<https://cran.r-project.org/web/packages/ritis/>
+    -   Ritis: API client for ITIS \<https://cran.r-project.org/web/packages/ritis/\>
 -   Python packages
     -   WoRMS API client\
         <https://github.com/iobis/pyworms>
@@ -274,6 +276,7 @@ knitr::include_graphics('https://imgs.xkcd.com/comics/coordinate_precision.png')
     -   Values for latitude range from `-90` to `90`, inclusive.
 
 *Example Coordinates*
+
 ```{r}
 
 #| label: tbl-example_coordinates
@@ -313,7 +316,7 @@ flextable(ds) %>%
     -   <https://www.trekview.org/blog/2021/reading-decimal-gps-coordinates-like-a-computer/#a-note-on-accuracy>
     -   <https://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude>
 -   DMS to DD calculator\
-    <https://www.fcc.gov/media/radio/dms-decimal> -- The three most commonly used datums are WGS84, NAD83, and NAD27. A more complete list can be found here: <https://wiki.gis.com/wiki/index.php/Datum\_(geodesy)#List_of_Datums>
+    <https://www.fcc.gov/media/radio/dms-decimal> -- The three most commonly used datums are WGS84, NAD83, and NAD27. A more complete list can be found here: <https://wiki.gis.com/wiki/index.php/Datum_(geodesy)#List_of_Datums)>
 
 ## Use persistent unique identifiers
 
@@ -333,6 +336,7 @@ flextable(ds) %>%
 -   Important that it be persistent (consider samples possibly moving between institutions)
 
 *Examples of PIDs*
+
 ```{r}
 
 #| label: tbl-PIDExamples

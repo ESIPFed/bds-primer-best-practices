@@ -21,10 +21,13 @@ execute:
   message: FALSE
 
 #bibliography: references.bib
-# 
+
 format:
   html:
    theme: cosmo
+   link-external-icon: true
+   link-external-newwindow: true
+   link-external-filter: '^(?:http:|https:)\/\/esipfed\.github\.io'
   pdf: default
   docx: 
     toc: false  # This isn't populating for some reason
@@ -34,7 +37,6 @@ format:
     #tbl-colwidths: auto
     lang: en
     reference-doc: custom-reference-doc.docx
-    
-  
+      
 editor: visual
 
