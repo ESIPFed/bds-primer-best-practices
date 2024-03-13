@@ -1,15 +1,14 @@
-# Provide Context and Understandability to Your Data {.unnumbered}
-
+# Provide Context and Understandability to Your Data
 
 ## Ecological Metadata Language (EML)
 
 ### What Is It?
 
-Ecological Metadata Language (EML) is an XML schema. An EML instance (XML document) holds metadata to describe one or more data objects. Data tables are the most common, but almost any data object can be accommodated.
+EML is a community-developed metadata schema designed for ecological data, which encompasses biological data. EML is normally presented as [Extensible Markup Language (XML)](https://www.w3schools.com/xml/). An EML instance (XML document) holds metadata to describe one or more data objects. Data tables are the most common, but almost any data object can be accommodated.
 
 ### Why?
 
--   Provide context to your data.
+-   Provide context to your data and improve reproducability of the data.
 -   Can capture linked data relationships within EML (dataset series)
 -   Standardized representation of information.
 -   EML was designed for ecological data, which encompasses biological data.
@@ -87,9 +86,13 @@ Content standard for describing geographic data sponsored by the International S
 
 ## Minimum Information about any (x) Sequence (MIxS)
 
+### Who?
+
+This is a standard for molecular data, like DNA and RNA. It is used by molecular biologist and ecologists who generate, manage and archive these type of sequence data.
+
 ### What is it?
 
-A set of checklists and packages for genomic sequence data
+A set of checklists and packages for genomic sequence data.
 
 ### Why?
 
@@ -108,7 +111,7 @@ A set of checklists and packages for genomic sequence data
 -   [![MIxS Structure](http://www.gensc.org/images/mixs_ext_graphic-1024x731.png)](http://www.gensc.org/pages/standards-intro.html)
 
 ### Top References
-  
+
 -   [MIxS Term Search Tool](http://www.gensc.org/pages/standards/search-terms.html)
 
 -   [Genomic Standards Consortium term list](https://genomicsstandardsconsortium.github.io/mixs/)

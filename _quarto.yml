@@ -14,7 +14,10 @@ book:
     #- INTEROPERABLE_DATA.qmd
     #- SHARE_DATA_WEB.qmd
     - SOFTWARE_READY.qmd
-    
+
+number-depth: 2
+number-offset: 1
+  
 execute:
   echo: FALSE
   warning: FALSE
@@ -28,11 +31,11 @@ format:
    link-external-icon: true
    link-external-newwindow: true
    link-external-filter: '^(?:http:|https:)\/\/esipfed\.github\.io'
+   toc: false
+   
   pdf: default
   docx: 
     toc: false  # This isn't populating for some reason
-    #toc-depth: 2
-    number-sections: true
     fig-align: center
     #tbl-colwidths: auto
     lang: en
