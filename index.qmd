@@ -4,9 +4,8 @@
 #    theme: cosmo
 #   pdf: default
 #   docx: default
-  
-
 ---
+
 # Preface {.unnumbered}
 
 ## ESIP BDS Primer Guide Suite of Documents
@@ -15,12 +14,12 @@ The [ESIP Biological Data Standards Cluster](https://wiki.esipfed.org/Biological
 
 ### How to contribute
 
-If you would like to suggest changes or additions to the current version of the best practice documents, please use the [GitHub issues](https://github.com/ESIPFed/bds-primer-best-practices/issues/new/choose) to document your request. The current draft can be seen as a rendered webpage [here](https://esipfed.github.io/bds-primer-best-practices/introduction.html).
+If you would like to suggest changes or additions to the current version of the best practice documents, please use the [GitHub issues](https://github.com/ESIPFed/bds-primer-best-practices/issues/new/choose) to document your request. The current draft can be seen as a rendered webpage [here](https://esipfed.github.io/bds-primer-best-practices/index.html).
 
-### Structure 
+### Structure
 
 The structure for each section is:
 
-- Value proposition (Why?)
-- List / key information (bulleted)
-- References list
+-   Value proposition (Why?)
+-   List / key information (bulleted)
+-   References list
