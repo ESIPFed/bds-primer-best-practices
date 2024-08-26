@@ -11,7 +11,7 @@ book:
     #- intro.qmd
     - CONTEXT_UNDERSTANDABILITY.qmd
     #- INTEGRATE_DATA.qmd
-    #- INTEROPERABLE_DATA.qmd
+    - INTEROPERABLE_DATA.qmd
     #- SHARE_DATA_WEB.qmd
     - SOFTWARE_READY.qmd
 
