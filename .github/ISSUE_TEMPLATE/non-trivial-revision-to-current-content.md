@@ -9,7 +9,7 @@ assignees: ''
 ---
 
 **What section of the best practices does your suggestion relate to?**
-*e.g. section 6.1.2 Use non-proprietary formats: Key Information*
+*e.g. Use non-proprietary formats: Key Information*
 
 **Short description of content that should be revised**
 *e.g. The definition of a proprietary file format is too long and convoluted*
