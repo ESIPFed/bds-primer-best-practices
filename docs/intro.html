@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>2&nbsp; Provide Context and Understandability to Your Data – ESIP Biological Data Cluster (BDS) Primer Guide</title>
+<title>1&nbsp; Introduction – ESIP Biological Data Cluster (BDS) Primer Guide</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./INTEGRATE_DATA.html" rel="next">
-<link href="./intro.html" rel="prev">
+<link href="./CONTEXT_UNDERSTANDABILITY.html" rel="next">
+<link href="./index.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./CONTEXT_UNDERSTANDABILITY.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Provide Context and Understandability to Your Data</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./intro.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -114,13 +114,13 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+  <a href="./intro.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./CONTEXT_UNDERSTANDABILITY.html" class="sidebar-item-text sidebar-link active">
+  <a href="./CONTEXT_UNDERSTANDABILITY.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Provide Context and Understandability to Your Data</span></span></a>
   </div>
 </li>
@@ -159,7 +159,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Provide Context and Understandability to Your Data</span></h1>
+<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></h1>
 </div>
 
 
@@ -176,132 +176,34 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="ecological-metadata-language-eml" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="ecological-metadata-language-eml"><span class="header-section-number">2.1</span> Ecological Metadata Language (EML)</h2>
-<section id="what-is-it" class="level3">
-<h3 class="anchored" data-anchor-id="what-is-it">What Is It?</h3>
-<p>EML is a community-developed metadata schema designed for ecological data, which encompasses biological data. EML is normally presented as <a href="https://www.w3schools.com/xml/">Extensible Markup Language (XML)</a>. An EML instance (XML document) holds metadata to describe one or more data objects. Data tables are the most common, but almost any data object can be accommodated.</p>
-</section>
-<section id="why" class="level3">
-<h3 class="anchored" data-anchor-id="why">Why?</h3>
+<p><em>This is still a work in progress and only presented here for the purposes of receiving feedback. This message will be removed when the best practices have been officially published.</em></p>
+<p>The diversity of biological data, and (seeming) lack of overarching community standards makes working with biological data challenging. Several standards do exist for biological data, however these different data, metadata, and taxonomic standards are confusing for data managers and data users to navigate. The biological data community in the US could benefit from guidance, best practice documentation, training, and community building. The <a href="https://wiki.esipfed.org/Biological_Data_Standards_Cluster">ESIP Biological Data Cluster (BDS)</a> was formed to tackle these problems.</p>
+<p>In short, the will be successful if it:</p>
+<ol type="1">
+<li>Increase awareness &amp; interest in standards</li>
+<li>Create unity/shared vision around biological data standards implementation &amp; Provide guidance related to biological standards</li>
+<li>Provide opportunities for Knowledge sharing &amp; coordination</li>
+<li>Provide Connectivity across ESIP</li>
+</ol>
+<p>We successfully increased awareness and interest in standards through the creation of the primer, officially called, <a href="https://doi.org/10.6084/m9.figshare.16806712.v1">Biological Observation Data Standardization - A Primer for Data Manager.</a> <img src="images/primer_thumbnail.PNG" height="30"></p>
+<p>Our goals have evolved to work toward creating a sample extension of the cluster’s primer in the form of a best practice document(s). The target audience for the best practice document(s) are people who are new to working with biological data standards. The best practice document will provide additional detail on the points listed in the primer, focusing on efficient actions that can be taken to standardize data.</p>
+<p>As an example, we brainstormed the “Make your data software ready” section of the primer. Specifically, this includes:</p>
 <ul>
-<li>Provide context to your data and improve reproducability of the data.</li>
-<li>Can capture linked data relationships within EML (dataset series)</li>
-<li>Standardized representation of information.</li>
-<li>EML was designed for ecological data, which encompasses biological data.</li>
-<li>It’s taxonomic fields cover relationships (hierarchies), IDs, and authoritative material</li>
+<li>Use non-proprietary formats</li>
+<li>Structure data in tidy/long format</li>
+<li>Follow ISO 8601 for dates</li>
+<li>Match scientific names to a taxonomic authority</li>
+<li>Record latitude and longitude in decimal degrees in WGS84</li>
+<li>Use globally unique identifiers</li>
 </ul>
-</section>
-<section id="key-information" class="level3">
-<h3 class="anchored" data-anchor-id="key-information">Key Information</h3>
+<p>The proposed structure for each guide module is:</p>
 <ul>
-<li><p><a href="https://eml.ecoinformatics.org/eml-schema">EML Schema</a></p></li>
-<li><p>Mandatory for LTER, iLTER, OBIS, GBIF, Darwin Core Archive (DwC-A)</p></li>
-<li><p>Maintained, and github repo, managed by NCEAS</p></li>
-<li><p>Usually, what you would submit to a repository is a “data package” consisting of an EML document and one or more data objects.</p></li>
-</ul>
-</section>
-<section id="top-references" class="level3">
-<h3 class="anchored" data-anchor-id="top-references">Top References</h3>
-<p>Tools or packages to help write EML:</p>
-<ul>
-<li><p>For data managers, coders:&nbsp;</p>
-<ul>
-<li><p><a href="https://cran.r-project.org/web/packages/EML/index.html">EML-R package</a></p></li>
-<li><p><a href="https://github.com/lter/LTER-core-metabase">Postgresql database with fields compatible with EML</a></p></li>
-<li><p><a href="https://github.com/BLE-LTER/MetaEgress">R-code for generating EML from LTER-metabase (built on EML-R package)</a></p></li>
-<li><p><a href="https://ediorg.github.io/EMLassemblyline/articles/overview.html">EMLAssemblyline (built on EML-R package)</a></p></li>
-</ul></li>
-<li><p>For scientists or those not inclined to write scripts</p>
-<ul>
-<li><a href="https://ezeml.edirepository.org/">ezEML</a></li>
-</ul></li>
-</ul>
-</section>
-</section>
-<section id="iso-19115" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="iso-19115"><span class="header-section-number">2.2</span> ISO 19115</h2>
-<section id="what-is-it-1" class="level3">
-<h3 class="anchored" data-anchor-id="what-is-it-1">What Is It?</h3>
-<p>Content standard for describing geographic data sponsored by the International Standards Organization (ISO). At its most basic, it is written in narrative form with class diagrams. There are many implementations and extensions (e.g., <a href="https://www.dcc.ac.uk/resources/metadata-standards/iso-19115" class="uri">https://www.dcc.ac.uk/resources/metadata-standards/iso-19115</a>).</p>
-</section>
-<section id="why-1" class="level3">
-<h3 class="anchored" data-anchor-id="why-1">Why?</h3>
-<ul>
-<li><p>Provide context to your data (biological data is inherently ‘geographic’)</p></li>
-<li><p>Standardized representation of information</p></li>
-<li><p><strong>Mandated</strong> by some US federal agencies, including NOAA, NASA, and USGS</p></li>
-<li><p>Can be used at different granularities, used to describe data packages or collections, as well as at a dataset level (?): content standard vs collection standard?</p></li>
-</ul>
-</section>
-<section id="what" class="level3">
-<h3 class="anchored" data-anchor-id="what">What?</h3>
-<ul>
-<li><p>Evolved from the need for to to harmonize the FGDC Content Standard for Digital Geospatial Metadata (CSDGM) with other formal and defacto standards that support the documentation of geospatial data and services.</p></li>
-<li><p>Many variations including 19115, 19115-1, 19115-2</p></li>
-<li><p>From <a href="https://www.ncei.noaa.gov/resources/metadata">NCEI</a>:</p>
-<ul>
-<li><p>ISO 19115 Geographic information – Metadata: The ISO standard for documenting geospatial data.&nbsp;</p></li>
-<li><p>ISO 19115-2 Geographic information – Metadata – Part 2: Extensions for imagery and gridded data: An extension of ISO 19115 used to document information about imagery, gridded data, and remotely sensed data. The root of ISO 19115 metadata records will change from MD_Metadata to MI_Metadata when using ISO 19115-2.</p></li>
-</ul></li>
-<li><p>Usurped FGDC CSDGM - all users encouraged to migrate to ISO.</p></li>
-<li><p>Highly flexible for many uses compared FGDC CSDGM, but few required elements leaves room for incomplete metadata</p></li>
-</ul>
-</section>
-<section id="top-references-1" class="level3">
-<h3 class="anchored" data-anchor-id="top-references-1">Top References</h3>
-<ul>
-<li><p><a href="https://www.ncei.noaa.gov/sites/default/files/2020-04/ISO%2019115-2%20Workbook_Part%20II%20Extentions%20for%20imagery%20and%20Gridded%20Data.pdf">NOAA Workbook for ISO 19115-2</a>&nbsp;</p></li>
-<li><p><a href="https://nceas.github.io/arcticdatautils/reference/convert_iso_to_eml.html">How to Convert ISO to EML</a>&nbsp;</p></li>
-<li><p><a href="https://www.fgdc.gov/metadata/iso-implementation-model-workflow">Work Flow Model</a></p></li>
-<li><p><a href="https://www.mdtoolkit.org/home">mdToolkit</a> - mdEditor is a writer for ISO 19115 metadata which uses mdJSON as an intermediary and mdTranslator allows translation to different metadata formats</p></li>
-</ul>
-</section>
-</section>
-<section id="minimum-information-about-any-x-sequence-mixs" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="minimum-information-about-any-x-sequence-mixs"><span class="header-section-number">2.3</span> Minimum Information about any (x) Sequence (MIxS)</h2>
-<section id="who" class="level3">
-<h3 class="anchored" data-anchor-id="who">Who?</h3>
-<p>This is a standard for molecular data, like DNA and RNA. It is used by molecular biologist and ecologists who generate, manage and archive these type of sequence data.</p>
-</section>
-<section id="what-is-it-2" class="level3">
-<h3 class="anchored" data-anchor-id="what-is-it-2">What is it?</h3>
-<p>A set of checklists and packages for genomic sequence data.</p>
-</section>
-<section id="why-2" class="level3">
-<h3 class="anchored" data-anchor-id="why-2">Why?</h3>
-<ul>
-<li><p>Provide minimal standardized metadata about genetic sequence data</p></li>
-<li><p>Agreed upon and published by the Genome Standards Consortium</p></li>
-<li><p>Used by the INSDC (DDBJ, EMBL-EBI and NCBI)</p></li>
-</ul>
-</section>
-<section id="key-information-1" class="level3">
-<h3 class="anchored" data-anchor-id="key-information-1">Key Information</h3>
-<ul>
-<li><p>MIxS (pronounced MIX-ess) is a suite of checklists standards introduced the reporting of a breadth of environment-specific metadata variables to augment the genome-specific checklists.</p></li>
-<li><p>Enables mixing and matching of genome checklists and environmental-specific packages.</p></li>
-<li><div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="http://www.gensc.org/pages/standards-intro.html"><img src="http://www.gensc.org/images/mixs_ext_graphic-1024x731.png" class="img-fluid figure-img" alt="MIxS Structure"></a></p>
-<figcaption>MIxS Structure</figcaption>
-</figure>
-</div></li>
-</ul>
-</section>
-<section id="top-references-2" class="level3">
-<h3 class="anchored" data-anchor-id="top-references-2">Top References</h3>
-<ul>
-<li><p><a href="http://www.gensc.org/pages/standards/search-terms.html">MIxS Term Search Tool</a></p></li>
-<li><p><a href="https://genomicsstandardsconsortium.github.io/mixs/">Genomic Standards Consortium term list</a></p></li>
-<li><p><a href="https://www.nature.com/articles/nbt.1823">Minimum Information about Marker Gene Sequence (MIMARKS)</a></p></li>
-<li><p><a href="https://github.com/GenomicsStandardsConsortium/mixs">MIxS GitHub repo</a></p></li>
-<li><p><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3869023/">Minimum Information about Sequence Data from the Built Environment (MIxS-BE)</a></p></li>
+<li>Value proposition (Why?)</li>
+<li>List / key information (bulleted)</li>
+<li>References list (max 5)</li>
 </ul>
 
 
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -733,13 +635,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./intro.html" class="pagination-link" aria-label="Introduction">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span>
+      <a href="./index.html" class="pagination-link" aria-label="Preface">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Preface</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./INTEGRATE_DATA.html" class="pagination-link" aria-label="INTEGRATE YOUR DATA WITH OTHER DATA">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">INTEGRATE YOUR DATA WITH OTHER DATA</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./CONTEXT_UNDERSTANDABILITY.html" class="pagination-link" aria-label="Provide Context and Understandability to Your Data">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Provide Context and Understandability to Your Data</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

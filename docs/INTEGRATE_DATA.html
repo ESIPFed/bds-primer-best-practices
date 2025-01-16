@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>2&nbsp; Provide Context and Understandability to Your Data – ESIP Biological Data Cluster (BDS) Primer Guide</title>
+<title>3&nbsp; INTEGRATE YOUR DATA WITH OTHER DATA – ESIP Biological Data Cluster (BDS) Primer Guide</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./INTEGRATE_DATA.html" rel="next">
-<link href="./intro.html" rel="prev">
+<link href="./INTEROPERABLE_DATA.html" rel="next">
+<link href="./CONTEXT_UNDERSTANDABILITY.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./CONTEXT_UNDERSTANDABILITY.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Provide Context and Understandability to Your Data</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./INTEGRATE_DATA.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">INTEGRATE YOUR DATA WITH OTHER DATA</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -120,13 +120,13 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./CONTEXT_UNDERSTANDABILITY.html" class="sidebar-item-text sidebar-link active">
+  <a href="./CONTEXT_UNDERSTANDABILITY.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Provide Context and Understandability to Your Data</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./INTEGRATE_DATA.html" class="sidebar-item-text sidebar-link">
+  <a href="./INTEGRATE_DATA.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">INTEGRATE YOUR DATA WITH OTHER DATA</span></span></a>
   </div>
 </li>
@@ -159,7 +159,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Provide Context and Understandability to Your Data</span></h1>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">INTEGRATE YOUR DATA WITH OTHER DATA</span></h1>
 </div>
 
 
@@ -176,128 +176,112 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="ecological-metadata-language-eml" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="ecological-metadata-language-eml"><span class="header-section-number">2.1</span> Ecological Metadata Language (EML)</h2>
-<section id="what-is-it" class="level3">
-<h3 class="anchored" data-anchor-id="what-is-it">What Is It?</h3>
-<p>EML is a community-developed metadata schema designed for ecological data, which encompasses biological data. EML is normally presented as <a href="https://www.w3schools.com/xml/">Extensible Markup Language (XML)</a>. An EML instance (XML document) holds metadata to describe one or more data objects. Data tables are the most common, but almost any data object can be accommodated.</p>
-</section>
-<section id="why" class="level3">
-<h3 class="anchored" data-anchor-id="why">Why?</h3>
 <ul>
-<li>Provide context to your data and improve reproducability of the data.</li>
-<li>Can capture linked data relationships within EML (dataset series)</li>
-<li>Standardized representation of information.</li>
-<li>EML was designed for ecological data, which encompasses biological data.</li>
-<li>It’s taxonomic fields cover relationships (hierarchies), IDs, and authoritative material</li>
+<li>Why?</li>
+<li>Key Information</li>
+<li>Top 5 References</li>
 </ul>
+<section id="topic-climate-and-forecast" class="level3">
+<h3 class="anchored" data-anchor-id="topic-climate-and-forecast"><strong>Topic:</strong> Climate and Forecast</h3>
+<section id="what-is-it" class="level5">
+<h5 class="anchored" data-anchor-id="what-is-it">What is it:&nbsp;</h5>
+<p>The Climate and Forecast (CF) metadata conventions are designed to promote the processing and sharing of files created with the NetCDF (Network Common Data Form) <a href="https://en.wikipedia.org/wiki/API">API (Application Programming Interface)</a>. The conventions define metadata that provide a definitive description of what the data in each variable represents, and the spatial and temporal properties of the data. Said more plainly, the conventions explain the extra information (metadata) that clearly describes what each piece of data means and when and where it was collected.</p>
 </section>
-<section id="key-information" class="level3">
-<h3 class="anchored" data-anchor-id="key-information">Key Information</h3>
-<ul>
-<li><p><a href="https://eml.ecoinformatics.org/eml-schema">EML Schema</a></p></li>
-<li><p>Mandatory for LTER, iLTER, OBIS, GBIF, Darwin Core Archive (DwC-A)</p></li>
-<li><p>Maintained, and github repo, managed by NCEAS</p></li>
-<li><p>Usually, what you would submit to a repository is a “data package” consisting of an EML document and one or more data objects.</p></li>
-</ul>
+<section id="why" class="level5">
+<h5 class="anchored" data-anchor-id="why">Why?&nbsp;</h5>
+<p>This enables users of data from different sources to decide which quantities are comparable, and facilitates building applications with powerful extraction, regridding, and display capabilities. The CF convention includes a standard name table, which defines strings that identify physical quantities. CF is well-established, although not perfect for biology. Still, biological standards, and other standards, should consider terms from CF that can be used, before reinventing the wheel.</p>
 </section>
-<section id="top-references" class="level3">
-<h3 class="anchored" data-anchor-id="top-references">Top References</h3>
-<p>Tools or packages to help write EML:</p>
+<section id="key-information-how-what" class="level5">
+<h5 class="anchored" data-anchor-id="key-information-how-what">Key Information (How / What)</h5>
 <ul>
-<li><p>For data managers, coders:&nbsp;</p>
+<li><p><a href="https://cfconventions.org/Data/cf-conventions/cf-conventions-1.0/build/cf-conventions.html">Version 1.0</a> was released in October 2003, we are now on version 1.12</p></li>
+<li><p>CF is a convention built on top of the netCDF standard, and it generalizes and extends the netCDF <a href="https://ferret.pmel.noaa.gov/noaa_coop/coop_cdf_profile.html">COARDS conventions</a>.</p></li>
+<li><p>Like DwC requires knowledge of the EML standard, CF requires knowledge of others standards. Because CF is a netCDF convention, it assumes the netCDF standard is being followed. And it relies on the UDUNITS system of specifying units (see <a href="https://cfconventions.org/faq.html#units-in-cf-udunits">Units in CF (UDUNITS)</a> below).</p></li>
+<li><p>a CF principle is to be self-contained. So for example the CF Standard Names attempt to be as general and well-defined as possible, so the reader does not have to access outside sources to understand the terms.</p></li>
+<li><p>To find standard names that describe your data, open up the latest <a href="https://cfconventions.org/vocabularies.html">Standard Name table</a> (as HTML or XML) and search through it for words typically used for your data</p></li>
+<li><p>The NERC Vocabulary Server hosts CF, and maintains mappings from CF to other vocabularies. They decompose them into more useful SKOS level semantics. For example: <a href="https://vocab.nerc.ac.uk/search_nvs/map/?vocab=P07" class="uri">https://vocab.nerc.ac.uk/search_nvs/map/?vocab=P07</a></p>
 <ul>
-<li><p><a href="https://cran.r-project.org/web/packages/EML/index.html">EML-R package</a></p></li>
-<li><p><a href="https://github.com/lter/LTER-core-metabase">Postgresql database with fields compatible with EML</a></p></li>
-<li><p><a href="https://github.com/BLE-LTER/MetaEgress">R-code for generating EML from LTER-metabase (built on EML-R package)</a></p></li>
-<li><p><a href="https://ediorg.github.io/EMLassemblyline/articles/overview.html">EMLAssemblyline (built on EML-R package)</a></p></li>
-</ul></li>
-<li><p>For scientists or those not inclined to write scripts</p>
-<ul>
-<li><a href="https://ezeml.edirepository.org/">ezEML</a></li>
+<li>The NERC Vocabulary server is a platform for searching and browsing vocabularies relating to a variety of domains. NERC hosts a collection of vocabularies, including the Climate and Forecast (CF) vocabulary, and provides an interface for searching for terms across all the hosted vocabularies.&nbsp;</li>
 </ul></li>
 </ul>
 </section>
+<section id="top-5-references" class="level5">
+<h5 class="anchored" data-anchor-id="top-5-references">Top 5 References</h5>
+<ol type="1">
+<li><p><a href="https://cfconventions.org/" class="uri">https://cfconventions.org/</a></p></li>
+<li><p><a href="https://github.com/orgs/cf-convention/discussions">CF GitHub Discussions</a>: announcements, forum for community discussion, questions and answers</p></li>
+<li><p>Current proposals for changing CF (CF GitHub issues): <a href="https://github.com/cf-convention/vocabularies/issues">vocabulary</a> (including standard names), <a href="https://github.com/cf-convention/cf-conventions/issues">conventions</a>, this <a href="https://github.com/cf-convention/cf-convention.github.io/issues">website</a> (including governance)</p></li>
+<li><p><a href="https://github.com/cf-convention">CF GitHub organisation</a></p></li>
+<li><p><a href="https://cfconventions.org/faq.html">CF FAQ</a></p></li>
+<li><p><a href="https://cfconventions.org/software.html">List of software for working with CF</a></p></li>
+<li><p><a href="https://cfconventions.org/projects-activities.html">List of Projects and Activities that Use the CF Metadata Conventions</a></p></li>
+<li><p><a href="https://doi.org/10.5194/gmd-10-4619-2017">Paper</a> describing the CF data model and reference software</p></li>
+<li><p>Overview of CF basics as a <a href="https://cfconventions.org/Data/cf-documents/overview/viewgraphs.pdf">presentation</a> and <a href="https://cfconventions.org/Data/cf-documents/overview/article.pdf">paper</a></p></li>
+<li><p><a href="https://www.ogc.org/standard/netcdf/" class="uri">https://www.ogc.org/standard/netcdf/</a>;&nbsp;&nbsp;</p></li>
+<li><p><a href="https://gdal.org/en/latest/drivers/vector/netcdf.html" class="uri">https://gdal.org/en/latest/drivers/vector/netcdf.html</a></p></li>
+</ol>
 </section>
-<section id="iso-19115" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="iso-19115"><span class="header-section-number">2.2</span> ISO 19115</h2>
-<section id="what-is-it-1" class="level3">
-<h3 class="anchored" data-anchor-id="what-is-it-1">What Is It?</h3>
-<p>Content standard for describing geographic data sponsored by the International Standards Organization (ISO). At its most basic, it is written in narrative form with class diagrams. There are many implementations and extensions (e.g., <a href="https://www.dcc.ac.uk/resources/metadata-standards/iso-19115" class="uri">https://www.dcc.ac.uk/resources/metadata-standards/iso-19115</a>).</p>
+<section id="repositories-that-use-this-data-standard" class="level5">
+<h5 class="anchored" data-anchor-id="repositories-that-use-this-data-standard">Repositories that use this data standard</h5>
+<ol type="1">
+<li><p>NCEI</p></li>
+<li><p>NASA EarthData</p></li>
+</ol>
 </section>
-<section id="why-1" class="level3">
-<h3 class="anchored" data-anchor-id="why-1">Why?</h3>
-<ul>
-<li><p>Provide context to your data (biological data is inherently ‘geographic’)</p></li>
-<li><p>Standardized representation of information</p></li>
-<li><p><strong>Mandated</strong> by some US federal agencies, including NOAA, NASA, and USGS</p></li>
-<li><p>Can be used at different granularities, used to describe data packages or collections, as well as at a dataset level (?): content standard vs collection standard?</p></li>
-</ul>
 </section>
-<section id="what" class="level3">
-<h3 class="anchored" data-anchor-id="what">What?</h3>
+<section id="topic-darwin-core" class="level3">
+<h3 class="anchored" data-anchor-id="topic-darwin-core"><strong>Topic:</strong> Darwin Core</h3>
+<section id="what-is-it-1" class="level5">
+<h5 class="anchored" data-anchor-id="what-is-it-1">What is it:&nbsp;</h5>
+<p>Dublin Core [Link to Dublin Core section in the primer guidelines.] is a set of metadata terms used by libraries to describe physical and digital resources.&nbsp;</p>
+<p>Darwin Core (DwC) is a glossary of terms…</p>
+<p>The Darwin Core archive is a set of interlinked tables…</p>
+<p>Darwin Core is a data standard that offers a stable, straightforward and flexible framework for compiling biodiversity data from varied and variable sources. Darwin Core is an extension of Dublin Core for biodiversity informatics. The standard was originally developed by the Biodiversity Information Standards (TDWG, formerly known as the Taxonomic Database Working Group) community, and it is currently maintained by the Darwin Core Maintenance Interest Group; feedback and participation in development is open to the public.. It includes a glossary of terms intended to facilitate the sharing of information about biological diversity by providing identifiers, labels and definitions, improving data reuse in a variety of contexts. In short, it maps information from multiple sources/institutions in a cohesive way for the broader community. Darwin Core is primarily based on taxa, their occurrence in nature as documented by observations, specimens, samples, and related information. Taxonomic occurrence data can be standardized to Darwin Core irrespective of the observing method by which the data were collected (e.g., observational data, genomics, imaging, animal tracking). Through the use of common terminology and controlled vocabularies, downstream users can more easily discover, search, evaluate, integrate and compare datasets<br>
+<br>
+</p>
 <ul>
-<li><p>Evolved from the need for to to harmonize the FGDC Content Standard for Digital Geospatial Metadata (CSDGM) with other formal and defacto standards that support the documentation of geospatial data and services.</p></li>
-<li><p>Many variations including 19115, 19115-1, 19115-2</p></li>
-<li><p>From <a href="https://www.ncei.noaa.gov/resources/metadata">NCEI</a>:</p>
+<li><p>Darwin Core Archive</p>
 <ul>
-<li><p>ISO 19115 Geographic information – Metadata: The ISO standard for documenting geospatial data.&nbsp;</p></li>
-<li><p>ISO 19115-2 Geographic information – Metadata – Part 2: Extensions for imagery and gridded data: An extension of ISO 19115 used to document information about imagery, gridded data, and remotely sensed data. The root of ISO 19115 metadata records will change from MD_Metadata to MI_Metadata when using ISO 19115-2.</p></li>
+<li><p>A DwC-Archive includes three things -&nbsp; the data itself, an EML file and a meta.xml file</p>
+<ul>
+<li>Some repositories only ask for EML (e.g.&nbsp;EDI)</li>
 </ul></li>
-<li><p>Usurped FGDC CSDGM - all users encouraged to migrate to ISO.</p></li>
-<li><p>Highly flexible for many uses compared FGDC CSDGM, but few required elements leaves room for incomplete metadata</p></li>
+</ul></li>
 </ul>
 </section>
-<section id="top-references-1" class="level3">
-<h3 class="anchored" data-anchor-id="top-references-1">Top References</h3>
+<section id="why-1" class="level5">
+<h5 class="anchored" data-anchor-id="why-1">Why?</h5>
+<p>Biodiversity data, be it in museum collections, environmental monitoring programs, research programs or civic science projects (e.g.&nbsp;iNaturalist), is collected and managed in many different systems and environments. Additionally, the data is often very heterogeneous within and across these systems, depending on research objectives. Formatting data to the Darwin Core standard can play a fundamental role in facilitating open-access biodiversity data sharing, use and reuse.&nbsp;</p>
+<p>Why use DwC in place of OGC, or other standards, like CF? People collect data in all sorts of ways (we list them later in that paragraph), but there are consistent aspects of those: the what, where, and when, and then details of those. It would be great to be able to put all of these disparate collection methods together, and that’s what aligning your data allows. The data you collect have details with names you’ve given them, but there are equivalents with specific names that you can give them to align them.</p>
+</section>
+<section id="key-information-how-what-1" class="level5">
+<h5 class="anchored" data-anchor-id="key-information-how-what-1">Key Information (How / What)</h5>
+<p>In practice, adopting the Darwin Core standard revolves around a standard file format, the Darwin Core Archive (DwC-A). This is the biodiversity informatics data standard that uses the Darwin Core terms to produce a data record for biodiversity data. Essentially, DwC-A is a compressed (.zip) file that contains interconnected text (e.g.&nbsp;csv or tsv) files that enables data publishers to share data using common terminology. These data files are logically arranged in a star-like manner, and typically consist of a core file with one or more extension files, connected through the use of primary and foreign keys.&nbsp;</p>
+<p>Aside from text data tables, a DwC-A contains .xml files that facilitate human- and machine-interpretation of the data. A descriptor file (meta.xml) describes the contents of the compressed file, as well as the relationships between the core and any extensions. An eml.xml file describes the datasets contained in the DwC-A.</p>
+</section>
+<section id="advanced-darwin-core" class="level5">
+<h5 class="anchored" data-anchor-id="advanced-darwin-core">Advanced Darwin Core</h5>
+<p>Measurement Or Fact Section? The eMOf can help pull in other vocabularies or standards and cross-link between them.</p>
+</section>
+<section id="top-5-references-1" class="level5">
+<h5 class="anchored" data-anchor-id="top-5-references-1">Top 5 References</h5>
 <ul>
-<li><p><a href="https://www.ncei.noaa.gov/sites/default/files/2020-04/ISO%2019115-2%20Workbook_Part%20II%20Extentions%20for%20imagery%20and%20Gridded%20Data.pdf">NOAA Workbook for ISO 19115-2</a>&nbsp;</p></li>
-<li><p><a href="https://nceas.github.io/arcticdatautils/reference/convert_iso_to_eml.html">How to Convert ISO to EML</a>&nbsp;</p></li>
-<li><p><a href="https://www.fgdc.gov/metadata/iso-implementation-model-workflow">Work Flow Model</a></p></li>
-<li><p><a href="https://www.mdtoolkit.org/home">mdToolkit</a> - mdEditor is a writer for ISO 19115 metadata which uses mdJSON as an intermediary and mdTranslator allows translation to different metadata formats</p></li>
+<li><p><a href="https://dwc.tdwg.org/terms/">Darwin Core Quick Reference</a></p></li>
+<li><p>Wieczorek et al., (2012) - Darwin Core: An Evolving Community-Developed Biodiversity Data Standard: <a href="https://doi.org/10.1371/journal.pone.0029715" class="uri">https://doi.org/10.1371/journal.pone.0029715</a>&nbsp;</p></li>
+<li><p>Ecological Metadata Language (*maybe we can point to EML section in Guidelines?)</p></li>
 </ul>
 </section>
-</section>
-<section id="minimum-information-about-any-x-sequence-mixs" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="minimum-information-about-any-x-sequence-mixs"><span class="header-section-number">2.3</span> Minimum Information about any (x) Sequence (MIxS)</h2>
-<section id="who" class="level3">
-<h3 class="anchored" data-anchor-id="who">Who?</h3>
-<p>This is a standard for molecular data, like DNA and RNA. It is used by molecular biologist and ecologists who generate, manage and archive these type of sequence data.</p>
-</section>
-<section id="what-is-it-2" class="level3">
-<h3 class="anchored" data-anchor-id="what-is-it-2">What is it?</h3>
-<p>A set of checklists and packages for genomic sequence data.</p>
-</section>
-<section id="why-2" class="level3">
-<h3 class="anchored" data-anchor-id="why-2">Why?</h3>
+<section id="repositories-that-use-this-data-standard-1" class="level5">
+<h5 class="anchored" data-anchor-id="repositories-that-use-this-data-standard-1">Repositories that use this data standard</h5>
 <ul>
-<li><p>Provide minimal standardized metadata about genetic sequence data</p></li>
-<li><p>Agreed upon and published by the Genome Standards Consortium</p></li>
-<li><p>Used by the INSDC (DDBJ, EMBL-EBI and NCBI)</p></li>
+<li><p><a href="https://www.gbif.org/">Global Biodiversity Information Facility (GBIF)</a></p></li>
+<li><p><a href="https://obis.org/">Ocean Biodiversity Information System (OBIS)</a></p></li>
+<li><p><a href="https://www.ala.org.au/">The Atlas of Living Australia (ALA)</a></p></li>
 </ul>
+<p>And many more, see this list of <a href="https://en.wikipedia.org/wiki/Darwin_Core">Key projects using Darwin Core</a></p>
 </section>
-<section id="key-information-1" class="level3">
-<h3 class="anchored" data-anchor-id="key-information-1">Key Information</h3>
-<ul>
-<li><p>MIxS (pronounced MIX-ess) is a suite of checklists standards introduced the reporting of a breadth of environment-specific metadata variables to augment the genome-specific checklists.</p></li>
-<li><p>Enables mixing and matching of genome checklists and environmental-specific packages.</p></li>
-<li><div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="http://www.gensc.org/pages/standards-intro.html"><img src="http://www.gensc.org/images/mixs_ext_graphic-1024x731.png" class="img-fluid figure-img" alt="MIxS Structure"></a></p>
-<figcaption>MIxS Structure</figcaption>
-</figure>
-</div></li>
-</ul>
-</section>
-<section id="top-references-2" class="level3">
-<h3 class="anchored" data-anchor-id="top-references-2">Top References</h3>
-<ul>
-<li><p><a href="http://www.gensc.org/pages/standards/search-terms.html">MIxS Term Search Tool</a></p></li>
-<li><p><a href="https://genomicsstandardsconsortium.github.io/mixs/">Genomic Standards Consortium term list</a></p></li>
-<li><p><a href="https://www.nature.com/articles/nbt.1823">Minimum Information about Marker Gene Sequence (MIMARKS)</a></p></li>
-<li><p><a href="https://github.com/GenomicsStandardsConsortium/mixs">MIxS GitHub repo</a></p></li>
-<li><p><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3869023/">Minimum Information about Sequence Data from the Built Environment (MIxS-BE)</a></p></li>
-</ul>
+<section id="is-there-anything-missing" class="level5">
+<h5 class="anchored" data-anchor-id="is-there-anything-missing">Is there anything missing?</h5>
 
 
 </section>
@@ -733,13 +717,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./intro.html" class="pagination-link" aria-label="Introduction">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span>
+      <a href="./CONTEXT_UNDERSTANDABILITY.html" class="pagination-link" aria-label="Provide Context and Understandability to Your Data">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Provide Context and Understandability to Your Data</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./INTEGRATE_DATA.html" class="pagination-link" aria-label="INTEGRATE YOUR DATA WITH OTHER DATA">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">INTEGRATE YOUR DATA WITH OTHER DATA</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./INTEROPERABLE_DATA.html" class="pagination-link" aria-label="Make Your Data Interoperable">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Make Your Data Interoperable</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

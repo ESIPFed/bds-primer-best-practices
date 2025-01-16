@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.353">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>ESIP Biological Data Cluster (BDS) Primer Guide - 3&nbsp; Make Your Data Software Ready</title>
+<title>6&nbsp; Make Your Data Software Ready – ESIP Biological Data Cluster (BDS) Primer Guide</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./INTEROPERABLE_DATA.html" rel="prev">
+<link href="./MAKE_YOUR_DATA_INTERNET_READY.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -46,7 +46,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -55,12 +61,16 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 <link href="site_libs/tabwid-1.1.3/tabwid.css" rel="stylesheet">
+
 <script src="site_libs/tabwid-1.1.3/tabwid.js"></script>
+
 
 
 </head>
@@ -71,12 +81,12 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./SOFTWARE_READY.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Make Your Data Software Ready</span></a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./SOFTWARE_READY.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Make Your Data Software Ready</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
@@ -86,7 +96,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">ESIP Biological Data Cluster (BDS) Primer Guide</a> 
@@ -107,26 +117,44 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./CONTEXT_UNDERSTANDABILITY.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Provide Context and Understandability to Your Data</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Provide Context and Understandability to Your Data</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./INTEGRATE_DATA.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">INTEGRATE YOUR DATA WITH OTHER DATA</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./INTEROPERABLE_DATA.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Make Your Data Interoperable</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Make Your Data Interoperable</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./MAKE_YOUR_DATA_INTERNET_READY.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">SHARE YOUR DATA ON THE WEB</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./SOFTWARE_READY.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Make Your Data Software Ready</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Make Your Data Software Ready</span></span></a>
   </div>
 </li>
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     
 <!-- main -->
@@ -134,7 +162,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Make Your Data Software Ready</span></h1>
+<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Make Your Data Software Ready</span></h1>
 </div>
 
 
@@ -147,10 +175,12 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
 
-<section id="use-non-proprietary-formats" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="use-non-proprietary-formats"><span class="header-section-number">3.1</span> Use non-proprietary formats</h2>
+
+<section id="use-non-proprietary-formats" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="use-non-proprietary-formats"><span class="header-section-number">6.1</span> Use non-proprietary formats</h2>
 <section id="why" class="level3">
 <h3 class="anchored" data-anchor-id="why">Why?</h3>
 <ul>
@@ -177,8 +207,8 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </section>
 </section>
-<section id="structure-tabular-data-in-tidylong-format" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="structure-tabular-data-in-tidylong-format"><span class="header-section-number">3.2</span> Structure tabular data in tidy/long format</h2>
+<section id="structure-tabular-data-in-tidylong-format" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="structure-tabular-data-in-tidylong-format"><span class="header-section-number">6.2</span> Structure tabular data in tidy/long format</h2>
 <section id="why-1" class="level3">
 <h3 class="anchored" data-anchor-id="why-1">Why?</h3>
 <p><em>This is specifically intended for tabular data</em></p>
@@ -197,15 +227,13 @@ ul.task-list li input[type="checkbox"] {
 <p>Example of Wide Format</p>
 <div class="cell">
 <div class="cell-output-display">
-
-<div class="tabwid"><style>.cl-6950f21a{}.cl-6939db5c{font-family:'Arial';font-size:11pt;font-weight:bold;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-6939db8e{font-family:'Arial';font-size:9pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-6942c08c{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-6942c0a0{margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-6943b000{width:1.133in;background-color:rgba(207, 207, 207, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-6943b014{width:0.778in;background-color:rgba(207, 207, 207, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-6943b015{width:1.133in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-6943b01e{width:0.778in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-6943b01f{width:1.133in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-6943b028{width:0.778in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing="true" class="cl-6950f21a"><thead><tr style="overflow-wrap:break-word;"><th class="cl-6943b000"><p class="cl-6942c08c"><span class="cl-6939db5c">species</span></p></th><th class="cl-6943b014"><p class="cl-6942c0a0"><span class="cl-6939db5c">site_01</span></p></th><th class="cl-6943b014"><p class="cl-6942c0a0"><span class="cl-6939db5c">site_02</span></p></th><th class="cl-6943b014"><p class="cl-6942c0a0"><span class="cl-6939db5c">site_03</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td class="cl-6943b015"><p class="cl-6942c08c"><span class="cl-6939db8e">Tilia americana</span></p></td><td class="cl-6943b01e"><p class="cl-6942c0a0"><span class="cl-6939db8e">4</span></p></td><td class="cl-6943b01e"><p class="cl-6942c0a0"><span class="cl-6939db8e">3</span></p></td><td class="cl-6943b01e"><p class="cl-6942c0a0"><span class="cl-6939db8e">4</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-6943b01f"><p class="cl-6942c08c"><span class="cl-6939db8e">Pinus strobus</span></p></td><td class="cl-6943b028"><p class="cl-6942c0a0"><span class="cl-6939db8e">0</span></p></td><td class="cl-6943b028"><p class="cl-6942c0a0"><span class="cl-6939db8e">0</span></p></td><td class="cl-6943b028"><p class="cl-6942c0a0"><span class="cl-6939db8e">2</span></p></td></tr></tbody></table></div>
+<div class="tabwid"><style>.cl-e6436e38{}.cl-e63d2988{font-family:'Arial';font-size:11pt;font-weight:bold;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-e63d2992{font-family:'Arial';font-size:9pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-e63fc6e8{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-e63fc6fc{margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-e63fe204{width:1.133in;background-color:rgba(207, 207, 207, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e63fe205{width:0.778in;background-color:rgba(207, 207, 207, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e63fe20e{width:1.133in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e63fe20f{width:0.778in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e63fe210{width:1.133in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e63fe211{width:0.778in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing="true" class="cl-e6436e38"><thead><tr style="overflow-wrap:break-word;"><th class="cl-e63fe204"><p class="cl-e63fc6e8"><span class="cl-e63d2988">species</span></p></th><th class="cl-e63fe205"><p class="cl-e63fc6fc"><span class="cl-e63d2988">site_01</span></p></th><th class="cl-e63fe205"><p class="cl-e63fc6fc"><span class="cl-e63d2988">site_02</span></p></th><th class="cl-e63fe205"><p class="cl-e63fc6fc"><span class="cl-e63d2988">site_03</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td class="cl-e63fe20e"><p class="cl-e63fc6e8"><span class="cl-e63d2992">Tilia americana</span></p></td><td class="cl-e63fe20f"><p class="cl-e63fc6fc"><span class="cl-e63d2992">1</span></p></td><td class="cl-e63fe20f"><p class="cl-e63fc6fc"><span class="cl-e63d2992">5</span></p></td><td class="cl-e63fe20f"><p class="cl-e63fc6fc"><span class="cl-e63d2992">5</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-e63fe210"><p class="cl-e63fc6e8"><span class="cl-e63d2992">Pinus strobus</span></p></td><td class="cl-e63fe211"><p class="cl-e63fc6fc"><span class="cl-e63d2992">4</span></p></td><td class="cl-e63fe211"><p class="cl-e63fc6fc"><span class="cl-e63d2992">3</span></p></td><td class="cl-e63fe211"><p class="cl-e63fc6fc"><span class="cl-e63d2992">1</span></p></td></tr></tbody></table></div>
 </div>
 </div>
 <p>Example of Long Format</p>
 <div class="cell">
 <div class="cell-output-display">
-
-<div class="tabwid"><style>.cl-69a505c6{}.cl-698fcbde{font-family:'Arial';font-size:11pt;font-weight:bold;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-698fcbf2{font-family:'Arial';font-size:9pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-699989da{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-699989ee{margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-6999b270{width:1.133in;background-color:rgba(207, 207, 207, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-6999b284{width:0.688in;background-color:rgba(207, 207, 207, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-6999b28e{width:0.659in;background-color:rgba(207, 207, 207, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-6999b28f{width:1.133in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-6999b298{width:0.688in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-6999b2a2{width:0.659in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-6999b2a3{width:1.133in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-6999b2a4{width:0.688in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-6999b2ac{width:0.659in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing="true" class="cl-69a505c6"><thead><tr style="overflow-wrap:break-word;"><th class="cl-6999b270"><p class="cl-699989da"><span class="cl-698fcbde">species</span></p></th><th class="cl-6999b284"><p class="cl-699989da"><span class="cl-698fcbde">site</span></p></th><th class="cl-6999b28e"><p class="cl-699989ee"><span class="cl-698fcbde">count</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td class="cl-6999b28f"><p class="cl-699989da"><span class="cl-698fcbf2">Tilia americana</span></p></td><td class="cl-6999b298"><p class="cl-699989da"><span class="cl-698fcbf2">site_01</span></p></td><td class="cl-6999b2a2"><p class="cl-699989ee"><span class="cl-698fcbf2">5</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-6999b2a3"><p class="cl-699989da"><span class="cl-698fcbf2">Tilia americana</span></p></td><td class="cl-6999b2a4"><p class="cl-699989da"><span class="cl-698fcbf2">site_02</span></p></td><td class="cl-6999b2ac"><p class="cl-699989ee"><span class="cl-698fcbf2">0</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-6999b28f"><p class="cl-699989da"><span class="cl-698fcbf2">Tilia americana</span></p></td><td class="cl-6999b298"><p class="cl-699989da"><span class="cl-698fcbf2">site_03</span></p></td><td class="cl-6999b2a2"><p class="cl-699989ee"><span class="cl-698fcbf2">5</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-6999b2a3"><p class="cl-699989da"><span class="cl-698fcbf2">Pinus strobus</span></p></td><td class="cl-6999b2a4"><p class="cl-699989da"><span class="cl-698fcbf2">site_01</span></p></td><td class="cl-6999b2ac"><p class="cl-699989ee"><span class="cl-698fcbf2">4</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-6999b28f"><p class="cl-699989da"><span class="cl-698fcbf2">Pinus strobus</span></p></td><td class="cl-6999b298"><p class="cl-699989da"><span class="cl-698fcbf2">site_02</span></p></td><td class="cl-6999b2a2"><p class="cl-699989ee"><span class="cl-698fcbf2">5</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-6999b2a3"><p class="cl-699989da"><span class="cl-698fcbf2">Pinus strobus</span></p></td><td class="cl-6999b2a4"><p class="cl-699989da"><span class="cl-698fcbf2">site_03</span></p></td><td class="cl-6999b2ac"><p class="cl-699989ee"><span class="cl-698fcbf2">0</span></p></td></tr></tbody></table></div>
+<div class="tabwid"><style>.cl-e66714dc{}.cl-e6618256{font-family:'Arial';font-size:11pt;font-weight:bold;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-e6618260{font-family:'Arial';font-size:9pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-e663a6bc{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-e663a6d0{margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-e663b80a{width:1.133in;background-color:rgba(207, 207, 207, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e663b80b{width:0.688in;background-color:rgba(207, 207, 207, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e663b80c{width:0.659in;background-color:rgba(207, 207, 207, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e663b814{width:1.133in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e663b815{width:0.688in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e663b816{width:0.659in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e663b81e{width:1.133in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e663b81f{width:0.688in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e663b820{width:0.659in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing="true" class="cl-e66714dc"><thead><tr style="overflow-wrap:break-word;"><th class="cl-e663b80a"><p class="cl-e663a6bc"><span class="cl-e6618256">species</span></p></th><th class="cl-e663b80b"><p class="cl-e663a6bc"><span class="cl-e6618256">site</span></p></th><th class="cl-e663b80c"><p class="cl-e663a6d0"><span class="cl-e6618256">count</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td class="cl-e663b814"><p class="cl-e663a6bc"><span class="cl-e6618260">Tilia americana</span></p></td><td class="cl-e663b815"><p class="cl-e663a6bc"><span class="cl-e6618260">site_01</span></p></td><td class="cl-e663b816"><p class="cl-e663a6d0"><span class="cl-e6618260">2</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-e663b81e"><p class="cl-e663a6bc"><span class="cl-e6618260">Tilia americana</span></p></td><td class="cl-e663b81f"><p class="cl-e663a6bc"><span class="cl-e6618260">site_02</span></p></td><td class="cl-e663b820"><p class="cl-e663a6d0"><span class="cl-e6618260">2</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-e663b814"><p class="cl-e663a6bc"><span class="cl-e6618260">Tilia americana</span></p></td><td class="cl-e663b815"><p class="cl-e663a6bc"><span class="cl-e6618260">site_03</span></p></td><td class="cl-e663b816"><p class="cl-e663a6d0"><span class="cl-e6618260">1</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-e663b81e"><p class="cl-e663a6bc"><span class="cl-e6618260">Pinus strobus</span></p></td><td class="cl-e663b81f"><p class="cl-e663a6bc"><span class="cl-e6618260">site_01</span></p></td><td class="cl-e663b820"><p class="cl-e663a6d0"><span class="cl-e6618260">4</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-e663b814"><p class="cl-e663a6bc"><span class="cl-e6618260">Pinus strobus</span></p></td><td class="cl-e663b815"><p class="cl-e663a6bc"><span class="cl-e6618260">site_02</span></p></td><td class="cl-e663b816"><p class="cl-e663a6d0"><span class="cl-e6618260">4</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-e663b81e"><p class="cl-e663a6bc"><span class="cl-e6618260">Pinus strobus</span></p></td><td class="cl-e663b81f"><p class="cl-e663a6bc"><span class="cl-e6618260">site_03</span></p></td><td class="cl-e663b820"><p class="cl-e663a6d0"><span class="cl-e6618260">4</span></p></td></tr></tbody></table></div>
 </div>
 </div>
 <ul>
@@ -229,14 +257,14 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </section>
 </section>
-<section id="follow-iso-8601-for-dates" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="follow-iso-8601-for-dates"><span class="header-section-number">3.3</span> Follow ISO 8601 for dates</h2>
+<section id="follow-iso-8601-for-dates" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="follow-iso-8601-for-dates"><span class="header-section-number">6.3</span> Follow ISO 8601 for dates</h2>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://imgs.xkcd.com/comics/iso_8601.png" class="img-fluid figure-img" style="width:40.0%"></p>
-<figcaption class="figure-caption">https://imgs.xkcd.com/comics/iso_8601.png</figcaption>
+<figcaption>https://imgs.xkcd.com/comics/iso_8601.png</figcaption>
 </figure>
 </div>
 </div>
@@ -258,15 +286,13 @@ ul.task-list li input[type="checkbox"] {
 <p><em>Examples: April 3, 2023 standardized to ISO 8601</em></p>
 <div class="cell">
 <div class="cell-output-display">
-
-<div class="tabwid"><style>.cl-6a184004{}.cl-69fd6a86{font-family:'Arial';font-size:11pt;font-weight:bold;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-69fd6aae{font-family:'Arial';font-size:9pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-6a07a1f4{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-6a07e51a{width:2.909in;background-color:rgba(207, 207, 207, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-6a07e52e{width:3.453in;background-color:rgba(207, 207, 207, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-6a07e538{width:2.909in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-6a07e542{width:3.453in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-6a07e543{width:2.909in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-6a07e54c{width:3.453in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-6a07e54d{width:2.909in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-6a07e556{width:3.453in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-6a07e557{width:2.909in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-6a07e560{width:3.453in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing="true" class="cl-6a184004"><thead><tr style="overflow-wrap:break-word;"><th class="cl-6a07e51a"><p class="cl-6a07a1f4"><span class="cl-69fd6a86">Description</span></p></th><th class="cl-6a07e52e"><p class="cl-6a07a1f4"><span class="cl-69fd6a86">Written in ISO 8601</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td class="cl-6a07e538"><p class="cl-6a07a1f4"><span class="cl-69fd6aae">Date</span></p></td><td class="cl-6a07e542"><p class="cl-6a07a1f4"><span class="cl-69fd6aae">2023-04-03</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-6a07e543"><p class="cl-6a07a1f4"><span class="cl-69fd6aae">Date and Time with timezone offset</span></p></td><td class="cl-6a07e54c"><p class="cl-6a07a1f4"><span class="cl-69fd6aae">2023-04-03T18:29:38+00:00</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-6a07e54d"><p class="cl-6a07a1f4"><span class="cl-69fd6aae">Date and Time in UTC</span></p></td><td class="cl-6a07e556"><p class="cl-6a07a1f4"><span class="cl-69fd6aae">2023-04-03T18:29:38Z</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-6a07e557"><p class="cl-6a07a1f4"><span class="cl-69fd6aae">Time Interval in UTC (April 3 - 5, 2023)</span></p></td><td class="cl-6a07e560"><p class="cl-6a07a1f4"><span class="cl-69fd6aae">2023-04-03T18:29:38Z/2023-04-05T00:29:38Z</span></p></td></tr></tbody></table></div>
+<div class="tabwid"><style>.cl-e6881bbe{}.cl-e681a644{font-family:'Arial';font-size:11pt;font-weight:bold;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-e681a64e{font-family:'Arial';font-size:9pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-e683e04e{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-e683f1b0{width:2.909in;background-color:rgba(207, 207, 207, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e683f1b1{width:3.453in;background-color:rgba(207, 207, 207, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e683f1ba{width:2.909in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e683f1bb{width:3.453in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e683f1c4{width:2.909in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e683f1c5{width:3.453in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e683f1c6{width:2.909in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e683f1c7{width:3.453in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e683f1ce{width:2.909in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e683f1cf{width:3.453in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing="true" class="cl-e6881bbe"><thead><tr style="overflow-wrap:break-word;"><th class="cl-e683f1b0"><p class="cl-e683e04e"><span class="cl-e681a644">Description</span></p></th><th class="cl-e683f1b1"><p class="cl-e683e04e"><span class="cl-e681a644">Written in ISO 8601</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td class="cl-e683f1ba"><p class="cl-e683e04e"><span class="cl-e681a64e">Date</span></p></td><td class="cl-e683f1bb"><p class="cl-e683e04e"><span class="cl-e681a64e">2023-04-03</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-e683f1c4"><p class="cl-e683e04e"><span class="cl-e681a64e">Date and Time with timezone offset</span></p></td><td class="cl-e683f1c5"><p class="cl-e683e04e"><span class="cl-e681a64e">2023-04-03T18:29:38+00:00</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-e683f1c6"><p class="cl-e683e04e"><span class="cl-e681a64e">Date and Time in UTC</span></p></td><td class="cl-e683f1c7"><p class="cl-e683e04e"><span class="cl-e681a64e">2023-04-03T18:29:38Z</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-e683f1ce"><p class="cl-e683e04e"><span class="cl-e681a64e">Time Interval in UTC (April 3 - 5, 2023)</span></p></td><td class="cl-e683f1cf"><p class="cl-e683e04e"><span class="cl-e681a64e">2023-04-03T18:29:38Z/2023-04-05T00:29:38Z</span></p></td></tr></tbody></table></div>
 </div>
 </div>
 <p><em>Examples: different styles of timezone annotation</em></p>
 <div class="cell">
 <div class="cell-output-display">
-
-<div class="tabwid"><style>.cl-6a5a368a{}.cl-6a45a314{font-family:'Arial';font-size:11pt;font-weight:bold;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-6a45a328{font-family:'Arial';font-size:9pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-6a4d152c{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-6a4d3890{width:2.909in;background-color:rgba(207, 207, 207, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-6a4d38a4{width:3.453in;background-color:rgba(207, 207, 207, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-6a4d38a5{width:2.909in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-6a4d38ae{width:3.453in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-6a4d38af{width:2.909in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-6a4d38b8{width:3.453in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-6a4d393a{width:2.909in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-6a4d3944{width:3.453in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-6a4d3945{width:2.909in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-6a4d394e{width:3.453in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing="true" class="cl-6a5a368a"><thead><tr style="overflow-wrap:break-word;"><th class="cl-6a4d3890"><p class="cl-6a4d152c"><span class="cl-6a45a314">Description</span></p></th><th class="cl-6a4d38a4"><p class="cl-6a4d152c"><span class="cl-6a45a314">Written in ISO 8601</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td class="cl-6a4d38a5"><p class="cl-6a4d152c"><span class="cl-6a45a328">Date</span></p></td><td class="cl-6a4d38ae"><p class="cl-6a4d152c"><span class="cl-6a45a328">2023-04-03</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-6a4d38af"><p class="cl-6a4d152c"><span class="cl-6a45a328">Date and Time with timezone offset</span></p></td><td class="cl-6a4d38b8"><p class="cl-6a4d152c"><span class="cl-6a45a328">2023-04-03T18:29:38+00:00</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-6a4d393a"><p class="cl-6a4d152c"><span class="cl-6a45a328">Date and Time in UTC</span></p></td><td class="cl-6a4d3944"><p class="cl-6a4d152c"><span class="cl-6a45a328">2023-04-03T18:29:38Z</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-6a4d3945"><p class="cl-6a4d152c"><span class="cl-6a45a328">Time Interval in UTC (April 3 - 5, 2023)</span></p></td><td class="cl-6a4d394e"><p class="cl-6a4d152c"><span class="cl-6a45a328">2023-04-03T18:29:38Z/2023-04-05T00:29:38Z</span></p></td></tr></tbody></table></div>
+<div class="tabwid"><style>.cl-e69b15d4{}.cl-e694d6b0{font-family:'Arial';font-size:11pt;font-weight:bold;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-e694d6ba{font-family:'Arial';font-size:9pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-e69793c8{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-e697a5b6{width:2.909in;background-color:rgba(207, 207, 207, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e697a5c0{width:3.453in;background-color:rgba(207, 207, 207, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e697a5c1{width:2.909in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e697a5c2{width:3.453in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e697a5c3{width:2.909in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e697a5ca{width:3.453in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e697a5cb{width:2.909in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e697a5cc{width:3.453in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e697a5cd{width:2.909in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e697a5d4{width:3.453in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing="true" class="cl-e69b15d4"><thead><tr style="overflow-wrap:break-word;"><th class="cl-e697a5b6"><p class="cl-e69793c8"><span class="cl-e694d6b0">Description</span></p></th><th class="cl-e697a5c0"><p class="cl-e69793c8"><span class="cl-e694d6b0">Written in ISO 8601</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td class="cl-e697a5c1"><p class="cl-e69793c8"><span class="cl-e694d6ba">Date</span></p></td><td class="cl-e697a5c2"><p class="cl-e69793c8"><span class="cl-e694d6ba">2023-04-03</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-e697a5c3"><p class="cl-e69793c8"><span class="cl-e694d6ba">Date and Time with timezone offset</span></p></td><td class="cl-e697a5ca"><p class="cl-e69793c8"><span class="cl-e694d6ba">2023-04-03T18:29:38+00:00</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-e697a5cb"><p class="cl-e69793c8"><span class="cl-e694d6ba">Date and Time in UTC</span></p></td><td class="cl-e697a5cc"><p class="cl-e69793c8"><span class="cl-e694d6ba">2023-04-03T18:29:38Z</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-e697a5cd"><p class="cl-e69793c8"><span class="cl-e694d6ba">Time Interval in UTC (April 3 - 5, 2023)</span></p></td><td class="cl-e697a5d4"><p class="cl-e69793c8"><span class="cl-e694d6ba">2023-04-03T18:29:38Z/2023-04-05T00:29:38Z</span></p></td></tr></tbody></table></div>
 </div>
 </div>
 </section>
@@ -282,8 +308,8 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </section>
 </section>
-<section id="match-scientific-names-to-a-taxonomic-authority" class="level2" data-number="3.4">
-<h2 data-number="3.4" class="anchored" data-anchor-id="match-scientific-names-to-a-taxonomic-authority"><span class="header-section-number">3.4</span> Match scientific names to a taxonomic authority</h2>
+<section id="match-scientific-names-to-a-taxonomic-authority" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="match-scientific-names-to-a-taxonomic-authority"><span class="header-section-number">6.4</span> Match scientific names to a taxonomic authority</h2>
 <section id="why-3" class="level3">
 <h3 class="anchored" data-anchor-id="why-3">Why?</h3>
 <ul>
@@ -332,14 +358,14 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </section>
 </section>
-<section id="record-latitude-and-longitude-in-decimal-degrees-in-wgs84" class="level2" data-number="3.5">
-<h2 data-number="3.5" class="anchored" data-anchor-id="record-latitude-and-longitude-in-decimal-degrees-in-wgs84"><span class="header-section-number">3.5</span> Record latitude and longitude in decimal degrees in WGS84</h2>
+<section id="record-latitude-and-longitude-in-decimal-degrees-in-wgs84" class="level2" data-number="6.5">
+<h2 data-number="6.5" class="anchored" data-anchor-id="record-latitude-and-longitude-in-decimal-degrees-in-wgs84"><span class="header-section-number">6.5</span> Record latitude and longitude in decimal degrees in WGS84</h2>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://imgs.xkcd.com/comics/coordinate_precision.png" class="img-fluid figure-img" style="width:40.0%"></p>
-<figcaption class="figure-caption">https://imgs.xkcd.com/comics/coordinate_precision.png</figcaption>
+<figcaption>https://imgs.xkcd.com/comics/coordinate_precision.png</figcaption>
 </figure>
 </div>
 </div>
@@ -372,8 +398,7 @@ ul.task-list li input[type="checkbox"] {
 <p><em>Example Coordinates</em></p>
 <div class="cell">
 <div class="cell-output-display">
-
-<div class="tabwid"><style>.cl-6aadd7ae{}.cl-6a9ba458{font-family:'Arial';font-size:11pt;font-weight:bold;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-6a9ba476{font-family:'Arial';font-size:9pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-6aa25aaa{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-6aa2814c{width:2.985in;background-color:rgba(207, 207, 207, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-6aa28156{width:1.264in;background-color:rgba(207, 207, 207, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-6aa28160{width:2.985in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-6aa2816a{width:1.264in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-6aa2816b{width:2.985in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-6aa28174{width:1.264in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing="true" class="cl-6aadd7ae"><thead><tr style="overflow-wrap:break-word;"><th class="cl-6aa2814c"><p class="cl-6aa25aaa"><span class="cl-6a9ba458">Format</span></p></th><th class="cl-6aa28156"><p class="cl-6aa25aaa"><span class="cl-6a9ba458">Example</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td class="cl-6aa28160"><p class="cl-6aa25aaa"><span class="cl-6a9ba476">Decimal Degrees (DD)</span></p></td><td class="cl-6aa2816a"><p class="cl-6aa25aaa"><span class="cl-6a9ba476">30.50833333</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-6aa2816b"><p class="cl-6aa25aaa"><span class="cl-6a9ba476">Degrees Minutes Seconds (DMS)</span></p></td><td class="cl-6aa28174"><p class="cl-6aa25aaa"><span class="cl-6a9ba476">30° 15' 10 N</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-6aa28160"><p class="cl-6aa25aaa"><span class="cl-6a9ba476">Degrees Decimal Minutes (DM or DDM)</span></p></td><td class="cl-6aa2816a"><p class="cl-6aa25aaa"><span class="cl-6a9ba476">30° 15.1667 N</span></p></td></tr></tbody></table></div>
+<div class="tabwid"><style>.cl-e6b88fa6{}.cl-e6b2a6ae{font-family:'Arial';font-size:11pt;font-weight:bold;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-e6b2a6b8{font-family:'Arial';font-size:9pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-e6b52276{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-e6b533f6{width:2.985in;background-color:rgba(207, 207, 207, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e6b53400{width:1.264in;background-color:rgba(207, 207, 207, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e6b53401{width:2.985in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e6b5340a{width:1.264in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e6b5340b{width:2.985in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e6b5340c{width:1.264in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing="true" class="cl-e6b88fa6"><thead><tr style="overflow-wrap:break-word;"><th class="cl-e6b533f6"><p class="cl-e6b52276"><span class="cl-e6b2a6ae">Format</span></p></th><th class="cl-e6b53400"><p class="cl-e6b52276"><span class="cl-e6b2a6ae">Example</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td class="cl-e6b53401"><p class="cl-e6b52276"><span class="cl-e6b2a6b8">Decimal Degrees (DD)</span></p></td><td class="cl-e6b5340a"><p class="cl-e6b52276"><span class="cl-e6b2a6b8">30.50833333</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-e6b5340b"><p class="cl-e6b52276"><span class="cl-e6b2a6b8">Degrees Minutes Seconds (DMS)</span></p></td><td class="cl-e6b5340c"><p class="cl-e6b52276"><span class="cl-e6b2a6b8">30° 15' 10 N</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-e6b53401"><p class="cl-e6b52276"><span class="cl-e6b2a6b8">Degrees Decimal Minutes (DM or DDM)</span></p></td><td class="cl-e6b5340a"><p class="cl-e6b52276"><span class="cl-e6b2a6b8">30° 15.1667 N</span></p></td></tr></tbody></table></div>
 </div>
 </div>
 </section>
@@ -398,8 +423,8 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </section>
 </section>
-<section id="use-persistent-unique-identifiers" class="level2" data-number="3.6">
-<h2 data-number="3.6" class="anchored" data-anchor-id="use-persistent-unique-identifiers"><span class="header-section-number">3.6</span> Use persistent unique identifiers</h2>
+<section id="use-persistent-unique-identifiers" class="level2" data-number="6.6">
+<h2 data-number="6.6" class="anchored" data-anchor-id="use-persistent-unique-identifiers"><span class="header-section-number">6.6</span> Use persistent unique identifiers</h2>
 <section id="why-5" class="level3">
 <h3 class="anchored" data-anchor-id="why-5">Why?</h3>
 <ul>
@@ -421,8 +446,7 @@ ul.task-list li input[type="checkbox"] {
 <p><em>Examples of PIDs</em></p>
 <div class="cell">
 <div class="cell-output-display">
-
-<div class="tabwid"><style>.cl-6ad4eaec{}.cl-6ac5ac30{font-family:'Arial';font-size:11pt;font-weight:bold;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-6ac5ac4e{font-family:'Arial';font-size:9pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-6acc5e72{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-6acc73a8{width:1.5in;background-color:rgba(207, 207, 207, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-6acc73b2{width:3in;background-color:rgba(207, 207, 207, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-6acc73b3{width:1.5in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-6acc73bc{width:3in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-6acc73bd{width:1.5in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-6acc73be{width:3in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing="true" class="cl-6ad4eaec"><thead><tr style="overflow-wrap:break-word;"><th class="cl-6acc73a8"><p class="cl-6acc5e72"><span class="cl-6ac5ac30">Type of PID</span></p></th><th class="cl-6acc73a8"><p class="cl-6acc5e72"><span class="cl-6ac5ac30">Use Case</span></p></th><th class="cl-6acc73b2"><p class="cl-6acc5e72"><span class="cl-6ac5ac30">Example</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td class="cl-6acc73b3"><p class="cl-6acc5e72"><span class="cl-6ac5ac4e">Digital Object Identifier (DOI)</span></p></td><td class="cl-6acc73b3"><p class="cl-6acc5e72"><span class="cl-6ac5ac4e">Actionable persistent link for papers, data, and other digital objects</span></p></td><td class="cl-6acc73bc"><p class="cl-6acc5e72"><span class="cl-6ac5ac4e">https://doi.org/10.6084/m9.figshare.16806712.v2</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-6acc73bd"><p class="cl-6acc5e72"><span class="cl-6ac5ac4e">International Geo Sample Number (IGSN)</span></p></td><td class="cl-6acc73bd"><p class="cl-6acc5e72"><span class="cl-6ac5ac4e">Persistent identifier for physical samples</span></p></td><td class="cl-6acc73be"><p class="cl-6acc5e72"><span class="cl-6ac5ac4e">http://igsn.org/AU1243&gt;</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-6acc73b3"><p class="cl-6acc5e72"><span class="cl-6ac5ac4e">Life Science Identifier (LSID)</span></p></td><td class="cl-6acc73b3"><p class="cl-6acc5e72"><span class="cl-6ac5ac4e">Persistent structured method for biologically significant data</span></p></td><td class="cl-6acc73bc"><p class="cl-6acc5e72"><span class="cl-6ac5ac4e">urn:lsid:marinespecies.org:taxname:218214</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-6acc73bd"><p class="cl-6acc5e72"><span class="cl-6ac5ac4e">Open Researcher and Contributor ID (ORCID)</span></p></td><td class="cl-6acc73bd"><p class="cl-6acc5e72"><span class="cl-6ac5ac4e">Persistent actionable link for individuals</span></p></td><td class="cl-6acc73be"><p class="cl-6acc5e72"><span class="cl-6ac5ac4e">https://orcid.org/0000-0002-4391-107X</span></p></td></tr></tbody></table></div>
+<div class="tabwid"><style>.cl-e6c85d3c{}.cl-e6c1ea06{font-family:'Arial';font-size:11pt;font-weight:bold;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-e6c1ea10{font-family:'Arial';font-size:9pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-e6c4601a{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-e6c47532{width:1.5in;background-color:rgba(207, 207, 207, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e6c47533{width:3in;background-color:rgba(207, 207, 207, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e6c4753c{width:1.5in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e6c4753d{width:3in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e6c4753e{width:1.5in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e6c47546{width:3in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing="true" class="cl-e6c85d3c"><thead><tr style="overflow-wrap:break-word;"><th class="cl-e6c47532"><p class="cl-e6c4601a"><span class="cl-e6c1ea06">Type of PID</span></p></th><th class="cl-e6c47532"><p class="cl-e6c4601a"><span class="cl-e6c1ea06">Use Case</span></p></th><th class="cl-e6c47533"><p class="cl-e6c4601a"><span class="cl-e6c1ea06">Example</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td class="cl-e6c4753c"><p class="cl-e6c4601a"><span class="cl-e6c1ea10">Digital Object Identifier (DOI)</span></p></td><td class="cl-e6c4753c"><p class="cl-e6c4601a"><span class="cl-e6c1ea10">Actionable persistent link for papers, data, and other digital objects</span></p></td><td class="cl-e6c4753d"><p class="cl-e6c4601a"><span class="cl-e6c1ea10">https://doi.org/10.6084/m9.figshare.16806712.v2</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-e6c4753e"><p class="cl-e6c4601a"><span class="cl-e6c1ea10">International Geo Sample Number (IGSN)</span></p></td><td class="cl-e6c4753e"><p class="cl-e6c4601a"><span class="cl-e6c1ea10">Persistent identifier for physical samples</span></p></td><td class="cl-e6c47546"><p class="cl-e6c4601a"><span class="cl-e6c1ea10">http://igsn.org/AU1243&gt;</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-e6c4753c"><p class="cl-e6c4601a"><span class="cl-e6c1ea10">Life Science Identifier (LSID)</span></p></td><td class="cl-e6c4753c"><p class="cl-e6c4601a"><span class="cl-e6c1ea10">Persistent structured method for biologically significant data</span></p></td><td class="cl-e6c4753d"><p class="cl-e6c4601a"><span class="cl-e6c1ea10">urn:lsid:marinespecies.org:taxname:218214</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-e6c4753e"><p class="cl-e6c4601a"><span class="cl-e6c1ea10">Open Researcher and Contributor ID (ORCID)</span></p></td><td class="cl-e6c4753e"><p class="cl-e6c4601a"><span class="cl-e6c1ea10">Persistent actionable link for individuals</span></p></td><td class="cl-e6c47546"><p class="cl-e6c4601a"><span class="cl-e6c1ea10">https://orcid.org/0000-0002-4391-107X</span></p></td></tr></tbody></table></div>
 </div>
 </div>
 </section>
@@ -484,18 +508,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -527,11 +540,57 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
-  function tippyHover(el, contentFn) {
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("^(?:http:|https:)\/\/esipfed\.github\.io");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+          // default icon
+          link.classList.add("external");
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -541,8 +600,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -554,7 +622,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -598,6 +789,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -623,6 +815,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -680,34 +898,19 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var filterRegex = new RegExp("^(?:http:|https:)\/\/esipfed\.github\.io");
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-          // target, if specified
-          link.setAttribute("target", "_blank");
-          // default icon
-          link.classList.add("external");
-      }
-    }
 });
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./INTEROPERABLE_DATA.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Make Your Data Interoperable</span></span>
+      <a href="./MAKE_YOUR_DATA_INTERNET_READY.html" class="pagination-link" aria-label="SHARE YOUR DATA ON THE WEB">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">SHARE YOUR DATA ON THE WEB</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
   </div>
 </nav>
 </div> <!-- /content -->
+
 
 
 
