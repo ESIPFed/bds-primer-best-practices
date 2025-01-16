@@ -1,4 +1,4 @@
-# SHARE YOUR DATA ON THE WEB
+# Make Your Data Internet Ready
 
 -   Why?
 -   Key Information
@@ -72,7 +72,7 @@ The Thematic Real-time Environmental Distributed Data Services (THREDDS) server 
 
 **What is it?**
 
-A Web Map Service (WMS) is a way to retrieve georegistered map images over the internet to display in applications and web pages. It allows you to view and use maps from different sources that host the maps and data used to create them without needing to download them. The WMS specifications were developed by the [Open Geospatial Consortium (OGC)](https://www.ogc.org/publications/standard/wms/) to enable interoperability and use  in web browsers, open-source GIS software (ex. [QGIS](https://www.qgis.org/)), and proprietary GIS software (ex. [Esri](https://www.esri.com/en-us/home)). \
+A Web Map Service (WMS) is a way to retrieve georegistered map images over the internet to display in applications and web pages. It allows you to view and use maps from different sources that host the maps and data used to create them without needing to download them. The WMS specifications were developed by the [Open Geospatial Consortium (OGC)](https://www.ogc.org/publications/standard/wms/) to enable interoperability and use  in web browsers, open-source GIS software (ex. [QGIS](https://www.qgis.org/)), and proprietary GIS software (ex. [Esri](https://www.esri.com/en-us/home)).\
 \
 
 **When should you use it?**
@@ -95,7 +95,7 @@ If data standards aren't web-friendly, data and information will be much harder 
 
 ##### **Web-Enabled Standards to Know About**
 
-The following standards use Web-friendly and FAIR compliant approaches to promote conformance and interoperability. For example, the use of open and dereferenceable URIs/URLs as persistent identifiers for their properties and types / classes. This means that any web browser or service will be able to act on these standards and link users to the issuing authorities. \
+The following standards use Web-friendly and FAIR compliant approaches to promote conformance and interoperability. For example, the use of open and dereferenceable URIs/URLs as persistent identifiers for their properties and types / classes. This means that any web browser or service will be able to act on these standards and link users to the issuing authorities.\
 \
 
 [W3C standards](https://www.w3.org/standards/)

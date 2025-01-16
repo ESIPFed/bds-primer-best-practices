@@ -1,4 +1,4 @@
-# INTEGRATE YOUR DATA WITH OTHER DATA
+# Integrate Your Data with Other Data
 
 -   Why?
 -   Key Information

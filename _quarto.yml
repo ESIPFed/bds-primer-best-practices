@@ -27,7 +27,10 @@ execute:
 
 format:
   html:
-   repo-url: https://github.com/ESIPFed/bds-primer-best-practices
+   code-links:
+      - text: Github Repo
+        icon: file-code
+        href: https://github.com/ESIPFed/bds-primer-best-practices
    theme: cosmo
    link-external-icon: true
    link-external-newwindow: true

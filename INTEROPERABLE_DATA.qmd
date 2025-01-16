@@ -62,6 +62,6 @@ The World Register of Marine Species (WoRMS) is an authoritative and comprehensi
 One of the reasons WoRMS is highly thought of in the marine community is that the content of WoRMS is curated by taxonomic and thematic experts, not by database managers. Each taxonomic group is represented by an expert who has the authority over the content, and is responsible for controlling the quality of the information. Each of these main taxonomic editors can invite several specialists of smaller groups within their area of responsibility to join them. WoRMS is the taxonomic database used by the Ocean Biodiversity Information System (OBIS), and other important biological initiatives.\
 \
 
-**How to use it?** 
+**How to use it?**
 
 WoRMS, and its associated tools, can be explored through your [web browser](https://www.marinespecies.org/index.php), and through its [API](https://www.marinespecies.org/rest/) using one of the R packages (e.g. [worrms](https://cran.r-project.org/web/packages/worrms/index.html), [taxize](https://cran.r-project.org/web/packages/taxize/)) or [python](https://github.com/iobis/pyworms) package. 
