@@ -8,11 +8,11 @@ book:
   date: last-modified
   chapters:
     - index.qmd
-    #- intro.qmd
+    - intro.qmd
     - CONTEXT_UNDERSTANDABILITY.qmd
-    #- INTEGRATE_DATA.qmd
+    - INTEGRATE_DATA.qmd
     - INTEROPERABLE_DATA.qmd
-    #- SHARE_DATA_WEB.qmd
+    - MAKE_YOUR_DATA_INTERNET_READY.qmd
     - SOFTWARE_READY.qmd
 
 number-depth: 2
