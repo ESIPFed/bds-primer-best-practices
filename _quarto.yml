@@ -29,8 +29,11 @@ format:
   html:
    code-links:
       - text: Github Repo
-        icon: file-code
+        icon: github
         href: https://github.com/ESIPFed/bds-primer-best-practices
+      - text: Give feedback on this page
+        icon: lightbulb
+        href: https://github.com/ESIPFed/bds-primer-best-practices/issues/new/choose
    theme: cosmo
    link-external-icon: true
    link-external-newwindow: true
