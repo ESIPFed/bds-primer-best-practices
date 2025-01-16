@@ -1,5 +1,80 @@
 # SHARE YOUR DATA ON THE WEB
 
-- Why?
-- Key Information
-- Top 5 References
+-   Why?
+-   Key Information
+-   Top 5 References
+
+**Topic:** Web Services
+
+###### What is it?
+
+Web services run much of our digital world today. For example, you may be familiar with Amazon Web Services (AWS), which is used for analytics and data service during football games, the olympics, and other sporting events. You can think of a web service as a waiter at a restaurant. You (the user) order food (a request), the waiter (the web service) takes your order to the kitchen (the server or application), and then brings you back your food (the response). This allows different parts of a computer system or different systems altogether to interact without needing to know how each other works internally.
+
+###### Why should you know about them?
+
+Biological services and platforms like [OBIS](https://manual.obis.org/access.html#api), GBIF, etc. utilize standard web services to serve data.
+
+These web services are relevant to all sectors collecting and handling biological, biodiversity, and environmental information, including the private, academic research, and government and other operational entities.This is what drives the exchange of scientific information.
+
+##### **Web Services to Know About**
+
+Application Program Interfaces (APIs)
+
+Overview: Distributed Model Data Access (<https://www.ncei.noaa.gov/access/distributed-data-access>)
+
+###### [ERDDAP](https://coastwatch.pfeg.noaa.gov/erddap/index.html)™
+
+**What is it?**
+
+ERDDAP™ \[ur-dap\] is a data server that offers users a simple, consistent way to download scientific datasets in common file formats, as well as make graphs and maps.  ERDDAP is [used globally](https://github.com/IrishMarineInstitute/awesome-erddap?tab=readme-ov-file#erddap-deployments) to share and integrate disparate data across a range of communities in a standardized way. ERDDAP is often the data service used for oceanographic and atmospheric datasets, but also works great for biological and biodiversity-relevant observations, and for both gridded and tabular data. Data providers can [set up their own ERDDAP server](https://erddap.github.io/setup.html) to serve up their data. By using ERDDAP you can incorporate multiple data subsets from different sources into a single workspace. Users can download data from ERDDAP in a multitude of file formats, or as graphs or maps by either using a web page or using the RESTful API in the programming language of their choice.
+
+To facilitate comparisons of data from different datasets, requests and results in ERDDAP use standardized space/time axis, which makes it easier for users to specify data constraints in requests without having to worry about the data format. 
+
+Data access: ERDDAP provides a variety of data access methods including via a web browser, OPeNDAP, SOS, WMS, WCS, HTTP, and more. 
+
+Data formats: ERDDAP can convert data to various formats such as .csv, .json, .nc, .xls, .mat, .dods, and others (more info [here](https://catalogue.hakai.org/erddap/tabledap/documentation.html#fileType))
+
+Data subsetting: ERDDAP allows users to request a subset of a dataset. It converts the subset to the desired file format available for download.
+
+ERDDAP API: All the information, data and figures made available via ERDDAP are also available via an API. See table dataset API docs [here](https://coastwatch.pfeg.noaa.gov/erddap/tabledap/documentation.html), and for gridded datasets [here](https://coastwatch.pfeg.noaa.gov/erddap/griddap/documentation.html).
+
+Data search: [Search for data](https://erddap.com/) across multiple ERDDAP installations
+
+Additional overall documentation on ERDDAP can be found [here](https://coastwatch.pfeg.noaa.gov/erddap/information.html). The documentation is in the process of being moved to GitHub [here](https://erddap.github.io/).
+
+**Why should you use it?**
+
+ERDDAP is free and open source, and makes your data much more accessible. ERDDAP has a [RESTful web service](https://www.ncei.noaa.gov/erddap/rest.html) which is designed to be easy for computer programs and scripts to use or interact with. 
+
+**How to use it?**
+
+There are many good tutorials and references on how to use ERDDAP including
+
+-   [CoastWatch Training](https://github.com/coastwatch-training/CoastWatch-Tutorials?tab=readme-ov-file) and specifically [ERDDAP basics](https://github.com/coastwatch-training/CoastWatch-Tutorials/tree/main/ERDDAP-basics)
+
+-   [Awesome ERDDAP](https://github.com/IrishMarineInstitute/awesome-erddap?tab=readme-ov-file)
+
+-   
+
+###### Thematic Real-time Environmental Distributed Data Services ([THREDDS](https://www.unidata.ucar.edu/software/tds/))
+
+**What is it?**
+
+The Thematic Real-time Environmental Distributed Data Services (THREDDS) server has features and interfaces that makes it easier to explore and use data. Here is a comparison of ERDDAP and THREDDS: <https://jsimkins2.github.io/geog473-673/thredds-and-erddap.html> 
+
+ \[you can’t access data by date, you need to know the index number. Less like a database than ERDDAP. Developed a little earlier than ERDDAP. ERDDAP was built to be better than THREDDS from a user perspective. Optimized for data cube, e.g. netCDF, data.  
+
+**Why should you use it?**
+
+**How to use it?**
+
+###### Web Map Services
+
+**What is it?**
+
+A Web Map Service (WMS) is a way to retrieve georegistered map images over the internet to display in applications and web pages. It allows you to view and use maps from different sources that host the maps and data used to create them without needing to download them. The WMS specifications were developed by the [Open Geospatial Consortium (OGC)](https://www.ogc.org/publications/standard/wms/) to enable interoperability and use  in web browsers, open-source GIS software (ex. [QGIS](https://www.qgis.org/)), and proprietary GIS software (ex. [Esri](https://www.esri.com/en-us/home)). \
+\
+
+**When should you use it?**
+
+**How to use it?**
