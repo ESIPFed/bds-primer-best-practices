@@ -1,0 +1,167 @@
+# SHARE YOUR DATA ON THE WEB
+
+-   Why?
+-   Key Information
+-   Top 5 References
+
+**Topic:** Web Services
+
+###### What is it?
+
+Web services run much of our digital world today. For example, you may be familiar with Amazon Web Services (AWS), which is used for analytics and data service during football games, the olympics, and other sporting events. You can think of a web service as a waiter at a restaurant. You (the user) order food (a request), the waiter (the web service) takes your order to the kitchen (the server or application), and then brings you back your food (the response). This allows different parts of a computer system or different systems altogether to interact without needing to know how each other works internally.
+
+###### Why should you know about them?
+
+Biological services and platforms like [OBIS](https://manual.obis.org/access.html#api), GBIF, etc. utilize standard web services to serve data.
+
+These web services are relevant to all sectors collecting and handling biological, biodiversity, and environmental information, including the private, academic research, and government and other operational entities.This is what drives the exchange of scientific information.
+
+##### **Web Services to Know About**
+
+Application Program Interfaces (APIs)
+
+Overview: Distributed Model Data Access (<https://www.ncei.noaa.gov/access/distributed-data-access>)
+
+###### [ERDDAP](https://coastwatch.pfeg.noaa.gov/erddap/index.html)™
+
+**What is it?**
+
+ERDDAP™ \[ur-dap\] is a data server that offers users a simple, consistent way to download scientific datasets in common file formats, as well as make graphs and maps.  ERDDAP is [used globally](https://github.com/IrishMarineInstitute/awesome-erddap?tab=readme-ov-file#erddap-deployments) to share and integrate disparate data across a range of communities in a standardized way. ERDDAP is often the data service used for oceanographic and atmospheric datasets, but also works great for biological and biodiversity-relevant observations, and for both gridded and tabular data. Data providers can [set up their own ERDDAP server](https://erddap.github.io/setup.html) to serve up their data. By using ERDDAP you can incorporate multiple data subsets from different sources into a single workspace. Users can download data from ERDDAP in a multitude of file formats, or as graphs or maps by either using a web page or using the RESTful API in the programming language of their choice.
+
+To facilitate comparisons of data from different datasets, requests and results in ERDDAP use standardized space/time axis, which makes it easier for users to specify data constraints in requests without having to worry about the data format. 
+
+Data access: ERDDAP provides a variety of data access methods including via a web browser, OPeNDAP, SOS, WMS, WCS, HTTP, and more. 
+
+Data formats: ERDDAP can convert data to various formats such as .csv, .json, .nc, .xls, .mat, .dods, and others (more info [here](https://catalogue.hakai.org/erddap/tabledap/documentation.html#fileType))
+
+Data subsetting: ERDDAP allows users to request a subset of a dataset. It converts the subset to the desired file format available for download.
+
+ERDDAP API: All the information, data and figures made available via ERDDAP are also available via an API. See table dataset API docs [here](https://coastwatch.pfeg.noaa.gov/erddap/tabledap/documentation.html), and for gridded datasets [here](https://coastwatch.pfeg.noaa.gov/erddap/griddap/documentation.html).
+
+Data search: [Search for data](https://erddap.com/) across multiple ERDDAP installations
+
+Additional overall documentation on ERDDAP can be found [here](https://coastwatch.pfeg.noaa.gov/erddap/information.html). The documentation is in the process of being moved to GitHub [here](https://erddap.github.io/).
+
+**Why should you use it?**
+
+ERDDAP is free and open source, and makes your data much more accessible. ERDDAP has a [RESTful web service](https://www.ncei.noaa.gov/erddap/rest.html) which is designed to be easy for computer programs and scripts to use or interact with. 
+
+**How to use it?**
+
+There are many good tutorials and references on how to use ERDDAP including
+
+-   [CoastWatch Training](https://github.com/coastwatch-training/CoastWatch-Tutorials?tab=readme-ov-file) and specifically [ERDDAP basics](https://github.com/coastwatch-training/CoastWatch-Tutorials/tree/main/ERDDAP-basics)
+
+-   [Awesome ERDDAP](https://github.com/IrishMarineInstitute/awesome-erddap?tab=readme-ov-file)
+
+-   
+
+###### Thematic Real-time Environmental Distributed Data Services ([THREDDS](https://www.unidata.ucar.edu/software/tds/))
+
+**What is it?**
+
+The Thematic Real-time Environmental Distributed Data Services (THREDDS) server has features and interfaces that makes it easier to explore and use data. Here is a comparison of ERDDAP and THREDDS: <https://jsimkins2.github.io/geog473-673/thredds-and-erddap.html> 
+
+ \[you can’t access data by date, you need to know the index number. Less like a database than ERDDAP. Developed a little earlier than ERDDAP. ERDDAP was built to be better than THREDDS from a user perspective. Optimized for data cube, e.g. netCDF, data.  
+
+**Why should you use it?**
+
+**How to use it?**
+
+###### Web Map Services
+
+**What is it?**
+
+A Web Map Service (WMS) is a way to retrieve georegistered map images over the internet to display in applications and web pages. It allows you to view and use maps from different sources that host the maps and data used to create them without needing to download them. The WMS specifications were developed by the [Open Geospatial Consortium (OGC)](https://www.ogc.org/publications/standard/wms/) to enable interoperability and use  in web browsers, open-source GIS software (ex. [QGIS](https://www.qgis.org/)), and proprietary GIS software (ex. [Esri](https://www.esri.com/en-us/home)). \
+\
+
+**When should you use it?**
+
+**How to use it?**
+
+Provide feedback via github: <https://github.com/ESIPFed/bds-primer-best-practices/issues>
+
+**Topic:** Web-friendly Standards
+
+###### What is it?
+
+###### Web-friendly standards are data standards which facilitate the transfer and handling of data over the Web, its architectures and its services. Data standards that comply with web standards promote  online sharing, programmatic discovery, access, and processing of data. 
+
+###### Why should you use them?
+
+Adopting web-friendly standards such as W3C standards, Dublin Core, the DataCite standards, and schema.org helps leverage Web technologies to connect and make discoverable research information across various platforms and disciplines, advancing knowledge. 
+
+If data standards aren't web-friendly, data and information will be much harder to “see” via Web services, which are the primary route for global data discovery.
+
+##### **Web-Enabled Standards to Know About**
+
+The following standards use Web-friendly and FAIR compliant approaches to promote conformance and interoperability. For example, the use of open and dereferenceable URIs/URLs as persistent identifiers for their properties and types / classes. This means that any web browser or service will be able to act on these standards and link users to the issuing authorities. \
+\
+
+[W3C standards](https://www.w3.org/standards/)
+
+**What is it?**
+
+“W3C standards define an open web platform for application development. The web has the unprecedented potential to enable developers to build rich interactive experiences, that can be available on any device.
+
+The platform continues to expand, but web users have long ago rallied around HTML as the cornerstone of the web. Many more technologies that W3C and its partners are creating extend the web and give it full strength, including CSS, SVG, WOFF, WebRTC, XML, and a growing variety of APIs.”
+
+**Why should you use it?**
+
+It might not be a question so much of why you should use it as much as that you should become aware that you already use these, and may be able to make your data more FAIR by increasing your awareness of these standards. As the W3C website says, “W3C's proven web standards process is based on fairness, openness, royalty-free, we make the web work, for everyone”.
+
+**How to use it?**
+
+You may use on of the W3C standard listed above to do activities like, rendering web pages, web architecture, and linking data and services.There are a variety of resources available that can be found by searching the internet. We do not currently have a single starting point to recommend here.
+
+###### [Dublin Core](https://www.dublincore.org)
+
+**What is it?** Dublin Core is a metadata standard of 15 ‘core’ terms originally developed for archives and libraries to describe physical or digital resources. The full set of terms can be found [here](http://purl.org/dc/terms/). Each term is optional can be used multiple times, as repeated ‘elements.’ All terms are defined as Resource Description Framework (RDF) properties. It has also been formally standardized internationally as ISO 15863.
+
+Darwin Core \[insert link to DwC section of the primer guidelines\]  is based on Dublin Core and is considered to be an extension for biodiversity information of Dublin Core. For information on further extensions to Darwin Core to capture details of additional information regarding a biological/biodiversity data record, use:
+
+-   Extended Measurement Or Facts (eMoF): (https://rs.obis.org/obis/terms#ExtendedMeasurementOrFact)
+
+eMoF was developed to be used in combination with the Event Core, but is also compatible with other cores. The eMoF can store measurements or facts related to a biological occurrence, environmental measurements or facts and sampling method attributes. This extension also provides the option to provide identifiers to reference a vocabulary for the measurementType, measurementValue and measurementUnit fields.
+
+-   The Humboldt Extension for Ecological Inventories (https://eco.tdwg.org/): a standard vocabulary maintained by the [Darwin Core Maintenance Group](https://www.tdwg.org/community/dwc/). It is intended to facilitate recording of biodiversity ancillary information in operational settings.
+
+**Why should you use it?**
+
+**How to use it?**
+
+**Disambiguating the Cores presentation: <https://docs.google.com/presentation/d/1DveHXvY5U5XISl0JocDJ5qUe4PP74dPFSrdryra2m1U/edit#slide=id.p>**
+
+###### [DataCite](https://datacite.org)
+
+**What is it?**
+
+DataCite is an international not-for-profit organization which aims to improve data citation, through helping people use web-enabled standards to connect products and citations. This allows users to i) establish easier access to research data, ii) support data archiving and long-term data preservation, and iii) increase acceptance of research data as legitimate, citable contributions to a scholarly record, promoting reuse and attribution. DataCite helps mint persistent identifiers, such as digital object identifiers (DOI) to research products, as well as provide recommendations for data citation formats. DOIs are a type of persistent identifier that identify and locate objects in the long-term. 
+
+Additional documentation on DataCite can be found at <https://support.datacite.org/docs/datacite-commons>. 
+
+**Why should you use it?**
+
+Assigning a DOI to your research product can enable long-term preservation and accessibility of your research product. Among other things, a main value of DataCite is the connection it creates between users and publishing machinery.
+
+**How to use it?**
+
+DataCite Consortium members can mint DOIs for their research products, making it part of a larger digital ecosystem and helping connect the research product to researchers through other persistent identifiers e.g., ORCIDs for researchers and ROR for organizations. DataCite has a REST API that enables retrieval, creation, and update of a DataCite DOI metadata record, can be queried: <https://support.datacite.org/reference/introduction> 
+
+###### [Schema.org](https://schema.org/)
+
+**What is it?**
+
+Schema.org is a set of extensible schemas that enables users to embed structured data on their web pages for use and indexation by major search engines. Markup on the webpages or in records helps search engines understand the information presented within and provide richer search results. Schema.org was launched in 2011 by Bing, Google and Yahoo to create and support a common set of schemas for structured data markup on webpages. By using schema.org vocabulary as well as various formats (e.g., JSON-LD) to mark up website content with metadata about itself, making it easier for websites or data records to be searched or indexed. 
+
+Schema.org is not a formal standards body, but rather a site where there is documentation on the schemas supported by several major search engines. Schema.org essentially defines a dictionary of terms (types, properties, and enumerated values). So its main hierarchy is formed by a collection of types (or class), each of which has properties that describe the type. Schema.org offers a hierarchically structured set of types which determines which properties can be assigned to a particular type. Essentially this helps search engines look for websites and record and understand the relationships between them. 
+
+Documentation on schema.org can be found here: <https://schema.org/docs/documents.html> 
+
+**Why should you use it?**
+
+By implementing schema.org you can make your research more easily and prominently discoverable through major search engines. 
+
+**How to use it?**
+
+You can add schema.org markup to your webpages or records using various online tools, including [Google’s Structured Data Markup Helper](https://www.google.com/webmasters/markup-helper/u/0/), or by directly adding code to your webpages. You can use different formats to add information to your web content implementing the schema.org vocabulary, such as JSON-LD.
