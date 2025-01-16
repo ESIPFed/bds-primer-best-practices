@@ -1,28 +1,23 @@
 # Make Your Data Internet Ready
 
--   Why?
--   Key Information
--   Top 5 References
+### Web Services
 
-**Topic:** Web Services
-
-###### What is it?
+#### What is it?
 
 Web services run much of our digital world today. For example, you may be familiar with Amazon Web Services (AWS), which is used for analytics and data service during football games, the olympics, and other sporting events. You can think of a web service as a waiter at a restaurant. You (the user) order food (a request), the waiter (the web service) takes your order to the kitchen (the server or application), and then brings you back your food (the response). This allows different parts of a computer system or different systems altogether to interact without needing to know how each other works internally.
 
-###### Why should you know about them?
+#### Why should you know about them?
 
 Biological services and platforms like [OBIS](https://manual.obis.org/access.html#api), GBIF, etc. utilize standard web services to serve data.
 
 These web services are relevant to all sectors collecting and handling biological, biodiversity, and environmental information, including the private, academic research, and government and other operational entities.This is what drives the exchange of scientific information.
 
-##### **Web Services to Know About**
+#### **Web Services to Know About**
 
-Application Program Interfaces (APIs)
+-   Application Program Interfaces (APIs)
+-   [Overview: Distributed Model Data Access](https://www.ncei.noaa.gov/access/distributed-data-access)
 
-Overview: Distributed Model Data Access (<https://www.ncei.noaa.gov/access/distributed-data-access>)
-
-###### [ERDDAP](https://coastwatch.pfeg.noaa.gov/erddap/index.html)™
+##### [ERDDAP](https://coastwatch.pfeg.noaa.gov/erddap/index.html)™
 
 **What is it?**
 
@@ -54,9 +49,7 @@ There are many good tutorials and references on how to use ERDDAP including
 
 -   [Awesome ERDDAP](https://github.com/IrishMarineInstitute/awesome-erddap?tab=readme-ov-file)
 
--   
-
-###### Thematic Real-time Environmental Distributed Data Services ([THREDDS](https://www.unidata.ucar.edu/software/tds/))
+##### Thematic Real-time Environmental Distributed Data Services ([THREDDS](https://www.unidata.ucar.edu/software/tds/))
 
 **What is it?**
 
@@ -68,7 +61,7 @@ The Thematic Real-time Environmental Distributed Data Services (THREDDS) server 
 
 **How to use it?**
 
-###### Web Map Services
+##### Web Map Services
 
 **What is it?**
 
@@ -81,13 +74,13 @@ A Web Map Service (WMS) is a way to retrieve georegistered map images over the i
 
 Provide feedback via github: <https://github.com/ESIPFed/bds-primer-best-practices/issues>
 
-**Topic:** Web-friendly Standards
+### Web-friendly Standards
 
-###### What is it?
+#### What is it?
 
-###### Web-friendly standards are data standards which facilitate the transfer and handling of data over the Web, its architectures and its services. Data standards that comply with web standards promote  online sharing, programmatic discovery, access, and processing of data. 
+#### Web-friendly standards are data standards which facilitate the transfer and handling of data over the Web, its architectures and its services. Data standards that comply with web standards promote  online sharing, programmatic discovery, access, and processing of data. 
 
-###### Why should you use them?
+#### Why should you use them?
 
 Adopting web-friendly standards such as W3C standards, Dublin Core, the DataCite standards, and schema.org helps leverage Web technologies to connect and make discoverable research information across various platforms and disciplines, advancing knowledge. 
 
@@ -132,7 +125,7 @@ eMoF was developed to be used in combination with the Event Core, but is also co
 
 **Disambiguating the Cores presentation: <https://docs.google.com/presentation/d/1DveHXvY5U5XISl0JocDJ5qUe4PP74dPFSrdryra2m1U/edit#slide=id.p>**
 
-###### [DataCite](https://datacite.org)
+##### [DataCite](https://datacite.org)
 
 **What is it?**
 
@@ -148,7 +141,7 @@ Assigning a DOI to your research product can enable long-term preservation and a
 
 DataCite Consortium members can mint DOIs for their research products, making it part of a larger digital ecosystem and helping connect the research product to researchers through other persistent identifiers e.g., ORCIDs for researchers and ROR for organizations. DataCite has a REST API that enables retrieval, creation, and update of a DataCite DOI metadata record, can be queried: <https://support.datacite.org/reference/introduction> 
 
-###### [Schema.org](https://schema.org/)
+##### [Schema.org](https://schema.org/)
 
 **What is it?**
 

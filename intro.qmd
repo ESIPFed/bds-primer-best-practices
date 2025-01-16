@@ -1,6 +1,6 @@
 # Introduction
 
-*This is still a work in progress and only presented here for the purposes of receiving feedback. This message will be removed when the best practices have been officially published.*
+*This is still a work in progress and only presented here for the purposes of receiving feedback. This message will be removed when the guidelines have been officially published.*
 
 The diversity of biological data, and (seeming) lack of overarching community standards makes working with biological data challenging. Several standards do exist for biological data, however these different data, metadata, and taxonomic standards are confusing for data managers and data users to navigate. The biological data community in the US could benefit from guidance, best practice documentation, training, and community building. The [ESIP Biological Data Cluster (BDS)](https://wiki.esipfed.org/Biological_Data_Standards_Cluster) was formed to tackle these problems.
 
@@ -11,7 +11,7 @@ In short, the will be successful if it:
 3.  Provide opportunities for Knowledge sharing & coordination
 4.  Provide Connectivity across ESIP
 
-We successfully increased awareness and interest in standards through the creation of the primer, officially called, [Biological Observation Data Standardization - A Primer for Data Manager.](https://doi.org/10.6084/m9.figshare.16806712.v1) ![](images/primer_thumbnail.PNG){height=30} 
+We successfully increased awareness and interest in standards through the creation of the primer, officially called, [Biological Observation Data Standardization - A Primer for Data Manager.](https://doi.org/10.6084/m9.figshare.16806712.v1) ![](images/primer_thumbnail.PNG){height="30"}
 
 Our goals have evolved to work toward creating a sample extension of the cluster's primer in the form of a best practice document(s). The target audience for the best practice document(s) are people who are new to working with biological data standards. The best practice document will provide additional detail on the points listed in the primer, focusing on efficient actions that can be taken to standardize data.
 
