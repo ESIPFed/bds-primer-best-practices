@@ -1,6 +1,7 @@
 project:
   type: book
   output-dir: docs
+  repo-url: https://github.com/ESIPFed/bds-primer-best-practices
 
 book:
   title: "ESIP Biological Data Cluster (BDS) Primer Guide"
@@ -27,6 +28,7 @@ execute:
 
 format:
   html:
+   
    theme: cosmo
    link-external-icon: true
    link-external-newwindow: true
