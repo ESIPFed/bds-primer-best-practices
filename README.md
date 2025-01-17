@@ -4,6 +4,8 @@ The [ESIP Biological Data Standards Cluster](https://wiki.esipfed.org/Biological
 
 The current draft can be seen as a rendered webpage [here](https://esipfed.github.io/bds-primer-best-practices/).
 
+Minor change locally to demonstrate a Pull Request.
+
 ## Why
 
 While the primer provided a quick reference it didn't provide enough context for new data managers to make decisions on which standards would be best to implement for the data they are working with. This suite of guidelines documents is intended to provide a bit more information than what you see in the primer but not the full standards documentation. The suite of documents will pair with the different sections of the primer. The first document being developed is for the "Make Your Data Software Ready?" section of the primer.
