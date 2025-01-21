@@ -8,7 +8,7 @@ Web services run much of our digital world today. For example, you may be famili
 
 #### Why should you know about them?
 
-Biological services and platforms like [OBIS](https://manual.obis.org/access.html#api), GBIF, etc. utilize standard web services to serve data.
+Biological services and platforms like [OBIS](https://manual.obis.org/access.html#api), [GBIF](https://www.gbif.org/), etc. utilize standard web services to serve data.
 
 These web services are relevant to all sectors collecting and handling biological, biodiversity, and environmental information, including the private, academic research, and government and other operational entities.This is what drives the exchange of scientific information.
 
