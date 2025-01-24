@@ -8,19 +8,19 @@ EML is a community-developed metadata schema designed for ecological data, which
 
 ### Why?
 
--   Provide context to your data and improve reproducability of the data.
+-   Provide context to your data and improve reproducibility of the data
 -   Can capture linked data relationships within EML (dataset series)
--   Standardized representation of information.
--   EML was designed for ecological data, which encompasses biological data.
+-   Standardized representation of information
+-   EML was designed for ecological data, which encompasses biological data
 -   It's taxonomic fields cover relationships (hierarchies), IDs, and authoritative material
 
 ### Key Information
 
 -   [EML Schema](https://eml.ecoinformatics.org/eml-schema)
 
--   Mandatory for LTER, iLTER, OBIS, GBIF, Darwin Core Archive (DwC-A)
+-   Mandatory for [LTER](https://lternet.edu/), [iLTER](https://www.ilter.network/), [OBIS](https://obis.org/), [GBIF](https://www.gbif.org/), [Darwin Core Archive (DwC-A)](https://www.gbif.org/darwin-core)
 
--   Maintained, and github repo, managed by NCEAS
+-   Maintained and managed through a [GitHub repository](https://github.com/NCEAS/eml) by NCEAS
 
 -   Usually, what you would submit to a repository is a "data package" consisting of an EML document and one or more data objects.
 
@@ -60,11 +60,9 @@ Content standard for describing geographic data sponsored by the International S
 
 ### What?
 
--   Evolved from the need for to to harmonize the FGDC Content Standard for Digital Geospatial Metadata (CSDGM) with other formal and defacto standards that support the documentation of geospatial data and services.
+-   Evolved from the need to harmonize the FGDC Content Standard for Digital Geospatial Metadata (CSDGM) with other formal and defacto standards that support the documentation of geospatial data and services.
 
--   Many variations including 19115, 19115-1, 19115-2
-
--   From [NCEI](https://www.ncei.noaa.gov/resources/metadata):
+-   Many variations including 19115, 19115-1, 19115-2. From [NCEI](https://www.ncei.noaa.gov/resources/metadata):
 
     -   ISO 19115 Geographic information -- Metadata: The ISO standard for documenting geospatial data. 
 
@@ -88,9 +86,9 @@ Content standard for describing geographic data sponsored by the International S
 
 ### Who?
 
-This is a standard for molecular data, like DNA and RNA. It is used by molecular biologist and ecologists who generate, manage and archive these type of sequence data.
+This is a standard for molecular data, like DNA and RNA. It is used by molecular biologists and ecologists who generate, manage and archive these type of sequence data.
 
-### What is it?
+### What Is It?
 
 A set of checklists and packages for genomic sequence data.
 
@@ -104,9 +102,9 @@ A set of checklists and packages for genomic sequence data.
 
 ### Key Information
 
--   MIxS (pronounced MIX-ess) is a suite of checklists standards introduced the reporting of a breadth of environment-specific metadata variables to augment the genome-specific checklists.
+-   MIxS (pronounced MIX-ess), a suite of checklists standards, is introduced to report on a breadth of environment-specific metadata variables to augment the genome-specific checklists
 
--   Enables mixing and matching of genome checklists and environmental-specific packages.
+-   Enables mixing and matching of genome checklists and environmental-specific packages
 
 -   [![MIxS Structure](http://www.gensc.org/images/mixs_ext_graphic-1024x731.png)](http://www.gensc.org/pages/standards-intro.html)
 
