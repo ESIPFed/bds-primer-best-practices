@@ -1,67 +1,57 @@
 # Make Your Data Interoperable
 
-## Taxonomic Authorities
+## Catalogue of Life (COL)
 
-### What is it?
+### What Is It?
+
+[Catalogue of Life](https://www.catalogueoflife.org/) brings together information from taxonomists studying every group of organisms to construct an integrated view of currently accepted species across all taxonomic groups. A list of source datasets can be found [here](https://www.catalogueoflife.org/data/source-datasets). The primary mission of COL is to deliver a freely accessible list of all species and their scientific name, but the tools and services offered by COL also enable taxonomists and other stakeholders to publish and revise species lists for any purpose.
 
 ### Why should you use it?
 
-### Taxonomic Authorities to Know About
-
-#### Catalogue of Life (COL)
-
-**What is it?**
-
-[Catalogue of Life](https://www.catalogueoflife.org/) brings together information from taxonomists studying every group of organisms to construct an integrated view of currently accepted species across all taxonomic groups. A list of source datasets can be found [here](https://www.catalogueoflife.org/data/source-datasets). The primary mission of COL is to deliver a freely accessible list of all species and show which species is referenced by any scientific name, but the tools and services offered by COL also enable taxonomists and other stakeholders to publish and revise species lists for any purpose.
-
-**Why should you use it?**
-
 Communicate across downstream users which organisms belong to the same group. Taxonomists continue to publish new (and revised) scientific names, which are a fundamental tool to help users to refer to these units of biodiversity, and understand everything that has been learned about its biology, distribution and relevance to mankind. CoL adds persistent identifiers that will enable users to track changes to a scientific name. 
 
-**How to use it?**
+### How to use it?
 
-Users can browse the [COL Checklist](https://www.catalogueoflife.org/data/browse), which is updated monthly. COL pulls information from specific data sources, e.g. FishBase (see: <https://www.catalogueoflife.org/data/taxon/49JFH>). CoL also has a Data Pipeline outlining how to best use and manage the taxonomic checklist data held by CoL: <https://www.catalogueoflife.org/about/colpipeline>. COL also has a ChecklistBank API: <https://api.checklistbank.org/>.
+Users can browse the [COL Checklist](https://www.catalogueoflife.org/data/browse), which is updated monthly. COL pulls information from specific data sources, e.g. FishBase (see: <https://www.catalogueoflife.org/data/taxon/49JFH>). COL also has a data pipeline outlining how to best use and manage the taxonomic checklist data held by COL: <https://www.catalogueoflife.org/about/colpipeline>. COL also has a ChecklistBank API: <https://api.checklistbank.org/>.
 
-#### ITIS
+## Integrated Taxonomic Information System (ITIS)
 
-**What is it?**
+### What Is It?
 
-[Integrated Taxonomic Information System](https://www.itis.gov/). Partnership of federal agencies that provides reliable information on taxonomy of plants, animals, fungi and microbes in North America and the world. ITIS has information on over 1.8 million species!
+[ITIS](https://www.itis.gov/) is a partnership of federal agencies that provides reliable information on taxonomy of plants, animals, fungi and microbes in North America and the world. ITIS has information on over 1.8 million species!
 
-**Why should you use it?**
+### Why should you use it?
 
 ITIS couples each scientific name with a unique taxonomic serial number (TSN) which ensures consistency and accuracy in the naming and classification of species. ITIS includes information on nomenclature, taxonomy, and distribution of species. This is an important tool for identifying and cataloging species and monitoring their populations. 
 
-**How to use it?**
+### How to use it?
 
-Users can browse on the [ITIS website](https://www.itis.gov/) and through the API.
+Users can browse on the [ITIS website](https://www.itis.gov/) and through the [API](https://itis.gov/web_service.html).
 
-#### Paleobiology Database (PBDB)
+## Paleobiology Database (PBDB)
 
-**What is it?**
+### What Is It?
 
 The [Paleobiology Database](https://paleobiodb.org/) (PBDB) is an online, expert-curated database that aims to provide taxonomic information for paleobiological taxa of all geological ages. It contains data for almost half a million paleobiological taxa from over 900 different contributors.
 
-**Why should you use it?**
+### Why should you use it?
 
 Checking your paleobiological taxonomic names against the PBDB will ensure the names are up-to-date based on current taxonomic literature. PBDB also provides the taxonomic backbone to the Global Biodiversity Information Facility (GBIF) so aligning your taxonomic names with PBDB will make the process of sharing your data easier.
 
-**How to use it?**
+## How to use it?
 
 PBDB can be accessed via their website, a mobile application, and an API. The PBDB website has a [Resources](https://paleobiodb.org/#/resources) tab where more information about these access points can be found. The same Resources page also includes information on how to contribute taxonomic information to PBDB.
 
-#### WoRMS:
+## World Register of Marine Species (WoRMS)
 
-**What is it?**
+### What Is It?
 
-The World Register of Marine Species (WoRMS) is an authoritative and comprehensive list of names of marine organisms. In plain language...\
-\
+The World Register of Marine Species (WoRMS) is an authoritative and comprehensive list of names of marine organisms. In plain language...
 
-**Why should you use it?**
+### Why should you use it?
 
-One of the reasons WoRMS is highly thought of in the marine community is that the content of WoRMS is curated by taxonomic and thematic experts, not by database managers. Each taxonomic group is represented by an expert who has the authority over the content, and is responsible for controlling the quality of the information. Each of these main taxonomic editors can invite several specialists of smaller groups within their area of responsibility to join them. WoRMS is the taxonomic database used by the Ocean Biodiversity Information System (OBIS), and other important biological initiatives.\
-\
+One of the reasons WoRMS is highly thought of in the marine community is that the content of WoRMS is curated by taxonomic and thematic experts, not by database managers. Each taxonomic group is represented by an expert who has the authority over the content, and is responsible for controlling the quality of the information. Each of these main taxonomic editors can invite several specialists of smaller groups within their area of responsibility to join them. WoRMS is the taxonomic database used by OBIS, and other important biological initiatives.
 
-**How to use it?**
+### How to use it?
 
 WoRMS, and its associated tools, can be explored through your [web browser](https://www.marinespecies.org/index.php), and through its [API](https://www.marinespecies.org/rest/) using one of the R packages (e.g. [worrms](https://cran.r-project.org/web/packages/worrms/index.html), [taxize](https://cran.r-project.org/web/packages/taxize/)) or [python](https://github.com/iobis/pyworms) package. 
