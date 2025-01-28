@@ -41,13 +41,13 @@ format:
    link-external-filter: '^(?:http:|https:)\/\/esipfed\.github\.io'
    toc: false
    
-  pdf: default
-  docx: 
-    toc: false  # This isn't populating for some reason
-    fig-align: center
-    #tbl-colwidths: auto
-    lang: en
-    reference-doc: custom-reference-doc.docx
+#  pdf: default
+#  docx: 
+    # toc: false  # This isn't populating for some reason
+    # fig-align: center
+    # #tbl-colwidths: auto
+    # lang: en
+    # reference-doc: custom-reference-doc.docx
       
 editor: visual
 
