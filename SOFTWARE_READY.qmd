@@ -5,7 +5,7 @@
 ### Why?
 
 -   Allows data to be useful in perpetuity by ensuring data readability and reusability across multiple platforms.
--   To align better with the FAIR principles (findability, accessibility, interoperability, reusability)
+-   To align better with the [FAIR data principles](https://www.go-fair.org/fair-principles/) (findability, accessibility, interoperability, reusability)
 -   Makes data more socially equitable, supporting open science. Proprietary formats can depend on software that require licenses, which not everyone can afford/has access to.
 
 ### Key Information
