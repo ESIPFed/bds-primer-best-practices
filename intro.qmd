@@ -1,5 +1,7 @@
 # Introduction
 
+Test
+
 *This is still a work in progress and only presented here for the purposes of receiving feedback. This message will be removed when the guidelines have been officially published.*
 
 The diversity of biological data, and (seeming) lack of overarching community standards makes working with biological data challenging. Several standards do exist for biological data, however these different data, metadata, and taxonomic standards are confusing for data managers and data users to navigate. The biological data community in the US could benefit from guidance, best practice documentation, training, and community building. The [ESIP Biological Data Cluster (BDS)](https://wiki.esipfed.org/Biological_Data_Standards_Cluster) was formed to tackle these problems.
