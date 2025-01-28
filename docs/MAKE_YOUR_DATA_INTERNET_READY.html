@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>5&nbsp; Make Your Data Internet Ready – ESIP Biological Data Cluster (BDS) Primer Guide</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./SOFTWARE_READY.html" rel="next">
+<link href="./INTEROPERABLE_DATA.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./MAKE_YOUR_DATA_INTERNET_READY.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Make Your Data Internet Ready</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">ESIP Biological Data Cluster (BDS) Primer Guide</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./CONTEXT_UNDERSTANDABILITY.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Provide Context and Understandability to Your Data</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./INTEGRATE_DATA.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Integrate Your Data with Other Data</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./INTEROPERABLE_DATA.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Make Your Data Interoperable</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./MAKE_YOUR_DATA_INTERNET_READY.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Make Your Data Internet Ready</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./SOFTWARE_READY.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Make Your Data Software Ready</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <div class="quarto-code-links"><h2>Code Links</h2><ul><li><a href="https://github.com/ESIPFed/bds-primer-best-practices"><i class="bi bi-github"></i>Github Repo</a></li><li><a href="https://github.com/ESIPFed/bds-primer-best-practices/issues/new/choose"><i class="bi bi-lightbulb"></i>Give feedback on this page</a></li></ul></div></div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Make Your Data Internet Ready</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="web-services" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="web-services"><span class="header-section-number">5.1</span> Web Services</h2>
+<section id="what-is-it" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-it">What Is It?</h3>
+<p>Web services run much of our digital world today. For example, you may be familiar with Amazon Web Services (AWS), which is used for analytics and data service during football games, the olympics, and other sporting events. You can think of a web service as a waiter at a restaurant. You (the user) order food (a request), the waiter (the web service) takes your order to the kitchen (the server or application), and then brings you back your food (the response). This allows different parts of a computer system or different systems altogether to interact without needing to know how each other works internally.</p>
+</section>
+<section id="why-should-you-know-about-them" class="level3">
+<h3 class="anchored" data-anchor-id="why-should-you-know-about-them">Why should you know about them?</h3>
+<p>Biological services and platforms like <a href="https://manual.obis.org/access.html#api">OBIS</a>, <a href="https://www.gbif.org/">GBIF</a>, etc. utilize standard web services to serve data.</p>
+<p>These web services are relevant to all sectors collecting and handling biological, biodiversity, and environmental information, including the private, academic research, government and other operational entities. This is what drives the exchange of scientific information.</p>
+</section>
+<section id="web-services-to-know-about" class="level3">
+<h3 class="anchored" data-anchor-id="web-services-to-know-about">Web Services to Know About</h3>
+<ul>
+<li>Application Program Interfaces (APIs)</li>
+<li><a href="https://www.ncei.noaa.gov/access/distributed-data-access">Overview: Distributed Model Data Access</a></li>
+</ul>
+</section>
+</section>
+<section id="erddap" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="erddap"><span class="header-section-number">5.2</span> ERDDAP™</h2>
+<section id="what-is-it-1" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-it-1">What Is It?</h3>
+<p><a href="https://coastwatch.pfeg.noaa.gov/erddap/index.html">ERDDAP</a>™ [ur-dap] is a data server that offers users a simple, consistent way to download scientific datasets in common file formats, as well as make graphs and maps.&nbsp;ERDDAP is <a href="https://github.com/IrishMarineInstitute/awesome-erddap?tab=readme-ov-file#erddap-deployments">used globally</a> to share and integrate disparate data across a range of communities in a standardized way. ERDDAP is often the data service used for oceanographic and atmospheric datasets, but also works great for biological and biodiversity-relevant observations, and for both gridded and tabular data. Data providers can <a href="https://erddap.github.io/setup.html">set up their own ERDDAP server</a> to serve up their data. By using ERDDAP you can incorporate multiple data subsets from different sources into a single workspace. Users can download data from ERDDAP in a multitude of file formats, or as graphs or maps by either using a web page or using the RESTful API in the programming language of their choice.</p>
+<p>To facilitate comparisons of data from different datasets, requests and results in ERDDAP use standardized space/time axis, which makes it easier for users to specify data constraints in requests without having to worry about the data format.&nbsp;</p>
+<p><strong>Data access</strong>: ERDDAP provides a variety of data access methods including via a web browser, OPeNDAP, SOS, WMS, WCS, HTTP, and more.&nbsp;</p>
+<p><strong>Data formats</strong>: ERDDAP can convert data to various formats such as .csv, .json, .nc, .xls, .mat, .dods, and others (more info <a href="https://catalogue.hakai.org/erddap/tabledap/documentation.html#fileType">here</a>)</p>
+<p><strong>Data subsetting</strong>: ERDDAP allows users to request a subset of a dataset. It converts the subset to the desired file format available for download.</p>
+<p><strong>ERDDAP API</strong>: All the information, data and figures made available via ERDDAP are also available via an API. See table dataset API docs <a href="https://coastwatch.pfeg.noaa.gov/erddap/tabledap/documentation.html">here</a>, and for gridded datasets <a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/documentation.html">here</a>.</p>
+<p><strong>Data search</strong>: Search for data across multiple ERDDAP installations at <a href="https://erddap.com" class="uri">https://erddap.com</a></p>
+<p>Additional overall documentation on ERDDAP can be found <a href="https://coastwatch.pfeg.noaa.gov/erddap/information.html">here</a>. The documentation is in the process of being moved to GitHub <a href="https://erddap.github.io/">here</a>.</p>
+</section>
+<section id="why-should-you-use-it" class="level3">
+<h3 class="anchored" data-anchor-id="why-should-you-use-it">Why should you use it?</h3>
+<p>ERDDAP is free and open source, and makes your data much more accessible. ERDDAP has a <a href="https://www.ncei.noaa.gov/erddap/rest.html">RESTful web service</a> which is designed to be easy for computer programs and scripts to use or interact with.&nbsp;</p>
+</section>
+<section id="how-to-use-it" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-use-it">How to use it?</h3>
+<p>There are many good tutorials and references on how to use ERDDAP including</p>
+<ul>
+<li><p><a href="https://github.com/coastwatch-training/CoastWatch-Tutorials?tab=readme-ov-file">CoastWatch Training</a> and specifically <a href="https://github.com/coastwatch-training/CoastWatch-Tutorials/tree/main/ERDDAP-basics">ERDDAP basics</a></p></li>
+<li><p><a href="https://github.com/IrishMarineInstitute/awesome-erddap?tab=readme-ov-file">Awesome ERDDAP</a></p></li>
+</ul>
+</section>
+</section>
+<section id="thematic-real-time-environmental-distributed-data-services-thredds" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="thematic-real-time-environmental-distributed-data-services-thredds"><span class="header-section-number">5.3</span> Thematic Real-time Environmental Distributed Data Services (THREDDS)</h2>
+<section id="what-is-it-2" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-it-2">What Is It?</h3>
+<p>The <a href="https://www.unidata.ucar.edu/software/tds/">THREDDS</a> server has features and interfaces that makes it easier to explore and use data. Here is a comparison of ERDDAP and THREDDS: <a href="https://jsimkins2.github.io/geog473-673/thredds-and-erddap.html" class="uri">https://jsimkins2.github.io/geog473-673/thredds-and-erddap.html</a>&nbsp;</p>
+<p>&nbsp;[you can’t access data by date, you need to know the index number. Less like a database than ERDDAP. Developed a little earlier than ERDDAP. ERDDAP was built to be better than THREDDS from a user perspective. Optimized for data cube, e.g.&nbsp;netCDF, data.&nbsp;&nbsp;</p>
+</section>
+<section id="why-should-you-use-it-1" class="level3">
+<h3 class="anchored" data-anchor-id="why-should-you-use-it-1">Why should you use it?</h3>
+</section>
+<section id="how-to-use-it-1" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-use-it-1">How to use it?</h3>
+</section>
+</section>
+<section id="web-map-service" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="web-map-service"><span class="header-section-number">5.4</span> Web Map Service</h2>
+<section id="what-is-it-3" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-it-3">What Is It?</h3>
+<p>A Web Map Service (WMS) is a way to retrieve georegistered map images over the internet to display in applications and web pages. It allows you to view and use maps from different sources that host the maps and data used to create them without needing to download them. The WMS specifications were developed by the <a href="https://www.ogc.org/publications/standard/wms/">Open Geospatial Consortium (OGC)</a> to enable interoperability and use&nbsp;in web browsers, open-source GIS software (ex. <a href="https://www.qgis.org/">QGIS</a>), and proprietary GIS software (ex. <a href="https://www.esri.com/en-us/home">Esri</a>).</p>
+</section>
+<section id="when-should-you-use-it" class="level3">
+<h3 class="anchored" data-anchor-id="when-should-you-use-it">When should you use it?</h3>
+</section>
+<section id="how-to-use-it-2" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-use-it-2">How to use it?</h3>
+</section>
+</section>
+<section id="web-friendly-standards" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="web-friendly-standards"><span class="header-section-number">5.5</span> Web-friendly Standards</h2>
+<section id="what-is-it-4" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-it-4">What Is It?</h3>
+<p>Web-friendly standards are data standards which facilitate the transfer and handling of data over the Web, its architectures and its services. Data standards that comply with web standards promote&nbsp;online sharing, programmatic discovery, access, and processing of data.&nbsp;</p>
+</section>
+<section id="why-should-you-use-them" class="level3">
+<h3 class="anchored" data-anchor-id="why-should-you-use-them">Why should you use them?</h3>
+<p>Adopting web-friendly standards such as <a href="https://www.w3.org/standards/">W3C standards</a>, <a href="https://www.dublincore.org/">Dublin Core</a>, the <a href="https://schema.datacite.org/">DataCite metadata schema</a>, and <a href="https://schema.org/" class="uri">https://schema.org/</a> helps leverage web technologies to connect and make discoverable research information across various platforms and disciplines, advancing knowledge.&nbsp;</p>
+<p>If data standards aren’t web-friendly, data and information will be much harder to “see” via Web services, which are the primary route for global data discovery.</p>
+</section>
+</section>
+<section id="web-enabled-standards-to-know-about" class="level2" data-number="5.6">
+<h2 data-number="5.6" class="anchored" data-anchor-id="web-enabled-standards-to-know-about"><span class="header-section-number">5.6</span> <strong>Web-Enabled Standards to Know About</strong></h2>
+<p>The following standards use Web-friendly and FAIR compliant approaches to promote conformance and interoperability. For example, the use of open and dereferenceable URIs/URLs as persistent identifiers for their properties and types / classes. This means that any web browser or service will be able to act on these standards and link users to the issuing authorities.</p>
+</section>
+<section id="w3c-standards" class="level2" data-number="5.7">
+<h2 data-number="5.7" class="anchored" data-anchor-id="w3c-standards"><span class="header-section-number">5.7</span> W3C standards</h2>
+<section id="what-is-it-5" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-it-5">What Is It?**</h3>
+<p><a href="https://www.w3.org/standards/">W3C standards</a>) define an open web platform for application development. The web has the unprecedented potential to enable developers to build rich interactive experiences, that can be available on any device.</p>
+<p>The platform continues to expand, but web users have long ago rallied around HTML as the cornerstone of the web. Many more technologies that W3C and its partners are creating extend the web and give it full strength, including CSS, SVG, WOFF, WebRTC, XML, and a growing variety of APIs.</p>
+</section>
+<section id="why-should-you-use-it-2" class="level3">
+<h3 class="anchored" data-anchor-id="why-should-you-use-it-2">Why should you use it?</h3>
+<p>It might not be a question so much of why you should use it as much as that you should become aware that you already use these, and may be able to make your data more <a href="https://www.go-fair.org/fair-principles/">FAIR</a> by increasing your awareness of these standards. As the W3C website says, “<em>W3C’s proven web standards process is based on fairness, openness, royalty-free, we make the web work, for everyone</em>”.</p>
+</section>
+<section id="how-to-use-it-3" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-use-it-3">How to use it?</h3>
+<p>You may use on of the W3C standards listed above to do activities like rendering web pages, web architecture, and linking data and services. There are a variety of resources available that can be found by searching the internet. We do not currently have a single starting point to recommend here.</p>
+</section>
+</section>
+<section id="dublin-core" class="level2" data-number="5.8">
+<h2 data-number="5.8" class="anchored" data-anchor-id="dublin-core"><span class="header-section-number">5.8</span> Dublin Core</h2>
+<section id="what-is-it-6" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-it-6">What Is It?</h3>
+<p><a href="https://www.dublincore.org">Dublin Core</a> is a metadata standard of 15 ‘core’ terms originally developed for archives and libraries to describe physical or digital resources. The full set of terms can be found <a href="http://purl.org/dc/terms/">here</a>. Each term is optional can be used multiple times, as repeated ‘elements.’ All terms are defined as Resource Description Framework (RDF) properties. It has also been formally standardized internationally as ISO 15863.</p>
+<p>The <a href="https://esipfed.github.io/bds-primer-best-practices/INTEGRATE_DATA.html#topic-darwin-core">Darwin Core</a> is based on Dublin Core and is considered to be an extension for biodiversity information of Dublin Core. For information on further extensions to Darwin Core to capture details of additional information regarding a biological/biodiversity data record, use:</p>
+<ul>
+<li>Extended Measurement Or Facts (eMoF): (https://rs.obis.org/obis/terms#ExtendedMeasurementOrFact)</li>
+</ul>
+<p>eMoF was developed to be used in combination with the Event Core, but is also compatible with other cores. The eMoF can store measurements or facts related to a biological occurrence, environmental measurements or facts and sampling method attributes. This extension also provides the option to provide identifiers to reference a vocabulary for the measurementType, measurementValue and measurementUnit fields.</p>
+<ul>
+<li>The Humboldt Extension for Ecological Inventories (https://eco.tdwg.org/): a standard vocabulary maintained by the <a href="https://www.tdwg.org/community/dwc/">Darwin Core Maintenance Group</a>. It is intended to facilitate recording of biodiversity ancillary information in operational settings.</li>
+</ul>
+</section>
+<section id="why-should-you-use-it-3" class="level3">
+<h3 class="anchored" data-anchor-id="why-should-you-use-it-3">Why should you use it?</h3>
+</section>
+<section id="how-to-use-it-4" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-use-it-4">How to use it?</h3>
+<p><strong>Disambiguating the Cores presentation: <a href="https://docs.google.com/presentation/d/1DveHXvY5U5XISl0JocDJ5qUe4PP74dPFSrdryra2m1U/edit#slide=id.p" class="uri">https://docs.google.com/presentation/d/1DveHXvY5U5XISl0JocDJ5qUe4PP74dPFSrdryra2m1U/edit#slide=id.p</a></strong></p>
+</section>
+</section>
+<section id="datacite" class="level2" data-number="5.9">
+<h2 data-number="5.9" class="anchored" data-anchor-id="datacite"><span class="header-section-number">5.9</span> DataCite</h2>
+<section id="what-is-it-7" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-it-7">What Is It?</h3>
+<p>The <a href="https://datacite.org">DataCite metadata schema</a> is an international not-for-profit organization which aims to improve data citation, through helping people use web-enabled standards to connect products and citations. This allows users to i) establish easier access to research data, ii) support data archiving and long-term data preservation, and iii) increase acceptance of research data as legitimate, citable contributions to a scholarly record, promoting reuse and attribution. DataCite helps mint persistent identifiers, such as digital object identifiers (DOI) to research products, as well as provide recommendations for data citation formats. DOIs are a type of persistent identifier that identify and locate objects in the long-term.&nbsp;</p>
+<p>Additional documentation on DataCite can be found at <a href="https://support.datacite.org/docs/datacite-commons" class="uri">https://support.datacite.org/docs/datacite-commons</a>.&nbsp;</p>
+</section>
+<section id="why-should-you-use-it-4" class="level3">
+<h3 class="anchored" data-anchor-id="why-should-you-use-it-4">Why should you use it?</h3>
+<p>Assigning a DOI to your research product can enable long-term preservation and accessibility of your research product. Among other things, a main value of DataCite is the connection it creates between users and publishing machinery.</p>
+</section>
+<section id="how-to-use-it-5" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-use-it-5">How to use it?</h3>
+<p>DataCite Consortium members can mint DOIs for their research products, making it part of a larger digital ecosystem and helping connect the research product to researchers through other persistent identifiers e.g., ORCIDs for researchers and ROR for organizations. DataCite has a REST API that enables retrieval, creation, and update of a DataCite DOI metadata record, can be queried: <a href="https://support.datacite.org/reference/introduction" class="uri">https://support.datacite.org/reference/introduction</a>&nbsp;</p>
+<p>##Schema.org</p>
+</section>
+<section id="what-is-it-8" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-it-8">What Is It?</h3>
+<p><a href="https://schema.org/">Schema.org</a> is a set of extensible schemas that enables users to embed structured data on their web pages for use and indexation by major search engines. Markup on the webpages or in records helps search engines understand the information presented within and provide richer search results. Schema.org was launched in 2011 by Bing, Google and Yahoo to create and support a common set of schemas for structured data markup on webpages. By using schema.org vocabulary as well as various formats (e.g., JSON-LD) to mark up website content with metadata about itself, making it easier for websites or data records to be searched or indexed.&nbsp;</p>
+<p>Schema.org is not a formal standards body, but rather a site where there is documentation on the schemas supported by several major search engines. Schema.org essentially defines a dictionary of terms (types, properties, and enumerated values). Its main hierarchy is formed by a collection of types (or class), each of which has properties that describe the type. Schema.org offers a hierarchically structured set of types which determines which properties can be assigned to a particular type. Essentially this helps search engines look for websites and record and understand the relationships between them.&nbsp;</p>
+<p>Documentation on schema.org can be found here: <a href="https://schema.org/docs/documents.html" class="uri">https://schema.org/docs/documents.html</a>&nbsp;</p>
+</section>
+<section id="why-should-you-use-it-5" class="level3">
+<h3 class="anchored" data-anchor-id="why-should-you-use-it-5">Why should you use it?</h3>
+<p>By implementing schema.org you can make your research more easily and prominently discoverable through major search engines.&nbsp;</p>
+</section>
+<section id="how-to-use-it-6" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-use-it-6">How to use it?</h3>
+<p>You can add schema.org markup to your webpages or records using various online tools, including <a href="https://www.google.com/webmasters/markup-helper/u/0/">Google’s Structured Data Markup Helper</a>, or by directly adding code to your webpages. You can use different formats to add information to your web content implementing the schema.org vocabulary, such as JSON-LD.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("^(?:http:|https:)\/\/esipfed\.github\.io");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+          // default icon
+          link.classList.add("external");
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./INTEROPERABLE_DATA.html" class="pagination-link" aria-label="Make Your Data Interoperable">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Make Your Data Interoperable</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./SOFTWARE_READY.html" class="pagination-link" aria-label="Make Your Data Software Ready">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Make Your Data Software Ready</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
