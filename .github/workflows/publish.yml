@@ -24,7 +24,7 @@ jobs:
           install-pandoc: false
 
       - name: Install dependencies
-        run: 'sudo apt-get install libcurl4-openssl-dev pkg-config libfontconfig1-dev libcairo2-dev'
+        run: 'sudo apt-get install libcurl4-openssl-dev pkg-config libfontconfig1-dev libcairo2-dev libharfbuzz-dev libfribidi-dev'
         
       - name: Install R Dependencies
         uses: r-lib/actions/setup-renv@v2
