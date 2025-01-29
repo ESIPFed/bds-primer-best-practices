@@ -89,7 +89,7 @@ The following standards use Web-friendly and FAIR compliant approaches to promot
 
 ## W3C standards
 
-### What Is It?**
+### What Is It?\*\*
 
 [W3C standards](https://www.w3.org/standards/)) define an open web platform for application development. The web has the unprecedented potential to enable developers to build rich interactive experiences, that can be available on any device.
 
@@ -97,7 +97,7 @@ The platform continues to expand, but web users have long ago rallied around HTM
 
 ### Why should you use it?
 
-It might not be a question so much of why you should use it as much as that you should become aware that you already use these, and may be able to make your data more [FAIR](https://www.go-fair.org/fair-principles/) by increasing your awareness of these standards. As the W3C website says, “_W3C's proven web standards process is based on fairness, openness, royalty-free, we make the web work, for everyone_”.
+It might not be a question so much of why you should use it as much as that you should become aware that you already use these, and may be able to make your data more [FAIR](https://www.go-fair.org/fair-principles/) by increasing your awareness of these standards. As the W3C website says, “*W3C's proven web standards process is based on fairness, openness, royalty-free, we make the web work, for everyone*”.
 
 ### How to use it?
 
@@ -105,7 +105,7 @@ You may use on of the W3C standards listed above to do activities like rendering
 
 ## Dublin Core
 
-### What Is It? 
+### What Is It?
 
 [Dublin Core](https://www.dublincore.org) is a metadata standard of 15 ‘core’ terms originally developed for archives and libraries to describe physical or digital resources. The full set of terms can be found [here](http://purl.org/dc/terms/). Each term is optional can be used multiple times, as repeated ‘elements.’ All terms are defined as Resource Description Framework (RDF) properties. It has also been formally standardized internationally as ISO 15863.
 

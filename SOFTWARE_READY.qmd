@@ -42,11 +42,8 @@ Example of Wide Format
 
 #| label: tbl-tidyformat wide
 
-
-
 library(dplyr)
 library(flextable)
-#library(gt)
 
 example_df <- data.frame(species = c("Tilia americana",
                                      "Pinus strobus"),
@@ -55,9 +52,6 @@ example_df <- data.frame(species = c("Tilia americana",
                          site_03 = sample(0:5, size = 2))
 
 long_example <- tidyr::pivot_longer(data = example_df, cols = site_01:site_03, names_to = "site", values_to = "count")
-
-# flextable is awesome, but captions aren't working yet: <https://github.com/quarto-dev/quarto-cli/issues/1556
-# for now, just add print lines and maybe switch back in the future
 
   flextable(example_df) %>%
   set_caption(caption = "Wide Format") %>% 
@@ -73,11 +67,8 @@ Example of Long Format
 
 #| label: tbl-tidyformat long
 
-
-
 library(dplyr)
 library(flextable)
-#library(gt)
 
 example_df <- data.frame(species = c("Tilia americana",
                                      "Pinus strobus"),
@@ -87,19 +78,10 @@ example_df <- data.frame(species = c("Tilia americana",
 
 long_example <- tidyr::pivot_longer(data = example_df, cols = site_01:site_03, names_to = "site", values_to = "count")
 
-# flextable is awesome, but captions aren't working yet: <https://github.com/quarto-dev/quarto-cli/issues/1556
-# for now, just add print lines and maybe switch back in the future
-
 flextable(long_example) %>%
   set_caption(caption = "Long Format") %>%
   fontsize(size = 9) %>% 
   autofit() %>%  theme_zebra()
-
-# example_df %>% 
-#   gt(caption = "Wide Format")
-# 
-# long_example %>% 
-#   gt(caption = "Long Format")
 
 ```
 
@@ -121,9 +103,10 @@ flextable(long_example) %>%
 
 ## Follow ISO 8601 for dates
 
+![https://imgs.xkcd.com/comics/iso_8601.png](images/iso_8601.png)
 ```{r xkcd1, echo = FALSE, out.width="40%", fig.align="center", fig.cap="https://imgs.xkcd.com/comics/iso_8601.png"}
 
-knitr::include_graphics('https://imgs.xkcd.com/comics/iso_8601.png')
+
 
 ```
 
@@ -251,11 +234,8 @@ flextable(tab1) %>%
 
 ## Record latitude and longitude in decimal degrees in WGS84
 
-```{r xkcd2, echo = FALSE, out.width="40%", fig.align="center", fig.cap="https://imgs.xkcd.com/comics/coordinate_precision.png"}
+![https://imgs.xkcd.com/comics/coordinate_precision.png](images/coordinate_precision.png)
 
-knitr::include_graphics('https://imgs.xkcd.com/comics/coordinate_precision.png')
-
-```
 
 ### Why?
 

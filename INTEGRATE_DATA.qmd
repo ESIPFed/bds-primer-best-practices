@@ -24,7 +24,6 @@ This enables users of data from different sources to decide which quantities are
 
 -   The [NERC Vocabulary Server](https://vocab.nerc.ac.uk/) hosts CF, and maintains mappings from CF to other vocabularies. They decompose them into more useful [SKOS](https://www.w3.org/TR/skos-reference/) level semantics. For example: <https://vocab.nerc.ac.uk/search_nvs/map/?vocab=P07>
 
-
 ### Top 5 References
 
 1.  <https://cfconventions.org/>
