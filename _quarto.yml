@@ -1,19 +1,27 @@
 project:
-  type: book
+  type: website
   output-dir: docs
 
-book:
+website:
   title: "ESIP Biological Data Cluster (BDS) Primer Guide"
-  author: "ESIP Biological Data Cluster"
-  date: last-modified
-  chapters:
-    - index.qmd
-    - intro.qmd
-    - CONTEXT_UNDERSTANDABILITY.qmd
-    - INTEGRATE_DATA.qmd
-    - INTEROPERABLE_DATA.qmd
-    - MAKE_YOUR_DATA_INTERNET_READY.qmd
-    - SOFTWARE_READY.qmd
+  #author: "ESIP Biological Data Cluster"
+  #date: last-modified
+  navbar:
+    left:
+    - href: index.qmd
+      text: Preface
+    - href: intro.qmd
+      text: Introduction
+    - href: CONTEXT_UNDERSTANDABILITY.qmd
+      text: Provide Context and Understandability to Your Data
+    - href: INTEGRATE_DATA.qmd
+      text: Integrate Your Data with Other Data
+    - href: INTEROPERABLE_DATA.qmd
+      text: Make Your Data Interoperable
+    - href: MAKE_YOUR_DATA_INTERNET_READY.qmd
+      text: Make Your Data Internet Ready
+    - href: SOFTWARE_READY.qmd
+      text: Make Your Data Software Ready
 
 number-depth: 2
 number-offset: 1

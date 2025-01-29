@@ -104,6 +104,7 @@ flextable(long_example) %>%
 ## Follow ISO 8601 for dates
 
 ![https://imgs.xkcd.com/comics/iso_8601.png](images/iso_8601.png)
+
 ```{r xkcd1, echo = FALSE, out.width="40%", fig.align="center", fig.cap="https://imgs.xkcd.com/comics/iso_8601.png"}
 
 
@@ -235,7 +236,6 @@ flextable(tab1) %>%
 ## Record latitude and longitude in decimal degrees in WGS84
 
 ![https://imgs.xkcd.com/comics/coordinate_precision.png](images/coordinate_precision.png)
-
 
 ### Why?
 
