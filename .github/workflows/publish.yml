@@ -26,6 +26,7 @@ jobs:
         uses: r-lib/actions/setup-renv@v2
         with:
           cache-version: 1
+          install-pandoc: false
 
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
