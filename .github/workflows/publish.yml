@@ -16,12 +16,6 @@ jobs:
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
-
-      # per https://github.com/actions/runner-images/issues/37
-      - name: Install cURL Headers
-          run: curl https://curl.haxx.se/download/curl-$V.tar.gz | sudo tar xz -C /usr --strip-components=1 curl-$V/include
-          env:
-            V: 7.58.0
     
       - name: Install R
         uses: r-lib/actions/setup-r@v2
