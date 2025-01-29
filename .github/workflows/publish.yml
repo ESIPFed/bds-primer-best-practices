@@ -13,9 +13,6 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
-
-      - name: Install dependencies
-        run: 'sudo apt-get install libcurl4-openssl-dev'
         
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
@@ -26,6 +23,9 @@ jobs:
           r-version: '4.4.0'
           install-pandoc: false
 
+      - name: Install dependencies
+        run: 'sudo apt-get install libcurl4-openssl-dev'
+        
       - name: Install R Dependencies
         uses: r-lib/actions/setup-renv@v2
         with:
