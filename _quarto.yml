@@ -30,7 +30,6 @@ execute:
   echo: FALSE
   warning: FALSE
   message: FALSE
-  freeze: auto
 
 #bibliography: references.bib
 

@@ -105,12 +105,6 @@ flextable(long_example) %>%
 
 ![https://imgs.xkcd.com/comics/iso_8601.png](images/iso_8601.png)
 
-```{r xkcd1, echo = FALSE, out.width="40%", fig.align="center", fig.cap="https://imgs.xkcd.com/comics/iso_8601.png"}
-
-
-
-```
-
 ### Why?
 
 -   Internationally accepted format used across multiple schemas (e.g. `Darwin Core`, `EML`, `ISO 19115`)
