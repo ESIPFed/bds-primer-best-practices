@@ -2,6 +2,8 @@
 
 *This is still a work in progress and only presented here for the purposes of receiving feedback. This message will be removed when the guidelines have been officially published.*
 
+To paraphrase the [MARCO-BOLO data management plan](https://doi.org/10.5281/zenodo.8208410), the main challenge with biological data is that it comes in many flavors. For example, it may include evidence of past or present organisms based on physical samples, chemicals, organic molecules, sound, or images. By using standards to organize and share data efficiently, biologists can turn this diversity of data types into a strength rather than an inherent challenge of dealing with biological data.
+
 The diversity of biological data, and (seeming) lack of overarching community standards makes working with biological data challenging. Several standards do exist for biological data, however these different data, metadata, and taxonomic standards are confusing for data managers and data users to navigate. The biological data community in the US could benefit from guidance, best practice documentation, training, and community building. The [ESIP Biological Data Cluster (BDS)](https://wiki.esipfed.org/Biological_Data_Standards_Cluster) was formed to tackle these problems.
 
 In short, these guidelines will be successful if they:
