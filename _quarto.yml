@@ -7,7 +7,7 @@ book:
   author: "ESIP Biological Data Cluster"
   date: last-modified
   chapters:
-    - intro.qmd
+    - index.qmd
     - CONTEXT_UNDERSTANDABILITY.qmd
     - INTEGRATE_DATA.qmd
     - INTEROPERABLE_DATA.qmd
