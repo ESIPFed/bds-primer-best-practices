@@ -48,13 +48,19 @@ The primary mission of COL is to deliver data, but the tools and services offere
 
 The [Paleobiology Database](https://paleobiodb.org/) (PBDB) is an online, expert-curated database that aims to provide taxonomic information for paleobiological taxa of all geological ages. It contains data for almost half a million paleobiological taxa from over 900 different contributors.
 
-### Why should you use it?
+### **Why?**
 
-Checking your paleobiological taxonomic names against the PBDB will ensure the names are up-to-date based on current taxonomic literature. PBDB also provides the taxonomic backbone to the Global Biodiversity Information Facility (GBIF) so aligning your taxonomic names with PBDB will make the process of sharing your data easier.
+-   Checking your paleobiological taxonomic names against the PBDB will ensure the names are up-to-date based on current taxonomic literature as reflected in the database.
 
-## How to use it?
+-   PBDB provides the taxonomic backbone to the Global Biodiversity Information Facility (GBIF). This means aligning your taxonomic names with PBDB will make the process of sharing your data easier.
 
-PBDB can be accessed via their website, a mobile application, and an API. The PBDB website has a [Resources](https://paleobiodb.org/#/resources) tab where more information about these access points can be found. The same Resources page also includes information on how to contribute taxonomic information to PBDB.
+### **Resources**
+
+-   PBDB can be accessed via their [website](https://paleobiodb.org/), [mobile applications](https://paleobiodb.org/#/resources), and an [API](https://paleobiodb.org/data1.2/).
+
+-   The PBDB website has a [Resources](https://paleobiodb.org/#/resources) tab where more information about these access points can be found. 
+
+-   The same Resources page also includes information on how to contribute taxonomic information to PBDB. Lessons are available via a [playlist of YouTube](https://www.youtube.com/watch?v=C06cjzcSDq4&list=PLmOEA6rrJ1dc3a4-etDDGQ7tQG1sEK0g6) videos. Note that you will need to be granted Contributory User access to contribute to PBDB. More information about the process and different user types is available in the [PBDB User Guide](https://escholarship.org/content/qt6tm05630/qt6tm05630.pdf?t=s0797i).
 
 ## World Register of Marine Species (WoRMS)
 
