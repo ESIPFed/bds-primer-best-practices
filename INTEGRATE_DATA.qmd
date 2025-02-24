@@ -1,5 +1,7 @@
 # Integrate Your Data with Other Data
 
+Biodiversity data are collected and managed in many different systems and environments from museum collections, to environmental monitoring programs, research programs, or community science projects (e.g. iNaturalist). Data are often heterogeneous within and across these systems, depending on research objectives, but there are consistent themes in them: the what, where, and when. Although the details may have names unique to your own data, there are specific field names to use to provide these details in a way that aligns with others’ data. Through the use of common terminology, downstream users can not only better search for and discover data, but also evaluate, integrate, and compare datasets.
+
 ## Climate and Forecast (CF)
 
 ### What Is It: 
