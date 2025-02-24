@@ -4,11 +4,13 @@ Biodiversity data are collected and managed in many different systems and enviro
 
 ## Climate and Forecast (CF)
 
-### What Is It: 
+### What Is It:
 
-The Climate and Forecast (CF) metadata conventions are designed to promote the processing and sharing of files created with the [NetCDF (Network Common Data Form)](https://psl.noaa.gov/data/gridded/whatsnetCDF.html) API. The conventions define metadata that provide a definitive description of what the data in each variable represents, and the spatial and temporal properties of the data. Said more plainly, the conventions explain the extra information (metadata) that clearly describes what each piece of data means and when and where it was collected.
+The [Climate and Forecast (CF) Metadata Conventions](https://cfconventions.org) provide a framework to clarify details about the context of each piece of data: a description of what the data in each variable represents and their spatial and temporal properties. Although CF is well-established, it is imperfect for biological data, but terms from CF are often applicable in biological data. CF units are specified using the [UDUNITS system](https://cfconventions.org/faq.html#units-in-cf-udunits). CF conventions are built on top of the [netCDF (Network Common Data Form) standard](https://www.ogc.org/publications/standard/netcdf/) and promote the processing and sharing of netCDF files created with the [NetCDF](https://psl.noaa.gov/data/gridded/whatsnetCDF.html) API, so standards like [COARDS conventions](https://ferret.pmel.noaa.gov/noaa_coop/coop_cdf_profile.html) are applied.
 
-### Why? 
+For more information, see overviews of CF as a [presentation](https://cfconventions.org/Data/cf-documents/overview/viewgraphs.pdf) and [paper](https://cfconventions.org/Data/cf-documents/overview/article.pdf).
+
+### Why?
 
 This enables users of data from different sources to decide which quantities are comparable, and facilitates building applications with powerful extraction, regridding, and display capabilities. The CF convention includes a standard name table, which defines strings that identify physical quantities. CF is well-established, although not perfect for biology. Still, biological standards, and other standards, should consider terms from CF that can be used, before reinventing the wheel.
 
