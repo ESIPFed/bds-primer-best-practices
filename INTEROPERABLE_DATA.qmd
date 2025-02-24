@@ -1,5 +1,7 @@
 # Make Your Data Interoperable
 
+Controlled vocabularies can provide standardized terms and definitions for biological concepts, like biological taxonomies. Using a controlled vocabulary facilitates the integration and sharing of data across diverse sources, improving consistency and data quality, for example, in species classification.
+
 ## Catalogue of Life (COL)
 
 ### What Is It?
