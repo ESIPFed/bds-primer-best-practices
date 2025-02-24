@@ -6,7 +6,9 @@ Metadata standards ensure that data are described using a consistent structure a
 
 ### What Is It?
 
-EML is a community-developed metadata schema designed for ecological data, which encompasses biological data. EML is normally presented as [Extensible Markup Language (XML)](https://www.w3schools.com/xml/). An EML instance (XML document) holds metadata to describe one or more data objects. Data tables are the most common, but almost any data object can be accommodated.
+[Ecological Metadata Language](https://eml.ecoinformatics.org/eml-ecological-metadata-language) (EML) is a metadata schema (i.e. standard) that was developed by the ecological community for ecological data, including biological data. Shared data can include an EML file that provides context for all files in the data “package”. EML is presented in [Extensible Markup Language (XML), which provides standard details for ecological data in a structure that is readable to both people and machines](https://www.w3schools.com/xml/).
+
+For more information, see the full [EML documentation or the National Center for Ecological Analysis and Synthesis (NCEAS) ](https://eml.ecoinformatics.org/eml-schema)[EML GitHub repository](https://github.com/NCEAS/eml).
 
 ### Why?
 
