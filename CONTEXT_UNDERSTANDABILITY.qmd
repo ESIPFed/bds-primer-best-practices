@@ -80,6 +80,6 @@ ISO-19115 is a metadata standard, developed and maintained by the [International
 
 -   [Minimum Information about Marker Gene Sequence (MIMARKS)](https://www.nature.com/articles/nbt.1823)
 
--   [MIxS GitHub repo](https://github.com/GenomicsStandardsConsortium/mixs)
+-   MIxS is maintained by the community using GitHub. To propose changes, ask questions, see the [MIxS GitHub repository](https://github.com/GenomicsStandardsConsortium/mixs).
 
 -   [Minimum Information about Sequence Data from the Built Environment (MIxS-BE)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3869023/)
