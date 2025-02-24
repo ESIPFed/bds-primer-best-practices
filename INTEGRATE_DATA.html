@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.40">
+<meta name="generator" content="quarto-1.6.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -37,7 +37,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-2ce9fc9ac8b614e7ffef13962cc12eaf.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
@@ -171,48 +171,29 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>Biodiversity data are collected and managed in many different systems and environments from museum collections, to environmental monitoring programs, research programs, or community science projects (e.g.&nbsp;iNaturalist). Data are often heterogeneous within and across these systems, depending on research objectives, but there are consistent themes in them: the what, where, and when. Although the details may have names unique to your own data, there are specific field names to use to provide these details in a way that aligns with others’ data. Through the use of common terminology, downstream users can not only better search for and discover data, but also evaluate, integrate, and compare datasets.</p>
 <section id="climate-and-forecast-cf" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="climate-and-forecast-cf"><span class="header-section-number">3.1</span> Climate and Forecast (CF)</h2>
 <section id="what-is-it" class="level3">
-<h3 class="anchored" data-anchor-id="what-is-it">What Is It:&nbsp;</h3>
-<p>The Climate and Forecast (CF) metadata conventions are designed to promote the processing and sharing of files created with the <a href="https://psl.noaa.gov/data/gridded/whatsnetCDF.html">NetCDF (Network Common Data Form)</a> API. The conventions define metadata that provide a definitive description of what the data in each variable represents, and the spatial and temporal properties of the data. Said more plainly, the conventions explain the extra information (metadata) that clearly describes what each piece of data means and when and where it was collected.</p>
+<h3 class="anchored" data-anchor-id="what-is-it">What Is It:</h3>
+<p>The <a href="https://cfconventions.org">Climate and Forecast (CF) Metadata Conventions</a> provide a framework to clarify details about the context of each piece of data: a description of what the data in each variable represents and their spatial and temporal properties. Although CF is well-established, it is imperfect for biological data, but terms from CF are often applicable in biological data. CF units are specified using the <a href="https://cfconventions.org/faq.html#units-in-cf-udunits">UDUNITS system</a>. CF conventions are built on top of the <a href="https://www.ogc.org/publications/standard/netcdf/">netCDF (Network Common Data Form) standard</a> and promote the processing and sharing of netCDF files created with the <a href="https://psl.noaa.gov/data/gridded/whatsnetCDF.html">NetCDF</a> API, so standards like <a href="https://ferret.pmel.noaa.gov/noaa_coop/coop_cdf_profile.html">COARDS conventions</a> are applied.</p>
+<p>For more information, see overviews of CF as a <a href="https://cfconventions.org/Data/cf-documents/overview/viewgraphs.pdf">presentation</a> and <a href="https://cfconventions.org/Data/cf-documents/overview/article.pdf">paper</a>.</p>
 </section>
 <section id="why" class="level3">
-<h3 class="anchored" data-anchor-id="why">Why?&nbsp;</h3>
-<p>This enables users of data from different sources to decide which quantities are comparable, and facilitates building applications with powerful extraction, regridding, and display capabilities. The CF convention includes a standard name table, which defines strings that identify physical quantities. CF is well-established, although not perfect for biology. Still, biological standards, and other standards, should consider terms from CF that can be used, before reinventing the wheel.</p>
-</section>
-<section id="key-information-how-what" class="level3">
-<h3 class="anchored" data-anchor-id="key-information-how-what">Key Information (How / What)</h3>
+<h3 class="anchored" data-anchor-id="why">Why?</h3>
 <ul>
-<li><p><a href="https://cfconventions.org/Data/cf-conventions/cf-conventions-1.0/build/cf-conventions.html">Version 1.0</a> was released in October 2003, we are now on version 1.12</p></li>
-<li><p>CF is a convention built on top of the netCDF standard, and it generalizes and extends the netCDF <a href="https://ferret.pmel.noaa.gov/noaa_coop/coop_cdf_profile.html">COARDS conventions</a>.</p></li>
-<li><p>Like DwC requires knowledge of the EML standard, CF requires knowledge of others standards. Because CF is a netCDF convention, it assumes the netCDF standard is being followed. And it relies on the UDUNITS system of specifying units (see <a href="https://cfconventions.org/faq.html#units-in-cf-udunits">Units in CF (UDUNITS)</a> below).</p></li>
-<li><p>A CF principle is to be self-contained. So for example the CF Standard Names attempt to be as general and well-defined as possible, so the reader does not have to access outside sources to understand the terms.</p></li>
-<li><p>To find standard names that describe your data, open up the latest <a href="https://cfconventions.org/vocabularies.html">Standard Name table</a> (as HTML or XML) and search through it for words typically used for your data</p></li>
-<li><p>The <a href="https://vocab.nerc.ac.uk/">NERC Vocabulary Server</a> hosts CF, and maintains mappings from CF to other vocabularies. They decompose them into more useful <a href="https://www.w3.org/TR/skos-reference/">SKOS</a> level semantics. For example: <a href="https://vocab.nerc.ac.uk/search_nvs/map/?vocab=P07" class="uri">https://vocab.nerc.ac.uk/search_nvs/map/?vocab=P07</a></p></li>
+<li><p>CF enables users of data from different sources to decide which quantities are comparable.</p></li>
+<li><p>It facilitates building applications with powerful extraction, regridding, and display capabilities.&nbsp;</p></li>
+<li><p>A CF principle is self-contained, meaning as general and well-defined as possible, so the reader does not have to access outside sources to understand the terms.</p></li>
+<li><p>There are many efforts that use CF, including the <a href="https://www.ncei.noaa.gov/">National Centers for Environmental Information (NCEI)</a> and <a href="https://www.earthdata.nasa.gov/">NASA EarthData</a> repositories. For a longer list, please see <a href="https://cfconventions.org/projects-activities.html">here</a>.</p></li>
+<li><p>The <a href="https://vocab.nerc.ac.uk/">NERC Vocabulary Server</a> hosts CF and maps it to other vocabularies.&nbsp;</p></li>
 </ul>
 </section>
-<section id="top-5-references" class="level3">
-<h3 class="anchored" data-anchor-id="top-5-references">Top 5 References</h3>
+<section id="top-resources" class="level3">
+<h3 class="anchored" data-anchor-id="top-resources"><strong>Top Resources</strong></h3>
 <ol type="1">
-<li><p><a href="https://cfconventions.org/" class="uri">https://cfconventions.org/</a></p></li>
-<li><p><a href="https://github.com/orgs/cf-convention/discussions">CF GitHub Discussions</a>: announcements, forum for community discussion, questions and answers</p></li>
-<li><p>Current proposals for changing CF (CF GitHub issues): <a href="https://github.com/cf-convention/vocabularies/issues">vocabulary</a> (including standard names), <a href="https://github.com/cf-convention/cf-conventions/issues">conventions</a>, this <a href="https://github.com/cf-convention/cf-convention.github.io/issues">website</a> (including governance)</p></li>
-<li><p><a href="https://github.com/cf-convention">CF GitHub organisation</a></p></li>
-<li><p><a href="https://cfconventions.org/faq.html">CF FAQ</a></p></li>
-<li><p><a href="https://cfconventions.org/software.html">List of software for working with CF</a></p></li>
-<li><p><a href="https://cfconventions.org/projects-activities.html">List of Projects and Activities that Use the CF Metadata Conventions</a></p></li>
-<li><p><a href="https://doi.org/10.5194/gmd-10-4619-2017">Paper</a> describing the CF data model and reference software</p></li>
-<li><p>Overview of CF basics as a <a href="https://cfconventions.org/Data/cf-documents/overview/viewgraphs.pdf">presentation</a> and <a href="https://cfconventions.org/Data/cf-documents/overview/article.pdf">paper</a></p></li>
-<li><p><a href="https://www.ogc.org/standard/netcdf/" class="uri">https://www.ogc.org/standard/netcdf/</a>;&nbsp;&nbsp;</p></li>
-<li><p><a href="https://gdal.org/en/latest/drivers/vector/netcdf.html" class="uri">https://gdal.org/en/latest/drivers/vector/netcdf.html</a></p></li>
-</ol>
-</section>
-<section id="repositories-that-use-this-data-standard" class="level3">
-<h3 class="anchored" data-anchor-id="repositories-that-use-this-data-standard">Repositories that use this data standard</h3>
-<ol type="1">
-<li><p><a href="https://www.ncei.noaa.gov/">National Centers for Environmental Information (NCEI)</a></p></li>
-<li><p><a href="https://www.earthdata.nasa.gov/">NASA EarthData</a></p></li>
+<li><p>To find standard names that describe your data, open up the latest <a href="https://cfconventions.org/vocabularies.html">Standard Name table</a> (as HTML or XML) and search through it for words typically used for your data.</p></li>
+<li><p>CF is developed and maintained by the community using GitHub. To propose changes, ask questions, see the <a href="https://github.com/cf-convention">CF GitHub repositories</a>.</p></li>
 </ol>
 </section>
 </section>
@@ -220,37 +201,24 @@ ul.task-list li input[type="checkbox"] {
 <h2 data-number="3.2" class="anchored" data-anchor-id="darwin-core"><span class="header-section-number">3.2</span> Darwin Core</h2>
 <section id="what-is-it-1" class="level3">
 <h3 class="anchored" data-anchor-id="what-is-it-1">What Is It:&nbsp;</h3>
-<p><a href="https://esipfed.github.io/bds-primer-best-practices/MAKE_YOUR_DATA_INTERNET_READY.html#dublin-core">Dublin Core</a> is a set of metadata terms used by libraries to describe physical and digital resources.&nbsp;</p>
-<p>Darwin Core (DwC) is a glossary of terms…</p>
-<p>The Darwin Core archive is a set of interlinked tables…</p>
-<p>Darwin Core is a data standard that offers a stable, straightforward and flexible framework for compiling biodiversity data from varied and variable sources. Darwin Core is an extension of Dublin Core for biodiversity informatics. The standard was originally developed by the Biodiversity Information Standards (TDWG, formerly known as the Taxonomic Database Working Group) community, and it is currently maintained by the Darwin Core Maintenance Interest Group; feedback and participation in development is open to the public. It includes a glossary of terms intended to facilitate the sharing of information about biological diversity by providing identifiers, labels and definitions, and improving data reuse in a variety of contexts. In short, it maps information from multiple sources/institutions in a cohesive way for the broader community. Darwin Core is primarily based on taxa, their occurrence in nature as documented by observations, specimens, samples, and related information. Taxonomic occurrence data can be standardized to Darwin Core irrespective of the observing method by which the data were collected (e.g., observational data, genomics, imaging, animal tracking). Through the use of common terminology and controlled vocabularies, downstream users can more easily discover, search, evaluate, integrate and compare datasets.</p>
+<p><a href="https://dwc.tdwg.org">Darwin Core</a> (DwC) is a data standard that offers a stable, simple, and flexible framework for compilation and reuse of biodiversity data, including observations, specimens, samples, and related information, from varied and variable sources. DwC builds upon <a href="https://esipfed.github.io/bds-primer-best-practices/MAKE_YOUR_DATA_INTERNET_READY.html#dublin-core">Dublin Core</a>, a set of metadata terms used by libraries to describe physical and digital resources, to describe biological occurrences. The DwC glossary of terms provides identifiers, labels, and definitions to map occurrence information from multiple sources in a cohesive and interpretable way.&nbsp;</p>
+<p>A single dataset, known as the Darwin Core Archive (DwC-A), is a compressed (.zip) file that contains interconnected text files (e.g.&nbsp;csv or tsv) with DarwinCore standard-mapped data that are arranged into core files. To facilitate human- and machine-interpretation of the data, .xml files are included to describe the contents of the Archive, the relationships between the core files and connected tables contained in the DwC-A.</p>
 </section>
 <section id="why-1" class="level3">
 <h3 class="anchored" data-anchor-id="why-1">Why?</h3>
-<p>Biodiversity data, be it in museum collections, environmental monitoring programs, research programs or civic science projects (e.g.&nbsp;iNaturalist), is collected and managed in many different systems and environments. Additionally, the data is often very heterogeneous within and across these systems, depending on research objectives. Formatting data to the Darwin Core standard plays a fundamental role in facilitating open-access biodiversity data sharing, use and reuse.&nbsp;</p>
-<p>People collect data in all sorts of ways, but there are consistent aspects of those: the what, where, and when, and then details of those. Aligning your data allows users to put all of these disparate collection methods together. The data you collect has details with names you’ve given them, but there are equivalents with specific names that you can give them to align them.</p>
-</section>
-<section id="key-information-how-what-1" class="level3">
-<h3 class="anchored" data-anchor-id="key-information-how-what-1">Key Information (How / What)</h3>
-<p>In practice, adopting the Darwin Core standard revolves around a standard file format, the Darwin Core Archive (DwC-A). This is the biodiversity informatics data standard that uses the Darwin Core terms to produce a data record for biodiversity data. Essentially, DwC-A is a compressed (.zip) file that contains interconnected text (e.g.&nbsp;csv or tsv) files that enables data publishers to share data using common terminology. These data files are logically arranged in a star-like manner, and typically consist of a core file with one or more extension files, connected through the use of primary and foreign keys.&nbsp;</p>
-<p>Aside from text data tables, a DwC-A contains .xml files that facilitate human- and machine-interpretation of the data. A descriptor file (meta.xml) describes the contents of the compressed file, as well as the relationships between the core and any extensions. An eml.xml file describes the datasets contained in the DwC-A.</p>
-</section>
-<section id="top-5-references-1" class="level3">
-<h3 class="anchored" data-anchor-id="top-5-references-1">Top 5 References</h3>
 <ul>
-<li><p><a href="https://dwc.tdwg.org/terms/">Darwin Core Quick Reference</a></p></li>
-<li><p>Wieczorek et al., (2012) - Darwin Core: An Evolving Community-Developed Biodiversity Data Standard: <a href="https://doi.org/10.1371/journal.pone.0029715" class="uri">https://doi.org/10.1371/journal.pone.0029715</a>&nbsp;</p></li>
-<li><p><a href="https://esipfed.github.io/bds-primer-best-practices/CONTEXT_UNDERSTANDABILITY.html#ecological-metadata-language-eml">Ecological Metadata Language</a></p></li>
+<li><p>Taxonomic occurrence data can be standardized to Darwin Core irrespective of the observing method by which the data were collected (e.g., observational data, genomics, imaging, animal tracking).&nbsp;</p></li>
+<li><p>The Darwin Core standard plays a fundamental role in facilitating open-access biodiversity data sharing, use, and reuse.&nbsp;</p></li>
+<li><p>Aligning your data to DwC facilitates the use of heterogeneous biological data gathered using disparate collection methods.</p></li>
+<li><p>The <a href="https://www.gbif.org/">Global Biodiversity Information Facility (GBIF),</a><a href="https://obis.org/">Ocean Biodiversity Information System (OBIS), and</a><a href="https://www.ala.org.au/">The Atlas of Living Australia (ALA), and</a><a href="https://en.wikipedia.org/wiki/Darwin_Core">many more repositories</a><a href="https://www.ala.org.au/">use this data standard.</a></p></li>
 </ul>
 </section>
-<section id="repositories-that-use-this-data-standard-1" class="level3">
-<h3 class="anchored" data-anchor-id="repositories-that-use-this-data-standard-1">Repositories that use this data standard</h3>
+<section id="top-resources-1" class="level3">
+<h3 class="anchored" data-anchor-id="top-resources-1"><strong>Top Resources</strong></h3>
 <ul>
-<li><p><a href="https://www.gbif.org/">Global Biodiversity Information Facility (GBIF)</a></p></li>
-<li><p><a href="https://obis.org/">Ocean Biodiversity Information System (OBIS)</a></p></li>
-<li><p><a href="https://www.ala.org.au/">The Atlas of Living Australia (ALA)</a></p></li>
+<li><p><a href="https://dwc.tdwg.org/terms/">Darwin Core Quick Reference Guide</a>.</p></li>
+<li><p><a href="https://doi.org/10.1371/journal.pone.0029715">Wieczorek et al., (2012)</a> Darwin Core: An Evolving Community-Developed Biodiversity Data Standard.</p></li>
 </ul>
-<p>And many more, see this list of <a href="https://en.wikipedia.org/wiki/Darwin_Core">Key projects using Darwin Core</a></p>
 
 
 </section>

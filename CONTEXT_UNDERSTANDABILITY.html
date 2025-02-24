@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.40">
+<meta name="generator" content="quarto-1.6.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -37,7 +37,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-2ce9fc9ac8b614e7ffef13962cc12eaf.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
@@ -171,33 +171,25 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>Metadata standards ensure that data are described using a consistent structure and format to provide necessary context for users across the data lifecycle from data management to accessibility and interoperability. In biological data, there are a few important metadata standards to be aware of: the Ecological Metadata Language (EML), ISO-19115, and MIxS.</p>
 <section id="ecological-metadata-language-eml" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="ecological-metadata-language-eml"><span class="header-section-number">2.1</span> Ecological Metadata Language (EML)</h2>
 <section id="what-is-it" class="level3">
 <h3 class="anchored" data-anchor-id="what-is-it">What Is It?</h3>
-<p>EML is a community-developed metadata schema designed for ecological data, which encompasses biological data. EML is normally presented as <a href="https://www.w3schools.com/xml/">Extensible Markup Language (XML)</a>. An EML instance (XML document) holds metadata to describe one or more data objects. Data tables are the most common, but almost any data object can be accommodated.</p>
+<p><a href="https://eml.ecoinformatics.org/eml-ecological-metadata-language">Ecological Metadata Language</a> (EML) is a metadata schema (i.e.&nbsp;standard) that was developed by the ecological community for ecological data, including biological data. Shared data can include an EML file that provides context for all files in the data “package”. EML is presented in <a href="https://www.w3schools.com/xml/">Extensible Markup Language (XML), which provides standard details for ecological data in a structure that is readable to both people and machines</a>.</p>
+<p>For more information, see the full <a href="https://eml.ecoinformatics.org/eml-schema">EML documentation or the National Center for Ecological Analysis and Synthesis (NCEAS)</a><a href="https://github.com/NCEAS/eml">EML GitHub repository</a>.</p>
 </section>
 <section id="why" class="level3">
 <h3 class="anchored" data-anchor-id="why">Why?</h3>
 <ul>
-<li>Provide context to your data and improve reproducibility of the data</li>
-<li>Can capture linked data relationships within EML (dataset series)</li>
-<li>Standardized representation of information</li>
-<li>EML was designed for ecological data, which encompasses biological data</li>
-<li>It’s taxonomic fields cover relationships (hierarchies), IDs, and authoritative material</li>
+<li><p>It provides context and improves reproducibility of the data.</p></li>
+<li><p>It captures important links and relationships between data, such as a time series, hierarchical taxonomies, IDs, and authoritative material.</p></li>
+<li><p>EML helps represent ecological information in a standardized way.</p></li>
+<li><p>EML is mandatory for <a href="https://lternet.edu/">LTER</a>, <a href="https://www.ilter.network/">iLTER</a>, <a href="https://obis.org/">OBIS</a>, <a href="https://www.gbif.org/">GBIF</a>, <a href="https://www.gbif.org/darwin-core">Darwin Core Archive (DwC-A)</a> data sharing.</p></li>
 </ul>
 </section>
-<section id="key-information" class="level3">
-<h3 class="anchored" data-anchor-id="key-information">Key Information</h3>
-<ul>
-<li><p><a href="https://eml.ecoinformatics.org/eml-schema">EML Schema</a></p></li>
-<li><p>Mandatory for <a href="https://lternet.edu/">LTER</a>, <a href="https://www.ilter.network/">iLTER</a>, <a href="https://obis.org/">OBIS</a>, <a href="https://www.gbif.org/">GBIF</a>, <a href="https://www.gbif.org/darwin-core">Darwin Core Archive (DwC-A)</a></p></li>
-<li><p>Maintained and managed through a <a href="https://github.com/NCEAS/eml">GitHub repository</a> by NCEAS</p></li>
-<li><p>Usually, what you would submit to a repository is a “data package” consisting of an EML document and one or more data objects.</p></li>
-</ul>
-</section>
-<section id="top-references" class="level3">
-<h3 class="anchored" data-anchor-id="top-references">Top References</h3>
+<section id="top-resources" class="level3">
+<h3 class="anchored" data-anchor-id="top-resources"><strong>Top Resources</strong></h3>
 <p>Tools or packages to help write EML:</p>
 <ul>
 <li><p>For data managers, coders:&nbsp;</p>
@@ -207,7 +199,7 @@ ul.task-list li input[type="checkbox"] {
 <li><p><a href="https://github.com/BLE-LTER/MetaEgress">R-code for generating EML from LTER-metabase (built on EML-R package)</a></p></li>
 <li><p><a href="https://ediorg.github.io/EMLassemblyline/articles/overview.html">EMLAssemblyline (built on EML-R package)</a></p></li>
 </ul></li>
-<li><p>For scientists or those not inclined to write scripts</p>
+<li><p>For scientists or those not inclined to write scripts:</p>
 <ul>
 <li><a href="https://ezeml.edirepository.org/">ezEML</a></li>
 </ul></li>
@@ -217,35 +209,20 @@ ul.task-list li input[type="checkbox"] {
 <section id="iso-19115" class="level2" data-number="2.2">
 <h2 data-number="2.2" class="anchored" data-anchor-id="iso-19115"><span class="header-section-number">2.2</span> ISO 19115</h2>
 <section id="what-is-it-1" class="level3">
-<h3 class="anchored" data-anchor-id="what-is-it-1">What Is It?</h3>
-<p>Content standard for describing geographic data sponsored by the International Standards Organization (ISO). At its most basic, it is written in narrative form with class diagrams. There are many implementations and extensions (e.g., <a href="https://www.dcc.ac.uk/resources/metadata-standards/iso-19115" class="uri">https://www.dcc.ac.uk/resources/metadata-standards/iso-19115</a>).</p>
+<h3 class="anchored" data-anchor-id="what-is-it-1"><strong>What Is It?</strong></h3>
+<p>ISO-19115 is a metadata standard, developed and maintained by the <a href="https://www.iso.org/home.html">International Standards Organization</a> (ISO), for describing geographic data. Biological data are inherently geographic, especially as we strive to understand how occurrences are impacted by ecological or environmental variables. ISO-19115 provides information about the identification, extent, quality, spatial and temporal schema, spatial reference, and distribution of geographic data. It evolved from the need for flexibility in harmonizing the Federal Geographic Data Committee (FGDC) Content Standard for Digital Geospatial Metadata (CSDGM) with other geospatial standards. For more information about implementations and extensions of ISO 19115, including for remotely sensed imagery and gridded data, see <a href="https://www.dcc.ac.uk/resources/metadata-standards/iso-19115">the Digital Curation Centre ISO 19115 guide</a> or the <a href="https://www.ncei.noaa.gov/sites/default/files/2020-04/ISO%2019115-2%20Workbook_Part%20II%20Extentions%20for%20imagery%20and%20Gridded%20Data.pdf">NCEI Metadata Workbook</a>.</p>
 </section>
 <section id="why-1" class="level3">
 <h3 class="anchored" data-anchor-id="why-1">Why?</h3>
 <ul>
-<li><p>Provide context to your data (biological data is inherently ‘geographic’)</p></li>
-<li><p>Standardized representation of information</p></li>
-<li><p><strong>Mandated</strong> by some US federal agencies, including NOAA, NASA, and USGS</p></li>
-<li><p>Can be used at different granularities, used to describe data packages or collections, as well as at a dataset level (?): content standard vs collection standard?</p></li>
+<li><p>It helps to provide important geographic context to data in a standardized way.</p></li>
+<li><p>Using ISO metadata is mandatory for some U.S. federal agencies, like NOAA, NASA and USGS, to share their data through government repositories.</p></li>
+<li><p>It can be used to describe individual files, data packages, and collections of datasets.</p></li>
 </ul>
 </section>
-<section id="what" class="level3">
-<h3 class="anchored" data-anchor-id="what">What?</h3>
+<section id="top-resources-1" class="level3">
+<h3 class="anchored" data-anchor-id="top-resources-1">Top Resources</h3>
 <ul>
-<li><p>Evolved from the need to harmonize the FGDC Content Standard for Digital Geospatial Metadata (CSDGM) with other formal and defacto standards that support the documentation of geospatial data and services.</p></li>
-<li><p>Many variations including 19115, 19115-1, 19115-2. From <a href="https://www.ncei.noaa.gov/resources/metadata">NCEI</a>:</p>
-<ul>
-<li><p>ISO 19115 Geographic information – Metadata: The ISO standard for documenting geospatial data.&nbsp;</p></li>
-<li><p>ISO 19115-2 Geographic information – Metadata – Part 2: Extensions for imagery and gridded data: An extension of ISO 19115 used to document information about imagery, gridded data, and remotely sensed data. The root of ISO 19115 metadata records will change from MD_Metadata to MI_Metadata when using ISO 19115-2.</p></li>
-</ul></li>
-<li><p>Usurped FGDC CSDGM - all users encouraged to migrate to ISO.</p></li>
-<li><p>Highly flexible for many uses compared FGDC CSDGM, but few required elements leaves room for incomplete metadata</p></li>
-</ul>
-</section>
-<section id="top-references-1" class="level3">
-<h3 class="anchored" data-anchor-id="top-references-1">Top References</h3>
-<ul>
-<li><p><a href="https://www.ncei.noaa.gov/sites/default/files/2020-04/ISO%2019115-2%20Workbook_Part%20II%20Extentions%20for%20imagery%20and%20Gridded%20Data.pdf">NOAA Workbook for ISO 19115-2</a>&nbsp;</p></li>
 <li><p><a href="https://nceas.github.io/arcticdatautils/reference/convert_iso_to_eml.html">How to Convert ISO to EML</a>&nbsp;</p></li>
 <li><p><a href="https://www.fgdc.gov/metadata/iso-implementation-model-workflow">Work Flow Model</a></p></li>
 <li><p><a href="https://www.mdtoolkit.org/home">mdToolkit</a> - mdEditor is a writer for ISO 19115 metadata which uses mdJSON as an intermediary and mdTranslator allows translation to different metadata formats</p></li>
@@ -254,42 +231,24 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="minimum-information-about-any-x-sequence-mixs" class="level2" data-number="2.3">
 <h2 data-number="2.3" class="anchored" data-anchor-id="minimum-information-about-any-x-sequence-mixs"><span class="header-section-number">2.3</span> Minimum Information about any (x) Sequence (MIxS)</h2>
-<section id="who" class="level3">
-<h3 class="anchored" data-anchor-id="who">Who?</h3>
-<p>This is a standard for molecular data, like DNA and RNA. It is used by molecular biologists and ecologists who generate, manage and archive these type of sequence data.</p>
-</section>
 <section id="what-is-it-2" class="level3">
 <h3 class="anchored" data-anchor-id="what-is-it-2">What Is It?</h3>
-<p>A set of checklists and packages for genomic sequence data.</p>
+<p><a href="https://w3id.org/mixs">MIxS</a> (pronounced MIX-ess) is a set of checklists and packages for molecular genomic sequence data, such as DNA and RNA. MIxS is a standard published by the <a href="https://www.gensc.org/">Genome Standards Consortium (GSC)</a> for molecular biologists and ecologists who create, manage, and archive sequence data. It includes a breadth of environment-specific metadata variables (e.g.&nbsp;soil variables) to augment genome-specific checklists (e.g.&nbsp;bacteria) and enables interoperability with environmental analyses.</p>
 </section>
 <section id="why-2" class="level3">
 <h3 class="anchored" data-anchor-id="why-2">Why?</h3>
 <ul>
-<li><p>Provide minimal standardized metadata about genetic sequence data</p></li>
-<li><p>Agreed upon and published by the Genome Standards Consortium</p></li>
-<li><p>Used by the INSDC (DDBJ, EMBL-EBI and NCBI)</p></li>
+<li><p>It helps to provide minimal standardized metadata about genetic sequence data.</p></li>
+<li><p>It is used by the International Nucleotide Sequence Database Collection (<a href="https://www.insdc.org/">INSDC</a>), which has the following member participating databases: <a href="https://www.ddbj.nig.ac.jp/index-e.html">ROIS - NIG</a>, <a href="https://www.ebi.ac.uk/ena/browser/home">EMBL-EBI</a> and <a href="https://submit.ncbi.nlm.nih.gov/">NCBI</a>.</p></li>
 </ul>
 </section>
-<section id="key-information-1" class="level3">
-<h3 class="anchored" data-anchor-id="key-information-1">Key Information</h3>
-<ul>
-<li><p>MIxS (pronounced MIX-ess), a suite of checklists standards, is introduced to report on a breadth of environment-specific metadata variables to augment the genome-specific checklists</p></li>
-<li><p>Enables mixing and matching of genome checklists and environmental-specific packages</p></li>
-<li><div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="http://www.gensc.org/pages/standards-intro.html"><img src="http://www.gensc.org/images/mixs_ext_graphic-1024x731.png" class="img-fluid figure-img" alt="MIxS Structure"></a></p>
-<figcaption>MIxS Structure</figcaption>
-</figure>
-</div></li>
-</ul>
-</section>
-<section id="top-references-2" class="level3">
-<h3 class="anchored" data-anchor-id="top-references-2">Top References</h3>
+<section id="top-references" class="level3">
+<h3 class="anchored" data-anchor-id="top-references">Top References</h3>
 <ul>
 <li><p><a href="http://www.gensc.org/pages/standards/search-terms.html">MIxS Term Search Tool</a></p></li>
 <li><p><a href="https://genomicsstandardsconsortium.github.io/mixs/">Genomic Standards Consortium term list</a></p></li>
 <li><p><a href="https://www.nature.com/articles/nbt.1823">Minimum Information about Marker Gene Sequence (MIMARKS)</a></p></li>
-<li><p><a href="https://github.com/GenomicsStandardsConsortium/mixs">MIxS GitHub repo</a></p></li>
+<li><p>MIxS is maintained by the community using GitHub. To propose changes, ask questions, see the <a href="https://github.com/GenomicsStandardsConsortium/mixs">MIxS GitHub repository</a>.</p></li>
 <li><p><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3869023/">Minimum Information about Sequence Data from the Built Environment (MIxS-BE)</a></p></li>
 </ul>
 
