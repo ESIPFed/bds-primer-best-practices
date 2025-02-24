@@ -62,29 +62,15 @@ ISO-19115 is a metadata standard, developed and maintained by the [International
 
 ## Minimum Information about any (x) Sequence (MIxS)
 
-### Who?
-
-This is a standard for molecular data, like DNA and RNA. It is used by molecular biologists and ecologists who generate, manage and archive these type of sequence data.
-
 ### What Is It?
 
-A set of checklists and packages for genomic sequence data.
+[MIxS](https://w3id.org/mixs) (pronounced MIX-ess) is a set of checklists and packages for molecular genomic sequence data, such as DNA and RNA. MIxS is a standard published by the [Genome Standards Consortium (GSC)](https://www.gensc.org/) for molecular biologists and ecologists who create, manage, and archive sequence data. It includes a breadth of environment-specific metadata variables (e.g. soil variables) to augment genome-specific checklists (e.g. bacteria) and enables interoperability with environmental analyses.
 
 ### Why?
 
--   Provide minimal standardized metadata about genetic sequence data
+-   It helps to provide minimal standardized metadata about genetic sequence data.
 
--   Agreed upon and published by the Genome Standards Consortium
-
--   Used by the INSDC (DDBJ, EMBL-EBI and NCBI)
-
-### Key Information
-
--   MIxS (pronounced MIX-ess), a suite of checklists standards, is introduced to report on a breadth of environment-specific metadata variables to augment the genome-specific checklists
-
--   Enables mixing and matching of genome checklists and environmental-specific packages
-
--   [![MIxS Structure](http://www.gensc.org/images/mixs_ext_graphic-1024x731.png)](http://www.gensc.org/pages/standards-intro.html)
+-   It is used by the International Nucleotide Sequence Database Collection ([INSDC](https://www.insdc.org/)), which has the following member participating databases: [ROIS - NIG](https://www.ddbj.nig.ac.jp/index-e.html), [EMBL-EBI](https://www.ebi.ac.uk/ena/browser/home) and [NCBI](https://submit.ncbi.nlm.nih.gov/).
 
 ### Top References
 
