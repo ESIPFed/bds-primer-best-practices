@@ -1,5 +1,7 @@
 # Provide Context and Understandability to Your Data
 
+Metadata standards ensure that data are described using a consistent structure and format to provide necessary context for users across the data lifecycle from data management to accessibility and interoperability. In biological data, there are a few important metadata standards to be aware of: the Ecological Metadata Language (EML), ISO-19115, and MIxS.
+
 ## Ecological Metadata Language (EML)
 
 ### What Is It?
