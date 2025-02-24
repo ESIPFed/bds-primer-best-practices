@@ -28,15 +28,19 @@ The primary mission of COL is to deliver data, but the tools and services offere
 
 ### What Is It?
 
-[ITIS](https://www.itis.gov/) is a partnership of federal agencies that provides reliable information on taxonomy of plants, animals, fungi and microbes in North America and the world. ITIS has information on over 1.8 million species!
+[ITIS](https://www.itis.gov/) is a taxonomic database, developed and maintained by a partnership of federal agencies that provides reliable information on the nomenclature, taxonomy, and distribution of 1.8 million species of plants, animals, fungi and microbes in North America and the world. ITIS couples each scientific name with a unique taxonomic serial number (TSN), which ensures consistency and accuracy in the naming and classification of species.
 
-### Why should you use it?
+### **Why?**
 
-ITIS couples each scientific name with a unique taxonomic serial number (TSN) which ensures consistency and accuracy in the naming and classification of species. ITIS includes information on nomenclature, taxonomy, and distribution of species. This is an important tool for identifying and cataloging species and monitoring their populations. 
+-   Unique taxonomic serial number (TSN) ensures consistent and accurate naming and classification of species
 
-### How to use it?
+-   ITIS is an important tool for identifying and cataloging species and monitoring their populations. 
 
-Users can browse on the [ITIS website](https://www.itis.gov/) and through the [API](https://itis.gov/web_service.html).
+### **Top Resources**
+
+-   [ITIS website](https://www.itis.gov/) 
+
+-   ITIS [API](https://itis.gov/web_service.html)
 
 ## Paleobiology Database (PBDB)
 
