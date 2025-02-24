@@ -32,40 +32,22 @@ For more information, see overviews of CF as a [presentation](https://cfconventi
 
 ### What Is It: 
 
-[Dublin Core](https://esipfed.github.io/bds-primer-best-practices/MAKE_YOUR_DATA_INTERNET_READY.html#dublin-core) is a set of metadata terms used by libraries to describe physical and digital resources. 
+[Darwin Core](https://dwc.tdwg.org) (DwC) is a data standard that offers a stable, simple, and flexible framework for compilation and reuse of biodiversity data, including observations, specimens, samples, and related information, from varied and variable sources. DwC builds upon [Dublin Core](https://esipfed.github.io/bds-primer-best-practices/MAKE_YOUR_DATA_INTERNET_READY.html#dublin-core), a set of metadata terms used by libraries to describe physical and digital resources, to describe biological occurrences. The DwC glossary of terms provides identifiers, labels, and definitions to map occurrence information from multiple sources in a cohesive and interpretable way. 
 
-Darwin Core (DwC) is a glossary of terms…
-
-The Darwin Core archive is a set of interlinked tables…
-
-Darwin Core is a data standard that offers a stable, straightforward and flexible framework for compiling biodiversity data from varied and variable sources. Darwin Core is an extension of Dublin Core for biodiversity informatics. The standard was originally developed by the Biodiversity Information Standards (TDWG, formerly known as the Taxonomic Database Working Group) community, and it is currently maintained by the Darwin Core Maintenance Interest Group; feedback and participation in development is open to the public. It includes a glossary of terms intended to facilitate the sharing of information about biological diversity by providing identifiers, labels and definitions, and improving data reuse in a variety of contexts. In short, it maps information from multiple sources/institutions in a cohesive way for the broader community. Darwin Core is primarily based on taxa, their occurrence in nature as documented by observations, specimens, samples, and related information. Taxonomic occurrence data can be standardized to Darwin Core irrespective of the observing method by which the data were collected (e.g., observational data, genomics, imaging, animal tracking). Through the use of common terminology and controlled vocabularies, downstream users can more easily discover, search, evaluate, integrate and compare datasets.
+A single dataset, known as the Darwin Core Archive (DwC-A), is a compressed (.zip) file that contains interconnected text files (e.g. csv or tsv) with DarwinCore standard-mapped data that are arranged into core files. To facilitate human- and machine-interpretation of the data, .xml files are included to describe the contents of the Archive, the relationships between the core files and connected tables contained in the DwC-A.
 
 ### Why?
 
-Biodiversity data, be it in museum collections, environmental monitoring programs, research programs or civic science projects (e.g. iNaturalist), is collected and managed in many different systems and environments. Additionally, the data is often very heterogeneous within and across these systems, depending on research objectives. Formatting data to the Darwin Core standard plays a fundamental role in facilitating open-access biodiversity data sharing, use and reuse. 
+-   Taxonomic occurrence data can be standardized to Darwin Core irrespective of the observing method by which the data were collected (e.g., observational data, genomics, imaging, animal tracking). 
 
-People collect data in all sorts of ways, but there are consistent aspects of those: the what, where, and when, and then details of those. Aligning your data allows users to put all of these disparate collection methods together. The data you collect has details with names you've given them, but there are equivalents with specific names that you can give them to align them.
+-   The Darwin Core standard plays a fundamental role in facilitating open-access biodiversity data sharing, use, and reuse. 
 
-### Key Information (How / What)
+-   Aligning your data to DwC facilitates the use of heterogeneous biological data gathered using disparate collection methods.
 
-In practice, adopting the Darwin Core standard revolves around a standard file format, the Darwin Core Archive (DwC-A). This is the biodiversity informatics data standard that uses the Darwin Core terms to produce a data record for biodiversity data. Essentially, DwC-A is a compressed (.zip) file that contains interconnected text (e.g. csv or tsv) files that enables data publishers to share data using common terminology. These data files are logically arranged in a star-like manner, and typically consist of a core file with one or more extension files, connected through the use of primary and foreign keys. 
+-   The [Global Biodiversity Information Facility (GBIF), ](https://www.gbif.org/)[Ocean Biodiversity Information System (OBIS), and ](https://obis.org/)[The Atlas of Living Australia (ALA), and ](https://www.ala.org.au/)[many more repositories](https://en.wikipedia.org/wiki/Darwin_Core)[ use this data standard.](https://www.ala.org.au/)
 
-Aside from text data tables, a DwC-A contains .xml files that facilitate human- and machine-interpretation of the data. A descriptor file (meta.xml) describes the contents of the compressed file, as well as the relationships between the core and any extensions. An eml.xml file describes the datasets contained in the DwC-A.
+### **Top Resources**
 
-### Top 5 References
+-   [Darwin Core Quick Reference Guide](https://dwc.tdwg.org/terms/).
 
--   [Darwin Core Quick Reference](https://dwc.tdwg.org/terms/)
-
--   Wieczorek et al., (2012) - Darwin Core: An Evolving Community-Developed Biodiversity Data Standard: <https://doi.org/10.1371/journal.pone.0029715> 
-
--   [Ecological Metadata Language](https://esipfed.github.io/bds-primer-best-practices/CONTEXT_UNDERSTANDABILITY.html#ecological-metadata-language-eml)
-
-### Repositories that use this data standard
-
--   [Global Biodiversity Information Facility (GBIF)](https://www.gbif.org/)
-
--   [Ocean Biodiversity Information System (OBIS)](https://obis.org/)
-
--   [The Atlas of Living Australia (ALA)](https://www.ala.org.au/)
-
-And many more, see this list of [Key projects using Darwin Core](https://en.wikipedia.org/wiki/Darwin_Core)
+-   [Wieczorek et al., (2012)](https://doi.org/10.1371/journal.pone.0029715) Darwin Core: An Evolving Community-Developed Biodiversity Data Standard.
