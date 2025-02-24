@@ -6,15 +6,23 @@ Controlled vocabularies can provide standardized terms and definitions for biolo
 
 ### What Is It?
 
-[Catalogue of Life](https://www.catalogueoflife.org/) brings together information from taxonomists studying every group of organisms to construct an integrated view of currently accepted species across all taxonomic groups. A list of source datasets can be found [here](https://www.catalogueoflife.org/data/source-datasets). The primary mission of COL is to deliver a freely accessible list of all species and their scientific name, but the tools and services offered by COL also enable taxonomists and other stakeholders to publish and revise species lists for any purpose.
+[Catalogue of Life](https://www.catalogueoflife.org/) describes itself as, “The most complete authoritative list of the world's species - maintained by hundreds of global taxonomists.” It brings together information from taxonomists, and taxonomic databases, to construct an integrated view of currently accepted species across all taxonomic groups. A list of source datasets can be found [here](https://www.catalogueoflife.org/data/source-datasets). \
+\
+The primary mission of COL is to deliver data, but the tools and services offered by COL also enable taxonomists and other stakeholders to publish and revise species lists for any purpose.
 
-### Why should you use it?
+### **Why?**
 
-Communicate across downstream users which organisms belong to the same group. Taxonomists continue to publish new (and revised) scientific names, which are a fundamental tool to help users to refer to these units of biodiversity, and understand everything that has been learned about its biology, distribution and relevance to mankind. CoL adds persistent identifiers that will enable users to track changes to a scientific name. 
+-   COL adds persistent identifiers that enable users to track changes to a scientific name. 
 
-### How to use it?
+-   COL helps downstream users consider the most up-to-date past and current characteristics of an organism: its biology, distribution, relevance to humans, and evolutionary history.
 
-Users can browse the [COL Checklist](https://www.catalogueoflife.org/data/browse), which is updated monthly. COL pulls information from specific data sources, e.g. FishBase (see: <https://www.catalogueoflife.org/data/taxon/49JFH>). COL also has a data pipeline outlining how to best use and manage the taxonomic checklist data held by COL: <https://www.catalogueoflife.org/about/colpipeline>. COL also has a ChecklistBank API: <https://api.checklistbank.org/>.
+### **Top Resources**
+
+-   Users can browse the [COL Checklist](https://www.catalogueoflife.org/data/browse), which is updated monthly. COL pulls information from specific data sources, e.g. FishBase (see: <https://www.catalogueoflife.org/data/taxon/49JFH>). 
+
+-   COL data pipeline for COL taxonomic checklist data: <https://www.catalogueoflife.org/about/colpipeline>. 
+
+-   COL ChecklistBank API: <https://api.checklistbank.org/>.
 
 ## Integrated Taxonomic Information System (ITIS)
 
