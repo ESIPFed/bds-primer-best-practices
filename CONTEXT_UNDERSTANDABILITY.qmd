@@ -40,37 +40,19 @@ Tools or packages to help write EML:
 
 ## ISO 19115
 
-### What Is It?
+### **What Is It?**
 
-Content standard for describing geographic data sponsored by the International Standards Organization (ISO). At its most basic, it is written in narrative form with class diagrams. There are many implementations and extensions (e.g., <https://www.dcc.ac.uk/resources/metadata-standards/iso-19115>).
+ISO-19115 is a metadata standard, developed and maintained by the [International Standards Organization](https://www.iso.org/home.html) (ISO), for describing geographic data. Biological data are inherently geographic, especially as we strive to understand how occurrences are impacted by ecological or environmental variables. ISO-19115 provides information about the identification, extent, quality, spatial and temporal schema, spatial reference, and distribution of geographic data. It evolved from the need for flexibility in harmonizing the Federal Geographic Data Committee (FGDC) Content Standard for Digital Geospatial Metadata (CSDGM) with other geospatial standards. For more information about implementations and extensions of ISO 19115, including for remotely sensed imagery and gridded data, see [the Digital Curation Centre ISO 19115 guide](https://www.dcc.ac.uk/resources/metadata-standards/iso-19115) or the [NCEI Metadata Workbook](https://www.ncei.noaa.gov/sites/default/files/2020-04/ISO%2019115-2%20Workbook_Part%20II%20Extentions%20for%20imagery%20and%20Gridded%20Data.pdf).
 
 ### Why?
 
--   Provide context to your data (biological data is inherently 'geographic')
+-   It helps to provide important geographic context to data in a standardized way.
 
--   Standardized representation of information
+-   Using ISO metadata is mandatory for some U.S. federal agencies, like NOAA, NASA and USGS, to share their data through government repositories.
 
--   **Mandated** by some US federal agencies, including NOAA, NASA, and USGS
+-   It can be used to describe individual files, data packages, and collections of datasets.
 
--   Can be used at different granularities, used to describe data packages or collections, as well as at a dataset level (?): content standard vs collection standard?
-
-### What?
-
--   Evolved from the need to harmonize the FGDC Content Standard for Digital Geospatial Metadata (CSDGM) with other formal and defacto standards that support the documentation of geospatial data and services.
-
--   Many variations including 19115, 19115-1, 19115-2. From [NCEI](https://www.ncei.noaa.gov/resources/metadata):
-
-    -   ISO 19115 Geographic information -- Metadata: The ISO standard for documenting geospatial data. 
-
-    -   ISO 19115-2 Geographic information -- Metadata -- Part 2: Extensions for imagery and gridded data: An extension of ISO 19115 used to document information about imagery, gridded data, and remotely sensed data. The root of ISO 19115 metadata records will change from MD_Metadata to MI_Metadata when using ISO 19115-2.
-
--   Usurped FGDC CSDGM - all users encouraged to migrate to ISO.
-
--   Highly flexible for many uses compared FGDC CSDGM, but few required elements leaves room for incomplete metadata
-
-### Top References
-
--   [NOAA Workbook for ISO 19115-2](https://www.ncei.noaa.gov/sites/default/files/2020-04/ISO%2019115-2%20Workbook_Part%20II%20Extentions%20for%20imagery%20and%20Gridded%20Data.pdf) 
+### Top Resources
 
 -   [How to Convert ISO to EML](https://nceas.github.io/arcticdatautils/reference/convert_iso_to_eml.html) 
 
