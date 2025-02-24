@@ -6,7 +6,7 @@ Controlled vocabularies can provide standardized terms and definitions for biolo
 
 ### What Is It?
 
-[Catalogue of Life](https://www.catalogueoflife.org/) describes itself as, “The most complete authoritative list of the world's species - maintained by hundreds of global taxonomists.” It brings together information from taxonomists, and taxonomic databases, to construct an integrated view of currently accepted species across all taxonomic groups. A list of source datasets can be found [here](https://www.catalogueoflife.org/data/source-datasets). \
+[Catalogue of Life](https://www.catalogueoflife.org/) describes itself as, “The most complete authoritative list of the world's species - maintained by hundreds of global taxonomists.” It brings together information from taxonomists, and taxonomic databases, to construct an integrated view of currently accepted species across all taxonomic groups. A list of source datasets can be found [here](https://www.catalogueoflife.org/data/source-datasets).\
 \
 The primary mission of COL is to deliver data, but the tools and services offered by COL also enable taxonomists and other stakeholders to publish and revise species lists for any purpose.
 
@@ -66,12 +66,20 @@ The [Paleobiology Database](https://paleobiodb.org/) (PBDB) is an online, expert
 
 ### What Is It?
 
-The World Register of Marine Species (WoRMS) is an authoritative and comprehensive list of names of marine organisms. In plain language...
+The World Register of Marine Species (WoRMS) is an authoritative and comprehensive list of names of marine organisms. It provides detailed information about marine species from around the world, helping anyone interested in marine life to find accurate and up-to-date information about these species, including where they can be found, their characteristics, and how they are related to one another. 
 
-### Why should you use it?
+### **Why?**
 
-One of the reasons WoRMS is highly thought of in the marine community is that the content of WoRMS is curated by taxonomic and thematic experts, not by database managers. Each taxonomic group is represented by an expert who has the authority over the content, and is responsible for controlling the quality of the information. Each of these main taxonomic editors can invite several specialists of smaller groups within their area of responsibility to join them. WoRMS is the taxonomic database used by OBIS, and other important biological initiatives.
+-   WoRMS content is curated by taxonomic and thematic experts, not by database managers. 
 
-### How to use it?
+-   Each taxonomic group is represented by an expert who has the authority over the content, and is responsible for controlling the quality of the information. Each of these main taxonomic editors can invite several specialists of smaller groups within their area of responsibility to join them. 
 
-WoRMS, and its associated tools, can be explored through your [web browser](https://www.marinespecies.org/index.php), and through its [API](https://www.marinespecies.org/rest/) using one of the R packages (e.g. [worrms](https://cran.r-project.org/web/packages/worrms/index.html), [taxize](https://cran.r-project.org/web/packages/taxize/)) or [python](https://github.com/iobis/pyworms) package. 
+-   WoRMS is the taxonomic database used by OBIS, and other important biological initiatives.
+
+### **Top Resources**
+
+-   WoRMS and its associated tools can be explored via [web browser](https://www.marinespecies.org/index.php) or the WoRMS [API](https://www.marinespecies.org/rest/)
+
+-   R packages: [worrms](https://cran.r-project.org/web/packages/worrms/index.html), [taxize](https://cran.r-project.org/web/packages/taxize/)
+
+-   [Python package](https://github.com/iobis/pyworms)
