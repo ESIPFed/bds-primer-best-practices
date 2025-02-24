@@ -12,23 +12,15 @@ For more information, see the full [EML documentation or the National Center for
 
 ### Why?
 
--   Provide context to your data and improve reproducibility of the data
--   Can capture linked data relationships within EML (dataset series)
--   Standardized representation of information
--   EML was designed for ecological data, which encompasses biological data
--   It's taxonomic fields cover relationships (hierarchies), IDs, and authoritative material
+-   It provides context and improves reproducibility of the data.
 
-### Key Information
+-   It captures important links and relationships between data, such as a time series, hierarchical taxonomies, IDs, and authoritative material.
 
--   [EML Schema](https://eml.ecoinformatics.org/eml-schema)
+-   EML helps represent ecological information in a standardized way.
 
--   Mandatory for [LTER](https://lternet.edu/), [iLTER](https://www.ilter.network/), [OBIS](https://obis.org/), [GBIF](https://www.gbif.org/), [Darwin Core Archive (DwC-A)](https://www.gbif.org/darwin-core)
+-   EML is mandatory for [LTER](https://lternet.edu/), [iLTER](https://www.ilter.network/), [OBIS](https://obis.org/), [GBIF](https://www.gbif.org/), [Darwin Core Archive (DwC-A)](https://www.gbif.org/darwin-core) data sharing.
 
--   Maintained and managed through a [GitHub repository](https://github.com/NCEAS/eml) by NCEAS
-
--   Usually, what you would submit to a repository is a "data package" consisting of an EML document and one or more data objects.
-
-### Top References
+### **Top Resources**
 
 Tools or packages to help write EML:
 
@@ -42,7 +34,7 @@ Tools or packages to help write EML:
 
     -   [EMLAssemblyline (built on EML-R package)](https://ediorg.github.io/EMLassemblyline/articles/overview.html)
 
--   For scientists or those not inclined to write scripts
+-   For scientists or those not inclined to write scripts:
 
     -   [ezEML](https://ezeml.edirepository.org/)
 
