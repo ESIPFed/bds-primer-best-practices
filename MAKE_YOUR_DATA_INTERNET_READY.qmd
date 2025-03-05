@@ -2,24 +2,87 @@
 
 Web services and standards are useful to understand if you collect or manage biological data. Platforms like NOAA’s [NCEI](https://www.ncei.noaa.gov/), [NASA](https://data.nasa.gov/), [OBIS](https://manual.obis.org/access.html#api), and [GBIF](https://www.gbif.org/), etc. utilize standard web services to serve data. Web-friendly data standards facilitate the transfer and handling of data via web services by making information visible in a predictable way, promoting online sharing, programmatic discovery, access, and processing of data across platforms and disciplines. 
 
-## Web Services
+## **Web-enabled standards**
+
+Web standards are the formal, non-proprietary standards and other technical specifications that define and describe different aspects of the World Wide Web. Web standards are created by standards bodies, which are institutions that invite groups of people to come together and agree on how the technologies should work in the best way to fulfill specific use cases. Web standards are key to global data discovery.
+
+### 5.1.1 W3C standards
+
+### What Is It?\*\*
+
+[W3C standards](https://www.w3.org/standards/)) define an open web platform for application development. The web has the unprecedented potential to enable developers to build rich interactive experiences, that can be available on any device.
+
+The platform continues to expand, but web users have long ago rallied around HTML as the cornerstone of the web. Many more technologies that W3C and its partners are creating extend the web and give it full strength, including CSS, SVG, WOFF, WebRTC, XML, and a growing variety of APIs.
+
+### Why should you use it?
+
+It might not be a question so much of why you should use it as much as that you should become aware that you already use these, and may be able to make your data more [FAIR](https://www.go-fair.org/fair-principles/) by increasing your awareness of these standards. As the W3C website says, “*W3C's proven web standards process is based on fairness, openness, royalty-free, we make the web work, for everyone*”.
+
+### How to use it?
+
+You may use on of the W3C standards listed above to do activities like rendering web pages, web architecture, and linking data and services. There are a variety of resources available that can be found by searching the internet. We do not currently have a single starting point to recommend here.
+
+## 
+
+### 5.1.2 Dublin Core Standard
 
 ### What Is It?
 
-Web services run much of our digital world today. For example, you may be familiar with Amazon Web Services (AWS), which is used for analytics and data service during football games, the olympics, and other sporting events. You can think of a web service as a waiter at a restaurant. You (the user) order food (a request), the waiter (the web service) takes your order to the kitchen (the server or application), and then brings you back your food (the response). This allows different parts of a computer system or different systems altogether to interact without needing to know how each other works internally.
+[Dublin Core](https://www.dublincore.org) is a metadata standard of 15 ‘core’ terms originally developed for archives and libraries to describe physical or digital resources. The full set of terms can be found [here](http://purl.org/dc/terms/). Each term is optional can be used multiple times, as repeated ‘elements.’ All terms are defined as Resource Description Framework (RDF) properties. It has also been formally standardized internationally as ISO 15863.
 
-### Why should you know about them?
+The [Darwin Core](https://esipfed.github.io/bds-primer-best-practices/INTEGRATE_DATA.html#topic-darwin-core) is based on Dublin Core and is considered to be an extension for biodiversity information of Dublin Core. For information on further extensions to Darwin Core to capture details of additional information regarding a biological/biodiversity data record, use:
 
-Biological services and platforms like [OBIS](https://manual.obis.org/access.html#api), [GBIF](https://www.gbif.org/), etc. utilize standard web services to serve data.
+-   Extended Measurement Or Facts (eMoF): (https://rs.obis.org/obis/terms#ExtendedMeasurementOrFact)
 
-These web services are relevant to all sectors collecting and handling biological, biodiversity, and environmental information, including the private, academic research, government and other operational entities. This is what drives the exchange of scientific information.
+eMoF was developed to be used in combination with the Event Core, but is also compatible with other cores. The eMoF can store measurements or facts related to a biological occurrence, environmental measurements or facts and sampling method attributes. This extension also provides the option to provide identifiers to reference a vocabulary for the measurementType, measurementValue and measurementUnit fields.
 
-### Web Services to Know About
+-   The Humboldt Extension for Ecological Inventories (https://eco.tdwg.org/): a standard vocabulary maintained by the [Darwin Core Maintenance Group](https://www.tdwg.org/community/dwc/). It is intended to facilitate recording of biodiversity ancillary information in operational settings.
 
--   Application Program Interfaces (APIs)
--   [Overview: Distributed Model Data Access](https://www.ncei.noaa.gov/access/distributed-data-access)
+### Why should you use it?
 
-## ERDDAP™
+### How to use it?
+
+**Disambiguating the Cores presentation: <https://docs.google.com/presentation/d/1DveHXvY5U5XISl0JocDJ5qUe4PP74dPFSrdryra2m1U/edit#slide=id.p>**
+
+### 5.1.3 DataCite
+
+### What Is It?
+
+The [DataCite metadata schema](https://datacite.org) is an international not-for-profit organization which aims to improve data citation, through helping people use web-enabled standards to connect products and citations. This allows users to i) establish easier access to research data, ii) support data archiving and long-term data preservation, and iii) increase acceptance of research data as legitimate, citable contributions to a scholarly record, promoting reuse and attribution. DataCite helps mint persistent identifiers, such as digital object identifiers (DOI) to research products, as well as provide recommendations for data citation formats. DOIs are a type of persistent identifier that identify and locate objects in the long-term. 
+
+Additional documentation on DataCite can be found at <https://support.datacite.org/docs/datacite-commons>. 
+
+### Why should you use it?
+
+Assigning a DOI to your research product can enable long-term preservation and accessibility of your research product. Among other things, a main value of DataCite is the connection it creates between users and publishing machinery.
+
+### How to use it?
+
+DataCite Consortium members can mint DOIs for their research products, making it part of a larger digital ecosystem and helping connect the research product to researchers through other persistent identifiers e.g., ORCIDs for researchers and ROR for organizations. DataCite has a REST API that enables retrieval, creation, and update of a DataCite DOI metadata record, can be queried: <https://support.datacite.org/reference/introduction> 
+
+### 5.1.4 Schema.org
+
+### What Is It?
+
+[Schema.org](https://schema.org/) is a set of extensible schemas that enables users to embed structured data on their web pages for use and indexation by major search engines. Markup on the webpages or in records helps search engines understand the information presented within and provide richer search results. Schema.org was launched in 2011 by Bing, Google and Yahoo to create and support a common set of schemas for structured data markup on webpages. By using schema.org vocabulary as well as various formats (e.g., JSON-LD) to mark up website content with metadata about itself, making it easier for websites or data records to be searched or indexed. 
+
+Schema.org is not a formal standards body, but rather a site where there is documentation on the schemas supported by several major search engines. Schema.org essentially defines a dictionary of terms (types, properties, and enumerated values). Its main hierarchy is formed by a collection of types (or class), each of which has properties that describe the type. Schema.org offers a hierarchically structured set of types which determines which properties can be assigned to a particular type. Essentially this helps search engines look for websites and record and understand the relationships between them. 
+
+Documentation on schema.org can be found here: <https://schema.org/docs/documents.html> 
+
+### Why should you use it?
+
+By implementing schema.org you can make your research more easily and prominently discoverable through major search engines. 
+
+### How to use it?
+
+You can add schema.org markup to your webpages or records using various online tools, including [Google’s Structured Data Markup Helper](https://www.google.com/webmasters/markup-helper/u/0/), or by directly adding code to your webpages. You can use different formats to add information to your web content implementing the schema.org vocabulary, such as JSON-LD.
+
+## Web Services
+
+Web services run much of our digital world today. You probably use them through your phone every day, without noticing a thing. You can think of a web service as a waiter at a restaurant. You (the user) order food (a request), the waiter (the web service) takes your order to the kitchen (the server or application), and then brings you back your food (the response). This allows different parts of a computer system or different systems altogether to interact without needing to know how each other works internally. When web services are fully utilized, it results in impressive hi-speed analysis, like the analytics shared during football (all types 🙂) games, the olympics, and other sporting events.
+
+### 5.2.1 ERDDAP™ Web Service
 
 ### What Is It?
 
@@ -51,7 +114,7 @@ There are many good tutorials and references on how to use ERDDAP including
 
 -   [Awesome ERDDAP](https://github.com/IrishMarineInstitute/awesome-erddap?tab=readme-ov-file)
 
-## Thematic Real-time Environmental Distributed Data Services (THREDDS)
+### 5.2.2 Thematic Real-time Environmental Distributed Data Services (THREDDS)
 
 ### What Is It?
 
@@ -63,7 +126,7 @@ The [THREDDS](https://www.unidata.ucar.edu/software/tds/) server has features an
 
 ### How to use it?
 
-## Web Map Service
+### 5.2.3 Web Map Service
 
 ### What Is It?
 
@@ -72,89 +135,3 @@ A Web Map Service (WMS) is a way to retrieve georegistered map images over the i
 ### When should you use it?
 
 ### How to use it?
-
-## Web-friendly Standards
-
-### What Is It?
-
-Web-friendly standards are data standards which facilitate the transfer and handling of data over the Web, its architectures and its services. Data standards that comply with web standards promote online sharing, programmatic discovery, access, and processing of data. 
-
-### Why should you use them?
-
-Adopting web-friendly standards such as [W3C standards](https://www.w3.org/standards/), [Dublin Core](https://www.dublincore.org/), the [DataCite metadata schema](https://schema.datacite.org/), and <https://schema.org/> helps leverage web technologies to connect and make discoverable research information across various platforms and disciplines, advancing knowledge. 
-
-If data standards aren't web-friendly, data and information will be much harder to “see” via Web services, which are the primary route for global data discovery.
-
-## **Web-Enabled Standards to Know About**
-
-The following standards use Web-friendly and FAIR compliant approaches to promote conformance and interoperability. For example, the use of open and dereferenceable URIs/URLs as persistent identifiers for their properties and types / classes. This means that any web browser or service will be able to act on these standards and link users to the issuing authorities.
-
-## W3C standards
-
-### What Is It?\*\*
-
-[W3C standards](https://www.w3.org/standards/)) define an open web platform for application development. The web has the unprecedented potential to enable developers to build rich interactive experiences, that can be available on any device.
-
-The platform continues to expand, but web users have long ago rallied around HTML as the cornerstone of the web. Many more technologies that W3C and its partners are creating extend the web and give it full strength, including CSS, SVG, WOFF, WebRTC, XML, and a growing variety of APIs.
-
-### Why should you use it?
-
-It might not be a question so much of why you should use it as much as that you should become aware that you already use these, and may be able to make your data more [FAIR](https://www.go-fair.org/fair-principles/) by increasing your awareness of these standards. As the W3C website says, “*W3C's proven web standards process is based on fairness, openness, royalty-free, we make the web work, for everyone*”.
-
-### How to use it?
-
-You may use on of the W3C standards listed above to do activities like rendering web pages, web architecture, and linking data and services. There are a variety of resources available that can be found by searching the internet. We do not currently have a single starting point to recommend here.
-
-## Dublin Core
-
-### What Is It?
-
-[Dublin Core](https://www.dublincore.org) is a metadata standard of 15 ‘core’ terms originally developed for archives and libraries to describe physical or digital resources. The full set of terms can be found [here](http://purl.org/dc/terms/). Each term is optional can be used multiple times, as repeated ‘elements.’ All terms are defined as Resource Description Framework (RDF) properties. It has also been formally standardized internationally as ISO 15863.
-
-The [Darwin Core](https://esipfed.github.io/bds-primer-best-practices/INTEGRATE_DATA.html#topic-darwin-core) is based on Dublin Core and is considered to be an extension for biodiversity information of Dublin Core. For information on further extensions to Darwin Core to capture details of additional information regarding a biological/biodiversity data record, use:
-
--   Extended Measurement Or Facts (eMoF): (https://rs.obis.org/obis/terms#ExtendedMeasurementOrFact)
-
-eMoF was developed to be used in combination with the Event Core, but is also compatible with other cores. The eMoF can store measurements or facts related to a biological occurrence, environmental measurements or facts and sampling method attributes. This extension also provides the option to provide identifiers to reference a vocabulary for the measurementType, measurementValue and measurementUnit fields.
-
--   The Humboldt Extension for Ecological Inventories (https://eco.tdwg.org/): a standard vocabulary maintained by the [Darwin Core Maintenance Group](https://www.tdwg.org/community/dwc/). It is intended to facilitate recording of biodiversity ancillary information in operational settings.
-
-### Why should you use it?
-
-### How to use it?
-
-**Disambiguating the Cores presentation: <https://docs.google.com/presentation/d/1DveHXvY5U5XISl0JocDJ5qUe4PP74dPFSrdryra2m1U/edit#slide=id.p>**
-
-## DataCite
-
-### What Is It?
-
-The [DataCite metadata schema](https://datacite.org) is an international not-for-profit organization which aims to improve data citation, through helping people use web-enabled standards to connect products and citations. This allows users to i) establish easier access to research data, ii) support data archiving and long-term data preservation, and iii) increase acceptance of research data as legitimate, citable contributions to a scholarly record, promoting reuse and attribution. DataCite helps mint persistent identifiers, such as digital object identifiers (DOI) to research products, as well as provide recommendations for data citation formats. DOIs are a type of persistent identifier that identify and locate objects in the long-term. 
-
-Additional documentation on DataCite can be found at <https://support.datacite.org/docs/datacite-commons>. 
-
-### Why should you use it?
-
-Assigning a DOI to your research product can enable long-term preservation and accessibility of your research product. Among other things, a main value of DataCite is the connection it creates between users and publishing machinery.
-
-### How to use it?
-
-DataCite Consortium members can mint DOIs for their research products, making it part of a larger digital ecosystem and helping connect the research product to researchers through other persistent identifiers e.g., ORCIDs for researchers and ROR for organizations. DataCite has a REST API that enables retrieval, creation, and update of a DataCite DOI metadata record, can be queried: <https://support.datacite.org/reference/introduction> 
-
-##Schema.org
-
-### What Is It?
-
-[Schema.org](https://schema.org/) is a set of extensible schemas that enables users to embed structured data on their web pages for use and indexation by major search engines. Markup on the webpages or in records helps search engines understand the information presented within and provide richer search results. Schema.org was launched in 2011 by Bing, Google and Yahoo to create and support a common set of schemas for structured data markup on webpages. By using schema.org vocabulary as well as various formats (e.g., JSON-LD) to mark up website content with metadata about itself, making it easier for websites or data records to be searched or indexed. 
-
-Schema.org is not a formal standards body, but rather a site where there is documentation on the schemas supported by several major search engines. Schema.org essentially defines a dictionary of terms (types, properties, and enumerated values). Its main hierarchy is formed by a collection of types (or class), each of which has properties that describe the type. Schema.org offers a hierarchically structured set of types which determines which properties can be assigned to a particular type. Essentially this helps search engines look for websites and record and understand the relationships between them. 
-
-Documentation on schema.org can be found here: <https://schema.org/docs/documents.html> 
-
-### Why should you use it?
-
-By implementing schema.org you can make your research more easily and prominently discoverable through major search engines. 
-
-### How to use it?
-
-You can add schema.org markup to your webpages or records using various online tools, including [Google’s Structured Data Markup Helper](https://www.google.com/webmasters/markup-helper/u/0/), or by directly adding code to your webpages. You can use different formats to add information to your web content implementing the schema.org vocabulary, such as JSON-LD.
