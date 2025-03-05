@@ -116,22 +116,28 @@ To facilitate comparisons of data from different datasets, requests and results 
 
 ### 5.2.2 Thematic Real-time Environmental Distributed Data Services (THREDDS)
 
-### What Is It?
+### **What Is It?**
 
-The [THREDDS](https://www.unidata.ucar.edu/software/tds/) server has features and interfaces that makes it easier to explore and use data. Here is a comparison of ERDDAP and THREDDS: <https://jsimkins2.github.io/geog473-673/thredds-and-erddap.html> 
+The [THREDDS](https://www.unidata.ucar.edu/software/tds/) server, which was developed prior to ERDDAP, has features and interfaces that makes it easier to explore and use data. 
 
- \[you can’t access data by date, you need to know the index number. Less like a database than ERDDAP. Developed a little earlier than ERDDAP. ERDDAP was built to be better than THREDDS from a user perspective. Optimized for data cube, e.g. netCDF, data.  
+### **Why?**
 
-### Why should you use it?
+-   Crowd source: What is beneficial about THREDDS for internet ready data?
 
-### How to use it?
+### **Top Resources**
+
+-   A [comparison](https://jsimkins2.github.io/geog473-673/thredds-and-erddap.html) of ERDDAP and THREDDS
 
 ### 5.2.3 Web Map Service
 
-### What Is It?
+### **What Is It?**
 
-A Web Map Service (WMS) is a way to retrieve georegistered map images over the internet to display in applications and web pages. It allows you to view and use maps from different sources that host the maps and data used to create them without needing to download them. The WMS specifications were developed by the [Open Geospatial Consortium (OGC)](https://www.ogc.org/publications/standard/wms/) to enable interoperability and use in web browsers, open-source GIS software (ex. [QGIS](https://www.qgis.org/)), and proprietary GIS software (ex. [Esri](https://www.esri.com/en-us/home)).
+A Web Map Service (WMS) is a way to retrieve georegistered map images over the internet to display in applications and web pages. The WMS specifications were developed by the [Open Geospatial Consortium (OGC)](https://www.ogc.org/publications/standard/wms/) to enable interoperability and use in web browsers, open-source GIS software (ex. [QGIS](https://www.qgis.org/)), and proprietary GIS software (ex. [Esri](https://www.esri.com/en-us/home)).
 
-### When should you use it?
+### **Why?**
 
-### How to use it?
+-   WMS allows you to view and use maps from different sources that host the maps and data used to create them without needing to download them.
+
+### **Top Resources**
+
+-   Crowd source: What is beneficial about Web Map Services for internet ready data?
