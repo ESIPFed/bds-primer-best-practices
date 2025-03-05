@@ -8,11 +8,9 @@ Web standards are the formal, non-proprietary standards and other technical spec
 
 ### 5.1.1 W3C standards
 
-### What Is It?\*\*
+### What Is It?
 
-[W3C standards](https://www.w3.org/standards/)) define an open web platform for application development. The web has the unprecedented potential to enable developers to build rich interactive experiences, that can be available on any device.
-
-The platform continues to expand, but web users have long ago rallied around HTML as the cornerstone of the web. Many more technologies that W3C and its partners are creating extend the web and give it full strength, including CSS, SVG, WOFF, WebRTC, XML, and a growing variety of APIs.
+The World Wide Web Consortium (W3C) develops the [W3C standards](https://www.w3.org/standards/), which serve as building blocks to build internet browsers, web pages, blogs, search engines, and other software that power our experience on the web. Although HTML is its cornerstone, W3C publishes a [range of technical reports](https://www.w3.org/TR/), which help move the web forward, like CSS, SVG, WOFF, WebRTC, XML, and a growing variety of APIs.
 
 ### Why should you use it?
 
