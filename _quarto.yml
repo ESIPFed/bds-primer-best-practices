@@ -14,8 +14,8 @@ book:
     - MAKE_YOUR_DATA_INTERNET_READY.qmd
     - SOFTWARE_READY.qmd
 
-number-depth: 2
-number-offset: 1
+number-depth: 1
+number-offset: 0
   
 execute:
   echo: FALSE
