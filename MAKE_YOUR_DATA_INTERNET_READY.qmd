@@ -1,5 +1,7 @@
 # Make Your Data Internet Ready
 
+Web services and standards are useful to understand if you collect or manage biological data. Platforms like NOAA’s [NCEI](https://www.ncei.noaa.gov/), [NASA](https://data.nasa.gov/), [OBIS](https://manual.obis.org/access.html#api), and [GBIF](https://www.gbif.org/), etc. utilize standard web services to serve data. Web-friendly data standards facilitate the transfer and handling of data via web services by making information visible in a predictable way, promoting online sharing, programmatic discovery, access, and processing of data across platforms and disciplines. 
+
 ## Web Services
 
 ### What Is It?
