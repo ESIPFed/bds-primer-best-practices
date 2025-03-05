@@ -40,7 +40,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-2ce9fc9ac8b614e7ffef13962cc12eaf.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-a34d670291f06f286357e447776a572a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -171,161 +171,165 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="web-services" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="web-services"><span class="header-section-number">5.1</span> Web Services</h2>
+<p>Web services and standards are useful to understand if you collect or manage biological data. Platforms like NOAA’s <a href="https://www.ncei.noaa.gov/">NCEI</a>, <a href="https://data.nasa.gov/">NASA</a>, <a href="https://manual.obis.org/access.html#api">OBIS</a>, and <a href="https://www.gbif.org/">GBIF</a>, etc. utilize standard web services to serve data. Web-friendly data standards facilitate the transfer and handling of data via web services by making information visible in a predictable way, promoting online sharing, programmatic discovery, access, and processing of data across platforms and disciplines.&nbsp;</p>
+<section id="web-enabled-standards" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="web-enabled-standards"><span class="header-section-number">5.1</span> <strong>Web-enabled standards</strong></h2>
+<p>Web standards are the formal, non-proprietary standards and other technical specifications that define and describe different aspects of the World Wide Web. Web standards are created by standards bodies, which are institutions that invite groups of people to come together and agree on how the technologies should work in the best way to fulfill specific use cases. Web standards are key to global data discovery.</p>
+<section id="w3c-standards" class="level3">
+<h3 class="anchored" data-anchor-id="w3c-standards">5.1.1 W3C standards</h3>
+</section>
 <section id="what-is-it" class="level3">
 <h3 class="anchored" data-anchor-id="what-is-it">What Is It?</h3>
-<p>Web services run much of our digital world today. For example, you may be familiar with Amazon Web Services (AWS), which is used for analytics and data service during football games, the olympics, and other sporting events. You can think of a web service as a waiter at a restaurant. You (the user) order food (a request), the waiter (the web service) takes your order to the kitchen (the server or application), and then brings you back your food (the response). This allows different parts of a computer system or different systems altogether to interact without needing to know how each other works internally.</p>
+<p>The World Wide Web Consortium (W3C) develops the <a href="https://www.w3.org/standards/">W3C standards</a>, which serve as building blocks to build internet browsers, web pages, blogs, search engines, and other software that power our experience on the web. Although HTML is its cornerstone, W3C publishes a <a href="https://www.w3.org/TR/">range of technical reports</a>, which help move the web forward, like CSS, SVG, WOFF, WebRTC, XML, and a growing variety of APIs.</p>
 </section>
-<section id="why-should-you-know-about-them" class="level3">
-<h3 class="anchored" data-anchor-id="why-should-you-know-about-them">Why should you know about them?</h3>
-<p>Biological services and platforms like <a href="https://manual.obis.org/access.html#api">OBIS</a>, <a href="https://www.gbif.org/">GBIF</a>, etc. utilize standard web services to serve data.</p>
-<p>These web services are relevant to all sectors collecting and handling biological, biodiversity, and environmental information, including the private, academic research, government and other operational entities. This is what drives the exchange of scientific information.</p>
-</section>
-<section id="web-services-to-know-about" class="level3">
-<h3 class="anchored" data-anchor-id="web-services-to-know-about">Web Services to Know About</h3>
+<section id="why" class="level3">
+<h3 class="anchored" data-anchor-id="why"><strong>Why?</strong></h3>
 <ul>
-<li>Application Program Interfaces (APIs)</li>
-<li><a href="https://www.ncei.noaa.gov/access/distributed-data-access">Overview: Distributed Model Data Access</a></li>
+<li><p>Developers can create interactive experiences available on any device.</p></li>
+<li><p>Data can be made more <a href="https://www.go-fair.org/fair-principles/">FAIR</a> by increasing your awareness of these standards.</p></li>
+</ul>
+</section>
+<section id="top-resources" class="level3">
+<h3 class="anchored" data-anchor-id="top-resources"><strong>Top Resources</strong></h3>
+<ul>
+<li><a href="https://www.w3schools.com/">W3Schools</a> offers a variety of tutorials for free</li>
 </ul>
 </section>
 </section>
-<section id="erddap" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="erddap"><span class="header-section-number">5.2</span> ERDDAP™</h2>
+<section id="section" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="section"><span class="header-section-number">5.2</span> </h2>
+<section id="dublin-core-standard" class="level3">
+<h3 class="anchored" data-anchor-id="dublin-core-standard">5.1.2 Dublin Core Standard</h3>
+</section>
 <section id="what-is-it-1" class="level3">
-<h3 class="anchored" data-anchor-id="what-is-it-1">What Is It?</h3>
-<p><a href="https://coastwatch.pfeg.noaa.gov/erddap/index.html">ERDDAP</a>™ [ur-dap] is a data server that offers users a simple, consistent way to download scientific datasets in common file formats, as well as make graphs and maps.&nbsp;ERDDAP is <a href="https://github.com/IrishMarineInstitute/awesome-erddap?tab=readme-ov-file#erddap-deployments">used globally</a> to share and integrate disparate data across a range of communities in a standardized way. ERDDAP is often the data service used for oceanographic and atmospheric datasets, but also works great for biological and biodiversity-relevant observations, and for both gridded and tabular data. Data providers can <a href="https://erddap.github.io/setup.html">set up their own ERDDAP server</a> to serve up their data. By using ERDDAP you can incorporate multiple data subsets from different sources into a single workspace. Users can download data from ERDDAP in a multitude of file formats, or as graphs or maps by either using a web page or using the RESTful API in the programming language of their choice.</p>
-<p>To facilitate comparisons of data from different datasets, requests and results in ERDDAP use standardized space/time axis, which makes it easier for users to specify data constraints in requests without having to worry about the data format.&nbsp;</p>
-<p><strong>Data access</strong>: ERDDAP provides a variety of data access methods including via a web browser, OPeNDAP, SOS, WMS, WCS, HTTP, and more.&nbsp;</p>
-<p><strong>Data formats</strong>: ERDDAP can convert data to various formats such as .csv, .json, .nc, .xls, .mat, .dods, and others (more info <a href="https://catalogue.hakai.org/erddap/tabledap/documentation.html#fileType">here</a>)</p>
-<p><strong>Data subsetting</strong>: ERDDAP allows users to request a subset of a dataset. It converts the subset to the desired file format available for download.</p>
-<p><strong>ERDDAP API</strong>: All the information, data and figures made available via ERDDAP are also available via an API. See table dataset API docs <a href="https://coastwatch.pfeg.noaa.gov/erddap/tabledap/documentation.html">here</a>, and for gridded datasets <a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/documentation.html">here</a>.</p>
-<p><strong>Data search</strong>: Search for data across multiple ERDDAP installations at <a href="https://erddap.com" class="uri">https://erddap.com</a></p>
-<p>Additional overall documentation on ERDDAP can be found <a href="https://coastwatch.pfeg.noaa.gov/erddap/information.html">here</a>. The documentation is in the process of being moved to GitHub <a href="https://erddap.github.io/">here</a>.</p>
+<h3 class="anchored" data-anchor-id="what-is-it-1"><strong>What Is It?</strong></h3>
+<p><a href="https://www.dublincore.org/">Dublin Core</a> is a metadata standard of 15 ‘core’ terms originally developed for archives and libraries to describe physical or digital resources and details about their collection. <a href="https://esipfed.github.io/bds-primer-best-practices/INTEGRATE_DATA.html#topic-darwin-core">Darwin Core</a> is an extension of Dublin Core for biodiversity information.</p>
 </section>
-<section id="why-should-you-use-it" class="level3">
-<h3 class="anchored" data-anchor-id="why-should-you-use-it">Why should you use it?</h3>
-<p>ERDDAP is free and open source, and makes your data much more accessible. ERDDAP has a <a href="https://www.ncei.noaa.gov/erddap/rest.html">RESTful web service</a> which is designed to be easy for computer programs and scripts to use or interact with.&nbsp;</p>
+<section id="why-1" class="level3">
+<h3 class="anchored" data-anchor-id="why-1"><strong>Why?</strong></h3>
+<ul>
+<li>Crowd source: Why is it beneficial to know about Dublin Core for internet ready data?</li>
+</ul>
 </section>
-<section id="how-to-use-it" class="level3">
-<h3 class="anchored" data-anchor-id="how-to-use-it">How to use it?</h3>
-<p>There are many good tutorials and references on how to use ERDDAP including</p>
+<section id="top-resources-1" class="level3">
+<h3 class="anchored" data-anchor-id="top-resources-1"><strong>Top Resources</strong></h3>
+<ul>
+<li><p><a href="https://docs.google.com/presentation/d/1DveHXvY5U5XISl0JocDJ5qUe4PP74dPFSrdryra2m1U/edit#slide=id.p">Disambiguating the Cores presentation</a></p></li>
+<li><p><a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/">Dublin Core Metadata Initiative documentation</a></p></li>
+</ul>
+</section>
+<section id="datacite" class="level3">
+<h3 class="anchored" data-anchor-id="datacite">5.1.3 DataCite</h3>
+</section>
+<section id="what-is-it-2" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-it-2"><strong>What Is It?</strong></h3>
+<p>The <a href="https://datacite.org/">DataCite metadata schema</a> is an international, not-for-profit organization which aims to improve data citation through web-enabled standards that connect products and citations.&nbsp;</p>
+</section>
+<section id="why-2" class="level3">
+<h3 class="anchored" data-anchor-id="why-2"><strong>Why?</strong></h3>
+<ul>
+<li><p>Helps mint persistent identifiers, such as digital object identifiers (DOI), for research products, which enables data archiving and long-term preservation</p></li>
+<li><p>Helps connect the research product to researchers through other persistent identifiers, such as ORCIDs for researchers or ROR for organizations</p></li>
+<li><p>Promotes long-term preservation, accessibility, reuse, and attribution of research products with citable contributions to a scholarly record</p></li>
+<li><p>Connects users and publishing machinery</p></li>
+</ul>
+</section>
+<section id="top-resources-2" class="level3">
+<h3 class="anchored" data-anchor-id="top-resources-2"><strong>Top Resources</strong></h3>
+<ul>
+<li><p><a href="https://support.datacite.org/reference/introduction">REST API</a>, which enables retrieval, creation, and update of a DOI metadata record.</p></li>
+<li><p><a href="https://support.datacite.org/docs/datacite-commons">Additional documentation</a> on DataCite</p></li>
+</ul>
+</section>
+<section id="schema.org" class="level3">
+<h3 class="anchored" data-anchor-id="schema.org">5.1.4 Schema.org</h3>
+</section>
+<section id="what-is-it-3" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-it-3"><strong>What Is It?</strong></h3>
+<p><a href="https://schema.org/">Schema.org</a> provides documentation on a set of extensible schemas, which are schemas where users can use components to create other schemas. This enables users to embed structured data on their web pages to help search engines understand the information presented and provide richer search results. Using schema.org vocabulary as well as various formats (e.g., JSON-LD) to mark up website content with metadata about itself, makes it easier for websites or data records to not only be searched but also for the relationships between them to be understood.</p>
+</section>
+<section id="why-3" class="level3">
+<h3 class="anchored" data-anchor-id="why-3"><strong>Why?</strong></h3>
+<ul>
+<li>Make your research more easily and prominently discvoerable through major search engines.</li>
+</ul>
+</section>
+<section id="top-resources-3" class="level3">
+<h3 class="anchored" data-anchor-id="top-resources-3"><strong>Top Resources</strong></h3>
+<ul>
+<li><p>You can add schema.org markup to your webpages or records using various online tools, including <a href="https://www.google.com/webmasters/markup-helper/u/0/">Google’s Structured Data Markup Helper</a>, or by directly adding code to your webpages.&nbsp;</p></li>
+<li><p><a href="https://schema.org/docs/documents.html">Documentation</a> on schema.org</p></li>
+</ul>
+</section>
+</section>
+<section id="web-services" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="web-services"><span class="header-section-number">5.3</span> Web Services</h2>
+<p>Web services run much of our digital world today. You probably use them through your phone every day, without noticing a thing. You can think of a web service as a waiter at a restaurant. You (the user) order food (a request), the waiter (the web service) takes your order to the kitchen (the server or application), and then brings you back your food (the response). This allows different parts of a computer system or different systems altogether to interact without needing to know how each other works internally. When web services are fully utilized, it results in impressive hi-speed analysis, like the analytics shared during football (all types 🙂) games, the olympics, and other sporting events.</p>
+<section id="erddap-web-service" class="level3">
+<h3 class="anchored" data-anchor-id="erddap-web-service">5.2.1 ERDDAP™ Web Service</h3>
+</section>
+<section id="what-is-it-4" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-it-4"><strong>What Is It?</strong></h3>
+<p><a href="https://coastwatch.pfeg.noaa.gov/erddap/index.html">ERDDAP</a>™ (pronounced ur-dap) is a data server that offers users a simple and consistent way to download, integrate, analyze, visualize, and map multiple scientific datasets from different sources and scientific communities – typically oceanographic and atmospheric data.</p>
+<p>To facilitate comparisons of data from different datasets, requests and results in ERDDAP use standardized space/time axis, which makes it easier for users to specify data constraints in requests without having to worry about the data format. ERDDAP allows users to request a subset of a dataset, and can convert the subset to a desired file format such as .csv, .json, .nc and others, for download.</p>
+</section>
+<section id="why-4" class="level3">
+<h3 class="anchored" data-anchor-id="why-4"><strong>Why?</strong></h3>
+<ul>
+<li><p>ERDDAP is free, open source, and used globally</p></li>
+<li><p>All information, data, and figures made available via ERDDAP are also available via an API, making data programmatically accessible.</p></li>
+<li><p>ERDDAP has a <a href="https://www.ncei.noaa.gov/erddap/rest.html">RESTful web service</a> which is designed to be easy for computer programs and scripts to use or interact with.</p></li>
+<li><p>Used for oceanographic and atmospheric datasets, but also works great for biological and biodiversity-relevant observations</p></li>
+<li><p>Good for both gridded and tabular data - See table dataset API docs <a href="https://coastwatch.pfeg.noaa.gov/erddap/tabledap/documentation.html">here</a>, and for gridded datasets <a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/documentation.html">here</a>.</p></li>
+</ul>
+</section>
+<section id="top-resources-4" class="level3">
+<h3 class="anchored" data-anchor-id="top-resources-4"><strong>Top Resources</strong></h3>
 <ul>
 <li><p><a href="https://github.com/coastwatch-training/CoastWatch-Tutorials?tab=readme-ov-file">CoastWatch Training</a> and specifically <a href="https://github.com/coastwatch-training/CoastWatch-Tutorials/tree/main/ERDDAP-basics">ERDDAP basics</a></p></li>
 <li><p><a href="https://github.com/IrishMarineInstitute/awesome-erddap?tab=readme-ov-file">Awesome ERDDAP</a></p></li>
+<li><p><a href="https://www.ncei.noaa.gov/access/distributed-data-access">Overview: Distributed Model Data Access</a></p></li>
+<li><p>Data providers can <a href="https://erddap.github.io/setup.html">set up their own ERDDAP server</a> to serve up their data.</p></li>
+<li><p>Additional overall documentation on ERDDAP can be found <a href="https://coastwatch.pfeg.noaa.gov/erddap/information.html">here</a>. This content is being migrated over to GitHub: <a href="https://erddap.github.io/" class="uri">https://erddap.github.io/</a>&nbsp;&nbsp;</p></li>
 </ul>
 </section>
+<section id="thematic-real-time-environmental-distributed-data-services-thredds" class="level3">
+<h3 class="anchored" data-anchor-id="thematic-real-time-environmental-distributed-data-services-thredds">5.2.2 Thematic Real-time Environmental Distributed Data Services (THREDDS)</h3>
 </section>
-<section id="thematic-real-time-environmental-distributed-data-services-thredds" class="level2" data-number="5.3">
-<h2 data-number="5.3" class="anchored" data-anchor-id="thematic-real-time-environmental-distributed-data-services-thredds"><span class="header-section-number">5.3</span> Thematic Real-time Environmental Distributed Data Services (THREDDS)</h2>
-<section id="what-is-it-2" class="level3">
-<h3 class="anchored" data-anchor-id="what-is-it-2">What Is It?</h3>
-<p>The <a href="https://www.unidata.ucar.edu/software/tds/">THREDDS</a> server has features and interfaces that makes it easier to explore and use data. Here is a comparison of ERDDAP and THREDDS: <a href="https://jsimkins2.github.io/geog473-673/thredds-and-erddap.html" class="uri">https://jsimkins2.github.io/geog473-673/thredds-and-erddap.html</a>&nbsp;</p>
-<p>&nbsp;[you can’t access data by date, you need to know the index number. Less like a database than ERDDAP. Developed a little earlier than ERDDAP. ERDDAP was built to be better than THREDDS from a user perspective. Optimized for data cube, e.g.&nbsp;netCDF, data.&nbsp;&nbsp;</p>
-</section>
-<section id="why-should-you-use-it-1" class="level3">
-<h3 class="anchored" data-anchor-id="why-should-you-use-it-1">Why should you use it?</h3>
-</section>
-<section id="how-to-use-it-1" class="level3">
-<h3 class="anchored" data-anchor-id="how-to-use-it-1">How to use it?</h3>
-</section>
-</section>
-<section id="web-map-service" class="level2" data-number="5.4">
-<h2 data-number="5.4" class="anchored" data-anchor-id="web-map-service"><span class="header-section-number">5.4</span> Web Map Service</h2>
-<section id="what-is-it-3" class="level3">
-<h3 class="anchored" data-anchor-id="what-is-it-3">What Is It?</h3>
-<p>A Web Map Service (WMS) is a way to retrieve georegistered map images over the internet to display in applications and web pages. It allows you to view and use maps from different sources that host the maps and data used to create them without needing to download them. The WMS specifications were developed by the <a href="https://www.ogc.org/publications/standard/wms/">Open Geospatial Consortium (OGC)</a> to enable interoperability and use&nbsp;in web browsers, open-source GIS software (ex. <a href="https://www.qgis.org/">QGIS</a>), and proprietary GIS software (ex. <a href="https://www.esri.com/en-us/home">Esri</a>).</p>
-</section>
-<section id="when-should-you-use-it" class="level3">
-<h3 class="anchored" data-anchor-id="when-should-you-use-it">When should you use it?</h3>
-</section>
-<section id="how-to-use-it-2" class="level3">
-<h3 class="anchored" data-anchor-id="how-to-use-it-2">How to use it?</h3>
-</section>
-</section>
-<section id="web-friendly-standards" class="level2" data-number="5.5">
-<h2 data-number="5.5" class="anchored" data-anchor-id="web-friendly-standards"><span class="header-section-number">5.5</span> Web-friendly Standards</h2>
-<section id="what-is-it-4" class="level3">
-<h3 class="anchored" data-anchor-id="what-is-it-4">What Is It?</h3>
-<p>Web-friendly standards are data standards which facilitate the transfer and handling of data over the Web, its architectures and its services. Data standards that comply with web standards promote&nbsp;online sharing, programmatic discovery, access, and processing of data.&nbsp;</p>
-</section>
-<section id="why-should-you-use-them" class="level3">
-<h3 class="anchored" data-anchor-id="why-should-you-use-them">Why should you use them?</h3>
-<p>Adopting web-friendly standards such as <a href="https://www.w3.org/standards/">W3C standards</a>, <a href="https://www.dublincore.org/">Dublin Core</a>, the <a href="https://schema.datacite.org/">DataCite metadata schema</a>, and <a href="https://schema.org/" class="uri">https://schema.org/</a> helps leverage web technologies to connect and make discoverable research information across various platforms and disciplines, advancing knowledge.&nbsp;</p>
-<p>If data standards aren’t web-friendly, data and information will be much harder to “see” via Web services, which are the primary route for global data discovery.</p>
-</section>
-</section>
-<section id="web-enabled-standards-to-know-about" class="level2" data-number="5.6">
-<h2 data-number="5.6" class="anchored" data-anchor-id="web-enabled-standards-to-know-about"><span class="header-section-number">5.6</span> <strong>Web-Enabled Standards to Know About</strong></h2>
-<p>The following standards use Web-friendly and FAIR compliant approaches to promote conformance and interoperability. For example, the use of open and dereferenceable URIs/URLs as persistent identifiers for their properties and types / classes. This means that any web browser or service will be able to act on these standards and link users to the issuing authorities.</p>
-</section>
-<section id="w3c-standards" class="level2" data-number="5.7">
-<h2 data-number="5.7" class="anchored" data-anchor-id="w3c-standards"><span class="header-section-number">5.7</span> W3C standards</h2>
 <section id="what-is-it-5" class="level3">
-<h3 class="anchored" data-anchor-id="what-is-it-5">What Is It?**</h3>
-<p><a href="https://www.w3.org/standards/">W3C standards</a>) define an open web platform for application development. The web has the unprecedented potential to enable developers to build rich interactive experiences, that can be available on any device.</p>
-<p>The platform continues to expand, but web users have long ago rallied around HTML as the cornerstone of the web. Many more technologies that W3C and its partners are creating extend the web and give it full strength, including CSS, SVG, WOFF, WebRTC, XML, and a growing variety of APIs.</p>
+<h3 class="anchored" data-anchor-id="what-is-it-5"><strong>What Is It?</strong></h3>
+<p>The <a href="https://www.unidata.ucar.edu/software/tds/">THREDDS</a> server, which was developed prior to ERDDAP, has features and interfaces that makes it easier to explore and use data.&nbsp;</p>
 </section>
-<section id="why-should-you-use-it-2" class="level3">
-<h3 class="anchored" data-anchor-id="why-should-you-use-it-2">Why should you use it?</h3>
-<p>It might not be a question so much of why you should use it as much as that you should become aware that you already use these, and may be able to make your data more <a href="https://www.go-fair.org/fair-principles/">FAIR</a> by increasing your awareness of these standards. As the W3C website says, “<em>W3C’s proven web standards process is based on fairness, openness, royalty-free, we make the web work, for everyone</em>”.</p>
+<section id="why-5" class="level3">
+<h3 class="anchored" data-anchor-id="why-5"><strong>Why?</strong></h3>
+<ul>
+<li>Crowd source: What is beneficial about THREDDS for internet ready data?</li>
+</ul>
 </section>
-<section id="how-to-use-it-3" class="level3">
-<h3 class="anchored" data-anchor-id="how-to-use-it-3">How to use it?</h3>
-<p>You may use on of the W3C standards listed above to do activities like rendering web pages, web architecture, and linking data and services. There are a variety of resources available that can be found by searching the internet. We do not currently have a single starting point to recommend here.</p>
+<section id="top-resources-5" class="level3">
+<h3 class="anchored" data-anchor-id="top-resources-5"><strong>Top Resources</strong></h3>
+<ul>
+<li>A <a href="https://jsimkins2.github.io/geog473-673/thredds-and-erddap.html">comparison</a> of ERDDAP and THREDDS</li>
+</ul>
 </section>
+<section id="web-map-service" class="level3">
+<h3 class="anchored" data-anchor-id="web-map-service">5.2.3 Web Map Service</h3>
 </section>
-<section id="dublin-core" class="level2" data-number="5.8">
-<h2 data-number="5.8" class="anchored" data-anchor-id="dublin-core"><span class="header-section-number">5.8</span> Dublin Core</h2>
 <section id="what-is-it-6" class="level3">
-<h3 class="anchored" data-anchor-id="what-is-it-6">What Is It?</h3>
-<p><a href="https://www.dublincore.org">Dublin Core</a> is a metadata standard of 15 ‘core’ terms originally developed for archives and libraries to describe physical or digital resources. The full set of terms can be found <a href="http://purl.org/dc/terms/">here</a>. Each term is optional can be used multiple times, as repeated ‘elements.’ All terms are defined as Resource Description Framework (RDF) properties. It has also been formally standardized internationally as ISO 15863.</p>
-<p>The <a href="https://esipfed.github.io/bds-primer-best-practices/INTEGRATE_DATA.html#topic-darwin-core">Darwin Core</a> is based on Dublin Core and is considered to be an extension for biodiversity information of Dublin Core. For information on further extensions to Darwin Core to capture details of additional information regarding a biological/biodiversity data record, use:</p>
+<h3 class="anchored" data-anchor-id="what-is-it-6"><strong>What Is It?</strong></h3>
+<p>A Web Map Service (WMS) is a way to retrieve georegistered map images over the internet to display in applications and web pages. The WMS specifications were developed by the <a href="https://www.ogc.org/publications/standard/wms/">Open Geospatial Consortium (OGC)</a> to enable interoperability and use in web browsers, open-source GIS software (ex. <a href="https://www.qgis.org/">QGIS</a>), and proprietary GIS software (ex. <a href="https://www.esri.com/en-us/home">Esri</a>).</p>
+</section>
+<section id="why-6" class="level3">
+<h3 class="anchored" data-anchor-id="why-6"><strong>Why?</strong></h3>
 <ul>
-<li>Extended Measurement Or Facts (eMoF): (https://rs.obis.org/obis/terms#ExtendedMeasurementOrFact)</li>
-</ul>
-<p>eMoF was developed to be used in combination with the Event Core, but is also compatible with other cores. The eMoF can store measurements or facts related to a biological occurrence, environmental measurements or facts and sampling method attributes. This extension also provides the option to provide identifiers to reference a vocabulary for the measurementType, measurementValue and measurementUnit fields.</p>
-<ul>
-<li>The Humboldt Extension for Ecological Inventories (https://eco.tdwg.org/): a standard vocabulary maintained by the <a href="https://www.tdwg.org/community/dwc/">Darwin Core Maintenance Group</a>. It is intended to facilitate recording of biodiversity ancillary information in operational settings.</li>
+<li>WMS allows you to view and use maps from different sources that host the maps and data used to create them without needing to download them.</li>
 </ul>
 </section>
-<section id="why-should-you-use-it-3" class="level3">
-<h3 class="anchored" data-anchor-id="why-should-you-use-it-3">Why should you use it?</h3>
-</section>
-<section id="how-to-use-it-4" class="level3">
-<h3 class="anchored" data-anchor-id="how-to-use-it-4">How to use it?</h3>
-<p><strong>Disambiguating the Cores presentation: <a href="https://docs.google.com/presentation/d/1DveHXvY5U5XISl0JocDJ5qUe4PP74dPFSrdryra2m1U/edit#slide=id.p" class="uri">https://docs.google.com/presentation/d/1DveHXvY5U5XISl0JocDJ5qUe4PP74dPFSrdryra2m1U/edit#slide=id.p</a></strong></p>
-</section>
-</section>
-<section id="datacite" class="level2" data-number="5.9">
-<h2 data-number="5.9" class="anchored" data-anchor-id="datacite"><span class="header-section-number">5.9</span> DataCite</h2>
-<section id="what-is-it-7" class="level3">
-<h3 class="anchored" data-anchor-id="what-is-it-7">What Is It?</h3>
-<p>The <a href="https://datacite.org">DataCite metadata schema</a> is an international not-for-profit organization which aims to improve data citation, through helping people use web-enabled standards to connect products and citations. This allows users to i) establish easier access to research data, ii) support data archiving and long-term data preservation, and iii) increase acceptance of research data as legitimate, citable contributions to a scholarly record, promoting reuse and attribution. DataCite helps mint persistent identifiers, such as digital object identifiers (DOI) to research products, as well as provide recommendations for data citation formats. DOIs are a type of persistent identifier that identify and locate objects in the long-term.&nbsp;</p>
-<p>Additional documentation on DataCite can be found at <a href="https://support.datacite.org/docs/datacite-commons" class="uri">https://support.datacite.org/docs/datacite-commons</a>.&nbsp;</p>
-</section>
-<section id="why-should-you-use-it-4" class="level3">
-<h3 class="anchored" data-anchor-id="why-should-you-use-it-4">Why should you use it?</h3>
-<p>Assigning a DOI to your research product can enable long-term preservation and accessibility of your research product. Among other things, a main value of DataCite is the connection it creates between users and publishing machinery.</p>
-</section>
-<section id="how-to-use-it-5" class="level3">
-<h3 class="anchored" data-anchor-id="how-to-use-it-5">How to use it?</h3>
-<p>DataCite Consortium members can mint DOIs for their research products, making it part of a larger digital ecosystem and helping connect the research product to researchers through other persistent identifiers e.g., ORCIDs for researchers and ROR for organizations. DataCite has a REST API that enables retrieval, creation, and update of a DataCite DOI metadata record, can be queried: <a href="https://support.datacite.org/reference/introduction" class="uri">https://support.datacite.org/reference/introduction</a>&nbsp;</p>
-<p>##Schema.org</p>
-</section>
-<section id="what-is-it-8" class="level3">
-<h3 class="anchored" data-anchor-id="what-is-it-8">What Is It?</h3>
-<p><a href="https://schema.org/">Schema.org</a> is a set of extensible schemas that enables users to embed structured data on their web pages for use and indexation by major search engines. Markup on the webpages or in records helps search engines understand the information presented within and provide richer search results. Schema.org was launched in 2011 by Bing, Google and Yahoo to create and support a common set of schemas for structured data markup on webpages. By using schema.org vocabulary as well as various formats (e.g., JSON-LD) to mark up website content with metadata about itself, making it easier for websites or data records to be searched or indexed.&nbsp;</p>
-<p>Schema.org is not a formal standards body, but rather a site where there is documentation on the schemas supported by several major search engines. Schema.org essentially defines a dictionary of terms (types, properties, and enumerated values). Its main hierarchy is formed by a collection of types (or class), each of which has properties that describe the type. Schema.org offers a hierarchically structured set of types which determines which properties can be assigned to a particular type. Essentially this helps search engines look for websites and record and understand the relationships between them.&nbsp;</p>
-<p>Documentation on schema.org can be found here: <a href="https://schema.org/docs/documents.html" class="uri">https://schema.org/docs/documents.html</a>&nbsp;</p>
-</section>
-<section id="why-should-you-use-it-5" class="level3">
-<h3 class="anchored" data-anchor-id="why-should-you-use-it-5">Why should you use it?</h3>
-<p>By implementing schema.org you can make your research more easily and prominently discoverable through major search engines.&nbsp;</p>
-</section>
-<section id="how-to-use-it-6" class="level3">
-<h3 class="anchored" data-anchor-id="how-to-use-it-6">How to use it?</h3>
-<p>You can add schema.org markup to your webpages or records using various online tools, including <a href="https://www.google.com/webmasters/markup-helper/u/0/">Google’s Structured Data Markup Helper</a>, or by directly adding code to your webpages. You can use different formats to add information to your web content implementing the schema.org vocabulary, such as JSON-LD.</p>
+<section id="top-resources-6" class="level3">
+<h3 class="anchored" data-anchor-id="top-resources-6"><strong>Top Resources</strong></h3>
+<ul>
+<li>Crowd source: What is beneficial about Web Map Services for internet ready data?</li>
+</ul>
 
 
 </section>
