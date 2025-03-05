@@ -12,69 +12,71 @@ Web standards are the formal, non-proprietary standards and other technical spec
 
 The World Wide Web Consortium (W3C) develops the [W3C standards](https://www.w3.org/standards/), which serve as building blocks to build internet browsers, web pages, blogs, search engines, and other software that power our experience on the web. Although HTML is its cornerstone, W3C publishes a [range of technical reports](https://www.w3.org/TR/), which help move the web forward, like CSS, SVG, WOFF, WebRTC, XML, and a growing variety of APIs.
 
-### Why should you use it?
+### **Why?**
 
-It might not be a question so much of why you should use it as much as that you should become aware that you already use these, and may be able to make your data more [FAIR](https://www.go-fair.org/fair-principles/) by increasing your awareness of these standards. As the W3C website says, “*W3C's proven web standards process is based on fairness, openness, royalty-free, we make the web work, for everyone*”.
+-   Developers can create interactive experiences available on any device.
 
-### How to use it?
+-   Data can be made more [FAIR](https://www.go-fair.org/fair-principles/) by increasing your awareness of these standards.
 
-You may use on of the W3C standards listed above to do activities like rendering web pages, web architecture, and linking data and services. There are a variety of resources available that can be found by searching the internet. We do not currently have a single starting point to recommend here.
+### **Top Resources**
+
+-   [W3Schools](https://www.w3schools.com/) offers a variety of tutorials for free
 
 ## 
 
 ### 5.1.2 Dublin Core Standard
 
-### What Is It?
+### **What Is It?**
 
-[Dublin Core](https://www.dublincore.org) is a metadata standard of 15 ‘core’ terms originally developed for archives and libraries to describe physical or digital resources. The full set of terms can be found [here](http://purl.org/dc/terms/). Each term is optional can be used multiple times, as repeated ‘elements.’ All terms are defined as Resource Description Framework (RDF) properties. It has also been formally standardized internationally as ISO 15863.
+[Dublin Core](https://www.dublincore.org/) is a metadata standard of 15 ‘core’ terms originally developed for archives and libraries to describe physical or digital resources and details about their collection. [Darwin Core](https://esipfed.github.io/bds-primer-best-practices/INTEGRATE_DATA.html#topic-darwin-core) is an extension of Dublin Core for biodiversity information.
 
-The [Darwin Core](https://esipfed.github.io/bds-primer-best-practices/INTEGRATE_DATA.html#topic-darwin-core) is based on Dublin Core and is considered to be an extension for biodiversity information of Dublin Core. For information on further extensions to Darwin Core to capture details of additional information regarding a biological/biodiversity data record, use:
+### **Why?**
 
--   Extended Measurement Or Facts (eMoF): (https://rs.obis.org/obis/terms#ExtendedMeasurementOrFact)
+-   Crowd source: Why is it beneficial to know about Dublin Core for internet ready data?
 
-eMoF was developed to be used in combination with the Event Core, but is also compatible with other cores. The eMoF can store measurements or facts related to a biological occurrence, environmental measurements or facts and sampling method attributes. This extension also provides the option to provide identifiers to reference a vocabulary for the measurementType, measurementValue and measurementUnit fields.
+### **Top Resources**
 
--   The Humboldt Extension for Ecological Inventories (https://eco.tdwg.org/): a standard vocabulary maintained by the [Darwin Core Maintenance Group](https://www.tdwg.org/community/dwc/). It is intended to facilitate recording of biodiversity ancillary information in operational settings.
+-   [Disambiguating the Cores presentation](https://docs.google.com/presentation/d/1DveHXvY5U5XISl0JocDJ5qUe4PP74dPFSrdryra2m1U/edit#slide=id.p)
 
-### Why should you use it?
-
-### How to use it?
-
-**Disambiguating the Cores presentation: <https://docs.google.com/presentation/d/1DveHXvY5U5XISl0JocDJ5qUe4PP74dPFSrdryra2m1U/edit#slide=id.p>**
+-   [Dublin Core Metadata Initiative documentation](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/)
 
 ### 5.1.3 DataCite
 
-### What Is It?
+### **What Is It?**
 
-The [DataCite metadata schema](https://datacite.org) is an international not-for-profit organization which aims to improve data citation, through helping people use web-enabled standards to connect products and citations. This allows users to i) establish easier access to research data, ii) support data archiving and long-term data preservation, and iii) increase acceptance of research data as legitimate, citable contributions to a scholarly record, promoting reuse and attribution. DataCite helps mint persistent identifiers, such as digital object identifiers (DOI) to research products, as well as provide recommendations for data citation formats. DOIs are a type of persistent identifier that identify and locate objects in the long-term. 
+The [DataCite metadata schema](https://datacite.org/) is an international, not-for-profit organization which aims to improve data citation through web-enabled standards that connect products and citations. 
 
-Additional documentation on DataCite can be found at <https://support.datacite.org/docs/datacite-commons>. 
+### **Why?**
 
-### Why should you use it?
+-   Helps mint persistent identifiers, such as digital object identifiers (DOI), for research products, which enables data archiving and long-term preservation
 
-Assigning a DOI to your research product can enable long-term preservation and accessibility of your research product. Among other things, a main value of DataCite is the connection it creates between users and publishing machinery.
+-   Helps connect the research product to researchers through other persistent identifiers, such as ORCIDs for researchers or ROR for organizations
 
-### How to use it?
+-   Promotes long-term preservation, accessibility, reuse, and attribution of research products with citable contributions to a scholarly record
 
-DataCite Consortium members can mint DOIs for their research products, making it part of a larger digital ecosystem and helping connect the research product to researchers through other persistent identifiers e.g., ORCIDs for researchers and ROR for organizations. DataCite has a REST API that enables retrieval, creation, and update of a DataCite DOI metadata record, can be queried: <https://support.datacite.org/reference/introduction> 
+-   Connects users and publishing machinery
+
+### **Top Resources**
+
+-   [REST API](https://support.datacite.org/reference/introduction), which enables retrieval, creation, and update of a DOI metadata record.
+
+-   [Additional documentation](https://support.datacite.org/docs/datacite-commons) on DataCite
 
 ### 5.1.4 Schema.org
 
-### What Is It?
+### **What Is It?**
 
-[Schema.org](https://schema.org/) is a set of extensible schemas that enables users to embed structured data on their web pages for use and indexation by major search engines. Markup on the webpages or in records helps search engines understand the information presented within and provide richer search results. Schema.org was launched in 2011 by Bing, Google and Yahoo to create and support a common set of schemas for structured data markup on webpages. By using schema.org vocabulary as well as various formats (e.g., JSON-LD) to mark up website content with metadata about itself, making it easier for websites or data records to be searched or indexed. 
+[Schema.org](https://schema.org/) provides documentation on a set of extensible schemas, which are schemas where users can use components to create other schemas. This enables users to embed structured data on their web pages to help search engines understand the information presented and provide richer search results. Using schema.org vocabulary as well as various formats (e.g., JSON-LD) to mark up website content with metadata about itself, makes it easier for websites or data records to not only be searched but also for the relationships between them to be understood.
 
-Schema.org is not a formal standards body, but rather a site where there is documentation on the schemas supported by several major search engines. Schema.org essentially defines a dictionary of terms (types, properties, and enumerated values). Its main hierarchy is formed by a collection of types (or class), each of which has properties that describe the type. Schema.org offers a hierarchically structured set of types which determines which properties can be assigned to a particular type. Essentially this helps search engines look for websites and record and understand the relationships between them. 
+### **Why?**
 
-Documentation on schema.org can be found here: <https://schema.org/docs/documents.html> 
+-   Make your research more easily and prominently discvoerable through major search engines.
 
-### Why should you use it?
+### **Top Resources**
 
-By implementing schema.org you can make your research more easily and prominently discoverable through major search engines. 
+-   You can add schema.org markup to your webpages or records using various online tools, including [Google’s Structured Data Markup Helper](https://www.google.com/webmasters/markup-helper/u/0/), or by directly adding code to your webpages. 
 
-### How to use it?
-
-You can add schema.org markup to your webpages or records using various online tools, including [Google’s Structured Data Markup Helper](https://www.google.com/webmasters/markup-helper/u/0/), or by directly adding code to your webpages. You can use different formats to add information to your web content implementing the schema.org vocabulary, such as JSON-LD.
+-   [Documentation](https://schema.org/docs/documents.html) on schema.org
 
 ## Web Services
 
@@ -82,35 +84,35 @@ Web services run much of our digital world today. You probably use them through 
 
 ### 5.2.1 ERDDAP™ Web Service
 
-### What Is It?
+### **What Is It?**
 
-[ERDDAP](https://coastwatch.pfeg.noaa.gov/erddap/index.html)™ \[ur-dap\] is a data server that offers users a simple, consistent way to download scientific datasets in common file formats, as well as make graphs and maps. ERDDAP is [used globally](https://github.com/IrishMarineInstitute/awesome-erddap?tab=readme-ov-file#erddap-deployments) to share and integrate disparate data across a range of communities in a standardized way. ERDDAP is often the data service used for oceanographic and atmospheric datasets, but also works great for biological and biodiversity-relevant observations, and for both gridded and tabular data. Data providers can [set up their own ERDDAP server](https://erddap.github.io/setup.html) to serve up their data. By using ERDDAP you can incorporate multiple data subsets from different sources into a single workspace. Users can download data from ERDDAP in a multitude of file formats, or as graphs or maps by either using a web page or using the RESTful API in the programming language of their choice.
+[ERDDAP](https://coastwatch.pfeg.noaa.gov/erddap/index.html)™ (pronounced ur-dap) is a data server that offers users a simple and consistent way to download, integrate, analyze, visualize, and map multiple scientific datasets from different sources and scientific communities – typically oceanographic and atmospheric data.
 
-To facilitate comparisons of data from different datasets, requests and results in ERDDAP use standardized space/time axis, which makes it easier for users to specify data constraints in requests without having to worry about the data format. 
+To facilitate comparisons of data from different datasets, requests and results in ERDDAP use standardized space/time axis, which makes it easier for users to specify data constraints in requests without having to worry about the data format. ERDDAP allows users to request a subset of a dataset, and can convert the subset to a desired file format such as .csv, .json, .nc and others, for download.
 
-**Data access**: ERDDAP provides a variety of data access methods including via a web browser, OPeNDAP, SOS, WMS, WCS, HTTP, and more. 
+### **Why?**
 
-**Data formats**: ERDDAP can convert data to various formats such as .csv, .json, .nc, .xls, .mat, .dods, and others (more info [here](https://catalogue.hakai.org/erddap/tabledap/documentation.html#fileType))
+-   ERDDAP is free, open source, and used globally
 
-**Data subsetting**: ERDDAP allows users to request a subset of a dataset. It converts the subset to the desired file format available for download.
+-   All information, data, and figures made available via ERDDAP are also available via an API, making data programmatically accessible.
 
-**ERDDAP API**: All the information, data and figures made available via ERDDAP are also available via an API. See table dataset API docs [here](https://coastwatch.pfeg.noaa.gov/erddap/tabledap/documentation.html), and for gridded datasets [here](https://coastwatch.pfeg.noaa.gov/erddap/griddap/documentation.html).
+-   ERDDAP has a [RESTful web service](https://www.ncei.noaa.gov/erddap/rest.html) which is designed to be easy for computer programs and scripts to use or interact with.
 
-**Data search**: Search for data across multiple ERDDAP installations at <https://erddap.com>
+-   Used for oceanographic and atmospheric datasets, but also works great for biological and biodiversity-relevant observations
 
-Additional overall documentation on ERDDAP can be found [here](https://coastwatch.pfeg.noaa.gov/erddap/information.html). The documentation is in the process of being moved to GitHub [here](https://erddap.github.io/).
+-   Good for both gridded and tabular data - See table dataset API docs [here](https://coastwatch.pfeg.noaa.gov/erddap/tabledap/documentation.html), and for gridded datasets [here](https://coastwatch.pfeg.noaa.gov/erddap/griddap/documentation.html).
 
-### Why should you use it?
-
-ERDDAP is free and open source, and makes your data much more accessible. ERDDAP has a [RESTful web service](https://www.ncei.noaa.gov/erddap/rest.html) which is designed to be easy for computer programs and scripts to use or interact with. 
-
-### How to use it?
-
-There are many good tutorials and references on how to use ERDDAP including
+### **Top Resources**
 
 -   [CoastWatch Training](https://github.com/coastwatch-training/CoastWatch-Tutorials?tab=readme-ov-file) and specifically [ERDDAP basics](https://github.com/coastwatch-training/CoastWatch-Tutorials/tree/main/ERDDAP-basics)
 
 -   [Awesome ERDDAP](https://github.com/IrishMarineInstitute/awesome-erddap?tab=readme-ov-file)
+
+-   [Overview: Distributed Model Data Access](https://www.ncei.noaa.gov/access/distributed-data-access)
+
+-   Data providers can [set up their own ERDDAP server](https://erddap.github.io/setup.html) to serve up their data.
+
+-   Additional overall documentation on ERDDAP can be found [here](https://coastwatch.pfeg.noaa.gov/erddap/information.html). This content is being migrated over to GitHub: <https://erddap.github.io/>  
 
 ### 5.2.2 Thematic Real-time Environmental Distributed Data Services (THREDDS)
 
