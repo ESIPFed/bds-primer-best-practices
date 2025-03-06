@@ -103,20 +103,13 @@ flextable(long_example) %>%
 -   [Cleaning Data and Quality Control\
     ](https://edirepository.org/resources/cleaning-data-and-quality-control#data-table-structure)
 
-## Follow ISO 8601 for dates
+## Follow ISO 8601 for dates 
 
-![https://imgs.xkcd.com/comics/iso_8601.png](images/iso_8601.png)
+### What is it?
 
-### Why?
+ISO 8601 is a convention for dates and times, where dates are listed as YYYY-MM-DD and time is given in Coordinated Universal Time (UTC, Zulu, or GMT) which is the time standard, relative to 0o longitude, that regulates global clocks.
 
--   Internationally accepted format used across multiple schemas (e.g. `Darwin Core`, `EML`, `ISO 19115`)
--   Removes ambiguity related to timezone, daylight savings time changes, and time of day
--   Better software integration of time date/time elements
-
-### Key Information
-
--   UTC (AKA `Zulu` or `GMT`): Coordinated Universal Time (UTC) is the primary time standard by which the world regulates clocks and time. It is time relative to `0°` longitude and is not adjusted for daylight saving time. ([from Wikipedia](https://en.wikipedia.org/wiki/ISO_8601)).
--   Conversion to UTC, or between time zones, may depend on daylight savings
+The following table outlines how to write dates, times, and time intervals using ISO 8601:
 
 *Examples: April 3, 2023 standardized to ISO 8601*
 
@@ -181,14 +174,29 @@ flextable(tab1) %>%
 
 ```
 
+### 
+
+![https://imgs.xkcd.com/comics/iso_8601.png](images/iso_8601.png)
+
+### Why?
+
+-   Internationally accepted format used across multiple schemas (e.g. `Darwin Core`, `EML`, `ISO 19115`)
+-   Removes ambiguity related to timezone, daylight savings time changes, and time of day
+-   Better software integration of time date/time elements
+
 ### Top References
 
--   ISO 8601 wiki: <https://en.wikipedia.org/wiki/ISO_8601>
--   R package lubridate, OlsonNames()
--   Python go-to package, datetime <https://docs.python.org/3/library/datetime.html>
--   Article on datetime uncertainty: <https://www.datafix.com.au/BASHing/2020-02-12.html>
--   Map of offset from UTC: <https://www.timeanddate.com/time/map/>
--   Nice time converter: <https://coastwatch.pfeg.noaa.gov/erddap/convert/time.html>
+-   [ISO 8601 wiki](https://en.wikipedia.org/wiki/ISO_8601)
+
+-   R package [lubridate](https://lubridate.tidyverse.org/)
+
+-   Python package [datetime ](https://docs.python.org/3/library/datetime.html)
+
+-   [Article on datetime uncertainty](https://www.datafix.com.au/BASHing/2020-02-12.html)
+
+-   [Map of offset from UTC](https://www.timeanddate.com/time/map/)
+
+-   [Time converter](https://coastwatch.pfeg.noaa.gov/erddap/convert/time.html)
 
 ## Match scientific names to a taxonomic authority
 
