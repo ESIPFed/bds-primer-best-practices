@@ -28,19 +28,19 @@ Non-proprietary file formats do not require specific software and can be accesse
 
 ### **What is it?**
 
-Long (or sometimes called “tidy”) format for tabular data can best be described as having one observation per row. The following example shows two different formats – wide and long – of the same data. Notice that while sites 1, 2, and 3 are the column names filled with counts for each species in the wide format, site and count become the column names in long format.
+Long (or sometimes called “tidy”) format for tabular data can best be described as having one observation per row.
+
+The following example shows two different formats – wide and long – of the same data. Notice that while sites 1, 2, and 3 are the column names filled with counts for each species in the wide format, site and count become the column names in long format.
 
 ### Why?
 
-*This is specifically intended for tabular data*
+-   The clear structure makes data more machine readable, particularly with commonly-used analytical software.
 
--   There is a clear and easy to understand structure that can make your data more machine readable and easier to analyze/visualize
-    -   Clear structure: one observation per row
-    -   Data are as atomic as possible (e.g., don't mix types in field)
--   In the biological data community, tidy formats are more likely to work with commonly-used software
--   Easier to aggregate data across multiple files
+-   Data are as atomic as possible (e.g. no mixed types in one field)
 
-### Key Information
+-   It is easier to aggregate data across multiple files
+
+### 
 
 Example of Wide Format
 
@@ -91,21 +91,17 @@ flextable(long_example) %>%
 
 ```
 
--   Can be tricky working with multiple column datatypes
--   Don't use colors or text formatting in tabular data, and only include column names as metadata. All other notes, definitions, etc. should be in an external metadata file (e.g. data dictionary)
+### Top Resources
 
-### Top References
+-   [Wickham, H. (2014)](https://doi.org/10.18637/jss.v059.i10). Tidy Data. Journal of Statistical Software, 59(10), 1–23.\
+    [Video](https://www.youtube.com/watch?v=N2zK3s=Atr-4&t=7s): Data Sharing and Management Snafu in 3 Short Acts (video)
 
--   Wickham, H. (2014). Tidy Data. Journal of Statistical Software, 59(10), 1--23.\
-    <https://doi.org/10.18637/jss.v059.i10>
--   Data Sharing and Management Snafu in 3 Short Acts (video)\
-    <https://www.youtube.com/watch?v=N2zK3s=Atr-4&t=7s>
--   Tips for working with data in BASH\
-    <https://www.datafix.com.au/BASHing/2022-01-12.html>
--   Data Organization in Spreadsheets for Ecologists\
-    <https://datacarpentry.org/spreadsheet-ecology-lesson/>
--   Cleaning Data and Quality Control\
-    <https://edirepository.org/resources/cleaning-data-and-quality-control#data-table-structure>
+-   [Tips](https://www.datafix.com.au/BASHing/2022-01-12.html) for working with data in BASH
+
+-   [Data Organization in Spreadsheets for Ecologists](https://datacarpentry.org/spreadsheet-ecology-lesson/)
+
+-   [Cleaning Data and Quality Control\
+    ](https://edirepository.org/resources/cleaning-data-and-quality-control#data-table-structure)
 
 ## Follow ISO 8601 for dates
 
