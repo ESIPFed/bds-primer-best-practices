@@ -10,19 +10,19 @@ Non-proprietary file formats do not require specific software and can be accesse
 
 ### Why?
 
--   Allows data to be useful in perpetuity by ensuring data readability and reusability across multiple platforms.
--   To align better with the [FAIR data principles](https://www.go-fair.org/fair-principles/) (findability, accessibility, interoperability, reusability)
--   Makes data more socially equitable, supporting open science. Proprietary formats can depend on software that require licenses, which not everyone can afford/has access to.
+-   Allows data to be useful in perpetuity by ensuring data readability and reusability across multiple platforms
 
-### Key Information
+-   Aligns better with the [FAIR data principles](https://www.go-fair.org/fair-principles/)
 
-### Top References
+-   Makes data more socially equitable, supporting open science
 
--   Table of commonly used formats for common data types\
-    <https://guides.osu.edu/c.php?g=707751&p=5027409>
+-   Many applications (e.g. Microsoft Office) allow exporting into multiple formats, which makes it easy to share data in non-proprietary formats even if it was created using proprietary software.
 
--   A more detailed table that is specific to US Federal records management\
-    <https://www.archives.gov/records-mgmt/policy/transfer-guidance-tables.html>
+### Top Resources
+
+-   Table of [commonly used formats](https://guides.osu.edu/c.php?g=707751&p=5027409) for common data types
+
+-   A [more detailed table](https://www.archives.gov/records-mgmt/policy/transfer-guidance-tables.html) that is specific to U.S. Federal records management\
 
 ## Structure tabular data in tidy/long format
 
