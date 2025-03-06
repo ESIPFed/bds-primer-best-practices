@@ -4,6 +4,10 @@ Those sharing or managing data can take small steps to make them “software rea
 
 ## Use non-proprietary formats
 
+### **What is it?** 
+
+Non-proprietary file formats do not require specific software and can be accessed without licenses and within different software systems.For example, comma separated values (CSV) format is becoming an increasingly popular non-proprietary format compared to the proprietary .xlsx format.
+
 ### Why?
 
 -   Allows data to be useful in perpetuity by ensuring data readability and reusability across multiple platforms.
@@ -11,10 +15,6 @@ Those sharing or managing data can take small steps to make them “software rea
 -   Makes data more socially equitable, supporting open science. Proprietary formats can depend on software that require licenses, which not everyone can afford/has access to.
 
 ### Key Information
-
--   *Non-proprietary formats* are supported by more than one developer and can be accessed with different software systems. For example, comma separated values (CSV) format is becoming an increasingly popular non-proprietary format.
--   A [*proprietary file format*](https://en.wikipedia.org/wiki/Proprietary_file_format) is a file format of a company, organization, or individual that contains data that is ordered and stored according to a particular encoding-scheme, designed by the company or organization to be secret or with restricted access, such that the decoding and interpretation of this stored data is easily accomplished only with particular software or hardware that the company itself has developed. There may also be costs associated with it and access may be limited. Examples include `Microsoft Excel (xlsx)` and `ESRI shapefiles (shp)`.
--   Many applications (e.g. Microsoft Office) allow exporting in multiple formats.
 
 ### Top References
 
