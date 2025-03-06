@@ -8,6 +8,7 @@ book:
   date: last-modified
   chapters:
     - index.qmd
+    - primer.qmd
     - CONTEXT_UNDERSTANDABILITY.qmd
     - INTEGRATE_DATA.qmd
     - INTEROPERABLE_DATA.qmd
