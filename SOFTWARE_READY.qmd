@@ -291,19 +291,21 @@ flextable(ds) %>%
 -   Decimal-degrees avoids special symbols (`°` or `‘`) which is preferable for machine readable formats
 -   `WGS84` is a reference coordinate system that is widely used and incorporated in many GPS units and tools, and recognized as a standard by many government agencies.
 
-### Top References
+### Top Resources
 
 -   Existing R/python/ESRI packages/functions
-    -   R - measurements <https://cran.r-project.org/web/packages/measurements/measurements.pdf>
-    -   EML <https://eml.ecoinformatics.org/schema/index.html> (find "bounding Coordinates)
-    -   CF <https://cfconventions.org/Data/cf-conventions/cf-conventions-1.10/cf-conventions.html#latitude-coordinate>
--   Getting lat/lon to decimal degrees\
-    <https://ioos.github.io/bio_mobilization_workshop/03-data-cleaning/index.html#getting-latlon-to-decimal-degrees>
--   Some background on precision
-    -   <https://www.trekview.org/blog/2021/reading-decimal-gps-coordinates-like-a-computer/#a-note-on-accuracy>
-    -   <https://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude>
--   DMS to DD calculator\
-    <https://www.fcc.gov/media/radio/dms-decimal> -- The three most commonly used datums are WGS84, NAD83, and NAD27. A more complete list can be found here: <https://wiki.gis.com/wiki/index.php/Datum_(geodesy)#List_of_Datums)>
+
+    -   R package [measurements](https://cran.r-project.org/web/packages/measurements/measurements.pdf) 
+
+    -   [EML](https://eml.ecoinformatics.org/schema/index.html) - find bounding coordinates
+
+    -   [CF coordinate conventions](https://cfconventions.org/Data/cf-conventions/cf-conventions-1.10/cf-conventions.html#latitude-coordinate)
+
+-   Some background on [precision](https://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude)
+
+-   [More on precision](https://www.trekview.org/blog/2021/reading-decimal-gps-coordinates-like-a-computer/#a-note-on-accuracy)
+
+-   [DMS to DD calculator](https://www.fcc.gov/media/radio/dms-decimal)
 
 ## Use persistent unique identifiers
 
