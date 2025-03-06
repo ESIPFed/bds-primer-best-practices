@@ -26,6 +26,10 @@ Non-proprietary file formats do not require specific software and can be accesse
 
 ## Structure tabular data in tidy/long format
 
+### **What is it?**
+
+Long (or sometimes called “tidy”) format for tabular data can best be described as having one observation per row. The following example shows two different formats – wide and long – of the same data. Notice that while sites 1, 2, and 3 are the column names filled with counts for each species in the wide format, site and count become the column names in long format.
+
 ### Why?
 
 *This is specifically intended for tabular data*
