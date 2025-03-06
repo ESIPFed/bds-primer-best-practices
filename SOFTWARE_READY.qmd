@@ -1,5 +1,7 @@
 # Make Your Data Software Ready
 
+Those sharing or managing data can take small steps to make them “software ready.” These include using non-proprietary formats, structuring tables with specific columns and entries, including standards for information about time, place, and organism.
+
 ## Use non-proprietary formats
 
 ### Why?
