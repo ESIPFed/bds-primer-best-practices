@@ -6,6 +6,8 @@ To paraphrase the [MARCO-BOLO data management plan](https://doi.org/10.5281/zeno
 
 The [ESIP Biological Data Standards Cluster](https://wiki.esipfed.org/Biological_Data_Standards_Cluster) formed in 2020 to maximize data relevance and utility for understanding changes in biodiversity over time. The cluster’s focus has expanded to include more aspects of biology beyond biodiversity, acknowledging that biological data may be useful for many facets of earth science. To accomplish this, the cluster encourages awareness and shared understanding of biological data standards by facilitating community building and information sharing via guidance, documentation, and training for the US biological data community. The first product from this cluster, the [Biological Data Standards Primer](https://doi.org/10.6084/m9.figshare.16806712.v2), is an easy to digest resource for new biological data managers.
 
+<iframe src="https://widgets.figshare.com/articles/16806712/embed?show_title=1" allowfullscreen frameborder="0"></iframe>
+
 We build on this foundational product by providing additional context and details in the following suite of Biological Data Standards Primer Guides. The guides are intended to be a bridge between a deep dive into the standards documentation, and the lists of links available in the primer. The target audience for these guides is anyone interested in working with biological data, from data collection, to data sharing, and data management. We hope these Primer Guides will provide useful context for using biological standards.
 
 **How to contribute**
