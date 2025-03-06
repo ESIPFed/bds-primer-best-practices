@@ -200,42 +200,53 @@ flextable(tab1) %>%
 
 ## Match scientific names to a taxonomic authority
 
+### **What is it?** 
+
+A taxonomic authority is defined here as an online resource that maintains up-to-date species-level classification information and provides persistent identifiers (ID) for taxonomic classifications.
+
+Example: For the species Balaenoptera borealis (Lesson, 1828), the WoRMS taxonomic authority ID link is <https://www.marinespecies.org/aphia.php?p=taxdetails&id=137088> and the Life Science Identifier (LSID) is urn:lsid:marinespecies.org:taxname:137088.
+
+Some important considerations:
+
+-   Consider where you want to publish your data and use the existing taxonomic authority (e.g. [World Register of Marine Species](https://www.marinespecies.org/), [Integrated Taxonomic Information System](https://itis.gov/), [NCBI taxonomy](https://www.ncbi.nlm.nih.gov/taxonomy)) used in that repository
+
+-   Include the authority who manages said information in your metadata.
+
+-   Make yourself aware of the structure, limits, and history of the authority you are using.
+
+-   Adopt standard binomial nomenclature, when possible.
+
+-   When possible, reference the unique identifier in addition to the nomenclature.
+
+-   Always save and document the originally recorded name.
+
+-   Put notes about identification uncertainty in a separate column.
+
+-   Many authorities have APIs to facilitate matching names to identifiers.
+
 ### Why?
 
 -   To integrate or aggregate datasets, we need a common frame of reference for taxonomic name
 -   Provides an anchor for the taxonomy as scientific understanding evolves.
 
-### Key Information
+### Top Resources
 
--   Definition: As used here, a taxonomic authority is an online resource that maintains up-to-date species-level classification information and provides persistent identifiers for taxonomic classifications. Example: For the species *Balaenoptera borealis* (Lesson, 1828), the WoRMS taxonomic authority ID link is <https://www.marinespecies.org/aphia.php?p=taxdetails&id=137088> and the LSID is `urn:lsid:marinespecies.org:taxname:137088`.
--   Use an existing taxonomic authority (e.g. [World Register of Marine Species](https://www.marinespecies.org) , [Integrated Taxonomic Information System](https://itis.gov/) , [NCBI taxonomy](https://www.ncbi.nlm.nih.gov/taxonomy)) and include the authority who manages said information in your metadata
--   List of many authorities can be found here: <https://resolver.globalnames.org/data_sources>
--   Make yourself aware of the structure, limits, and history of the authority you are using.
--   Adopt standard binomial nomenclature, when possible
--   When possible, reference the unique identifier in addition to the nomenclature.
--   Always save and document the originally recorded name.
--   Put notes about identification uncertainty in a separate column.
--   Many authorities have APIs through which you can match names to identifiers.
+-   [Global Names Resolver](https://resolver.globalnames.org/) allows users to compare taxonomic concepts across authorities
 
-### Top References
+-   [List of authorities](https://resolver.globalnames.org/data_sources)
 
 -   R packages
-    -   taxize is a taxonomic toolbelt for R. taxize wraps APIs for a large suite of taxonomic databases available on the web\
-        <https://cran.r-project.org/web/packages/taxize/index.html>
-    -   worrms is an API client for [World Register of Marine Species](http://www.marinespecies.org/)\
-        <http://cran.nexr.com/web/packages/worrms/vignettes/worrms_vignette.html>
-    -   worms: another API client for WoRMS\
-        <https://cran.r-project.org/web/packages/worms/index.html>
-    -   Ritis: API client for ITIS \<https://cran.r-project.org/web/packages/ritis/\>
--   Python packages
-    -   WoRMS API client\
-        <https://github.com/iobis/pyworms>
--   Global Names Resolver to compare taxonomic concepts across authorities\
-    <https://resolver.globalnames.org/>
--   Article: Recommendations for the Standardisation of Open Taxonomic Nomenclature for Image-Based Identifications\
-    <https://doi.org/10.3389/fmars.2021.620702>
--   TDWG 2022 Keynote: Richard Pyle, "An Introduction to the Scientific Names of Organisms and the Taxon Concepts they Represent"\
-    <https://www.youtube.com/watch?v=rmTvUUjBxrI>
+
+    -   [taxize](https://cran.r-project.org/web/packages/taxize/index.html) is a taxonomic toolbelt for R, which wraps APIs for a large suite of taxonomic databases available on the web\
+        [worrms](http://cran.nexr.com/web/packages/worrms/vignettes/worrms_vignette.html) and [Worms](https://cran.r-project.org/web/packages/worms/index.html) are two API clients for [World Register of Marine Species](http://www.marinespecies.org/)
+
+    -   [Ritis](https://cran.r-project.org/web/packages/ritis/) is an API client for ITIS
+
+-   Python package [WoRMS API client](https://github.com/iobis/pyworms)
+
+-   [Article](https://doi.org/10.3389/fmars.2021.620702): Recommendations for the Standardisation of Open Taxonomic Nomenclature for Image-Based Identifications
+
+-   [TDWG 2022 Keynote](https://www.youtube.com/watch?v=rmTvUUjBxrI): Richard Pyle, “An Introduction to the Scientific Names of Organisms and the Taxon Concepts they Represent”
 
 ## Record latitude and longitude in decimal degrees in WGS84
 
