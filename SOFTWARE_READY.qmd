@@ -250,25 +250,9 @@ Some important considerations:
 
 ## Record latitude and longitude in decimal degrees in WGS84
 
-![https://imgs.xkcd.com/comics/coordinate_precision.png](images/coordinate_precision.png)
+### **What is it?**
 
-### Why?
-
--   Users have to know where you collected this data, which requires a latitude, longitude, reference system and uncertainty.
--   Decimal-degrees avoids special symbols (`°` or `‘`) which is preferable for machine readable formats
--   `WGS84` is a reference coordinate system that is widely used and incorporated in many GPS units and tools, and recognized as a standard by many government agencies.
-
-### Key Information
-
--   If possible, encourage data providers to confirm, and record, the WGS84 datum prior to data collection.
--   Understand and report the device/instrument uncertainty associated with your coordinates because it affects the usability of your data.
--   Consider including the vertical component (altitude, depth, height off bottom, elevation, etc)
--   Generally speaking, `degrees-minutes-seconds (DMS)` can be converted to `decimal-degrees (DD)` by:
-    -   `DD = d + (min/60) + (sec/3600)`
-    -   Watch out for mixed formats, like degrees, `decimal-minutes (DDM)`.
--   Degrees West and South become negative in DD.
-    -   Values for longitude range from `-180` to `180`, inclusive.
-    -   Values for latitude range from `-90` to `90`, inclusive.
+WGS84 is a coordinate reference system that clarifies location. Recording latitude and longitude coordinates in decimal degrees (DD), rather than degrees-minutes-seconds (DMS) or decimal-minutes (DM or DDM) standardizes them to be more machine and human readable. Degrees West and South are negative in decimal degrees, and longitude can range from -180 to 180, and longitude -90 to 90. Below are example coordinates in each format. Once locations are recorded in DD, the number of decimal places included should be adjusted to match the precision of the observation.
 
 *Example Coordinates*
 
@@ -298,6 +282,14 @@ flextable(ds) %>%
   theme_zebra()
   
 ```
+
+![https://imgs.xkcd.com/comics/coordinate_precision.png](images/coordinate_precision.png)
+
+### Why?
+
+-   Users have to know where you collected this data, which requires a latitude, longitude, reference system and uncertainty.
+-   Decimal-degrees avoids special symbols (`°` or `‘`) which is preferable for machine readable formats
+-   `WGS84` is a reference coordinate system that is widely used and incorporated in many GPS units and tools, and recognized as a standard by many government agencies.
 
 ### Top References
 
