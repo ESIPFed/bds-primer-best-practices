@@ -28,7 +28,7 @@ A single dataset, known as the Darwin Core Archive (DwC-A), is a compressed (e.g
 
 -   For more information, see overviews of CF as a [presentation](https://cfconventions.org/Data/cf-documents/overview/viewgraphs.pdf) and [paper](https://cfconventions.org/Data/cf-documents/overview/article.pdf). You can also check out the presentation John Weiczorek gave to our ESIP cluster back in April, 2022:
 
-    {{< video https://youtu.be/yOJhP9995TU title="Introduction to Darwin Core by John Weiczorek" start="63">}}
+    {{< video https://youtube.com/embed/yOJhP9995TU title="Introduction to Darwin Core by John Weiczorek" start="63">}}
 
 ## Climate and Forecast (CF) 🌍
 
@@ -56,4 +56,4 @@ Like many standards, CF is built on other standards. For example, units are spec
 
 4.  For more information, see overviews of CF as a [presentation](https://cfconventions.org/Data/cf-documents/overview/viewgraphs.pdf) and [paper](https://cfconventions.org/Data/cf-documents/overview/article.pdf). You can also check out the presentation Roy Lowry gave to our ESIP cluster back in April, 2022:
 
-    {{< video https://youtu.be/yOJhP9995TU title="Introduction to CF Conventions by Roy Lowry" start="469">}}
+    {{< video https://youtube.com/embed/yOJhP9995TU title="Introduction to CF Conventions by Roy Lowry" start="469">}}
