@@ -86,17 +86,17 @@ Web services run much of our digital world today. You probably use them through 
 
 ### **What Is It?**
 
-[ERDDAP](https://coastwatch.pfeg.noaa.gov/erddap/index.html)™ (pronounced ur-dap) is a data server that offers users a simple and consistent way to download, integrate, analyze, visualize, and map multiple scientific datasets from different sources and scientific communities – typically oceanographic and atmospheric data.
+[ERDDAP](https://erddap.github.io/)™ (pronounced ur-dap) is a data server that offers users a simple and consistent way to download, integrate, analyze, visualize, and map multiple scientific datasets from different sources and scientific communities – typically oceanographic and atmospheric data.
 
-To facilitate comparisons of data from different datasets, requests and results in ERDDAP use standardized space/time axis, which makes it easier for users to specify data constraints in requests without having to worry about the data format. ERDDAP allows users to request a subset of a dataset, and can convert the subset to a desired file format such as .csv, .json, .nc and others, for download.
+To facilitate comparisons of data from different datasets, requests and results in ERDDAP™ use standardized space/time axis, which makes it easier for users to specify data constraints in requests without having to worry about the data format. ERDDAP™ allows users to request a subset of a dataset, and can convert the subset to a desired file format such as .csv, .json, .nc and others, for download.
 
 ### **Why?**
 
--   ERDDAP is free, open source, and used globally
+-   ERDDAP™ is free, open source, and used globally
 
--   All information, data, and figures made available via ERDDAP are also available via an API, making data programmatically accessible.
+-   All information, data, and figures made available via ERDDAP™ are also available via an API, making data programmatically accessible.
 
--   ERDDAP has a [RESTful web service](https://www.ncei.noaa.gov/erddap/rest.html) which is designed to be easy for computer programs and scripts to use or interact with.
+-   ERDDAP™ has a [RESTful web service](https://www.ncei.noaa.gov/erddap/rest.html) which is designed to be easy for computer programs and scripts to use or interact with.
 
 -   Used for oceanographic and atmospheric datasets, but also works great for biological and biodiversity-relevant observations
 
@@ -112,7 +112,7 @@ To facilitate comparisons of data from different datasets, requests and results 
 
 -   Data providers can [set up their own ERDDAP server](https://erddap.github.io/setup.html) to serve up their data.
 
--   Additional overall documentation on ERDDAP can be found [here](https://coastwatch.pfeg.noaa.gov/erddap/information.html). This content is being migrated over to GitHub: <https://erddap.github.io/>  
+-   Additional overall documentation on ERDDAP can be found [here](https://erddap.github.io/).  
 
 ### 5.2.2 Thematic Real-time Environmental Distributed Data Services (THREDDS)
 
