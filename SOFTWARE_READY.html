@@ -67,8 +67,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<link href="site_libs/tabwid-1.1.3/tabwid.css" rel="stylesheet">
-<script src="site_libs/tabwid-1.1.3/tabwid.js"></script>
 
 
 </head>
@@ -211,21 +209,69 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Data are as atomic as possible (e.g.&nbsp;no mixed types in one field)</p></li>
 <li><p>It is easier to aggregate data across multiple files</p></li>
 </ul>
-</section>
-<section id="section" class="level3">
-<h3 class="anchored" data-anchor-id="section"></h3>
-<p>Example of Wide Format</p>
-<div class="cell">
-<div class="cell-output-display">
-<div class="tabwid"><style>.cl-b90162fc{}.cl-b8fa2a8c{font-family:'DejaVu Sans';font-size:11pt;font-weight:bold;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-b8fa2a96{font-family:'DejaVu Sans';font-size:9pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-b8fcc10c{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-b8fcc116{margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-b8fd7d18{width:1.245in;background-color:rgba(207, 207, 207, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-b8fd7d22{width:0.832in;background-color:rgba(207, 207, 207, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-b8fd7d2c{width:1.245in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-b8fd7d2d{width:0.832in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-b8fd7d36{width:1.245in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-b8fd7d37{width:0.832in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing="true" class="cl-b90162fc"><thead><tr style="overflow-wrap:break-word;"><th class="cl-b8fd7d18"><p class="cl-b8fcc10c"><span class="cl-b8fa2a8c">species</span></p></th><th class="cl-b8fd7d22"><p class="cl-b8fcc116"><span class="cl-b8fa2a8c">site_01</span></p></th><th class="cl-b8fd7d22"><p class="cl-b8fcc116"><span class="cl-b8fa2a8c">site_02</span></p></th><th class="cl-b8fd7d22"><p class="cl-b8fcc116"><span class="cl-b8fa2a8c">site_03</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td class="cl-b8fd7d2c"><p class="cl-b8fcc10c"><span class="cl-b8fa2a96">Tilia americana</span></p></td><td class="cl-b8fd7d2d"><p class="cl-b8fcc116"><span class="cl-b8fa2a96">3</span></p></td><td class="cl-b8fd7d2d"><p class="cl-b8fcc116"><span class="cl-b8fa2a96">5</span></p></td><td class="cl-b8fd7d2d"><p class="cl-b8fcc116"><span class="cl-b8fa2a96">0</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-b8fd7d36"><p class="cl-b8fcc10c"><span class="cl-b8fa2a96">Pinus strobus</span></p></td><td class="cl-b8fd7d37"><p class="cl-b8fcc116"><span class="cl-b8fa2a96">4</span></p></td><td class="cl-b8fd7d37"><p class="cl-b8fcc116"><span class="cl-b8fa2a96">3</span></p></td><td class="cl-b8fd7d37"><p class="cl-b8fcc116"><span class="cl-b8fa2a96">4</span></p></td></tr></tbody></table></div>
-</div>
-</div>
-<p>Example of Long Format</p>
-<div class="cell">
-<div class="cell-output-display">
-<div class="tabwid"><style>.cl-b91e6c30{}.cl-b91781f4{font-family:'DejaVu Sans';font-size:11pt;font-weight:bold;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-b91781fe{font-family:'DejaVu Sans';font-size:9pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-b919ec32{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-b919ec3c{margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-b91a0708{width:1.245in;background-color:rgba(207, 207, 207, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-b91a0709{width:0.733in;background-color:rgba(207, 207, 207, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-b91a0712{width:0.716in;background-color:rgba(207, 207, 207, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-b91a071c{width:1.245in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-b91a0726{width:0.733in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-b91a0727{width:0.716in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-b91a0728{width:1.245in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-b91a0730{width:0.733in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-b91a073a{width:0.716in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing="true" class="cl-b91e6c30"><thead><tr style="overflow-wrap:break-word;"><th class="cl-b91a0708"><p class="cl-b919ec32"><span class="cl-b91781f4">species</span></p></th><th class="cl-b91a0709"><p class="cl-b919ec32"><span class="cl-b91781f4">site</span></p></th><th class="cl-b91a0712"><p class="cl-b919ec3c"><span class="cl-b91781f4">count</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td class="cl-b91a071c"><p class="cl-b919ec32"><span class="cl-b91781fe">Tilia americana</span></p></td><td class="cl-b91a0726"><p class="cl-b919ec32"><span class="cl-b91781fe">site_01</span></p></td><td class="cl-b91a0727"><p class="cl-b919ec3c"><span class="cl-b91781fe">0</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-b91a0728"><p class="cl-b919ec32"><span class="cl-b91781fe">Tilia americana</span></p></td><td class="cl-b91a0730"><p class="cl-b919ec32"><span class="cl-b91781fe">site_02</span></p></td><td class="cl-b91a073a"><p class="cl-b919ec3c"><span class="cl-b91781fe">1</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-b91a071c"><p class="cl-b919ec32"><span class="cl-b91781fe">Tilia americana</span></p></td><td class="cl-b91a0726"><p class="cl-b919ec32"><span class="cl-b91781fe">site_03</span></p></td><td class="cl-b91a0727"><p class="cl-b919ec3c"><span class="cl-b91781fe">4</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-b91a0728"><p class="cl-b919ec32"><span class="cl-b91781fe">Pinus strobus</span></p></td><td class="cl-b91a0730"><p class="cl-b919ec32"><span class="cl-b91781fe">site_01</span></p></td><td class="cl-b91a073a"><p class="cl-b919ec3c"><span class="cl-b91781fe">4</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-b91a071c"><p class="cl-b919ec32"><span class="cl-b91781fe">Pinus strobus</span></p></td><td class="cl-b91a0726"><p class="cl-b919ec32"><span class="cl-b91781fe">site_02</span></p></td><td class="cl-b91a0727"><p class="cl-b919ec3c"><span class="cl-b91781fe">2</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-b91a0728"><p class="cl-b919ec32"><span class="cl-b91781fe">Pinus strobus</span></p></td><td class="cl-b91a0730"><p class="cl-b919ec32"><span class="cl-b91781fe">site_03</span></p></td><td class="cl-b91a073a"><p class="cl-b919ec3c"><span class="cl-b91781fe">2</span></p></td></tr></tbody></table></div>
-</div>
-</div>
+<p><em>Example of Wide Format</em></p>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td><strong>species</strong></td>
+<td><strong>site_01</strong></td>
+<td><strong>site_02</strong></td>
+<td><strong>site_03</strong></td>
+</tr>
+<tr class="even">
+<td>Tilia americana</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+</tr>
+<tr class="odd">
+<td>Pinus strobus</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<p><em>Example of Long Format</em></p>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td><strong>species</strong></td>
+<td><strong>site</strong></td>
+<td><strong>count</strong></td>
+</tr>
+<tr class="even">
+<td>Tilia americana</td>
+<td>site_01</td>
+<td>4</td>
+</tr>
+<tr class="odd">
+<td>Tilia americana</td>
+<td>site_02</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td>Tilia americana</td>
+<td>site_03</td>
+<td>4</td>
+</tr>
+<tr class="odd">
+<td>Pinus strobus</td>
+<td>site_01</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>Pinus strobus</td>
+<td>site_02</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Pinus strobus</td>
+<td>site_03</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="top-resources-1" class="level3">
 <h3 class="anchored" data-anchor-id="top-resources-1">Top Resources</h3>
@@ -247,14 +293,34 @@ ul.task-list li input[type="checkbox"] {
 <p>ISO 8601 is a convention for dates and times, where dates are listed as YYYY-MM-DD and time is given in Coordinated Universal Time (UTC, Zulu, or GMT) which is the time standard, relative to 0 longitude, that regulates global clocks.</p>
 <p>The following table outlines how to write dates, times, and time intervals using ISO 8601:</p>
 <p><em>Examples: different timezone annotation details for April 3, 2023 standardized to ISO 8601</em></p>
-<div class="cell">
-<div class="cell-output-display">
-<div class="tabwid"><style>.cl-b9432eda{}.cl-b93cf952{font-family:'DejaVu Sans';font-size:11pt;font-weight:bold;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-b93cf95c{font-family:'DejaVu Sans';font-size:9pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-b93fdca8{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-b93ff666{width:3.244in;background-color:rgba(207, 207, 207, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-b93ff670{width:3.881in;background-color:rgba(207, 207, 207, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-b93ff67a{width:3.244in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-b93ff67b{width:3.881in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-b93ff684{width:3.244in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-b93ff685{width:3.881in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-b93ff68e{width:3.244in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-b93ff68f{width:3.881in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-b93ff690{width:3.244in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-b93ff698{width:3.881in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing="true" class="cl-b9432eda"><thead><tr style="overflow-wrap:break-word;"><th class="cl-b93ff666"><p class="cl-b93fdca8"><span class="cl-b93cf952">Description</span></p></th><th class="cl-b93ff670"><p class="cl-b93fdca8"><span class="cl-b93cf952">Written in ISO 8601</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td class="cl-b93ff67a"><p class="cl-b93fdca8"><span class="cl-b93cf95c">Date</span></p></td><td class="cl-b93ff67b"><p class="cl-b93fdca8"><span class="cl-b93cf95c">2023-04-03</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-b93ff684"><p class="cl-b93fdca8"><span class="cl-b93cf95c">Date and Time with timezone offset</span></p></td><td class="cl-b93ff685"><p class="cl-b93fdca8"><span class="cl-b93cf95c">2023-04-03T18:29:38+00:00</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-b93ff68e"><p class="cl-b93fdca8"><span class="cl-b93cf95c">Date and Time in UTC</span></p></td><td class="cl-b93ff68f"><p class="cl-b93fdca8"><span class="cl-b93cf95c">2023-04-03T18:29:38Z</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-b93ff690"><p class="cl-b93fdca8"><span class="cl-b93cf95c">Time Interval in UTC (April 3 - 5, 2023)</span></p></td><td class="cl-b93ff698"><p class="cl-b93fdca8"><span class="cl-b93cf95c">2023-04-03T18:29:38Z/2023-04-05T00:29:38Z</span></p></td></tr></tbody></table></div>
-</div>
-</div>
-</section>
-<section id="section-1" class="level3">
-<h3 class="anchored" data-anchor-id="section-1"></h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Description</strong></td>
+<td><strong>Written in ISO 8601</strong></td>
+</tr>
+<tr class="even">
+<td>Date</td>
+<td>2023-04-03</td>
+</tr>
+<tr class="odd">
+<td>Date and Time with timezone offset</td>
+<td>2023-04-03T18:29:38+00:00</td>
+</tr>
+<tr class="even">
+<td>Date and Time in UTC</td>
+<td>2023-04-03T18:29:38Z</td>
+</tr>
+<tr class="odd">
+<td>Time Interval in UTC (April 3 - 5, 2023)</td>
+<td>2023-04-03T18:29:38Z/2023-04-05T00:29:38Z</td>
+</tr>
+</tbody>
+</table>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/iso_8601.png" class="img-fluid figure-img"></p>
@@ -330,11 +396,26 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="what-is-it-4"><strong>What is it?</strong></h3>
 <p>WGS84 is a coordinate reference system that clarifies location. Recording latitude and longitude coordinates in decimal degrees (DD), rather than degrees-minutes-seconds (DMS) or decimal-minutes (DM or DDM) standardizes them to be more machine and human readable. Degrees West and South are negative in decimal degrees, and longitude can range from -180 to 180, and longitude -90 to 90. Below are example coordinates in each format. Once locations are recorded in DD, the number of decimal places included should be adjusted to match the precision of the observation.</p>
 <p><em>Example Coordinates</em></p>
-<div class="cell">
-<div class="cell-output-display">
-<div class="tabwid"><style>.cl-b9572642{}.cl-b950f1aa{font-family:'DejaVu Sans';font-size:11pt;font-weight:bold;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-b950f1b4{font-family:'DejaVu Sans';font-size:9pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-b953d53c{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-b953effe{width:3.283in;background-color:rgba(207, 207, 207, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-b953f008{width:1.399in;background-color:rgba(207, 207, 207, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-b953f012{width:3.283in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-b953f013{width:1.399in;background-color:rgba(239, 239, 239, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-b953f01c{width:3.283in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-b953f01d{width:1.399in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing="true" class="cl-b9572642"><thead><tr style="overflow-wrap:break-word;"><th class="cl-b953effe"><p class="cl-b953d53c"><span class="cl-b950f1aa">Format</span></p></th><th class="cl-b953f008"><p class="cl-b953d53c"><span class="cl-b950f1aa">Example</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td class="cl-b953f012"><p class="cl-b953d53c"><span class="cl-b950f1b4">Decimal Degrees (DD)</span></p></td><td class="cl-b953f013"><p class="cl-b953d53c"><span class="cl-b950f1b4">30.50833333</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-b953f01c"><p class="cl-b953d53c"><span class="cl-b950f1b4">Degrees Minutes Seconds (DMS)</span></p></td><td class="cl-b953f01d"><p class="cl-b953d53c"><span class="cl-b950f1b4">30° 15' 10 N</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-b953f012"><p class="cl-b953d53c"><span class="cl-b950f1b4">Degrees Decimal Minutes (DM or DDM)</span></p></td><td class="cl-b953f013"><p class="cl-b953d53c"><span class="cl-b950f1b4">30° 15.1667 N</span></p></td></tr></tbody></table></div>
-</div>
-</div>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td><strong>Format</strong></td>
+<td><strong>Example</strong></td>
+</tr>
+<tr class="even">
+<td>Decimal Degrees (DD)</td>
+<td>30.50833333</td>
+</tr>
+<tr class="odd">
+<td>Degrees Minutes Seconds (DMS)</td>
+<td>30° 15’ 10 N</td>
+</tr>
+<tr class="even">
+<td>Degrees Decimal Minutes (DM or DDM)</td>
+<td>30° 15.1667 N</td>
+</tr>
+</tbody>
+</table>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/coordinate_precision.png" class="img-fluid figure-img"></p>
