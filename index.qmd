@@ -4,21 +4,19 @@
 
 To paraphrase the [MARCO-BOLO data management plan](https://doi.org/10.5281/zenodo.8208410), the main challenge with biological data is that it comes in many flavors. For example, it may include evidence of past or present organisms based on physical samples, chemicals, organic molecules, sound, or images. By using standards to organize and share data efficiently, biologists can turn this diversity of data types into a strength rather than a challenge of dealing with biological data.
 
- |  |  |
-|---------------------------------|---------------------|------------------|
-| Helping People Climb | Always Feeding Back | Transparent |
-
 The [ESIP Biological Data Standards Cluster](https://wiki.esipfed.org/Biological_Data_Standards_Cluster) formed in 2020 to maximize data relevance and utility for understanding changes in biodiversity over time. The cluster’s focus has expanded to include more aspects of biology beyond biodiversity, acknowledging that biological data may be useful for many facets of earth science. To accomplish this, the cluster encourages awareness and shared understanding of biological data standards by facilitating community building and information sharing via guidance, documentation, and training for the US biological data community. The first product from this cluster, the [Biological Data Standards Primer](https://doi.org/10.6084/m9.figshare.16806712.v2), is an easy to digest resource for new biological data managers.
 
 #### Key Values
 
 In designing this resource, we focused on a few key values.
 
-{{< fa solid fa-person-hiking size=lg >}} Helping People Climb: We want to help people learn about data standards resources. We want to see higher quality data publishing in science. We were students too; we know how little of this is part of a standard science education.
+{{< fa thumbs-up >}} 
 
-{{< fa solid fa-arrows-spin size=lg  >}} Always Feeding Back: Information and standards develop too quickly to bury them in a journal. The goal here is that _you_ can immediately let us know what isn't working, or what is wrong, via GitHub issues. We're excited to work with you to make this better!
+{{< fa solid fa-person-hiking >}} Helping People Climb: We want to help people learn about data standards resources. We want to see higher quality data publishing in science. We were students too; we know how little of this is part of a standard science education.
 
-{{< fa solid fa-magnifying-glass size=lg  >}} Transparent: Sometimes standards are confusing until you understand the journey of how it was created.  Having experienced this ourselves, we want to share the conversations that helped us edit this resource.
+{{< fa solid fa-arrows-spin >}} Always Feeding Back: Information and standards develop too quickly to bury them in a journal. The goal here is that _you_ can immediately let us know what isn't working, or what is wrong, via GitHub issues. We're excited to work with you to make this better!
+
+{{< fa solid fa-magnifying-glass >}} Transparent: Sometimes standards are confusing until you understand the journey of how it was created.  Having experienced this ourselves, we want to share the conversations that helped us edit this resource.
 
 
 <iframe src="https://widgets.figshare.com/articles/16806712/embed?show_title=1" width="600" height="400" allowfullscreen frameborder="0">
