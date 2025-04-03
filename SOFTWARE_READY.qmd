@@ -121,7 +121,8 @@ A taxonomic authority is defined here as an online resource that maintains up-to
 
 Example: For the species Balaenoptera borealis (Lesson, 1828), the WoRMS taxonomic authority ID link is <https://www.marinespecies.org/aphia.php?p=taxdetails&id=137088> and the Life Science Identifier (LSID) is urn:lsid:marinespecies.org:taxname:137088.
 
-Some important considerations:
+::: {.callout-note}
+## Some important considerations
 
 -   Consider where you want to publish your data and use the existing taxonomic authority (e.g. [World Register of Marine Species](https://www.marinespecies.org/), [Integrated Taxonomic Information System](https://itis.gov/), [NCBI taxonomy](https://www.ncbi.nlm.nih.gov/taxonomy)) used in that repository
 
@@ -138,6 +139,9 @@ Some important considerations:
 -   Put notes about identification uncertainty in a separate column.
 
 -   Many authorities have APIs to facilitate matching names to identifiers.
+
+:::
+
 
 ### Why?
 
