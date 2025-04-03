@@ -10,13 +10,11 @@ The [ESIP Biological Data Standards Cluster](https://wiki.esipfed.org/Biological
 
 In designing this resource, we focused on a few key values.
 
-{{< fa thumbs-up >}} 
+{{< fa solid person-hiking >}} Helping People Climb: We want to help people learn about data standards resources. We want to see higher quality data publishing in science. We were students too; we know how little of this is part of a standard science education.
 
-{{< fa solid fa-person-hiking >}} Helping People Climb: We want to help people learn about data standards resources. We want to see higher quality data publishing in science. We were students too; we know how little of this is part of a standard science education.
+{{< fa solid arrows-spin >}} Always Feeding Back: Information and standards develop too quickly to bury them in a journal. The goal here is that _you_ can immediately let us know what isn't working, or what is wrong, via GitHub issues. We're excited to work with you to make this better!
 
-{{< fa solid fa-arrows-spin >}} Always Feeding Back: Information and standards develop too quickly to bury them in a journal. The goal here is that _you_ can immediately let us know what isn't working, or what is wrong, via GitHub issues. We're excited to work with you to make this better!
-
-{{< fa solid fa-magnifying-glass >}} Transparent: Sometimes standards are confusing until you understand the journey of how it was created.  Having experienced this ourselves, we want to share the conversations that helped us edit this resource.
+{{< fa solid magnifying-glass >}} Transparent: Sometimes standards are confusing until you understand the journey of how it was created.  Having experienced this ourselves, we want to share the conversations that helped us edit this resource.
 
 
 <iframe src="https://widgets.figshare.com/articles/16806712/embed?show_title=1" width="600" height="400" allowfullscreen frameborder="0">
