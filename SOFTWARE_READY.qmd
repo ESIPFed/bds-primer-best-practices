@@ -6,7 +6,7 @@ Those sharing or managing data can take small steps to make them “software rea
 
 ### **What is it?** 
 
-Non-proprietary file formats do not require specific software and can be accessed without licenses and within different software systems.For example, comma separated values (CSV) format is becoming an increasingly popular non-proprietary format compared to the proprietary .xlsx format.
+Non-proprietary file formats do not require specific software and can be accessed without licenses and within different software systems. For example, comma separated values (CSV) format is becoming an increasingly popular non-proprietary format compared to the proprietary .xlsx format.
 
 ### Why?
 
@@ -94,7 +94,7 @@ flextable(long_example) %>%
 ### Top Resources
 
 -   [Wickham, H. (2014)](https://doi.org/10.18637/jss.v059.i10). Tidy Data. Journal of Statistical Software, 59(10), 1–23.\
-    [Video](https://www.youtube.com/watch?v=N2zK3s=Atr-4&t=7s): Data Sharing and Management Snafu in 3 Short Acts (video)
+-   [Video](https://www.youtube.com/watch?v=N2zK3s=Atr-4&t=7s): Data Sharing and Management Snafu in 3 Short Acts (video)
 
 -   [Tips](https://www.datafix.com.au/BASHing/2022-01-12.html) for working with data in BASH
 
@@ -107,11 +107,11 @@ flextable(long_example) %>%
 
 ### What is it?
 
-ISO 8601 is a convention for dates and times, where dates are listed as YYYY-MM-DD and time is given in Coordinated Universal Time (UTC, Zulu, or GMT) which is the time standard, relative to 0o longitude, that regulates global clocks.
+ISO 8601 is a convention for dates and times, where dates are listed as YYYY-MM-DD and time is given in Coordinated Universal Time (UTC, Zulu, or GMT) which is the time standard, relative to 0 longitude, that regulates global clocks.
 
 The following table outlines how to write dates, times, and time intervals using ISO 8601:
 
-*Examples: April 3, 2023 standardized to ISO 8601*
+*Examples: different timezone annotation details for April 3, 2023 standardized to ISO 8601*
 
 ```{r}
 
@@ -136,35 +136,6 @@ tab1 <-
       "2023-04-03T18:29:38Z/2023-04-05T00:29:38Z"
     )
   )
-
-flextable(tab1) %>%
-  #set_caption(caption = "") %>%
-  autofit() %>%  
-  fontsize(size = 9) %>% 
-  theme_zebra()
-
-```
-
-*Examples: different styles of timezone annotation*
-
-```{r}
-
-#| label: tbl-datetime2
-#| echo: FALSE
-#| message: FALSE
-#| warnings: FALSE
-#| results: 'asis'}
-
-tab2 <-
-  tibble(
-    "Description" = c("Date and Time with timezone offset", "Date and Time in UTC"),
-    "Example" = c("2023-04-03T18:29:38+00:00", "2023-04-03T18:29:38Z"),
-    "Annotation" = c(
-      "YYYY-MM-DD[the letter capital T]HH:MM:SS+[Timezone offset]",
-      "YYYY-MM-DD[capital T]HH:MM:SS+[capital Z to indicate an offset of zero]"
-    )
-  )
-
 
 flextable(tab1) %>%
   #set_caption(caption = "") %>%
