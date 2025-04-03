@@ -4,7 +4,7 @@
 
 To paraphrase the [MARCO-BOLO data management plan](https://doi.org/10.5281/zenodo.8208410), the main challenge with biological data is that it comes in many flavors. For example, it may include evidence of past or present organisms based on physical samples, chemicals, organic molecules, sound, or images. By using standards to organize and share data efficiently, biologists can turn this diversity of data types into a strength rather than a challenge of dealing with biological data.
 
-|{{< fa solid fa-person-hiking size=lg >}}| {{< fa solid fa-arrows-spin size=lg  >}} | {{< fa solid fa-magnifying-glass size=lg  >}} |
+|{{< fa solid fa-person-hiking size=lg >}} | {{< fa solid fa-arrows-spin size=lg  >}} | {{< fa solid fa-magnifying-glass size=lg  >}} |
 |---------------------------------|---------------------|------------------|
 | Helping People Climb | Always Feeding Back | Transparent |
 
