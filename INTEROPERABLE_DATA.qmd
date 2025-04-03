@@ -2,7 +2,7 @@
 
 Controlled vocabularies can provide standardized terms and definitions for biological concepts, like biological taxonomies. Using a controlled vocabulary facilitates the integration and sharing of data across diverse sources, improving consistency and data quality, for example, in species classification.
 
-## Catalogue of Life (COL)
+## Catalogue of Life (COL) 
 
 ### What Is It?
 
@@ -62,7 +62,7 @@ The [Paleobiology Database](https://paleobiodb.org/) (PBDB) is an online, expert
 
 -   The same Resources page also includes information on how to contribute taxonomic information to PBDB. Lessons are available via a [playlist of YouTube](https://www.youtube.com/watch?v=C06cjzcSDq4&list=PLmOEA6rrJ1dc3a4-etDDGQ7tQG1sEK0g6) videos. Note that you will need to be granted Contributory User access to contribute to PBDB. More information about the process and different user types is available in the [PBDB User Guide](https://escholarship.org/content/qt6tm05630/qt6tm05630.pdf?t=s0797i).
 
-## World Register of Marine Species (WoRMS)
+## World Register of Marine Species (WoRMS) 🐋
 
 ### What Is It?
 
@@ -70,7 +70,7 @@ The World Register of Marine Species (WoRMS) is an authoritative and comprehensi
 
 ### **Why?**
 
--   WoRMS content is curated by taxonomic and thematic experts, not by database managers. 
+-   WoRMS content is curated by taxonomic and thematic marine experts. 
 
 -   Each taxonomic group is represented by an expert who has the authority over the content, and is responsible for controlling the quality of the information. Each of these main taxonomic editors can invite several specialists of smaller groups within their area of responsibility to join them. 
 
@@ -100,7 +100,7 @@ CMECS (and the NVC and Wetlands standards) were endorsed by the US FGDC so that 
 
 Combined with international ontologies like ENVO, which is used by UNESCO, for example, the reach of your data will become global.
 
-## CMECS
+## CMECS 
 
 ### **What is it?** 
 
