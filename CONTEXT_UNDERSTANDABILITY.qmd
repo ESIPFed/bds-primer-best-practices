@@ -72,7 +72,7 @@ ISO-19115 is a metadata standard, developed and maintained by the [International
 
 -   It is used by the International Nucleotide Sequence Database Collection ([INSDC](https://www.insdc.org/)), which has the following member participating databases: [ROIS - NIG](https://www.ddbj.nig.ac.jp/index-e.html), [EMBL-EBI](https://www.ebi.ac.uk/ena/browser/home) and [NCBI](https://submit.ncbi.nlm.nih.gov/).
 
-### Top References
+### Top Resources
 
 -   [MIxS Term Search Tool](http://www.gensc.org/pages/standards/search-terms.html)
 
