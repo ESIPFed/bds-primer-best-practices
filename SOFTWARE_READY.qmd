@@ -40,13 +40,13 @@ The following example shows two different formats – wide and long – of the s
 
 -   It is easier to aggregate data across multiple files
 
-*Example of Wide Format*
 
-|                 |             |             |             |
-|-----------------|-------------|-------------|-------------|
 | **species**     | **site_01** | **site_02** | **site_03** |
+|-----------------|-------------|-------------|-------------|
 | Tilia americana | 4           | 2           | 4           |
 | Pinus strobus   | 3           | 3           | 3           |
+
+: Example of Wide Format {.striped .hover}
 
 *Example of Long Format*
 
