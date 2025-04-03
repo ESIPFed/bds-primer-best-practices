@@ -8,7 +8,7 @@ Metadata standards ensure that data are described using a consistent structure a
 
 [Ecological Metadata Language](https://eml.ecoinformatics.org/eml-ecological-metadata-language) (EML) is a metadata schema (i.e. standard) that was developed by the ecological community for ecological data, including biological data. Shared data can include an EML file that provides context for all files in the data “package”. EML is presented in [Extensible Markup Language](https://www.w3schools.com/xml/) (XML), which provides standard details for ecological data in a structure that is readable to both people and machines.
 
-For more information, see the full [EML documentation](https://eml.ecoinformatics.org/eml-schema) or the National Center for Ecological Analysis and Synthesis (NCEAS)][EML GitHub repository](https://github.com/NCEAS/eml).
+For more information, see the full [EML documentation](https://eml.ecoinformatics.org/eml-schema) or the National Center for Ecological Analysis and Synthesis (NCEAS) [EML GitHub repository](https://github.com/NCEAS/eml).
 
 ### Why?
 
@@ -72,7 +72,7 @@ ISO-19115 is a metadata standard, developed and maintained by the [International
 
 -   It is used by the International Nucleotide Sequence Database Collection ([INSDC](https://www.insdc.org/)), which has the following member participating databases: [ROIS - NIG](https://www.ddbj.nig.ac.jp/index-e.html), [EMBL-EBI](https://www.ebi.ac.uk/ena/browser/home) and [NCBI](https://submit.ncbi.nlm.nih.gov/).
 
-### Top References
+### Top Resources
 
 -   [MIxS Term Search Tool](http://www.gensc.org/pages/standards/search-terms.html)
 

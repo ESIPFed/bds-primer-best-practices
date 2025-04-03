@@ -4,7 +4,7 @@ Biodiversity data are collected and managed in many different systems and enviro
 
 ## Darwin Core 🐘
 
-### What Is It: 
+### What Is It? 
 
 [Darwin Core](https://dwc.tdwg.org) (DwC) is a data standard that offers a stable, simple, and flexible framework for compilation and reuse of biodiversity data, including observations, specimens, samples, and related information, from varied and variable sources. DwC builds upon [Dublin Core](https://esipfed.github.io/bds-primer-best-practices/MAKE_YOUR_DATA_INTERNET_READY.html#dublin-core), a set of metadata terms used by libraries to describe physical and digital resources, to describe biological occurrences. The DwC glossary of terms provides identifiers, labels, and definitions to map occurrence information from multiple sources in a cohesive and interpretable way. 
 
@@ -32,7 +32,7 @@ A single dataset, known as the Darwin Core Archive (DwC-A), is a compressed (e.g
 
 ## Climate and Forecast (CF) 🌍
 
-### What Is It:
+### What Is It?
 
 The [Climate and Forecast (CF) Metadata Conventions](https://cfconventions.org) provide a framework to clarify details about the context of each piece of data: a description of what the data in each variable represents and their spatial and temporal properties. CF was designed to represent geolocations and times of Earth science data, the physical quantities that the data represent, and other ancillary information.
 

@@ -54,7 +54,7 @@ The [Paleobiology Database](https://paleobiodb.org/) (PBDB) is an online, expert
 
 -   PBDB provides the taxonomic backbone to the Global Biodiversity Information Facility (GBIF). This means aligning your taxonomic names with PBDB will make the process of sharing your data easier.
 
-### **Resources**
+### **Top Resources**
 
 -   PBDB can be accessed via their [website](https://paleobiodb.org/), [mobile applications](https://paleobiodb.org/#/resources), and an [API](https://paleobiodb.org/data1.2/).
 
