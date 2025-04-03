@@ -130,6 +130,86 @@
     ]
   },
   {
+    "objectID": "INTEROPERABLE_DATA.html#habitat-classification",
+    "href": "INTEROPERABLE_DATA.html#habitat-classification",
+    "title": "4  Make Your Data Interoperable",
+    "section": "4.5 Habitat Classification",
+    "text": "4.5 Habitat Classification\n\nWhat is it?\nHabitat classification is the process of organizing quantitative observations (i.e., data collected by various methods and instruments) about the natural world into meaningful, human-understandable representations and descriptions. Habitat classification standards or systems provide terminology and methodology or guidance so that classification can be performed in a standard manner by individual projects and programs.\nFrom CMECS p. 2: “The purpose of habitat classification is “to provide a language through which data and information regarding habitats can be communicated and managed” (McDougall, Janowicz, and Taylor 2007).”\nSimilarities and differences between vocabularies, when to use each one? These are legitimate ‘vocabularies’ as opposed to an ontology.  From a perspective of making data interoperable, using these terms, but specifically the ENVO version (which would be more specific) will help data be more interoperable over time.\n\n\nWhy?\nCMECS (and the NVC and Wetlands standards) were endorsed by the US FGDC so that data collectors and analysts can describe data using standard terminology and organization structures. This enables data discovery and thereby data use and re-use of Federally funded data assets. Standardized classifications of observational data also allows the information derived from individual projects to be compared with each other and compiled into larger and more extensive representations across space and time. This advances the collective scientific knowledge of natural systems and enables coordinated management activities, such as regional assessments, monitoring and restoration between partners.\nCombined with international ontologies like ENVO, which is used by UNESCO, for example, the reach of your data will become global.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Make Your Data Interoperable</span>"
+    ]
+  },
+  {
+    "objectID": "INTEROPERABLE_DATA.html#cmecs",
+    "href": "INTEROPERABLE_DATA.html#cmecs",
+    "title": "4  Make Your Data Interoperable",
+    "section": "4.6 CMECS",
+    "text": "4.6 CMECS\n\nWhat is it?\nThe Coastal and Marine Ecological Classification Standard (CMECS) is a structured dictionary of terms that describe benthic habitats in marine, estuarine, and lacustrine settings. It was developed by a consortium of scientists and coastal managers to meet the needs of inventorying, monitoring and managing natural resources in US and territorial waters. CMECS terms are organized in a spatially-scaled framework for annotating geospatial data and integrating information about the physical components of aquatic habitats that enables three-dimensional representations of ecological conditions for associating with faunal behavior.\n\n\nWhy should you use it?\nCMECS is endorsed as a Federal Geographic Data Committee (FGDC) standard in the U.S. and should be used by all federally funded projects that involve aquatic environmental data. Using CMECS allows for broader analytical applications of data.\n\n\nHow to use it?\nYou can read more about the CMECS standard, how to use it (including examples), and how to contribute to the improvement of CMECS by visiting this website.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Make Your Data Interoperable</span>"
+    ]
+  },
+  {
+    "objectID": "INTEROPERABLE_DATA.html#nvcs",
+    "href": "INTEROPERABLE_DATA.html#nvcs",
+    "title": "4  Make Your Data Interoperable",
+    "section": "4.7 NVCS",
+    "text": "4.7 NVCS\n\nWhat is it?\nThe U.S National Vegetation Classification (USNVC) is a comprehensive classification system for all vegetation types in the United States. Much like a flora for plant species, the USNVC offers a hierarchy of classification levels from coarse to fine, providing a common language for the effective management and conservation of plant communities in the U.S. Furthermore, it is governed by standards for vegetation data collection and analysis, ensuring consistent reporting on the nation’s vegetation resources. \nThe USNVC provides a common language for the effective management and conservation of plant communities. A collaboration between the Ecological Society of America (ESA), NatureServe, and various federal agencies, the USNVC is the only standardized vegetation classification system for the United States. The framework of the standard allows for communication and cooperation on vegetation management issues that cross jurisdictional boundaries.\nAs a dynamic standard, the USNVC is designed to be easily adapted as new ecological knowledge becomes available. This as well as its hierarchical nature makes the classification scalable for diverse applications from vegetation monitoring to broad-scale analyses of trends across North America. Additional applications include:\n\nModeling and mapping wildlife habitat\nEnhancing natural resource conservation efforts \nFire management planning and modeling\nStudying patterns of vegetation change over time \nManaging invasive species\nLand inventory and mapping programs \nSetting national vegetation policies (e.g., biofuels, carbon markets, ecosystem services)\n\n\n\nWhy should you use it?\nLand management agencies are actively engaged in inventory and monitoring vegetation resources across the nation.  However, while vegetation classification is integral to the successful functioning of a variety of groups across all jurisdictional boundaries, no single agency has been tasked with the sole purpose of mapping or describing vegetation in the United States. As a result, many agencies have created their own protocols, resulting in data that is incompatible across jurisdictional boundaries. The USNVC was created to address this need.\n\n\nHow to use it?\n\nDetails\n\nhttps://usnvc.org/\nhttps://www.esa.org/vegpanel/resources/outreach-and-education/",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Make Your Data Interoperable</span>"
+    ]
+  },
+  {
+    "objectID": "INTEROPERABLE_DATA.html#nwcs",
+    "href": "INTEROPERABLE_DATA.html#nwcs",
+    "title": "4  Make Your Data Interoperable",
+    "section": "4.8 NWCS",
+    "text": "4.8 NWCS\n\nWhat is it?\nThe primary objective of the Classification of Wetlands and Deepwater Habitats of the United States, as originally drafted by Cowardin et al. (1979:3), was “to impose boundaries on natural ecosystems for the purposes of inventory, evaluation, and management.” The FGDC Wetlands Classification Standard (WCS) provides minimum requirements and guidelines for classification of both wetlands and deepwater habitats that are consistent with the FGDC Wetlands Mapping Standard (FGDC-STD-015-2009). \n\n\nWhy should you use it?\nThe Classification of Wetlands and Deepwater Habitats of the United States (Cowardin et al. 1979) was developed to support a detailed inventory and periodic monitoring of the Nation’s wet habitats using remote sensing. It became a National Standard in 1996 (FGDC-STD-004), but has been the de facto standard for mapping U.S. wetlands and deepwater habitats since 1976\n\n\nHow to use it?\n\nDetails\n\nhttps://www.fgdc.gov/standards/projects/wetlands/index_html\nhttps://www.fgdc.gov/standards/projects/wetlands/nwcs-2013\nhttps://www.fws.gov/program/national-wetlands-inventory/classification-codes",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Make Your Data Interoperable</span>"
+    ]
+  },
+  {
+    "objectID": "INTEROPERABLE_DATA.html#controlled-vocabularies",
+    "href": "INTEROPERABLE_DATA.html#controlled-vocabularies",
+    "title": "4  Make Your Data Interoperable",
+    "section": "4.9 Controlled Vocabularies",
+    "text": "4.9 Controlled Vocabularies\n\nWhat is it?\nControlled vocabulary are predefined, preferred terms or definitions that describe a specific entity, collection, parameter or unit of measurement to standardize information. They are used for indexing and annotating data and associated information (metadata) in database and data files. Controlled vocabularies have been carefully preselected by the designers of the specific schema.\nThere are processed through community groups and should be responsive to community needs.  You can get involved in them.\n\n\nWhy should you use it?\nControlled vocabularies facilitate searching for data in web portals, and enable records to be interpreted by computers, facilitating automated data workflows, computer aided manipulation, distribution, and interoperability. They reduce ambiguity around terms, where the same concept can be given multiple names. Including controlled vocabulary ensures consistency, facilitates machine and human information retrieval and long-term reuse.\n\n\nControlled Vocabularies to Know About",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Make Your Data Interoperable</span>"
+    ]
+  },
+  {
+    "objectID": "INTEROPERABLE_DATA.html#envo-environmental-ontology",
+    "href": "INTEROPERABLE_DATA.html#envo-environmental-ontology",
+    "title": "4  Make Your Data Interoperable",
+    "section": "4.10 ENVO: Environmental Ontology",
+    "text": "4.10 ENVO: Environmental Ontology\n\nWhat is it?\nOntology describes a set of concepts or categories in a domain and shows their properties and the relations between them. The Environmental Ontology (ENVO) is a domain ontology of environmental systems, ecosystems, components and processes to increase the interoperability of environmental descriptions. Additional information on ENVO can be found in the Wiki’s on their GitHub repository.\n\n\nWhy should you use it?\nWhile it started out as a relatively simple controlled and structured vocabulary to support the metadata checklist of the Genomic Standards Consortium (GSC), it has matured to support a wide range of initiatives ranging from individual research projects to inter-governmental data. This evolution is further guided by collaborations between the ESIP Federation, UN Environmental and IOC-UNESCO. ENVO now provides a comprehensive standardized vocabulary for describing habitats, ecosystems and environmental processes. \nUsed internationally - global reach vs. US-reach. \nENVO = controlled vocabulary + relationships + more…\n\n\nHow to use it?\nENVO can be used to annotate data or metadata records in many ways. Every annotation should contain either:\n\nThe full internationalized resource identifier (IRI) of the term used (e.g. http://purl.obolibrary.org/obo/ENVO_01000228)\nThe CURIE form of the terms’ identifier (e.g. ENVO:01000228)\n\nThe IRI and identifier are locked to the definition or semantics of the term and don’t change. ENVO terms can also be used within the MIxS metadata standard (see here), for example to describe the materials that compose your sample or the environment where the sample was collected.\nSeveral portals and ontology browsing interfaces already harvest from ENVO.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Make Your Data Interoperable</span>"
+    ]
+  },
+  {
+    "objectID": "INTEROPERABLE_DATA.html#nerc-national-environmental-research-council",
+    "href": "INTEROPERABLE_DATA.html#nerc-national-environmental-research-council",
+    "title": "4  Make Your Data Interoperable",
+    "section": "4.11 NERC: National Environmental Research Council",
+    "text": "4.11 NERC: National Environmental Research Council\n\nWhat is it?\nThe NVS gives access to standardized and hierarchically-organized vocabularies. It is managed by the British Oceanographic Data Centre at the National Oceanography Centre (NOC) in Liverpool and Southampton, and receives funding from the Natural Environment Research Council (NERC) in the United Kingdom.\n\n\nWhy should you use it?\nBy connecting terms held in controlled lists using standards, the data described by these controlled vocabularies become more interoperable and hence more broadly reusable. It becomes possible to build a truly distributed and interoperable data ecosystem across domain boundaries, enabling data reuse no matter the purpose for which they were collected in the first place.\n\n\nHow to use it?\nThe NVS Search (nerc.ac.uk) can be used to find controlled vocabulary terms",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Make Your Data Interoperable</span>"
+    ]
+  },
+  {
+    "objectID": "INTEROPERABLE_DATA.html#global-change-master-directory-gcmd-keywords",
+    "href": "INTEROPERABLE_DATA.html#global-change-master-directory-gcmd-keywords",
+    "title": "4  Make Your Data Interoperable",
+    "section": "4.12 Global Change Master Directory (GCMD) Keywords",
+    "text": "4.12 Global Change Master Directory (GCMD) Keywords\n\nWhat is it?\nThe Global Change Master Directory (GCMD) Keywords are a standardized set of terms used to describe Earth science data sets and services. They serve as a common language for categorizing and searching for data related to Earth science, environmental science, and global change research\n\n\nWhy should you use it?\nGCMD Keywords provide a standardized vocabulary for describing Earth science data, ensuring consistency and interoperability across different data sets and repositories. The GCMD keywords describe Earth science data and services consistently and comprehensively in a hierarchical format and follow a codified governance process. The power of the keywords is in their ability to enable scientists to tag their data using a taxonomy of controlled scientific categories. This, in turn, allows those searching for data to discover datasets easily through the use of an established hierarchy.\n\n\nHow to use it?\nGlobal Change Master Directory (GCMD) Keywords are a hierarchical set of controlled Earth Science vocabularies that help ensure Earth science data, services, and variables are described in a consistent and comprehensive manner and allow for the precise searching of metadata and subsequent retrieval of data, services, and variables. Initiated over twenty years ago, GCMD Keywords are periodically analyzed for relevancy and will continue to be refined and expanded in response to user needs. The categories of GCMD Keywords are as follows:\n\nEarth Science\nEarth Science Services\nData Centers/Service Providers\nProjects\nInstruments/Sensors\nPlatforms/Sources\nLocations\nHorizontal Data Resolution\nVertical Data Resolution\nTemporal Data Resolution\nURL Content Types\nGranule Data Formats\nMeasurement Names\nChronostratigraphic Units\n\nMore information can be found here:Global Change Master Directory (GCMD) Keywords | Earthdata (nasa.gov)",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Make Your Data Interoperable</span>"
+    ]
+  },
+  {
     "objectID": "MAKE_YOUR_DATA_INTERNET_READY.html",
     "href": "MAKE_YOUR_DATA_INTERNET_READY.html",
     "title": "5  Make Your Data Internet Ready",
