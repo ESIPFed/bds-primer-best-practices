@@ -200,22 +200,23 @@ ul.task-list li input[type="checkbox"] {
 <h2 data-number="3.2" class="anchored" data-anchor-id="climate-and-forecast-cf"><span class="header-section-number">3.2</span> Climate and Forecast (CF)</h2>
 <section id="what-is-it-1" class="level3">
 <h3 class="anchored" data-anchor-id="what-is-it-1">What Is It:</h3>
-<p>The <a href="https://cfconventions.org">Climate and Forecast (CF) Metadata Conventions</a> provide a framework to clarify details about the context of each piece of data: a description of what the data in each variable represents and their spatial and temporal properties. Although CF is well-established, it is imperfect for biological data, but terms from CF are often applicable in biological data. CF units are specified using the <a href="https://cfconventions.org/faq.html#units-in-cf-udunits">UDUNITS system</a>. CF conventions are built on top of the <a href="https://www.ogc.org/publications/standard/netcdf/">netCDF (Network Common Data Form) standard</a> and promote the processing and sharing of netCDF files created with the <a href="https://psl.noaa.gov/data/gridded/whatsnetCDF.html">NetCDF</a> API, so standards like <a href="https://ferret.pmel.noaa.gov/noaa_coop/coop_cdf_profile.html">COARDS conventions</a> are applied.</p>
-<p>For more information, see overviews of CF as a <a href="https://cfconventions.org/Data/cf-documents/overview/viewgraphs.pdf">presentation</a> and <a href="https://cfconventions.org/Data/cf-documents/overview/article.pdf">paper</a>.</p>
+<p>The <a href="https://cfconventions.org">Climate and Forecast (CF) Metadata Conventions</a> provide a framework to clarify details about the context of each piece of data: a description of what the data in each variable represents and their spatial and temporal properties. CF was designed to represent geolocations and times of Earth science data, the physical quantities that the data represent, and other ancillary information.</p>
+<p>Although CF is well-established, the original intended purpose that has guided it’s development means it can conflict with traditional, or intuitive ideas about describing biological data. Still, terms from CF are often applicable to peripheral context of biological data.</p>
+<p>Like many standards, CF is built on other standards. For example, units are specified using the <a href="https://cfconventions.org/faq.html#units-in-cf-udunits">UDUNITS system</a> and files formats are defined by the <a href="https://www.ogc.org/publications/standard/netcdf/">netCDF (Network Common Data Form) standard</a>. These standards have been around for about 30 years, and have facilitated the efficient processing and sharing ofclimate and oceanographic data.</p>
+<p>For more information, see overviews of CF as a <a href="https://cfconventions.org/Data/cf-documents/overview/viewgraphs.pdf">presentation</a> and <a href="https://cfconventions.org/Data/cf-documents/overview/article.pdf">paper</a>. You can also check out the presentation Roy Lowry gave to our ESIP cluster back in April, 2022:</p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/yOJhP9995TU?feature=shared&amp;t=469" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 </section>
 <section id="why-1" class="level3">
 <h3 class="anchored" data-anchor-id="why-1">Why?</h3>
 <ul>
-<li><p>CF enables users of data from different sources to decide which quantities are comparable.</p></li>
-<li><p>It facilitates building applications with powerful extraction, regridding, and display capabilities.&nbsp;</p></li>
-<li><p>A CF principle is self-contained, meaning as general and well-defined as possible, so the reader does not have to access outside sources to understand the terms.</p></li>
-<li><p>There are many efforts that use CF, including the <a href="https://www.ncei.noaa.gov/">National Centers for Environmental Information (NCEI)</a> and <a href="https://www.earthdata.nasa.gov/">NASA EarthData</a> repositories. For a longer list, please see <a href="https://cfconventions.org/projects-activities.html">here</a>.</p></li>
-<li><p>The <a href="https://vocab.nerc.ac.uk/">NERC Vocabulary Server</a> hosts CF and maps it to other vocabularies.&nbsp;</p></li>
+<li><p>If you’re a biologist who works in the realm of oceanography and climate science, becoming familiar with CF conventions is a good idea because it will help you hit the ground running with data from the <a href="https://www.ncei.noaa.gov/">National Centers for Environmental Information (NCEI)</a> and <a href="https://www.earthdata.nasa.gov/">NASA EarthData</a> repositories (For a longer list or repositories, see <a href="https://cfconventions.org/projects-activities.html">here</a>)</p></li>
+<li><p>It’s also worthwhile to become familiar with CF because it is a reasonably long-lived and tested standard. It has lasted through the ups and downs of technological and scientific progress, which is a tribute to the utility of the standard and the community behind it.</p></li>
 </ul>
 </section>
 <section id="top-resources-1" class="level3">
 <h3 class="anchored" data-anchor-id="top-resources-1"><strong>Top Resources</strong></h3>
 <ol type="1">
+<li><p>The <a href="https://vocab.nerc.ac.uk/">NERC Vocabulary Server</a> hosts CF and maps it to other vocabularies.&nbsp;</p></li>
 <li><p>To find standard names that describe your data, open up the latest <a href="https://cfconventions.org/vocabularies.html">Standard Name table</a> (as HTML or XML) and search through it for words typically used for your data.</p></li>
 <li><p>CF is developed and maintained by the community using GitHub. To propose changes, ask questions, see the <a href="https://github.com/cf-convention">CF GitHub repositories</a>.</p></li>
 </ol>
