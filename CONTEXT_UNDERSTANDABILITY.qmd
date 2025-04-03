@@ -1,20 +1,20 @@
 # Provide Context and Understandability to Your Data
 
-Metadata standards ensure that data are described using a consistent structure and format to provide necessary context for users across the data lifecycle from data management to accessibility and interoperability. In biological data, there are a few important metadata standards to be aware of: the Ecological Metadata Language (EML), ISO-19115, and MIxS.
+Metadata standards ensure that data are described using a consistent structure and format to provide necessary context for users across the data lifecycle from data management to accessibility and interoperability. In biological data, there are a few metadata standards to be aware of: the Ecological Metadata Language (EML), ISO-19115, and MIxS.
 
-## Ecological Metadata Language (EML)
+## Ecological Metadata Language (EML) 🍃
 
 ### What Is It?
 
-[Ecological Metadata Language](https://eml.ecoinformatics.org/eml-ecological-metadata-language) (EML) is a metadata schema (i.e. standard) that was developed by the ecological community for ecological data, including biological data. Shared data can include an EML file that provides context for all files in the data “package”. EML is presented in [Extensible Markup Language (XML), which provides standard details for ecological data in a structure that is readable to both people and machines](https://www.w3schools.com/xml/).
+[Ecological Metadata Language](https://eml.ecoinformatics.org/eml-ecological-metadata-language) (EML) is a metadata schema (i.e. standard) that was developed by the ecological community for ecological data, including biological data. Shared data can include an EML file that provides context for all files in the data “package”. EML is presented in [Extensible Markup Language (XML)](https://www.w3schools.com/xml/), which provides standard details for ecological data in a structure that is readable to both people and machines.
 
-For more information, see the full [EML documentation or the National Center for Ecological Analysis and Synthesis (NCEAS) ](https://eml.ecoinformatics.org/eml-schema)[EML GitHub repository](https://github.com/NCEAS/eml).
+For more information, see the full [EML documentation or the National Center for Ecological Analysis and Synthesis (NCEAS)](https://eml.ecoinformatics.org/eml-schema)[EML GitHub repository](https://github.com/NCEAS/eml).
 
 ### Why?
 
 -   It provides context and improves reproducibility of the data.
 
--   It captures important links and relationships between data, such as a time series, hierarchical taxonomies, IDs, and authoritative material.
+-   It captures important links and relationships between data, such as a time series, hierarchical taxonomies, IDs, and authoritative reference points and vocabularies.
 
 -   EML helps represent ecological information in a standardized way.
 
@@ -34,11 +34,11 @@ Tools or packages to help write EML:
 
     -   [EMLAssemblyline (built on EML-R package)](https://ediorg.github.io/EMLassemblyline/articles/overview.html)
 
--   For scientists or those not inclined to write scripts:
+-   For those not inclined to write scripts:
 
     -   [ezEML](https://ezeml.edirepository.org/)
 
-## ISO 19115
+## ISO 19115 🗺️
 
 ### **What Is It?**
 
@@ -60,7 +60,7 @@ ISO-19115 is a metadata standard, developed and maintained by the [International
 
 -   [mdToolkit](https://www.mdtoolkit.org/home) - mdEditor is a writer for ISO 19115 metadata which uses mdJSON as an intermediary and mdTranslator allows translation to different metadata formats
 
-## Minimum Information about any (x) Sequence (MIxS)
+## Minimum Information about any (x) Sequence (MIxS) 🧬
 
 ### What Is It?
 
@@ -68,7 +68,7 @@ ISO-19115 is a metadata standard, developed and maintained by the [International
 
 ### Why?
 
--   It helps to provide minimal standardized metadata about genetic sequence data.
+-   It helps to provide standardized metadata about genetic sequence data.
 
 -   It is used by the International Nucleotide Sequence Database Collection ([INSDC](https://www.insdc.org/)), which has the following member participating databases: [ROIS - NIG](https://www.ddbj.nig.ac.jp/index-e.html), [EMBL-EBI](https://www.ebi.ac.uk/ena/browser/home) and [NCBI](https://submit.ncbi.nlm.nih.gov/).
 
