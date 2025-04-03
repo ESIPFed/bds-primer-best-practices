@@ -4,7 +4,7 @@ Those sharing or managing data can take small steps to make them “software rea
 
 ## Use non-proprietary formats
 
-### **What is it?** 
+### **What is it?**
 
 Non-proprietary file formats do not require specific software and can be accessed without licenses and within different software systems. For example, comma separated values (CSV) format is becoming an increasingly popular non-proprietary format compared to the proprietary .xlsx format.
 
@@ -14,7 +14,7 @@ Non-proprietary file formats do not require specific software and can be accesse
 
 -   Aligns better with the [FAIR data principles](https://www.go-fair.org/fair-principles/)
 
--   Makes data more socially equitable, supporting open science
+-   Supports [open science](https://en.wikipedia.org/wiki/Open_science).
 
 -   Many applications (e.g. Microsoft Office) allow exporting into multiple formats, which makes it easy to share data in non-proprietary formats even if it was created using proprietary software.
 
@@ -94,6 +94,7 @@ flextable(long_example) %>%
 ### Top Resources
 
 -   [Wickham, H. (2014)](https://doi.org/10.18637/jss.v059.i10). Tidy Data. Journal of Statistical Software, 59(10), 1–23.\
+
 -   [Video](https://www.youtube.com/watch?v=N2zK3s=Atr-4&t=7s): Data Sharing and Management Snafu in 3 Short Acts (video)
 
 -   [Tips](https://www.datafix.com.au/BASHing/2022-01-12.html) for working with data in BASH
@@ -103,7 +104,7 @@ flextable(long_example) %>%
 -   [Cleaning Data and Quality Control\
     ](https://edirepository.org/resources/cleaning-data-and-quality-control#data-table-structure)
 
-## Follow ISO 8601 for dates 
+## Follow ISO 8601 for dates
 
 ### What is it?
 
@@ -171,7 +172,7 @@ flextable(tab1) %>%
 
 ## Match scientific names to a taxonomic authority
 
-### **What is it?** 
+### **What is it?**
 
 A taxonomic authority is defined here as an online resource that maintains up-to-date species-level classification information and provides persistent identifiers (ID) for taxonomic classifications.
 
@@ -189,7 +190,7 @@ Some important considerations:
 
 -   When possible, reference the unique identifier in addition to the nomenclature.
 
--   Always save and document the originally recorded name.
+-   If possible, save and document the originally recorded name.
 
 -   Put notes about identification uncertainty in a separate column.
 
@@ -198,7 +199,7 @@ Some important considerations:
 ### Why?
 
 -   To integrate or aggregate datasets, we need a common frame of reference for taxonomic name
--   Provides an anchor for the taxonomy as scientific understanding evolves.
+-   Provides an anchor for the taxonomy as scientific understanding evolves. We get more into that over in [section 4](INTEROPERABLE_DATA.qmd).
 
 ### Top Resources
 
@@ -280,11 +281,11 @@ flextable(ds) %>%
 
 ## Use persistent unique identifiers
 
-### Why?
+### **What is it?**
 
--   It can be useful to have unique identifiers to unambiguously identify granules of information, e.g. dataset, collection, database, taxonomic concept, etc. This will allow users to precisely refer to the data and allow your data to remain identifiable when aggregated with other datasets.
--   To be able to uniquely identify a record in your data system or across data systems. Useful to create relational databases or merge records.
--   Although it increases workload, it safeguards against confusion and inefficiency in the future.
+Persistent unique identifiers (PIDs) are globally unique identifiers to unambiguously identify granules of information in a machine-readable way. Identifiers can exist in acquired data, or they may be created. It is important to manage any identifiers you create, if they are not managed by an authority (e.g. DOIs).
+
+PIDs can capture details about the underlying sampling event (e.g., the PID `Station_95_Date_09JAN1997:14:35:00.000` is comprised of the time and place of sampling), or they can be opaque (i.e., not indicating anything about the content, e.g., the `PID 10FC9784-B30F-48ED-8DB5-FF65A2A9934E`), or semi-opaque. There are sometimes good reasons to keep an identifier opaque, but transparent or semi-opaque identifiers can guide humans as well as machines.
 
 ### Key Information
 
@@ -295,61 +296,43 @@ flextable(ds) %>%
 -   It is important to manage any identifiers you create, if they are not managed by an authority (e.g. DOIs).
 -   Important that it be persistent (consider samples possibly moving between institutions)
 
-*Examples of PIDs*
+Examples of PIDs
 
-```{r}
++-------------------------------------------------+------------------------------------------------------------------------+-------------------------------------------------+
+| **Type of PID**                                 | **Use Case**                                                           | **Example**                                     |
++-------------------------------------------------+------------------------------------------------------------------------+-------------------------------------------------+
+| Digital Object Identifier (DOI)                 | Actionable persistent link for papers, data, and other digital objects | https://doi.org/10.6084/m9.figshare.16806712.v2 |
++-------------------------------------------------+------------------------------------------------------------------------+-------------------------------------------------+
+| International Geo Sample Number (IGSN)          | Persistent identifier for physical samples                             | http://igsn.org/AU1243                          |
++-------------------------------------------------+------------------------------------------------------------------------+-------------------------------------------------+
+| Life Science Identifier (LSID)                  | Persistent structured method for biologically significant data         | urn:lsid:marinespecies.org:taxname:218214       |
++-------------------------------------------------+------------------------------------------------------------------------+-------------------------------------------------+
+| Open Researcher and Contributor ID (ORCID)      | Persistent actionable link for individuals                             | https://orcid.org/0000-0002-4391-107X           |
++-------------------------------------------------+------------------------------------------------------------------------+-------------------------------------------------+
+| Research Organization Registry (ROR) Identifier | Persistent actionable link for research organizations                  | <https://ror.org/01yvark48>                     |
++-------------------------------------------------+------------------------------------------------------------------------+-------------------------------------------------+
 
-#| label: tbl-PIDExamples
-#| echo: FALSE
+### Why?
 
+-   To be able to uniquely identify a record in your data system or across data systems, it is important that it be persistent (consider samples possibly moving between institutions).
+-   Although it increases workload, it safeguards against confusion and inefficiency in the future.
+-   Maintains consistency through change, whether moving samplings between institutions, creating relational databases, or merging records.
+-   Allows users to precisely refer to data
 
-# Autowrap isn't working in pdfs for flextable when overridden by font size
-# Hard returns seem to be the answer
-ds <- tibble(
-  "Type of PID" = c(
-    "Digital Object Identifier (DOI)",
-    "International Geo Sample Number (IGSN)",
-    "Life Science Identifier (LSID)",
-    "Open Researcher and Contributor ID (ORCID)"
-  ),
-  "Use Case" = c(
-    "Actionable persistent link for papers, data, and other digital objects",
-    "Persistent identifier for physical samples",
-    "Persistent structured method for biologically significant data",
-    "Persistent actionable link for individuals"
-  ),
-  "Example" = c(
-    "https://doi.org/10.6084/m9.figshare.16806712.v2",
-    "http://igsn.org/AU1243>",
-    "urn:lsid:marinespecies.org:taxname:218214",
-    "https://orcid.org/0000-0002-4391-107X"
-  )
-)
+### **Top Resources**
 
-flextable(ds) %>% 
-#set_caption(caption = "") %>%
-  #set_table_properties(layout = "autofit") %>%  
-  fontsize(size = 9) %>% 
-  width(j = 1,
-          width = 1.5) %>%
-  width(j = 2,
-          width = 1.5) %>% 
-  width(j = 3,
-        width = 3) %>% 
-  theme_zebra() 
-  
-```
-
-### Top References
+-   A [Beginner’s Guide](http://links.gbif.org/persistent_identifiers_guide_en_v1.pdf) to Persistent Identifiers
 
 -   Software and Packages to generate uuids:
-    -   R - uuid <https://cran.r-project.org/web/packages/uuid/index.html>
-    -   python - uuid <https://docs.python.org/3/library/uuid.html>
+
+    -   R package [uuid](https://cran.r-project.org/web/packages/uuid/index.html) 
+
+    -   Python package [uuid](https://docs.python.org/3/library/uuid.html) 
+
     -   <http://guid.one/>
+
     -   <https://guidgenerator.com/>
--   Guidance on how to use GUIDs (Globally Unique Identifiers) to meet specific requirements of the biodiversity information community\
-    <http://bioimages.vanderbilt.edu/pages/guid-applicability-final-2011-01.pdf>
--   Use of globally unique identifiers (GUIDs) to link herbarium specimen records to physical specimens\
-    <https://bsapubs.onlinelibrary.wiley.com/doi/full/10.1002/aps3.1027>
--   A Beginner's Guide to Persistent Identifiers\
-    <http://links.gbif.org/persistent_identifiers_guide_en_v1.pdf>
+
+-   [Guidance on how to use GUIDs](http://bioimages.vanderbilt.edu/pages/guid-applicability-final-2011-01.pdf) (Globally Unique Identifiers) to meet specific requirements of the biodiversity information community
+
+-   [Use of globally unique identifiers (GUIDs) to link herbarium specimen records to physical specimens](https://bsapubs.onlinelibrary.wiley.com/doi/full/10.1002/aps3.1027)
