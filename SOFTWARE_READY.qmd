@@ -40,56 +40,25 @@ The following example shows two different formats – wide and long – of the s
 
 -   It is easier to aggregate data across multiple files
 
-### 
+*Example of Wide Format*
 
-Example of Wide Format
+|                 |             |             |             |
+|-----------------|-------------|-------------|-------------|
+| **species**     | **site_01** | **site_02** | **site_03** |
+| Tilia americana | 4           | 2           | 4           |
+| Pinus strobus   | 3           | 3           | 3           |
 
-```{r}
+*Example of Long Format*
 
-#| label: tbl-tidyformat wide
-
-library(dplyr)
-library(flextable)
-
-example_df <- data.frame(species = c("Tilia americana",
-                                     "Pinus strobus"),
-                         site_01 = sample(0:5, size = 2),
-                         site_02 = sample(0:5, size = 2),
-                         site_03 = sample(0:5, size = 2))
-
-long_example <- tidyr::pivot_longer(data = example_df, cols = site_01:site_03, names_to = "site", values_to = "count")
-
-  flextable(example_df) %>%
-  set_caption(caption = "Wide Format") %>% 
-  fontsize(size = 9) %>% 
-  autofit() %>% 
-  theme_zebra()
-
-```
-
-Example of Long Format
-
-```{r}
-
-#| label: tbl-tidyformat long
-
-library(dplyr)
-library(flextable)
-
-example_df <- data.frame(species = c("Tilia americana",
-                                     "Pinus strobus"),
-                         site_01 = sample(0:5, size = 2),
-                         site_02 = sample(0:5, size = 2),
-                         site_03 = sample(0:5, size = 2))
-
-long_example <- tidyr::pivot_longer(data = example_df, cols = site_01:site_03, names_to = "site", values_to = "count")
-
-flextable(long_example) %>%
-  set_caption(caption = "Long Format") %>%
-  fontsize(size = 9) %>% 
-  autofit() %>%  theme_zebra()
-
-```
+|                 |          |           |
+|-----------------|----------|-----------|
+| **species**     | **site** | **count** |
+| Tilia americana | site_01  | 4         |
+| Tilia americana | site_02  | 2         |
+| Tilia americana | site_03  | 4         |
+| Pinus strobus   | site_01  | 3         |
+| Pinus strobus   | site_02  | 3         |
+| Pinus strobus   | site_03  | 3         |
 
 ### Top Resources
 
@@ -114,39 +83,13 @@ The following table outlines how to write dates, times, and time intervals using
 
 *Examples: different timezone annotation details for April 3, 2023 standardized to ISO 8601*
 
-```{r}
-
-#| label: tbl-datetime1
-#| echo: FALSE
-#| message: FALSE
-#| warnings: FALSE
-#| results: 'asis'}
-
-tab1 <-
-  tibble(
-    Description = c(
-      "Date",
-      "Date and Time with timezone offset",
-      "Date and Time in UTC",
-      "Time Interval in UTC (April 3 - 5, 2023)"
-    ),
-    "Written in ISO 8601" = c(
-      "2023-04-03",
-      "2023-04-03T18:29:38+00:00",
-      "2023-04-03T18:29:38Z",
-      "2023-04-03T18:29:38Z/2023-04-05T00:29:38Z"
-    )
-  )
-
-flextable(tab1) %>%
-  #set_caption(caption = "") %>%
-  autofit() %>%  
-  fontsize(size = 9) %>% 
-  theme_zebra()
-
-```
-
-### 
+|  |  |
+|----|----|
+| **Description** | **Written in ISO 8601** |
+| Date | 2023-04-03 |
+| Date and Time with timezone offset | 2023-04-03T18:29:38+00:00 |
+| Date and Time in UTC | 2023-04-03T18:29:38Z |
+| Time Interval in UTC (April 3 - 5, 2023) | 2023-04-03T18:29:38Z/2023-04-05T00:29:38Z |
 
 ![https://imgs.xkcd.com/comics/iso_8601.png](images/iso_8601.png)
 
@@ -228,32 +171,12 @@ WGS84 is a coordinate reference system that clarifies location. Recording latitu
 
 *Example Coordinates*
 
-```{r}
-
-#| label: tbl-example_coordinates
-#| echo: FALSE
-
-ds <- tibble(
-  Format = c(
-    "Decimal Degrees (DD)",
-    "Degrees Minutes Seconds (DMS)",
-    "Degrees Decimal Minutes (DM or DDM)"
-  ),
-  Example = c(
-    30.50833333,
-    paste("30\u00B0", "15'", '10 N'),
-    paste("30\u00B0", "15.1667 N")
-  )
-)
-
-
-flextable(ds) %>% 
-  #set_caption(caption = "") %>%
-  autofit() %>%  
-  fontsize(size = 9) %>% 
-  theme_zebra()
-  
-```
+|                                     |               |
+|-------------------------------------|---------------|
+| **Format**                          | **Example**   |
+| Decimal Degrees (DD)                | 30.50833333   |
+| Degrees Minutes Seconds (DMS)       | 30° 15' 10 N  |
+| Degrees Decimal Minutes (DM or DDM) | 30° 15.1667 N |
 
 ![https://imgs.xkcd.com/comics/coordinate_precision.png](images/coordinate_precision.png)
 
