@@ -48,17 +48,17 @@ The following example shows two different formats – wide and long – of the s
 
 : Example of Wide Format {.striped .hover}
 
-*Example of Long Format*
 
-|                 |          |           |
-|-----------------|----------|-----------|
 | **species**     | **site** | **count** |
+|-----------------|----------|-----------|
 | Tilia americana | site_01  | 4         |
 | Tilia americana | site_02  | 2         |
 | Tilia americana | site_03  | 4         |
 | Pinus strobus   | site_01  | 3         |
 | Pinus strobus   | site_02  | 3         |
 | Pinus strobus   | site_03  | 3         |
+
+: Example of Long Format {.striped .hover}
 
 ### Top Resources
 
@@ -81,15 +81,15 @@ ISO 8601 is a convention for dates and times, where dates are listed as YYYY-MM-
 
 The following table outlines how to write dates, times, and time intervals using ISO 8601:
 
-*Examples: different timezone annotation details for April 3, 2023 standardized to ISO 8601*
 
-|  |  |
-|----|----|
 | **Description** | **Written in ISO 8601** |
+|----|----|
 | Date | 2023-04-03 |
 | Date and Time with timezone offset | 2023-04-03T18:29:38+00:00 |
 | Date and Time in UTC | 2023-04-03T18:29:38Z |
 | Time Interval in UTC (April 3 - 5, 2023) | 2023-04-03T18:29:38Z/2023-04-05T00:29:38Z |
+
+: Examples of different timezone annotation for April 3, 2023. Standardized to ISO 8601 {.striped .hover}
 
 ![https://imgs.xkcd.com/comics/iso_8601.png](images/iso_8601.png)
 
@@ -169,14 +169,14 @@ Some important considerations:
 
 WGS84 is a coordinate reference system that clarifies location. Recording latitude and longitude coordinates in decimal degrees (DD), rather than degrees-minutes-seconds (DMS) or decimal-minutes (DM or DDM) standardizes them to be more machine and human readable. Degrees West and South are negative in decimal degrees, and longitude can range from -180 to 180, and longitude -90 to 90. Below are example coordinates in each format. Once locations are recorded in DD, the number of decimal places included should be adjusted to match the precision of the observation.
 
-*Example Coordinates*
 
-|                                     |               |
-|-------------------------------------|---------------|
 | **Format**                          | **Example**   |
+|-------------------------------------|---------------|
 | Decimal Degrees (DD)                | 30.50833333   |
 | Degrees Minutes Seconds (DMS)       | 30° 15' 10 N  |
 | Degrees Decimal Minutes (DM or DDM) | 30° 15.1667 N |
+
+: Example Coordinates {.striped .hover}
 
 ![https://imgs.xkcd.com/comics/coordinate_precision.png](images/coordinate_precision.png)
 
@@ -219,7 +219,6 @@ PIDs can capture details about the underlying sampling event (e.g., the PID `Sta
 -   It is important to manage any identifiers you create, if they are not managed by an authority (e.g. DOIs).
 -   Important that it be persistent (consider samples possibly moving between institutions)
 
-Examples of PIDs
 
 +-------------------------------------------------+------------------------------------------------------------------------+-------------------------------------------------+
 | **Type of PID**                                 | **Use Case**                                                           | **Example**                                     |
@@ -234,6 +233,8 @@ Examples of PIDs
 +-------------------------------------------------+------------------------------------------------------------------------+-------------------------------------------------+
 | Research Organization Registry (ROR) Identifier | Persistent actionable link for research organizations                  | <https://ror.org/01yvark48>                     |
 +-------------------------------------------------+------------------------------------------------------------------------+-------------------------------------------------+
+
+: Examples of PIDs {.striped .hover}
 
 ### Why?
 
