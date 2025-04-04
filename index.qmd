@@ -6,7 +6,7 @@ To paraphrase the [MARCO-BOLO data management plan](https://doi.org/10.5281/zeno
 
 ### This Guide
 
-The first product from this cluster, the [Biological Data Standards Primer](https://doi.org/10.6084/m9.figshare.16806712.v2) an easy to digest resource for new biological data managers. However, it is essentially a list of names and links. We created this guide to build on the Primer by providing additional context and details to the items listed in the Primer. The guide is intended to be a bridge between a deep dive into standards documentation and the lists of links available in the Primer. 
+The first product from this cluster, the [Biological Data Standards Primer](https://doi.org/10.6084/m9.figshare.16806712.v2) is an easy to digest resource for new biological data managers. However, it is essentially a list of names and links. We created this guide to build on the Primer by providing additional context and details to the items listed in the Primer. The guide is intended to be a bridge between a deep dive into standards documentation and the lists of links available in the Primer. 
 
 <iframe src="https://widgets.figshare.com/articles/16806712/embed?show_title=1" width="600" height="400" allowfullscreen frameborder="0">
 
@@ -16,7 +16,9 @@ The first product from this cluster, the [Biological Data Standards Primer](http
 
 The target audience for these guides is anyone interested in working with biological data, from data collection, to data sharing, and data management. We hope this Primer Guide will provide useful context for using biological standards.
 
-Currently we only have the capacity to offer it in English. However, users can get a rough translation using Google Translate. Just drop the url in this service: <https://translate.google.com/?sl=en&tl=es&op=websites>
+##### Translations
+Currently we only have the capacity to offer it in English. However, users can get a rough translation using Google Translate. 
+Just drop the url in this service: <https://translate.google.com/?sl=en&tl=es&op=websites>
 
 
 ::: callout-note
