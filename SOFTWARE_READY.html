@@ -174,7 +174,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="use-non-proprietary-formats" class="level2" data-number="6.1">
 <h2 data-number="6.1" class="anchored" data-anchor-id="use-non-proprietary-formats"><span class="header-section-number">6.1</span> Use non-proprietary formats</h2>
 <section id="what-is-it" class="level3">
-<h3 class="anchored" data-anchor-id="what-is-it"><strong>What is it?</strong></h3>
+<h3 class="anchored" data-anchor-id="what-is-it">What is it?</h3>
 <p>Non-proprietary file formats do not require specific software and can be accessed without licenses and within different software systems. For example, comma separated values (CSV) format is becoming an increasingly popular non-proprietary format compared to the proprietary .xlsx format.</p>
 </section>
 <section id="why" class="level3">
@@ -198,7 +198,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="structure-tabular-data-in-tidylong-format" class="level2" data-number="6.2">
 <h2 data-number="6.2" class="anchored" data-anchor-id="structure-tabular-data-in-tidylong-format"><span class="header-section-number">6.2</span> Structure tabular data in tidy/long format</h2>
 <section id="what-is-it-1" class="level3">
-<h3 class="anchored" data-anchor-id="what-is-it-1"><strong>What is it?</strong></h3>
+<h3 class="anchored" data-anchor-id="what-is-it-1">What is it?</h3>
 <p>Long (or sometimes called “tidy”) format for tabular data can best be described as having one observation per row.</p>
 <p>The following example shows two different formats – wide and long – of the same data. Notice that while sites 1, 2, and 3 are the column names filled with counts for each species in the wide format, site and count become the column names in long format.</p>
 </section>
@@ -342,8 +342,8 @@ ul.task-list li input[type="checkbox"] {
 <li>Better software integration of time date/time elements</li>
 </ul>
 </section>
-<section id="top-references" class="level3">
-<h3 class="anchored" data-anchor-id="top-references">Top References</h3>
+<section id="top-resources-2" class="level3">
+<h3 class="anchored" data-anchor-id="top-resources-2">Top Resources</h3>
 <ul>
 <li><p><a href="https://en.wikipedia.org/wiki/ISO_8601">ISO 8601 wiki</a></p></li>
 <li><p>R package <a href="https://lubridate.tidyverse.org/">lubridate</a></p></li>
@@ -390,8 +390,8 @@ Some important considerations
 <li>Provides an anchor for the taxonomy as scientific understanding evolves. We get more into that over in <a href="./INTEROPERABLE_DATA.html">section 4</a>.</li>
 </ul>
 </section>
-<section id="top-resources-2" class="level3">
-<h3 class="anchored" data-anchor-id="top-resources-2">Top Resources</h3>
+<section id="top-resources-3" class="level3">
+<h3 class="anchored" data-anchor-id="top-resources-3">Top Resources</h3>
 <ul>
 <li><p><a href="https://resolver.globalnames.org/">Global Names Resolver</a> allows users to compare taxonomic concepts across authorities</p></li>
 <li><p><a href="https://resolver.globalnames.org/data_sources">List of authorities</a></p></li>
@@ -410,7 +410,7 @@ Some important considerations
 <section id="record-latitude-and-longitude-in-decimal-degrees-in-wgs84" class="level2" data-number="6.5">
 <h2 data-number="6.5" class="anchored" data-anchor-id="record-latitude-and-longitude-in-decimal-degrees-in-wgs84"><span class="header-section-number">6.5</span> Record latitude and longitude in decimal degrees in WGS84</h2>
 <section id="what-is-it-4" class="level3">
-<h3 class="anchored" data-anchor-id="what-is-it-4"><strong>What is it?</strong></h3>
+<h3 class="anchored" data-anchor-id="what-is-it-4">What is it?</h3>
 <p>WGS84 is a coordinate reference system that clarifies location. Recording latitude and longitude coordinates in decimal degrees (DD), rather than degrees-minutes-seconds (DMS) or decimal-minutes (DM or DDM) standardizes them to be more machine and human readable. Degrees West and South are negative in decimal degrees, and longitude can range from -180 to 180, and longitude -90 to 90. Below are example coordinates in each format. Once locations are recorded in DD, the number of decimal places included should be adjusted to match the precision of the observation.</p>
 <table class="table-striped table-hover caption-top table">
 <caption>Example Coordinates</caption>
@@ -450,8 +450,8 @@ Some important considerations
 <li><code>WGS84</code> is a reference coordinate system that is widely used and incorporated in many GPS units and tools, and recognized as a standard by many government agencies.</li>
 </ul>
 </section>
-<section id="top-resources-3" class="level3">
-<h3 class="anchored" data-anchor-id="top-resources-3">Top Resources</h3>
+<section id="top-resources-4" class="level3">
+<h3 class="anchored" data-anchor-id="top-resources-4">Top Resources</h3>
 <ul>
 <li><p>Existing R/python/ESRI packages/functions</p>
 <ul>
@@ -468,20 +468,9 @@ Some important considerations
 <section id="use-persistent-unique-identifiers" class="level2" data-number="6.6">
 <h2 data-number="6.6" class="anchored" data-anchor-id="use-persistent-unique-identifiers"><span class="header-section-number">6.6</span> Use persistent unique identifiers</h2>
 <section id="what-is-it-5" class="level3">
-<h3 class="anchored" data-anchor-id="what-is-it-5"><strong>What is it?</strong></h3>
-<p>Persistent unique identifiers (PIDs) are globally unique identifiers to unambiguously identify granules of information in a machine-readable way. Identifiers can exist in acquired data, or they may be created. It is important to manage any identifiers you create, if they are not managed by an authority (e.g.&nbsp;DOIs).</p>
+<h3 class="anchored" data-anchor-id="what-is-it-5">What is it?</h3>
+<p>Persistent unique identifiers (PIDs) are globally unique identifiers to unambiguously identify granules of information in a machine-readable way. Identifiers can exist in acquired data, or they may be created. When persistent unique identifiers from authorities exist, they should be used (e.g., when using a taxonomic authority like WoRMS). If PIDs are created, the user is responsible for managing them (e.g.&nbsp;DOIs).</p>
 <p>PIDs can capture details about the underlying sampling event (e.g., the PID <code>Station_95_Date_09JAN1997:14:35:00.000</code> is comprised of the time and place of sampling), or they can be opaque (i.e., not indicating anything about the content, e.g., the <code>PID 10FC9784-B30F-48ED-8DB5-FF65A2A9934E</code>), or semi-opaque. There are sometimes good reasons to keep an identifier opaque, but transparent or semi-opaque identifiers can guide humans as well as machines.</p>
-</section>
-<section id="key-information" class="level3">
-<h3 class="anchored" data-anchor-id="key-information">Key Information</h3>
-<ul>
-<li>There are good reasons to keep an identifier opaque, i.e.&nbsp;it does not indicate anything about the content of information it points to. However, there are also transparent, or semi-opaque identifiers in use that take advantage of semantics to guide humans as well as machines.</li>
-<li>One way to create a unique identifier is concatenation of sampling event, location, time, enumeration of unique observation or event. (e.g.&nbsp;<code>Station_95_Date_09JAN1997:14:35:00.000</code>)</li>
-<li>Some prefer using opaque identifiers. (e.g.&nbsp;<code>10FC9784-B30F-48ED-8DB5-FF65A2A9934E</code>)</li>
-<li>If there is an existing persistent unique identifier, it’s usually a good idea to use it (i.e.&nbsp;when using a taxonomic authority like WoRMS and applying their LSID).</li>
-<li>It is important to manage any identifiers you create, if they are not managed by an authority (e.g.&nbsp;DOIs).</li>
-<li>Important that it be persistent (consider samples possibly moving between institutions)</li>
-</ul>
 <table class="table-striped table-hover caption-top table">
 <caption>Examples of PIDs</caption>
 <tbody>
@@ -527,16 +516,16 @@ Some important considerations
 <li>Allows users to precisely refer to data</li>
 </ul>
 </section>
-<section id="top-resources-4" class="level3">
-<h3 class="anchored" data-anchor-id="top-resources-4"><strong>Top Resources</strong></h3>
+<section id="top-resources-5" class="level3">
+<h3 class="anchored" data-anchor-id="top-resources-5">Top Resources</h3>
 <ul>
 <li><p>A <a href="http://links.gbif.org/persistent_identifiers_guide_en_v1.pdf">Beginner’s Guide</a> to Persistent Identifiers</p></li>
 <li><p>Software and Packages to generate uuids:</p>
 <ul>
 <li><p>R package <a href="https://cran.r-project.org/web/packages/uuid/index.html">uuid</a>&nbsp;</p></li>
 <li><p>Python package <a href="https://docs.python.org/3/library/uuid.html">uuid</a>&nbsp;</p></li>
-<li><p><a href="http://guid.one/" class="uri">http://guid.one/</a></p></li>
-<li><p><a href="https://guidgenerator.com/" class="uri">https://guidgenerator.com/</a></p></li>
+<li><p>[Generate, understand contruction, or parse existing GUIDs] (http://guid.one/)</p></li>
+<li><p>[Online GUID / UUID Generator] (https://guidgenerator.com/)</p></li>
 </ul></li>
 <li><p><a href="http://bioimages.vanderbilt.edu/pages/guid-applicability-final-2011-01.pdf">Guidance on how to use GUIDs</a> (Globally Unique Identifiers) to meet specific requirements of the biodiversity information community</p></li>
 <li><p><a href="https://bsapubs.onlinelibrary.wiley.com/doi/full/10.1002/aps3.1027">Use of globally unique identifiers (GUIDs) to link herbarium specimen records to physical specimens</a></p></li>
