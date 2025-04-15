@@ -4,7 +4,7 @@ Those sharing or managing data can take small steps to make them “software rea
 
 ## Use non-proprietary formats
 
-### **What is it?**
+### What is it?
 
 Non-proprietary file formats do not require specific software and can be accessed without licenses and within different software systems. For example, comma separated values (CSV) format is becoming an increasingly popular non-proprietary format compared to the proprietary .xlsx format.
 
@@ -26,7 +26,7 @@ Non-proprietary file formats do not require specific software and can be accesse
 
 ## Structure tabular data in tidy/long format
 
-### **What is it?**
+### What is it?
 
 Long (or sometimes called “tidy”) format for tabular data can best be described as having one observation per row.
 
@@ -99,7 +99,7 @@ The following table outlines how to write dates, times, and time intervals using
 -   Removes ambiguity related to timezone, daylight savings time changes, and time of day
 -   Better software integration of time date/time elements
 
-### Top References
+### Top Resources
 
 -   [ISO 8601 wiki](https://en.wikipedia.org/wiki/ISO_8601)
 
@@ -169,7 +169,7 @@ Example: For the species Balaenoptera borealis (Lesson, 1828), the WoRMS taxonom
 
 ## Record latitude and longitude in decimal degrees in WGS84
 
-### **What is it?**
+### What is it?
 
 WGS84 is a coordinate reference system that clarifies location. Recording latitude and longitude coordinates in decimal degrees (DD), rather than degrees-minutes-seconds (DMS) or decimal-minutes (DM or DDM) standardizes them to be more machine and human readable. Degrees West and South are negative in decimal degrees, and longitude can range from -180 to 180, and longitude -90 to 90. Below are example coordinates in each format. Once locations are recorded in DD, the number of decimal places included should be adjusted to match the precision of the observation.
 
@@ -208,21 +208,11 @@ WGS84 is a coordinate reference system that clarifies location. Recording latitu
 
 ## Use persistent unique identifiers
 
-### **What is it?**
+### What is it?
 
-Persistent unique identifiers (PIDs) are globally unique identifiers to unambiguously identify granules of information in a machine-readable way. Identifiers can exist in acquired data, or they may be created. It is important to manage any identifiers you create, if they are not managed by an authority (e.g. DOIs).
+Persistent unique identifiers (PIDs) are globally unique identifiers to unambiguously identify granules of information in a machine-readable way. Identifiers can exist in acquired data, or they may be created. When persistent unique identifiers from authorities exist, they should be used (e.g., when using a taxonomic authority like WoRMS). If PIDs are created, the user is responsible for managing them (e.g. DOIs).
 
 PIDs can capture details about the underlying sampling event (e.g., the PID `Station_95_Date_09JAN1997:14:35:00.000` is comprised of the time and place of sampling), or they can be opaque (i.e., not indicating anything about the content, e.g., the `PID 10FC9784-B30F-48ED-8DB5-FF65A2A9934E`), or semi-opaque. There are sometimes good reasons to keep an identifier opaque, but transparent or semi-opaque identifiers can guide humans as well as machines.
-
-### Key Information
-
--   There are good reasons to keep an identifier opaque, i.e. it does not indicate anything about the content of information it points to. However, there are also transparent, or semi-opaque identifiers in use that take advantage of semantics to guide humans as well as machines.
--   One way to create a unique identifier is concatenation of sampling event, location, time, enumeration of unique observation or event. (e.g. `Station_95_Date_09JAN1997:14:35:00.000`)
--   Some prefer using opaque identifiers. (e.g. `10FC9784-B30F-48ED-8DB5-FF65A2A9934E`)
--   If there is an existing persistent unique identifier, it's usually a good idea to use it (i.e. when using a taxonomic authority like WoRMS and applying their LSID).
--   It is important to manage any identifiers you create, if they are not managed by an authority (e.g. DOIs).
--   Important that it be persistent (consider samples possibly moving between institutions)
-
 
 +-------------------------------------------------+------------------------------------------------------------------------+-------------------------------------------------+
 | **Type of PID**                                 | **Use Case**                                                           | **Example**                                     |
@@ -247,7 +237,7 @@ PIDs can capture details about the underlying sampling event (e.g., the PID `Sta
 -   Maintains consistency through change, whether moving samplings between institutions, creating relational databases, or merging records.
 -   Allows users to precisely refer to data
 
-### **Top Resources**
+### Top Resources
 
 -   A [Beginner’s Guide](http://links.gbif.org/persistent_identifiers_guide_en_v1.pdf) to Persistent Identifiers
 
@@ -257,9 +247,9 @@ PIDs can capture details about the underlying sampling event (e.g., the PID `Sta
 
     -   Python package [uuid](https://docs.python.org/3/library/uuid.html) 
 
-    -   <http://guid.one/>
+    -   [Generate, understand contruction, or parse existing GUIDs] (http://guid.one/)
 
-    -   <https://guidgenerator.com/>
+    -   [Online GUID / UUID Generator] (https://guidgenerator.com/)
 
 -   [Guidance on how to use GUIDs](http://bioimages.vanderbilt.edu/pages/guid-applicability-final-2011-01.pdf) (Globally Unique Identifiers) to meet specific requirements of the biodiversity information community
 
