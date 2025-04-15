@@ -75,7 +75,7 @@ The Natural Environment Research Council (NERC)-funded Vocabulary Server (NVS) p
 
 ### Top Resources
 
--   The [NERC Vocabulary Server] (https://vocab.nerc.ac.uk/)
+-   The [NERC Vocabulary Server](https://vocab.nerc.ac.uk/)
 
 -   The [NVS Search](https://vocab.nerc.ac.uk/search_nvs/) can be used to find controlled vocabulary terms
 
@@ -205,7 +205,7 @@ The [Coastal and Marine Ecological Classification Standard](https://iocm.noaa.go
 
 ### Top Resources
 
--   [Documentation] (https://iocm.noaa.gov/standards/cmecs-home) of the CMECS standard, how to use it (including examples), and how to contribute to its improvement
+-   [Documentation](https://iocm.noaa.gov/standards/cmecs-home) of the CMECS standard, how to use it (including examples), and how to contribute to its improvement
 
 ### 4.3.2 U.S. National Vegetation Classification (NVCS) \[emoji\]
 
