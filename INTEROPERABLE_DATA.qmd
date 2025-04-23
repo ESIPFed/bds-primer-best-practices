@@ -29,7 +29,7 @@ Combined with international ontologies like ENVO, which is used by UNESCO, for e
 
 Controlled vocabularies are pre-determined standardized terms and definitions used to describe a specific entity, collection, parameter, or unit of measurement in either metadata or data. While they facilitate computer-readability, they also reduce ambiguity around terms. Controlled vocabularies are designed to fit specific schema and are routinely updated by the communities that use them.
 
-### 4.1.1 Environmental Ontology (ENVO) \[emoji\]
+### 4.1.1 Environmental Ontology (ENVO) 🌿
 
 ### What is it?
 
@@ -59,7 +59,7 @@ ENVO terms can also be used within the MIxS metadata standard (see [here](https:
 
 **Could be included in either and link to the other**\]
 
-### 4.1.2 Natural Environmental Research Council (NERC) Vocabulary Server (NVS) \[emoji\]
+### 4.1.2 Natural Environmental Research Council (NERC) Vocabulary Server (NVS) 🌳
 
 ### What is it?
 
@@ -83,7 +83,7 @@ The Natural Environment Research Council (NERC)-funded Vocabulary Server (NVS) p
 
 -   [SeaDataNet Search](https://vocab.seadatanet.org/search) searches only collections used by the SeaDataNet data infrastructure
 
-### 4.1.3 Global Change Master Directory (GCMD) Keywords \[emoji.. gonna suggest a globe\]
+### 4.1.3 Global Change Master Directory (GCMD) Keywords 🌏
 
 ### What is it?
 
@@ -105,7 +105,7 @@ The Global Change Master Directory (GCMD) Keywords are a standardized set of ter
 
 \[preamble for Taxonomic Authorities\]
 
-### 4.2.1 Catalogue of Life (COL) \[emoji\]
+### 4.2.1 Catalogue of Life (COL) 📒
 
 ### What Is It?
 
@@ -127,7 +127,7 @@ The primary mission of COL is to deliver data, but the tools and services offere
 
 -   COL ChecklistBank API: <https://api.checklistbank.org/>.
 
-### 4.2.2 Integrated Taxonomic Information System (ITIS) \[emoji\]
+### 4.2.2 Integrated Taxonomic Information System (ITIS) 🧬
 
 ### What Is It?
 
@@ -145,7 +145,7 @@ The primary mission of COL is to deliver data, but the tools and services offere
 
 -   ITIS [API](https://itis.gov/web_service.html)
 
-### 4.2.3 Paleobiology Database (PBDB) \[emoji\]
+### 4.2.3 Paleobiology Database (PBDB) 🦴
 
 ### What Is It?
 
@@ -191,7 +191,7 @@ The World Register of Marine Species (WoRMS) is an authoritative and comprehensi
 
 Habitat classification is the process of organizing quantitative observations (i.e., data collected by various methods and instruments) about the natural world into meaningful, human-understandable representations and descriptions. Habitat classification standards or systems provide terminology and methodology or guidance so that classification can be performed in a standard manner by individual projects and programs.
 
-### 4.3.1 Coastal and Marine Ecological Classification Standard (CMECS) \[emoji\]
+### 4.3.1 Coastal and Marine Ecological Classification Standard (CMECS) 🪸
 
 ### What is it?
 
@@ -207,7 +207,7 @@ The [Coastal and Marine Ecological Classification Standard](https://iocm.noaa.go
 
 -   [Documentation](https://iocm.noaa.gov/standards/cmecs-home) of the CMECS standard, how to use it (including examples), and how to contribute to its improvement
 
-### 4.3.2 U.S. National Vegetation Classification (NVCS) \[emoji\]
+### 4.3.2 U.S. National Vegetation Classification (NVCS) 🌻
 
 ### What is it?
 
@@ -230,7 +230,7 @@ Vegetation modeling and mapping are relevant to many conservation efforts, inclu
 
 -   ESA's [collection of USNVC resources](https://esa.org/vegpanel/resources/outreach-and-education/), including fact sheets, presentations, webinars, and posters.
 
-### **4.3.3 National Wetlands Classification System (?) (NWCS)** \[emoji\]
+### **4.3.3 National Wetlands Classification System (?) (NWCS)** 🐸
 
 ### What is it?
 
