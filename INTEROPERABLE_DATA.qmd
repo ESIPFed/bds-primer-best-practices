@@ -154,6 +154,8 @@ The [Coastal and Marine Ecological Classification Standard](https://iocm.noaa.go
 
 -   [Documentation](https://iocm.noaa.gov/standards/cmecs-home) of the CMECS standard, how to use it (including examples), and how to contribute to its improvement
 
+-   [Recorded Presentation on CMECS](https://www.youtube.com/live/vwzGMfQWyKY)
+
 ### 4.3.2 U.S. National Vegetation Classification (NVCS) 🌻
 
 ### What is it?
