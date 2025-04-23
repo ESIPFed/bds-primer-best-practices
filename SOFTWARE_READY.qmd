@@ -219,7 +219,7 @@ PIDs can capture details about the underlying sampling event (e.g., the PID `Sta
 +-------------------------------------------------+------------------------------------------------------------------------+-------------------------------------------------+
 | Digital Object Identifier (DOI)                 | Actionable persistent link for papers, data, and other digital objects | https://doi.org/10.6084/m9.figshare.16806712.v2 |
 +-------------------------------------------------+------------------------------------------------------------------------+-------------------------------------------------+
-| International Geo Sample Number (IGSN)          | Persistent identifier for physical samples                             | http://igsn.org/AU1243                          |
+| International Generic Sample Number (IGSN)          | Persistent identifier for physical samples                             | http://igsn.org/AU1243                          |
 +-------------------------------------------------+------------------------------------------------------------------------+-------------------------------------------------+
 | Life Science Identifier (LSID)                  | Persistent structured method for biologically significant data         | urn:lsid:marinespecies.org:taxname:218214       |
 +-------------------------------------------------+------------------------------------------------------------------------+-------------------------------------------------+
