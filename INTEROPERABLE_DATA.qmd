@@ -96,13 +96,13 @@ The primary mission of COL is to deliver data, but the tools and services offere
 
 ### What Is It?
 
-The [Paleobiology Database](https://paleobiodb.org/) (PBDB) is an online, expert-curated database that aims to provide taxonomic information for paleobiological taxa of all geological ages. It contains data for almost half a million paleobiological taxa from over 900 different contributors.
+The [Paleobiology Database](https://paleobiodb.org/) (PBDB) is an expert-curated database that aims to provide taxonomic information for paleobiological taxa of all geological ages. It contains data for almost half a million paleobiological taxa from over 900 different contributors.
 
 ### Why?
 
 -   Checking your paleobiological taxonomic names against the PBDB will ensure the names are up-to-date based on current taxonomic literature as reflected in the database.
 
--   PBDB provides the taxonomic backbone to the Global Biodiversity Information Facility (GBIF). This means aligning your taxonomic names with PBDB will make the process of sharing your data easier.
+-   PBDB is a significant contributor to the taxonomic backbone of the Global Biodiversity Information Facility (GBIF). This means aligning your taxonomic names with PBDB will make the process of sharing your data easier.
 
 ### Top Resources
 
@@ -128,11 +128,7 @@ The World Register of Marine Species (WoRMS) is an authoritative and comprehensi
 
 ### Top Resources
 
--   WoRMS and its associated tools can be explored via [web browser](https://www.marinespecies.org/index.php) or the WoRMS [API](https://www.marinespecies.org/rest/)
-
--   R packages: [worrms](https://cran.r-project.org/web/packages/worrms/index.html), [taxize](https://cran.r-project.org/web/packages/taxize/)
-
--   [Python package](https://github.com/iobis/pyworms)
+-   WoRMS and its associated tools can be explored via [web browser](https://www.marinespecies.org/index.php), the [WoRMS API](https://www.marinespecies.org/rest/), R packages ([worrms](https://cran.r-project.org/web/packages/worrms/index.html), [taxize](https://cran.r-project.org/web/packages/taxize/)), and a python package ([pyworms](https://github.com/iobis/pyworms)).  
 
 ## Habitat Classification
 
