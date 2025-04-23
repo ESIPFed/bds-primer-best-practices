@@ -33,7 +33,7 @@ Controlled vocabularies are pre-determined standardized terms and definitions us
 
 ### What is it?
 
-The Environmental Ontology (ENVO) is an ontology (i.e. it describes a set of concepts or categories, their properties, and the relations between them) of all things environmental (e.g. systems, components, and processes). ENVO aids humans, machines, and semantic web applications in understanding environmental entities of all kinds, from microscopic to intergalactic scales, increasing the interoperability of environmental descriptions.
+The Environmental Ontology (ENVO) is an ontology (i.e. it describes a set of concepts or categories, their properties, and the relations between them) of all things environmental (e.g. systems, components, and processes). ENVO aids humans, machines, and semantic web applications in understanding environmental entities of all kinds, from microscopic to intergalactic scales, increasing the interoperability of environmental descriptions. ENVO terms can be used within various standards, like the MIxS metadata standard (see [here](https://github.com/EnvironmentOntology/envo/wiki/ENVO-annotations-for-MIxS-v5)) or Darwin Core standard, to describe the materials that compose your sample or the environment where the sample was collected. Integrating ENVO within other standards enhances the ability to integrate environmental information with species occurrence data, improving data quality and usability. 
 
 ### Why?
 
@@ -53,11 +53,6 @@ The Environmental Ontology (ENVO) is an ontology (i.e. it describes a set of con
 
 -   [Instructions](https://sites.google.com/site/environmentontology/Browse-EnvO) on how to Browse ENVO terms
 
-\[Do we want to include this fun fact?
-
-ENVO terms can also be used within the MIxS metadata standard (see [here](https://github.com/EnvironmentOntology/envo/wiki/ENVO-annotations-for-MIxS-v5)), for example to describe the materials that compose your sample or the environment where the sample was collected.
-
-**Could be included in either and link to the other**\]
 
 ### 4.1.2 Natural Environmental Research Council (NERC) Vocabulary Server (NVS) 🌳
 
@@ -103,7 +98,7 @@ The Global Change Master Directory (GCMD) Keywords are a standardized set of ter
 
 ## Taxonomic Authorities
 
-\[preamble for Taxonomic Authorities\]
+Taxonomic authorities ensure clarity and consistency of organism taxonomic identity (e.g. species, genus, etc.), regardless of changes to scientific name over time or differences in common name. In addition to nomenclature, taxonomic authorities often also include taxonomy and distribution.
 
 ### 4.2.1 Catalogue of Life (COL) 📒
 
