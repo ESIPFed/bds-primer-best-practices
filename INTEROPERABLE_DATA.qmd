@@ -96,13 +96,13 @@ The primary mission of COL is to deliver data, but the tools and services offere
 
 ### What Is It?
 
-The [Paleobiology Database](https://paleobiodb.org/) (PBDB) is an online, expert-curated database that aims to provide taxonomic information for paleobiological taxa of all geological ages. It contains data for almost half a million paleobiological taxa from over 900 different contributors.
+The [Paleobiology Database](https://paleobiodb.org/) (PBDB) is an expert-curated database that aims to provide taxonomic information for paleobiological taxa of all geological ages. It contains data for almost half a million paleobiological taxa from over 900 different contributors.
 
 ### Why?
 
 -   Checking your paleobiological taxonomic names against the PBDB will ensure the names are up-to-date based on current taxonomic literature as reflected in the database.
 
--   PBDB provides the taxonomic backbone to the Global Biodiversity Information Facility (GBIF). This means aligning your taxonomic names with PBDB will make the process of sharing your data easier.
+-   PBDB is a significant contributor to the taxonomic backbone of the Global Biodiversity Information Facility (GBIF). This means aligning your taxonomic names with PBDB will make the process of sharing your data easier.
 
 ### Top Resources
 
@@ -128,11 +128,7 @@ The World Register of Marine Species (WoRMS) is an authoritative and comprehensi
 
 ### Top Resources
 
--   WoRMS and its associated tools can be explored via [web browser](https://www.marinespecies.org/index.php) or the WoRMS [API](https://www.marinespecies.org/rest/)
-
--   R packages: [worrms](https://cran.r-project.org/web/packages/worrms/index.html), [taxize](https://cran.r-project.org/web/packages/taxize/)
-
--   [Python package](https://github.com/iobis/pyworms)
+-   WoRMS and its associated tools can be explored via [web browser](https://www.marinespecies.org/index.php), the [WoRMS API](https://www.marinespecies.org/rest/), R packages ([worrms](https://cran.r-project.org/web/packages/worrms/index.html), [taxize](https://cran.r-project.org/web/packages/taxize/)), and a python package ([pyworms](https://github.com/iobis/pyworms)).  
 
 ## Habitat Classification
 
@@ -160,7 +156,9 @@ The [Coastal and Marine Ecological Classification Standard](https://iocm.noaa.go
 
 ### What is it?
 
-The U.S National Vegetation Classification (USNVC) is the comprehensive, standardized, and hierarchical classification system for all vegetation types in the United States. Because several agencies, each with its own sampling protocols, are tasked with mapping and describing vegetation in the United States, the resultant inventories are not automatically interoperable, making vegetation resource monitoring across jurisdictional boundaries challenging. The USNVC, a collaboration between the [Ecological Society of America (ESA)](https://www.esa.org/vegpanel/), [NatureServe](https://www.natureserve.org/conservation-tools/projects/us-national-vegetation-classification), and [various federal agencies](https://usnvc.org/about/team/), was created to address this need. It provides a common language that allows for communication and cooperation on vegetation management issues across jurisdictional boundaries for the effective management and conservation of plant communities.
+The U.S National Vegetation Classification (USNVC) is the comprehensive, standardized, and hierarchical classification system for all vegetation types in the United States. Because several agencies, each with its own sampling protocols, are tasked with mapping and describing vegetation in the United States, the resultant inventories are not automatically interoperable, making vegetation resource monitoring across jurisdictional boundaries and scales challenging. The USNVC, a collaboration between the [Ecological Society of America (ESA)](https://www.esa.org/vegpanel/), [NatureServe](https://www.natureserve.org/conservation-tools/projects/us-national-vegetation-classification), and [various federal agencies](https://usnvc.org/about/team/), was created to address this need. It provides a common language that allows for communication and cooperation on vegetation management issues across jurisdictional boundaries for the effective management and conservation of plant communities.
+
+![Natural classification at different scales](images/ClassificationNatural_d.png)
 
 Vegetation modeling and mapping are relevant to many conservation efforts, including land inventories, wildlife habitat inventories, enhancing natural resource conservation efforts, fire management, invasive species management, and setting national vegetation policies (e.g. biofuels, carbon markets, and ecosystem services).
 
