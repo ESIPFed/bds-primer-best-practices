@@ -26,9 +26,7 @@ A single dataset, known as the Darwin Core Archive (DwC-A), is a compressed (e.g
 
 -   Biddle, M., Benson, A., van der Stap, T., Pye, J., Murray, T., Lawrence, E., & Formel, S. (2024). Marine data mobilization workshop (Version 2024). Zenodo. <https://doi.org/10.5281/zenodo.11085142>
 
--   For more information, see overviews of CF as a [presentation](https://cfconventions.org/Data/cf-documents/overview/viewgraphs.pdf) and [paper](https://cfconventions.org/Data/cf-documents/overview/article.pdf). You can also check out the presentation John Weiczorek gave to our ESIP cluster back in April, 2022:
-
-    {{< video https://youtube.com/embed/yOJhP9995TU title="Introduction to Darwin Core by John Weiczorek" start="63">}}
+-   [Recorded presentation by John Wieczorek](https://youtube.com/embed/yOJhP9995TU) about Darwin Core in April 2022.
 
 ## Climate and Forecast (CF) 🌍
 
@@ -48,12 +46,12 @@ Like many standards, CF is built on other standards. For example, units are spec
 
 ### **Top Resources**
 
-1.  The [NERC Vocabulary Server](https://vocab.nerc.ac.uk/) hosts CF and maps it to other vocabularies. 
+-  The [NERC Vocabulary Server](https://vocab.nerc.ac.uk/) hosts CF and maps it to other vocabularies. 
 
-2.  To find standard names that describe your data, open up the latest [Standard Name table](https://cfconventions.org/vocabularies.html) (as HTML or XML) and search through it for words typically used for your data.
+-  To find standard names that describe your data, open up the latest [Standard Name table](https://cfconventions.org/vocabularies.html) (as HTML or XML) and search through it for words typically used for your data.
 
-3.  CF is developed and maintained by the community using GitHub. To propose changes, ask questions, see the [CF GitHub repositories](https://github.com/cf-convention).
+-  CF is developed and maintained by the community using GitHub. To propose changes, ask questions, see the [CF GitHub repositories](https://github.com/cf-convention).
 
-4.  For more information, see overviews of CF as a [presentation](https://cfconventions.org/Data/cf-documents/overview/viewgraphs.pdf) and [paper](https://cfconventions.org/Data/cf-documents/overview/article.pdf). You can also check out the presentation Roy Lowry gave to our ESIP cluster back in April, 2022:
+-  For more information, see overviews of CF as a [presentation](https://cfconventions.org/Data/cf-documents/overview/viewgraphs.pdf) and [paper](https://cfconventions.org/Data/cf-documents/overview/article.pdf).
 
-    {{< video https://youtube.com/embed/yOJhP9995TU title="Introduction to CF Conventions by Roy Lowry" start="469">}}
+-  [Recorded presentation by Roy Lowry](https://youtube.com/embed/yOJhP9995TU) about CF in April 2022.
