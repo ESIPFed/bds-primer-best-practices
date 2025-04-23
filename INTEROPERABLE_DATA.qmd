@@ -1,60 +1,12 @@
 # Make Your Data Interoperable
 
-\[whole section preamble about "SEMANTIC RESOURCES" (rather than controlled vocabularies, as it was)... Possibly want to connect to framework of understanding, incl. controlled vocabulary, taxonomy, close associations, and ontology = taxonomy + relationships between terms\]
-
-**Possible content/phrases to incorporate into whole section preamble:**
-Ontology describes a set of concepts or categories in a domain and shows their properties and the relations between them.
-
-Semantic resources (i.e. \_\_\_\_\_\_), improve consistency across diverse sources of data and are essential to interoperability. Controlled vocabularies, taxonomic authorities, and habitat classifications are all useful semantic resources for standardizing biological data.
-
-Controlled vocabularies provide **standardized terms and definitions** for biological concepts
-
-They facilitate searching for data in web portals. They also enable records to be interpreted by computers. This opens up data sets to a whole world of possibilities for automated data workflows, computer aided manipulation, distribution, interoperability, and long-term reuse.
-
-By connecting terms held in controlled lists using standards, the data described by these controlled vocabularies become more interoperable and hence more broadly reusable.
-
-enable records to be interpreted by computers, facilitating automated data workflows, computer aided manipulation, distribution, and interoperability
-
-It becomes possible to build a truly distributed and interoperable data ecosystem across domain boundaries, enabling data reuse no matter the purpose for which they were collected in the first place.
-
-concise, controlled description
-
-Standardized classifications of observational data also allows the information derived from individual projects to be compared with each other and compiled into larger and more extensive representations across space and time. This advances the collective scientific knowledge of natural systems and enables coordinated management activities, such as regional assessments, monitoring and restoration between partners.
-
-Combined with international ontologies like ENVO, which is used by UNESCO, for example, the reach of your data will become global.
-
-
+The term "semantic resources" refers to a suite of information frameworks - such as controlled vocabularies, taxonomies, and ontologies - that provide definitions and context to natural language terms that are found within datasets. Semantic resources help disambiguate what is meant by a certain word or phrase. This facilitates interoperability, machine readability, and cross-dataset comparisons. Controlled vocabularies, taxonomic authorities, habitat classifications, and ontologies are all important semantic resources that are used in biological data standardization.
 
 ## Controlled Vocabularies
 
 Controlled vocabularies are pre-determined standardized terms and definitions used to describe a specific entity, collection, parameter, or unit of measurement in either metadata or data. While they facilitate computer-readability, they also reduce ambiguity around terms. Controlled vocabularies are designed to fit specific schema and are routinely updated by the communities that use them.
 
-### 4.1.1 Environmental Ontology (ENVO) 🌿
-
-### What is it?
-
-The Environmental Ontology (ENVO) is an ontology (i.e. it describes a set of concepts or categories, their properties, and the relations between them) of all things environmental (e.g. systems, components, and processes). ENVO aids humans, machines, and semantic web applications in understanding environmental entities of all kinds, from microscopic to intergalactic scales, increasing the interoperability of environmental descriptions. ENVO terms can be used within various standards, like the MIxS metadata standard (see [here](https://github.com/EnvironmentOntology/envo/wiki/ENVO-annotations-for-MIxS-v5)) or Darwin Core standard, to describe the materials that compose your sample or the environment where the sample was collected. Integrating ENVO within other standards enhances the ability to integrate environmental information with species occurrence data, improving data quality and usability. 
-
-### Why?
-
--   ENVO provides a comprehensive standardized vocabulary for describing habitats, ecosystems, and environmental processes.
-
--   It incorporates the relationships between objects (Ontology).
-
--   It is used internationally.
-
--   Several portals and ontology browsing interfaces already harvest from ENVO.
-
-### Top Resources
-
--   [Buttigieg et al. (2013) article](https://jbiomedsem.biomedcentral.com/articles/10.1186/2041-1480-4-43) introducing ENVO in Journal of Biomedical Semantics
-
--   [Buttigieg et al. (2016) article](https://jbiomedsem.biomedcentral.com/articles/10.1186/s13326-016-0097-6) revisiting ENVO
-
--   [Instructions](https://sites.google.com/site/environmentontology/Browse-EnvO) on how to Browse ENVO terms
-
-
-### 4.1.2 Natural Environmental Research Council (NERC) Vocabulary Server (NVS) 🌳
+### 4.1.1 Natural Environmental Research Council (NERC) Vocabulary Server (NVS) 🌳
 
 ### What is it?
 
@@ -78,7 +30,7 @@ The Natural Environment Research Council (NERC)-funded Vocabulary Server (NVS) p
 
 -   [SeaDataNet Search](https://vocab.seadatanet.org/search) searches only collections used by the SeaDataNet data infrastructure
 
-### 4.1.3 Global Change Master Directory (GCMD) Keywords 🌏
+### 4.1.2 Global Change Master Directory (GCMD) Keywords 🌏
 
 ### What is it?
 
@@ -122,7 +74,7 @@ The primary mission of COL is to deliver data, but the tools and services offere
 
 -   COL ChecklistBank API: <https://api.checklistbank.org/>.
 
-### 4.2.2 Integrated Taxonomic Information System (ITIS) 🧬
+### 4.2.2 Integrated Taxonomic Information System (ITIS) 🦬
 
 ### What Is It?
 
@@ -140,7 +92,7 @@ The primary mission of COL is to deliver data, but the tools and services offere
 
 -   ITIS [API](https://itis.gov/web_service.html)
 
-### 4.2.3 Paleobiology Database (PBDB) 🦴
+### 4.2.3 Paleobiology Database (PBDB) 🦣
 
 ### What Is It?
 
@@ -245,3 +197,33 @@ The primary objective of the Classification of Wetlands and Deepwater Habitats o
 -   [Wetland Classification codes](https://www.fws.gov/program/national-wetlands-inventory/classification-codes) in table and tool formats
 
 -   The [second edition](https://www.fgdc.gov/standards/projects/wetlands/nwcs-2013) of Classification of Wetlands and Deepwater Habitats of the United States, which outlines the underlying concepts, definitions, systems, and sub-systems.
+
+## Ontologies
+
+Ontologies are semantic resources that describe a set of concepts, their definitions and properties, and the relationships between. They facilitate the machine readability and usability of datasets by enabling semantic reasoners to analyze data and make inferences based on the relationships defined in the ontology.
+
+### 4.4.1 Environmental Ontology (ENVO) 🌿
+
+### What is it?
+
+The Environmental Ontology (ENVO) is an ontology of all things environmental (e.g. systems, components, and processes). ENVO aids humans, machines, and semantic web applications in understanding environmental entities of all kinds, from microscopic to intergalactic scales, increasing the interoperability of environmental descriptions. ENVO terms can be used within various standards, like the MIxS metadata standard (see [here](https://github.com/EnvironmentOntology/envo/wiki/ENVO-annotations-for-MIxS-v5)) or Darwin Core standard, to describe the materials that compose your sample or the environment where the sample was collected. Integrating ENVO within other standards enhances the ability to integrate environmental information with species occurrence data, improving data quality and usability. 
+
+### Why?
+
+-   ENVO provides a comprehensive standardized vocabulary for describing habitats, ecosystems, and environmental processes.
+
+-   It incorporates the relationships between objects (Ontology).
+
+-   It is used internationally.
+
+-   Several portals and ontology browsing interfaces already harvest from ENVO.
+
+### Top Resources
+
+-   [Buttigieg et al. (2013) article](https://jbiomedsem.biomedcentral.com/articles/10.1186/2041-1480-4-43) introducing ENVO in Journal of Biomedical Semantics
+
+-   [Buttigieg et al. (2016) article](https://jbiomedsem.biomedcentral.com/articles/10.1186/s13326-016-0097-6) revisiting ENVO
+
+-   [Instructions](https://sites.google.com/site/environmentontology/Browse-EnvO) on how to Browse ENVO terms
+
+-   [Recorded ESIP Presentation on the use of ENVO](https://www.youtube.com/watch?v=tyJphUcIr1E)
