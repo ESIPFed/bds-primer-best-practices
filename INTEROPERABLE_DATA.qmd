@@ -148,7 +148,7 @@ The [Coastal and Marine Ecological Classification Standard](https://iocm.noaa.go
 
 ### Top Resources
 
--   [Access](https://github.com/NOAA-OCM/cmecs) The CMECS Catalog is the collection of ecological units (defined terms) represented in the Web Ontology Language (OWL) format. The CMECS GitHub provides access to versioned       releases of the CMECS OWL file as well as table and text versions. Details about the CMECS Catalog and information about the update process can be found in the wiki. 
+-   [Access](https://github.com/NOAA-OCM/cmecs) The CMECS Catalog is the collection of ecological units (defined terms) represented in the Web Ontology Language (OWL) format. The CMECS GitHub provides access to versioned releases of the CMECS OWL file and table and text versions. Details about the CMECS Catalog and information about the update process can be found in the wiki. 
 
 -   [CMECS on Ecoportal](https://ecoportal.lifewatch.eu/ontologies/CMECS?p=summary) for browsing the most recent version of the CMECS Catalog and linking directly to individual units' definitions and properties.     
 
