@@ -168,12 +168,11 @@ Vegetation modeling and mapping are relevant to many conservation efforts, inclu
 
 ### Why?
 
+-   The USNVC is endorsed by the U.S. Federal Geographic Data Committee (FGDC) as the national standard for vegetation classification ([FGDC-STD-005-2008 (Version 2)](https://www.fgdc.gov/standards/projects/FGDC-standards-projects/vegetation/NVCS_V2_FINAL_2008-02.pdf) and provides a methodology and guidelines for vegetation data collection and analysis, ensuring consistent reporting on the nation’s vegetation resources.
+
 -   As a dynamic standard, the USNVC is designed to be easily adapted as new ecological knowledge becomes available.
 
 -   Its hierarchical nature makes classification scalable for diverse applications from vegetation monitoring to broad-scale analyses of trends across North America. 
-
--   The USNVC is governed by standards for vegetation data collection and analysis, ensuring consistent reporting on the nation’s vegetation resources.
-
 
 ### Top Resources
 
