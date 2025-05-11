@@ -138,17 +138,22 @@ Habitat classification is the process of organizing quantitative observations (i
 
 ### What is it?
 
-The [Coastal and Marine Ecological Classification Standard](https://iocm.noaa.gov/standards/cmecs-home.html) (CMECS) is a structured dictionary of terms that describe benthic habitats in marine, estuarine, and lacustrine settings. It was developed by a consortium of scientists and coastal managers to meet the needs of inventorying, monitoring and managing natural resources in US and territorial waters. CMECS terms are organized in a spatially-scaled framework for annotating geospatial data and integrating information about the physical components of aquatic habitats that enables three-dimensional representations of ecological conditions for associating with faunal behavior.
+The [Coastal and Marine Ecological Classification Standard](https://iocm.noaa.gov/standards/cmecs-home.html) (CMECS) was developed by a consortium of scientists and coastal managers to meet the needs of inventorying, monitoring and managing natural resources in U.S. and territorial waters. It is a structured dictionary of defined terms, or "ecological units", that characterize the biotic and abiotic characteristics of benthic habitats in marine, estuarine, and lacustrine settings. CMECS' ecoloigcal units are descriptive and may also be categorical; they are used for interpreting and classifying observational data and integrating information about physical environments and associated biota. Units are organized in a spatially-scaled hierarchical framework that works well for annotating geospatial data and developing map layers or constructing three-dimensional representations of the ecological conditions and associated biological communities.
+
+CMECS is endorsed by the U.S. Federal Geographic Data Committee (FGDC) as the national standard for ecological classification [FGDC-STD-018-2012](https://repository.library.noaa.gov/view/noaa/27552) CMECS was developed to be compatible with other FGDC-endorsed standards listed below. CMECS adopts the Marine System, Estuarine System (with some modification), and Lacustrine System for the its Aquatic Setting from the Wetlands Classification Standard (FGDC-STD-004-2013), and the CMECS Biotic Component includes some vegetation communities and associations from both the Wetlands Classifciation Standard and the National Vegetation Classification Standard (FGDC-STD-005-2008). 
 
 ### Why?
 
--   CMECS is endorsed as a Federal Geographic Data Committee (FGDC) standard in the U.S. for aquatic environmental data so that data collectors and analysts can describe data using standard terminology and organization structures. 
-
+-   Data collectors and analysts can describe data using standard terminology and organization structures so that information is consistent among projects and over time.
 -   Using CMECS enables data discovery, data use and re-use, and broader analytical applications of data federally-funded data assets.
 
 ### Top Resources
 
--   [Documentation](https://iocm.noaa.gov/standards/cmecs-home) of the CMECS standard, how to use it (including examples), and how to contribute to its improvement
+-   [Access](https://github.com/NOAA-OCM/cmecs) The CMECS Catalog is the collection of ecological units (defined terms) represented in the Web Ontology Language (OWL) format. The CMECS GitHub provides access to versioned releases of the CMECS OWL file and table and text versions. Details about the CMECS Catalog and information about the update process can be found in the wiki. 
+
+-   [CMECS on Ecoportal](https://ecoportal.lifewatch.eu/ontologies/CMECS?p=summary) for browsing the most recent version of the CMECS Catalog and linking directly to individual units' definitions and properties.     
+
+-   [Documentation](https://iocm.noaa.gov/standards/cmecs-home) background about the CMECS standard and how to use it, including technical guidance and examples of CMECS application in various locations and settings.
 
 -   [Recorded Presentation on CMECS](https://www.youtube.com/live/vwzGMfQWyKY)
 
@@ -164,12 +169,11 @@ Vegetation modeling and mapping are relevant to many conservation efforts, inclu
 
 ### Why?
 
+-   The USNVC is endorsed by the U.S. Federal Geographic Data Committee (FGDC) as the national standard for vegetation classification ([FGDC-STD-005-2008 (Version 2)](https://www.fgdc.gov/standards/projects/FGDC-standards-projects/vegetation/NVCS_V2_FINAL_2008-02.pdf) and provides a methodology and guidelines for vegetation data collection and analysis, ensuring consistent reporting on the nation’s vegetation resources.
+
 -   As a dynamic standard, the USNVC is designed to be easily adapted as new ecological knowledge becomes available.
 
 -   Its hierarchical nature makes classification scalable for diverse applications from vegetation monitoring to broad-scale analyses of trends across North America. 
-
--   The USNVC is governed by standards for vegetation data collection and analysis, ensuring consistent reporting on the nation’s vegetation resources.
-
 
 ### Top Resources
 
