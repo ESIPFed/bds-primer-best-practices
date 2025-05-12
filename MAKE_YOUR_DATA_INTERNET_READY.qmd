@@ -22,8 +22,6 @@ The World Wide Web Consortium (W3C) develops the [W3C standards](https://www.w3.
 
 -   [W3Schools](https://www.w3schools.com/) offers a variety of tutorials for free
 
-## 
-
 ### 5.1.2 Dublin Core Standard
 
 ### **What Is It?**
