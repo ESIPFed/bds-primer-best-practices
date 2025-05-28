@@ -11,7 +11,7 @@ Biodiversity data are collected and managed in many different systems and enviro
 A single dataset, known as the Darwin Core Archive (DwC-A), is a compressed (e.g. zip) file that contains interconnected text files (e.g. csv or tsv) with DarwinCore standard-mapped data that are arranged into core files. To facilitate human- and machine-interpretation of the data, xml files are included to describe the contents of the Archive, the relationships between the core files and connected tables contained in the DwC-A.
 
 ![Illustration of how Darwin Core can be used to connect sampling and occurrence events with environmental measurements](https://manual.obis.org/images/DataSchemaExample.png){fig-alt="Illustration of how Darwin Core can be used to connect sampling and occurrence events with environmental measurements"}
-*Darwin Core offers a solution for standardizing a simple group of observations about sampling, biological occurrences, environmental parameters, etc. Credit: Ocean Biodiversity Information System (OBIS) Manual. <https://manual.obis.org/>
+*Darwin Core offers a solution for standardizing a simple group of observations about sampling, biological occurrences, environmental parameters, etc. Credit: Ocean Biodiversity Information System (OBIS) Manual. <https://manual.obis.org/>*
 
 ### Why?
 
