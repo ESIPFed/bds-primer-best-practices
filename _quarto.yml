@@ -37,7 +37,9 @@ format:
    link-external-icon: true
    link-external-newwindow: true
    link-external-filter: '^(?:http:|https:)\/\/esipfed\.github\.io'
-   toc: false
+   toc: true  
+   toc-location: left  
+   toc-title: ""  
    
 #  pdf: default
 #  docx: 
