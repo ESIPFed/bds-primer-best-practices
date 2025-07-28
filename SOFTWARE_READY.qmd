@@ -79,17 +79,43 @@ The following example shows two different formats – wide and long – of the s
 
 ISO 8601 is a convention for dates and times, where dates are listed as YYYY-MM-DD and time is given in Coordinated Universal Time (UTC, Zulu, or GMT) which is the time standard, relative to 0 longitude, that regulates global clocks.
 
-The following table outlines how to write dates, times, and time intervals using ISO 8601:
+ISO 8601 dates can represent moments in time at different resolutions, as well as time intervals.
 
+- Time intervals use `/` as a separator. 
+- Date and times are separated by `T`. 
+- Timezones can be indicated at the end by using `+` or `-` the number of hours offset from UTC. 
+- If no timezone is indicated, then the time is assumed to be local time. 
+- When a date/time is recorded in UTC, a `Z` should be added at the end. 
+- Times must be written in the 24-hour clock system. 
+- If you do not know the time, you do not have to provide it. 
+- Do not indicate unknown times as “00:00” as this indicates midnight.
 
-| **Description** | **Written in ISO 8601** |
-|----|----|
-| Date | 2023-04-03 |
-| Date and Time with timezone offset | 2023-04-03T18:29:38+00:00 |
-| Date and Time in UTC | 2023-04-03T18:29:38Z |
-| Time Interval in UTC (April 3 - 5, 2023) | 2023-04-03T18:29:38Z/2023-04-05T00:29:38Z |
+Not every piece of time information is necessary, but a generalization of how to format dates and times looks like:
 
-: Examples of different timezone annotation for April 3, 2023. Standardized to ISO 8601 {.striped .hover}
+`YYYY-MM-DDT[hh]:[mm]:[ss] [+/-XX OR Z]`
+
+Some specific examples of acceptable ISO 8601 dates. Thanks to @ are:
+
+**Dates:**
+
+> 1948-09-13
+> 1993-01/02
+> 1993-01
+> 1993
+
+**Dates with Specific Times:**
+
+> 1973-02-28T15:25:00
+> 2008-04-25T09:53
+
+**Dates with Time Zones:**
+
+> 2005-08-31T12:11+12
+> 2013-02-16T04:28Z
+
+**Date and Time Intervals:**
+
+> 1993-01-26T04:39+12/1993-01-26T05:48+12
 
 ![https://imgs.xkcd.com/comics/iso_8601.png](images/iso_8601.png)
 
