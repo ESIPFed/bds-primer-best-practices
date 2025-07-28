@@ -338,38 +338,36 @@ ul.task-list li input[type="checkbox"] {
 <section id="what-is-it-2" class="level3">
 <h3 class="anchored" data-anchor-id="what-is-it-2">What is it?</h3>
 <p>ISO 8601 is a convention for dates and times, where dates are listed as YYYY-MM-DD and time is given in Coordinated Universal Time (UTC, Zulu, or GMT) which is the time standard, relative to 0 longitude, that regulates global clocks.</p>
-<p>The following table outlines how to write dates, times, and time intervals using ISO 8601:</p>
-<table class="table-striped table-hover caption-top table">
-<caption>Examples of different timezone annotation for April 3, 2023. Standardized to ISO 8601</caption>
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th><strong>Description</strong></th>
-<th><strong>Written in ISO 8601</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Date</td>
-<td>2023-04-03</td>
-</tr>
-<tr class="even">
-<td>Date and Time with timezone offset</td>
-<td>2023-04-03T18:29:38+00:00</td>
-</tr>
-<tr class="odd">
-<td>Date and Time in UTC</td>
-<td>2023-04-03T18:29:38Z</td>
-</tr>
-<tr class="even">
-<td>Time Interval in UTC (April 3 - 5, 2023)</td>
-<td>2023-04-03T18:29:38Z/2023-04-05T00:29:38Z</td>
-</tr>
-</tbody>
-</table>
+<p>ISO 8601 dates can represent moments in time at different resolutions, as well as time intervals.</p>
+<ul>
+<li>Time intervals use <code>/</code> as a separator.</li>
+<li>Date and times are separated by <code>T</code>.</li>
+<li>Timezones can be indicated at the end by using <code>+</code> or <code>-</code> the number of hours offset from UTC.</li>
+<li>If no timezone is indicated, then the time is assumed to be local time.</li>
+<li>When a date/time is recorded in UTC, a <code>Z</code> should be added at the end.</li>
+<li>Times must be written in the 24-hour clock system.</li>
+<li>If you do not know the time, you do not have to provide it.</li>
+<li>Do not indicate unknown times as “00:00” as this indicates midnight.</li>
+</ul>
+<p>Not every piece of time information is necessary, but a generalization of how to format dates and times looks like:</p>
+<p><code>YYYY-MM-DDT[hh]:[mm]:[ss] [+/-XX OR Z]</code></p>
+<p>Some specific examples of acceptable ISO 8601 dates. Thanks to @ are:</p>
+<p><strong>Dates:</strong></p>
+<blockquote class="blockquote">
+<p>1948-09-13 1993-01/02 1993-01 1993</p>
+</blockquote>
+<p><strong>Dates with Specific Times:</strong></p>
+<blockquote class="blockquote">
+<p>1973-02-28T15:25:00 2008-04-25T09:53</p>
+</blockquote>
+<p><strong>Dates with Time Zones:</strong></p>
+<blockquote class="blockquote">
+<p>2005-08-31T12:11+12 2013-02-16T04:28Z</p>
+</blockquote>
+<p><strong>Date and Time Intervals:</strong></p>
+<blockquote class="blockquote">
+<p>1993-01-26T04:39+12/1993-01-26T05:48+12</p>
+</blockquote>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/iso_8601.png" class="img-fluid figure-img"></p>
