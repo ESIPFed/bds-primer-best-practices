@@ -1,6 +1,8 @@
 # Make Your Data Interoperable
 
-The term "semantic resources" refers to a suite of information frameworks - such as controlled vocabularies, taxonomies, and ontologies - that provide definitions and context to natural language terms that are found within datasets. Semantic resources help disambiguate what is meant by a certain word or phrase. This facilitates interoperability, machine readability, and cross-dataset comparisons. Controlled vocabularies, taxonomic authorities, habitat classifications, and ontologies are all important semantic resources that are used in biological data standardization.
+The term "semantic resources" refers to a suite of information frameworks - such as controlled vocabularies, taxonomies, and ontologies - that provide definitions and context to natural language terms that are found within datasets. Semantic resources help disambiguate what is meant by a certain word or phrase. This facilitates interoperability, machine readability, and cross-dataset comparisons. Controlled vocabularies, taxonomic authorities, habitat classifications, and ontologies are all important semantic resources that are used in biological data standardization. 
+
+> Note: Semantic resources may or may not imply or define relationships to other values. Learning how to use them correctly helps your data be precise and powerful! When all is said and done, there isn't a semantic resource for everything, but when it's there, it's a good idea to use it.
 
 ## Controlled Vocabularies
 
