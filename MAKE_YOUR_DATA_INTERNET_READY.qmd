@@ -120,7 +120,7 @@ The [THREDDS](https://www.unidata.ucar.edu/software/tds/) server, which was deve
 
 ### **Why?**
 
--   Crowd source: What is beneficial about THREDDS for internet ready data?
+-   Biologists usually bump into THREDDS when they need to download large environmental datasets; like climate model outputs, ocean circulation fields, or satellite products; because many data centers use THREDDS catalogs to serve those files. If a biologist wants to go a step further and overlay sea surface temperature maps directly in QGIS to compare with marine protected areas, THREDDS is especially useful since it can provide WMS map services that plug right into GIS tools. By contrast, they often turn to ERDDAP when they want to slice, query, or subset those same datasets for just their study region or species, since ERDDAP makes that kind of filtering and export to CSV or JSON much easier.
 
 ### **Top Resources**
 
