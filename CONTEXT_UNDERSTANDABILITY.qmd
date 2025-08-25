@@ -70,16 +70,19 @@ ISO-19115 is a metadata standard, developed and maintained by the [International
 
 -   It helps to provide standardized metadata about genetic sequence data.
 
--   It is used by the International Nucleotide Sequence Database Collection ([INSDC](https://www.insdc.org/)), which has the following member participating databases: [ROIS - NIG](https://www.ddbj.nig.ac.jp/index-e.html), [EMBL-EBI](https://www.ebi.ac.uk/ena/browser/home) and [NCBI](https://submit.ncbi.nlm.nih.gov/).
+-   It is used by the International Nucleotide Sequence Database Collection ([INSDC](https://www.insdc.org/)), which has the following member participating databases:
+    - Research Organization of Information and System National Institute of Genetics (NIG)[ROIS - NIG](https://www.ddbj.nig.ac.jp/index-e.html) *often referred to as the DNA Data Bank of Japan (DDBJ)*
+    - European Molecular Biology Laboratory's European Bioinformatics Institute. [EMBL-EBI](https://www.ebi.ac.uk/ena/browser/home) *often referred to as European Nucleotide Archive (ENA)*
+    - National Library of Medicine (NLM) - National Center for Biotechnology Information (NCBI) [NLM-NCBI](https://submit.ncbi.nlm.nih.gov/) *often referred to as GenBank*
 
 ### Top Resources
 
--   [MIxS Term Search Tool](http://www.gensc.org/pages/standards/search-terms.html)
+-   [MIxS Term Search Tool](http://www.gensc.org/pages/standards/search-terms.html): Search for individual terms in the MIxS standard.
 
--   [Genomic Standards Consortium term list](https://genomicsstandardsconsortium.github.io/mixs/)
+-   [Genomic Standards Consortium term list](https://genomicsstandardsconsortium.github.io/mixs/): Browse checklists and extensions of MIxS.
 
--   [Minimum Information about Marker Gene Sequence (MIMARKS)](https://www.nature.com/articles/nbt.1823)
+-   [Minimum Information about Marker Gene Sequence (MIMARKS)](https://www.nature.com/articles/nbt.1823): paper announcing publication of MIMARKS and MIxS.
 
 -   MIxS is maintained by the community using GitHub. To propose changes, ask questions, see the [MIxS GitHub repository](https://github.com/GenomicsStandardsConsortium/mixs).
 
--   [Minimum Information about Sequence Data from the Built Environment (MIxS-BE)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3869023/)
+-   [Minimum Information about Sequence Data from the Built Environment (MIxS-BE)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3869023/): paper describing publication of the 'Built Environment' extension.

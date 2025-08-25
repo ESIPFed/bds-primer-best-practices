@@ -22,8 +22,6 @@ The World Wide Web Consortium (W3C) develops the [W3C standards](https://www.w3.
 
 -   [W3Schools](https://www.w3schools.com/) offers a variety of tutorials for free
 
-## 
-
 ### 5.1.2 Dublin Core Standard
 
 ### **What Is It?**
@@ -86,9 +84,7 @@ Web services run much of our digital world today. You probably use them through 
 
 ### **What Is It?**
 
-[ERDDAP](https://erddap.github.io/)™ (pronounced ur-dap) is a data server that offers users a simple and consistent way to download, integrate, analyze, visualize, and map multiple scientific datasets from different sources and scientific communities – typically oceanographic and atmospheric data.
-
-To facilitate comparisons of data from different datasets, requests and results in ERDDAP™ use standardized space/time axis, which makes it easier for users to specify data constraints in requests without having to worry about the data format. ERDDAP™ allows users to request a subset of a dataset, and can convert the subset to a desired file format such as .csv, .json, .nc and others, for download.
+[ERDDAP™](https://erddap.github.io/) (pronounced ur-dap) is a data server designed to make it easy to access and work with scientific datasets, especially oceanographic and atmospheric data. It provides a simple, consistent way to download, integrate, analyze, and visualize data from many sources. To help compare across datasets, ERDDAP™ standardizes the space/time axes, so users can set constraints without worrying about the original file format. Users can request just a subset of a dataset and then download it in their preferred format—such as CSV, JSON, NetCDF, and more—making ERDDAP™ a flexible tool for customizing data to fit their needs.
 
 ### **Why?**
 
@@ -122,7 +118,7 @@ The [THREDDS](https://www.unidata.ucar.edu/software/tds/) server, which was deve
 
 ### **Why?**
 
--   Crowd source: What is beneficial about THREDDS for internet ready data?
+-   Biologists usually bump into THREDDS when they need to download large environmental datasets; like climate model outputs, ocean circulation fields, or satellite products; because many data centers use THREDDS catalogs to serve those files. If a biologist wants to go a step further and overlay sea surface temperature maps directly in QGIS to compare with marine protected areas, THREDDS is especially useful since it can provide WMS map services that plug right into GIS tools. By contrast, they often turn to ERDDAP when they want to slice, query, or subset those same datasets for just their study region or species, since ERDDAP makes that kind of filtering and export to CSV or JSON much easier.
 
 ### **Top Resources**
 
