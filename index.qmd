@@ -6,7 +6,9 @@ To paraphrase the [MARCO-BOLO Project Data Management Plan](https://doi.org/10.5
 
 ### This Primer Guide
 
-The first product from this cluster, the [Biological Data Standards Primer](https://doi.org/10.6084/m9.figshare.16806712.v2), aims to be an easy to digest resource for new biological data managers. However, it is essentially a list of names and links. We created this Primer Guide with the intention of providing additional context, bridging the gap between technical standards documentation and the lists of links available in the Primer.
+The first product from this cluster, the [Biological Data Standards Primer](https://doi.org/10.6084/m9.figshare.16806712.v2), is an easy to digest resource for new biological data managers. However, it is essentially a list of names and links. We created this Primer Guide with the intention of providing additional context, bridging the gap between technical standards documentation and the lists of links available in the Primer.
+
+The lists of standards discussed in these Primer guidelines is not comprehensive and is based on the standards included in the original Primer. If you would like to recommend standards for inclusion in future versions, please see the associated [GitHub repository](https://github.com/ESIPFed/bds-primer-best-practices).
 
 The following widget displays the Biological Data Standards Primer and allows for quick download.
 
@@ -40,3 +42,4 @@ If you would like to suggest changes or additions to the guide, please use [GitH
 
 #### Translations
 Currently, we have the capacity to offer this guide only in English. However, users can get a rough translation using Google Translate. Just drop the page's url in this service: <https://translate.google.com/?sl=en&tl=es&op=websites>
+
