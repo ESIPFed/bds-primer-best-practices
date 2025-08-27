@@ -95,6 +95,8 @@ The primary mission of COL is to deliver data, but the tools and services offere
 
 -   ITIS [API](https://itis.gov/web_service.html)
 
+- {{< video https://www.youtube.com/watch?v=MGsstbDYAMU width="200" height="100"  >}}
+
 ### 4.2.3 Paleobiology Database (PBDB) 🦣
 
 ### What Is It?
@@ -115,6 +117,8 @@ The [Paleobiology Database](https://paleobiodb.org/) (PBDB) is an expert-curated
 
 -   The same Resources page also includes information on how to contribute taxonomic information to PBDB. Lessons are available via a [playlist of YouTube](https://www.youtube.com/watch?v=C06cjzcSDq4&list=PLmOEA6rrJ1dc3a4-etDDGQ7tQG1sEK0g6) videos. Note that you will need to be granted Contributory User access to contribute to PBDB. More information about the process and different user types is available in the [PBDB User Guide](https://escholarship.org/content/qt6tm05630/qt6tm05630.pdf?t=s0797i).
 
+- {{< video https://www.youtube.com/watch?v=VCy0C1qj3kw width="200" height="100"  >}}
+
 ### 4.2.4 World Register of Marine Species (WoRMS) 🐋
 
 ### What Is It?
@@ -132,6 +136,9 @@ The World Register of Marine Species (WoRMS) is an authoritative and comprehensi
 ### Top Resources
 
 -   WoRMS and its associated tools can be explored via [web browser](https://www.marinespecies.org/index.php), the [WoRMS API](https://www.marinespecies.org/rest/), R packages ([worrms](https://cran.r-project.org/web/packages/worrms/index.html), [taxize](https://cran.r-project.org/web/packages/taxize/)), and a python package ([pyworms](https://github.com/iobis/pyworms)).  
+
+-- {{< video https://www.youtube.com/watch?v=ntZDzBE3pO0
+ width="200" height="100"  >}}
 
 ## Habitat Classification
 
