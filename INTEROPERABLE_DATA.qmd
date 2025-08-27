@@ -55,6 +55,8 @@ The Global Change Master Directory (GCMD) Keywords are a standardized set of ter
 
 Taxonomic authorities ensure clarity and consistency of organism taxonomic identity (e.g. species, genus, etc.), regardless of changes to scientific name over time or differences in common name. In addition to nomenclature, taxonomic authorities often also include taxonomy and distribution.
 
+_Note: To our surprise, this definition became one of the most discussed pieces of information in developing this guidance. We are comfortable with where it's at right now, but feel free to open up a GitHub issue if you think it needs improvement._
+
 ### 4.2.1 Catalogue of Life (COL) 📒
 
 ### What Is It?
