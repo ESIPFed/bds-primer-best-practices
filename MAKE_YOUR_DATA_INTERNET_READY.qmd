@@ -114,7 +114,7 @@ Web services run much of our digital world today. You probably use them through 
 
 ### **What Is It?**
 
-The [THREDDS](https://www.unidata.ucar.edu/software/tds/) server, which was developed prior to ERDDAP, has features and interfaces that makes it easier to explore and use data. 
+The [THREDDS](https://www.unidata.ucar.edu/software/tds/) server, is a data service, like ERDDAP. THREDDS is closely tied to OPeNDAP, using it as one of its core protocols for serving scientific data, though it also supports others like WMS, WCS, and NetCDF Subset Service. ERDDAP, on the other hand, is more flexible: it can expose data through OPeNDAP but doesn’t depend on it, instead offering multiple access formats such as CSV, JSON, and custom REST-like APIs.
 
 ### **Why?**
 
