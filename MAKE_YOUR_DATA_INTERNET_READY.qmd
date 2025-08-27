@@ -30,7 +30,7 @@ The World Wide Web Consortium (W3C) develops the [W3C standards](https://www.w3.
 
 ### **Why?**
 
--   Crowd source: Why is it beneficial to know about Dublin Core for internet ready data?
+-   Dublin Core can be thought of as the cornerstone of Darwin Core. Dublin Core was created in 1994 as a simple, set of terms for describing web resources. Standards like Darwin Core built on it and continue to use Dublin Core terms, for example `language` to describe the language that a record is in. Because Dublin Core provides a simple, universal set of metadata elements (like title, creator, subject, date, identifier), that work across all kinds of digital resources, it’s widely adopted and shows up in libraries (to describe books and digital texts), museums (for artifacts and specimens), and across the internet (in data repositories, archives, and search engines). So why should you be aware of it? As a biologist you may use it as part of Darwin Core or when you dive deep into your library stacks.
 
 ### **Top Resources**
 
