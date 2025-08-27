@@ -136,4 +136,15 @@ A Web Map Service (WMS) is a way to retrieve georegistered map images over the i
 
 ### **Top Resources**
 
--   Crowd source: What is beneficial about Web Map Services for internet ready data?
+-   OGC WMS Standard; [Official specification and protocol details](https://www.ogc.org/standards/wms) 
+
+- QGIS WMS Tutorial; [Hands-on lesson loading WMS layers](https://docs.qgis.org/latest/en/docs/training_manual/online_resources/wms.html
+)
+
+- GeoServer WMS Guide; [Practical WMS setup and usage](https://geoserver.geosolutionsgroup.com/edu/en/pretty_maps/wms.html
+)
+
+- Penn State GEOG 585; [Course module on web mapping systems](https://www.e-education.psu.edu/geog585/node/683
+)
+
+- GISGeography WMS Intro; [Clear overview of concepts and uses](https://gisgeography.com/web-mapping-services-wms/)
