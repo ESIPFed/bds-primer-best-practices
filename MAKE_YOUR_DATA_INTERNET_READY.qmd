@@ -30,7 +30,11 @@ The World Wide Web Consortium (W3C) develops the [W3C standards](https://www.w3.
 
 ### **Why?**
 
--   Dublin Core can be thought of as the cornerstone of Darwin Core. Dublin Core was created in 1994 as a simple, set of terms for describing web resources. Standards like Darwin Core built on it and continue to use Dublin Core terms, for example `language` to describe the language that a record is in. Because Dublin Core provides a simple, universal set of metadata elements (like title, creator, subject, date, identifier), that work across all kinds of digital resources, it’s widely adopted and shows up in libraries (to describe books and digital texts), museums (for artifacts and specimens), and across the internet (in data repositories, archives, and search engines). So why should you be aware of it? As a biologist you may use it as part of Darwin Core or when you dive deep into your library stacks.
+Dublin Core can be thought of as the cornerstone of Darwin Core. Created in 1994, Dublin Core provides a simple set of terms for describing digital resources. Standards like Darwin Core build on this foundation and continue to use Dublin Core terms, such as language to describe the language of a record. Because Dublin Core offers a small, universal set of metadata elements (like title, creator, subject, date, identifier) that work across all kinds of digital resources, it has been widely adopted in libraries (to describe books and digital texts), museums (for artifacts and specimens), and across the internet (in data repositories, archives, and search engines).
+
+Its success lies not only in its simplicity but also in its purpose: Dublin Core was designed to make digital resources more discoverable, shareable, and usable. By distilling resource description down to its most essential elements, it ensures consistency while remaining both human- and machine-readable. This balance is what has allowed Dublin Core to become a well-established, widely trusted standard.
+
+Why should you care? As a biologist, you may encounter Dublin Core directly when working with Darwin Core, or indirectly every time you publish a dataset, deposit a record in a repository, or use a data portal. Even if you don’t see it, Dublin Core is almost always at work behind the scenes, enabling data integration, discovery, and reuse. For ESIP and other communities, awareness of Dublin Core matters because it underpins how biodiversity and other scientific data are shared and connected globally.
 
 ### **Top Resources**
 
