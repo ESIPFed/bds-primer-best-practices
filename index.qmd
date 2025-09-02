@@ -6,10 +6,6 @@ To paraphrase the [MARCO-BOLO Project Data Management Plan](https://doi.org/10.5
 
 ### This Primer Guide
 
-=======
-
-The lists of standards discussed in these Primer guidelines is not comprehensive and is based on the standards included in the original Primer. If you would like to recommend standards for inclusion in future versions, please see the associated [GitHub repository](https://github.com/ESIPFed/bds-primer-best-practices).
-
 The lists of standards discussed in these Primer guidelines is not comprehensive and is based on the standards included in the original Primer. If you would like to recommend standards for inclusion in future versions, please see the associated [GitHub repository](https://github.com/ESIPFed/bds-primer-best-practices).
 
 <iframe src="https://widgets.figshare.com/articles/16806712/embed?show_title=1" width="748" height="400" allowfullscreen frameborder="0">
@@ -42,5 +38,6 @@ If you would like to suggest changes or additions to the guide, please use [GitH
 
 #### Translations
 Currently, we have the capacity to offer this guide only in English. However, users can get a rough translation using Google Translate. Just drop the page's url in this service: <https://translate.google.com/?sl=en&tl=es&op=websites>
+
 
 
