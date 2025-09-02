@@ -37,7 +37,8 @@ The [ESIP Biological Data Standards Cluster](https://wiki.esipfed.org/Biological
 If you would like to suggest changes or additions to the guide, please use [GitHub issues](https://github.com/ESIPFed/bds-primer-best-practices/issues/new/choose) to document your request.
 
 #### Translations
-Currently, we have the capacity to offer this guide only in English. However, users can get a rough translation using Google Translate. Just drop the page's url in this service: <https://translate.google.com/?sl=en&tl=es&op=websites>
+Currently, we have the capacity to offer this guide only in English. However, users can get a rough translation using [Google Translate](https://translate.google.com/?sl=en&tl=es&op=websites). Just drop the page's url in this service.
+
 
 
 
