@@ -6,7 +6,7 @@ In this guide we introduce you to standards and resources for working with biolo
 
 > Biological data is any information that tells us something about living things—what they are, where they are, how many there are, or how they are functioning. It can come from direct observations (like counting birds or collecting plant samples), from measurements of their traits (like DNA sequences or chemical markers in tissues), or from indirect signals that reflect biological activity (like acoustic recordings of animal calls, pigments that reveal plankton growth, or satellite images showing vegetation health). We choose to focus on biological data that are relevant to understanding our planet and its ecosystems. The data from fields like biomedical, social, and economic sciences may overlap with what we discuss here, but those areas are beyond the scope of this guide.
 
-![](images/biological_data_flavors.svg){alt= "An illustration of some of the many types of biological data that are typically created to observe ecosystems on planter earth."}
+![](images/what_is_biological_data.svg){alt= "An illustration of some of the many types of biological data that are typically created to observe ecosystems on planter earth."}
 
 To paraphrase the [MARCO-BOLO Project Data Management Plan](https://doi.org/10.5281/zenodo.8208410), a primary challenge with biological data is that it comes in many flavors. For example, it may include evidence of past or present organisms based on physical samples, chemicals, organic molecules, sound, or images. By using standards to organize and share data efficiently, biologists can turn this variety of data types into a strength rather than a challenge when dealing with biological data.
 
@@ -44,6 +44,7 @@ If you would like to suggest changes or additions to the guide, please use [GitH
 
 #### Translations
 Currently, we have the capacity to offer this guide only in English. However, users can get a rough translation using [Google Translate](https://translate.google.com/?sl=en&tl=es&op=websites). Just drop the page's url in this service.
+
 
 
 
