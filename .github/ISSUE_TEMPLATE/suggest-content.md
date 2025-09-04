@@ -1,5 +1,4 @@
 ---
-
 name: suggest new content
 about: Suggest new content for any section. Don't use this to suggest revisions to
   existing content.
