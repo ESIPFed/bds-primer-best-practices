@@ -11,7 +11,7 @@ assignees: ''
 ##### replace YOUR_*_HERE and delete roles/types that don't apply
  
 - name: YOUR_NAME_HERE
-  orcid: YOUR_ORCID_HERE
+  orcid: YOUR_ORCID_HERE e.g. https://orcid.org/0000-0001-7418-1244
   affiliation: YOUR_INSTITUTION_HERE
   roles:
     - Conceptualization
