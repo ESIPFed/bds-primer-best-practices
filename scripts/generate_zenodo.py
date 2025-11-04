@@ -2,6 +2,10 @@ import yaml
 import json
 from datetime import datetime
 
+# Read template
+with open('zenodo_template.json', 'r') as f:
+    zenodo_metadata = json.load(f)
+
 # Read contributors
 with open('contributors.yaml', 'r') as f:
     contributors = yaml.safe_load(f)
@@ -49,51 +53,19 @@ for person in contributors:
         zenodo_contributors.append(zenodo_entry)
         cff_contributors.append(cff_entry)
 
-# Build zenodo.json
-zenodo_metadata = {
-    "title": "Biological Data Standards Primer Guide",
-    "description": "An introductory guide to biological data standards, developed as a companion to the <a href=\"https://doi.org/10.6084/m9.figshare.16806712\">ESIP Biological Data Standards Primer</a>. This resource helps researchers organize and share biological data—information about living organisms, their traits, distributions, and ecosystem functions—using community standards. Covers direct observations, trait measurements, and indirect biological signals relevant to Earth systems science. Created by the <a href=\"https://wiki.esipfed.org/Biological_Data_Standards_Cluster\">ESIP Biological Data Standards Cluster</a> with ongoing community input through <a href=\"https://github.com/ESIPFed/bds-primer-best-practices\">GitHub</a>.",
-    "license": "CC-BY-4.0",
-    "upload_type": "publication",
-    "publication_type": "workingpaper",
-    "creators": creators,
-    "contributors": zenodo_contributors,
-    "keywords": [
-        "biological data",
-        "data standards",
-        "biodiversity",
-        "Earth systems science",
-        "ESIP"
-    ],
-    "related_identifiers": [
-        {
-            "identifier": "10.6084/m9.figshare.16806712",
-            "relation": "isSupplementTo",
-            "scheme": "doi"
-        },
-        {
-            "identifier": "https://github.com/ESIPFed/bds-primer-best-practices",
-            "relation": "isSupplementTo",
-            "scheme": "url"
-        }
-    ]
-}
+# Add creators and contributors to zenodo metadata
+zenodo_metadata['creators'] = creators
+zenodo_metadata['contributors'] = zenodo_contributors
 
 # Build CITATION.cff
 citation_metadata = {
     "cff-version": "1.2.0",
     "message": "If you use this guide, please cite it using these metadata.",
-    "title": "Biological Data Standards Primer Guide",
+    "title": zenodo_metadata['title'],
     "abstract": "An introductory guide to biological data standards, developed as a companion to the ESIP Biological Data Standards Primer. This resource helps researchers organize and share biological data using community standards.",
     "authors": cff_authors,
-    "keywords": [
-        "biological data",
-        "data standards",
-        "biodiversity",
-        "Earth systems science",
-        "ESIP"
-    ],
-    "license": "CC-BY-4.0",
+    "keywords": zenodo_metadata['keywords'],
+    "license": zenodo_metadata['license'],
     "repository-code": "https://github.com/ESIPFed/bds-primer-best-practices",
     "type": "software",
     "date-released": datetime.now().strftime("%Y-%m-%d")
