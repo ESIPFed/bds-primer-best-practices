@@ -7,7 +7,7 @@ with open('zenodo_template.json', 'r') as f:
     zenodo_metadata = json.load(f)
 
 # Read contributors
-with open('contributors.yaml', 'r') as f:
+with open('CONTRIBUTORS.yaml', 'r') as f:
     contributors = yaml.safe_load(f)
 
 # Separate creators (5+ roles) from contributors (< 5 roles)
