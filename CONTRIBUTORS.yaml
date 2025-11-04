@@ -1,6 +1,54 @@
+# CRediT roles for Zenodo metadata
+# See: https://credit.niso.org/ for role definitions
+
 - name: Stephen Formel
   orcid: https://orcid.org/0000-0001-7418-1244
   affiliation: The Data Patch
+  roles:
+    - Conceptualization
+    - Data Curation
+    - Methodology
+    - Project Administration
+    - Supervision
+    - Validation
+    - Visualization
+    - Writing - Original Draft
+    - Writing - Review & Editing
+  type: ProjectLeader
+
+- name: Kelsey Huelsman
+  orcid: https://orcid.org/0000-0001-6696-6295
+  affiliation: NASA
+  roles:
+    - Conceptualization
+    - Data Curation
+    - Methodology
+    - Project Administration
+    - Supervision
+    - Validation
+    - Visualization
+    - Writing - Original Draft
+    - Writing - Review & Editing
+  type: ProjectLeader
+
+  - name: Laura Brenskelle
+  orcid: https://orcid.org/0000-0002-9284-8871
+  affiliation: NOAA
+  roles:
+    - Conceptualization
+    - Data Curation
+    - Methodology
+    - Project Administration
+    - Supervision
+    - Validation
+    - Visualization
+    - Writing - Original Draft
+    - Writing - Review & Editing
+  type: ProjectLeader
+
+  - name: Tim van der Stap
+  orcid: https://orcid.org/0000-0002-0053-0795
+  affiliation: Hakai Institute
   roles:
     - Conceptualization
     - Data Curation
