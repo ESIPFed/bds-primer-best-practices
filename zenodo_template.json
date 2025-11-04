@@ -1,6 +1,7 @@
 {
   "title": "ESIP Biological Data Standards (BDS) Cluster: Primer Guidelines",
   "description": "An introductory guide to biological data standards, developed as a companion to the <a href=\"https://doi.org/10.6084/m9.figshare.16806712\">ESIP Biological Data Standards Primer</a>. This resource helps researchers organize and share biological data—information about living organisms, their traits, distributions, and ecosystem functions—using community standards. Covers direct observations, trait measurements, and indirect biological signals relevant to Earth systems science. Created by the <a href=\"https://wiki.esipfed.org/Biological_Data_Standards_Cluster\">ESIP Biological Data Standards Cluster</a> with ongoing community input through <a href=\"https://github.com/ESIPFed/bds-primer-best-practices\">GitHub</a>.",
+  "language": "eng",
   "license": "CC-BY-4.0",
   "upload_type": "publication",
   "publication_type": "other",
