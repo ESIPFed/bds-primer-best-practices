@@ -45,7 +45,7 @@
     - Writing - Review & Editing
   type: ProjectLeader
 
-  - name: Laura Brenskelle
+- name: Laura Brenskelle
   orcid: https://orcid.org/0000-0002-9284-8871
   affiliation: NOAA
   roles:
@@ -60,7 +60,7 @@
     - Writing - Review & Editing
   type: ProjectLeader
 
-  - name: Tim van der Stap
+- name: Tim van der Stap
   orcid: https://orcid.org/0000-0002-0053-0795
   affiliation: Hakai Institute
   roles:
