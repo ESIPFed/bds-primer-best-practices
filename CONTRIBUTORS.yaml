@@ -1,6 +1,20 @@
 # CRediT roles for Zenodo metadata
 # See: https://credit.niso.org/ for role definitions
 
+- name: ESIP Biological Data Standards Cluster
+  affiliation: Earth Science Information Partners
+  roles:
+    - Conceptualization
+    - Data Curation
+    - Methodology
+    - Project Administration
+    - Supervision
+    - Validation
+    - Visualization
+    - Writing - Original Draft
+    - Writing - Review & Editing
+  type: ProjectLeader
+  
 - name: Stephen Formel
   orcid: https://orcid.org/0000-0001-7418-1244
   affiliation: The Data Patch
