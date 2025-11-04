@@ -1,0 +1,14 @@
+- name: Stephen Formel
+  orcid: https://orcid.org/0000-0001-7418-1244
+  affiliation: The Data Patch
+  roles:
+    - Conceptualization
+    - Data Curation
+    - Methodology
+    - Project Administration
+    - Supervision
+    - Validation
+    - Visualization
+    - Writing - Original Draft
+    - Writing - Review & Editing
+  type: ProjectLeader
