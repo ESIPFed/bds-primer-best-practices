@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: If you use this guide, please cite it using these metadata.
+title: 'ESIP Biological Data Standards (BDS) Cluster: Primer Guidelines'
+abstract: An introductory guide to biological data standards, developed as a companion
+  to the ESIP Biological Data Standards Primer. This resource helps researchers organize
+  and share biological data using community standards.
+authors:
+- family-names: Cluster
+  given-names: ESIP Biological Data Standards
+  affiliation: Earth Science Information Partners
+  orcid: ''
+- family-names: Formel
+  given-names: Stephen
+  affiliation: The Data Patch
+  orcid: https://orcid.org/0000-0001-7418-1244
+- family-names: Huelsman
+  given-names: Kelsey
+  affiliation: NASA
+  orcid: https://orcid.org/0000-0001-6696-6295
+- family-names: Brenskelle
+  given-names: Laura
+  affiliation: NOAA
+  orcid: https://orcid.org/0000-0002-9284-8871
+- family-names: Stap
+  given-names: Tim van der
+  affiliation: Hakai Institute
+  orcid: https://orcid.org/0000-0002-0053-0795
+keywords:
+- biological data
+- standards
+- data management
+- FAIR
+license: CC-BY-4.0
+repository-code: https://github.com/ESIPFed/bds-primer-best-practices
+type: software
+date-released: '2025-11-04'
