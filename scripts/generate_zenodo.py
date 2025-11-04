@@ -1,0 +1,115 @@
+import yaml
+import json
+from datetime import datetime
+
+# Read contributors
+with open('contributors.yaml', 'r') as f:
+    contributors = yaml.safe_load(f)
+
+# Separate creators (5+ roles) from contributors (< 5 roles)
+creators = []
+zenodo_contributors = []
+cff_authors = []
+cff_contributors = []
+
+for person in contributors:
+    role_count = len(person.get('roles', []))
+    
+    # Format name as "Last, First" for Zenodo
+    name_parts = person['name'].split()
+    if len(name_parts) >= 2:
+        formatted_name = f"{name_parts[-1]}, {' '.join(name_parts[:-1])}"
+        family_name = name_parts[-1]
+        given_names = ' '.join(name_parts[:-1])
+    else:
+        formatted_name = person['name']
+        family_name = person['name']
+        given_names = ''
+    
+    # Zenodo entry
+    zenodo_entry = {
+        "name": formatted_name,
+        "affiliation": person.get('affiliation', ''),
+        "orcid": person.get('orcid', '').replace('https://orcid.org/', '')
+    }
+    
+    # CFF entry
+    cff_entry = {
+        "family-names": family_name,
+        "given-names": given_names,
+        "affiliation": person.get('affiliation', ''),
+        "orcid": person.get('orcid', '')
+    }
+    
+    if role_count >= 5:
+        creators.append(zenodo_entry)
+        cff_authors.append(cff_entry)
+    else:
+        zenodo_entry['type'] = person.get('type', 'Researcher')
+        zenodo_contributors.append(zenodo_entry)
+        cff_contributors.append(cff_entry)
+
+# Build zenodo.json
+zenodo_metadata = {
+    "title": "Biological Data Standards Primer Guide",
+    "description": "An introductory guide to biological data standards, developed as a companion to the <a href=\"https://doi.org/10.6084/m9.figshare.16806712\">ESIP Biological Data Standards Primer</a>. This resource helps researchers organize and share biological data—information about living organisms, their traits, distributions, and ecosystem functions—using community standards. Covers direct observations, trait measurements, and indirect biological signals relevant to Earth systems science. Created by the <a href=\"https://wiki.esipfed.org/Biological_Data_Standards_Cluster\">ESIP Biological Data Standards Cluster</a> with ongoing community input through <a href=\"https://github.com/ESIPFed/bds-primer-best-practices\">GitHub</a>.",
+    "license": "CC-BY-4.0",
+    "upload_type": "publication",
+    "publication_type": "workingpaper",
+    "creators": creators,
+    "contributors": zenodo_contributors,
+    "keywords": [
+        "biological data",
+        "data standards",
+        "biodiversity",
+        "Earth systems science",
+        "ESIP"
+    ],
+    "related_identifiers": [
+        {
+            "identifier": "10.6084/m9.figshare.16806712",
+            "relation": "isSupplementTo",
+            "scheme": "doi"
+        },
+        {
+            "identifier": "https://github.com/ESIPFed/bds-primer-best-practices",
+            "relation": "isSupplementTo",
+            "scheme": "url"
+        }
+    ]
+}
+
+# Build CITATION.cff
+citation_metadata = {
+    "cff-version": "1.2.0",
+    "message": "If you use this guide, please cite it using these metadata.",
+    "title": "Biological Data Standards Primer Guide",
+    "abstract": "An introductory guide to biological data standards, developed as a companion to the ESIP Biological Data Standards Primer. This resource helps researchers organize and share biological data using community standards.",
+    "authors": cff_authors,
+    "keywords": [
+        "biological data",
+        "data standards",
+        "biodiversity",
+        "Earth systems science",
+        "ESIP"
+    ],
+    "license": "CC-BY-4.0",
+    "repository-code": "https://github.com/ESIPFed/bds-primer-best-practices",
+    "type": "software",
+    "date-released": datetime.now().strftime("%Y-%m-%d")
+}
+
+# Add contributors if any
+if cff_contributors:
+    citation_metadata["contributors"] = cff_contributors
+
+# Write zenodo.json
+with open('.zenodo.json', 'w') as f:
+    json.dump(zenodo_metadata, f, indent=2)
+
+# Write CITATION.cff
+with open('CITATION.cff', 'w') as f:
+    yaml.dump(citation_metadata, f, default_flow_style=False, sort_keys=False, allow_unicode=True)
+
+print(f"Generated .zenodo.json with {len(creators)} creators and {len(zenodo_contributors)} contributors")
+print(f"Generated CITATION.cff with {len(cff_authors)} authors and {len(cff_contributors)} contributors")
